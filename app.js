@@ -1,344 +1,469 @@
 /**
- * Quranic Arabic Companion - Application Logic
- * High-performance, diacritic-tolerant search across 800+ base vocabulary words, 31 grammar rules, and Tajweed
- * Tab arrangement: 1. Tajweed, 2. Rules, 3. Words (Words tab active on load)
- * Strict tri-script typography: Amiri (Arabic), Gulzar (Urdu), Inter (English)
- * Permanent bilingual view on Words tab: Urdu meaning on top, English translation below
- * Zero emojis, zero external institution or author mentions
+ * Quranic Arabic Study Companion — Application Logic
+ * High-performance, diacritic-tolerant search across 2,030 Grand Master Base Words,
+ * 83 Grammar Rules across Units 1 to 5, and authentic Tajweed modules.
+ * Restored Beta App Design with full gestures, modals, theme persistence, and bilingual controls.
+ * Zero emojis across all modules.
  */
 
 (function () {
   'use strict';
 
   // -------------------------------------------------------------
+  // Data References
+  // -------------------------------------------------------------
+  const wordsCollection = (typeof WORDS_DATA !== 'undefined') ? WORDS_DATA :
+    ((typeof DICTIONARY_WORDS !== 'undefined') ? DICTIONARY_WORDS : []);
+
+  const rulesCollection = (typeof RULES_DATA !== 'undefined') ? RULES_DATA :
+    ((typeof GRAMMAR_RULES !== 'undefined') ? GRAMMAR_RULES : []);
+
+  const tajweedCollection = (typeof TAJWEED_DATA !== 'undefined') ? TAJWEED_DATA : [];
+
+  // -------------------------------------------------------------
   // State
   // -------------------------------------------------------------
-  let activeTab = 'rules'; // 'rules' (pushed Units 1 & 2) | 'words' | 'tajweed' | 'ayahs'
+  let activeTab = 'words'; // Default: 'words' | 'tajweed' | 'rules' | 'ayahs'
   let activeLetter = 'ALL';
-  let singleLangMode = 'UR'; // Rules, Tajweed & Translations mode: 'UR' | 'EN'
+  let activeRuleUnit = '1'; // Default: Unit 1
+  let activeRuleIndex = 0; // Local index within current unit rules
+  let rulesDisplayMode = 'all'; // 'all' (Brief Overview grid) | 'island' (one rule at a time)
+  let singleLangMode = 'UR'; // 'UR' (default) | 'EN' for Tajweed & Rules
   let searchQuery = '';
-  let activeRuleUnit = 1; // 1 to 5 (Unit-scoped rules architecture)
-  let activeRuleId = 'ALL'; // 'ALL' (all rules in active unit) | specific rule ID
-  let rulesDisplayMode = 'all'; // 'all' (continuous unit document) | 'lesson' (single rule)
-  let activeAyahUnit = '2'; // '1' to '5' (Default '2')
-  let activeAyahLesson = '1'; // '1' to max lessons for active unit
 
-  // -------------------------------------------------------------
-  // Helpers
-  // -------------------------------------------------------------
-  const urduNumerals = ['۰', '۱', '۲', '۳', '۴', '۵', '۶', '۷', '۸', '۹'];
-  function toUrduDigits(n) {
-    return String(n).replace(/[0-9]/g, d => urduNumerals[parseInt(d, 10)]);
-  }
-
-  const UNIT_LESSON_COUNTS = {
-    '1': 19,
-    '2': 13,
-    '3': 10,
-    '4': 18,
-    '5': 23
-  };
-
-  function getMaxLessonsForUnit(unit) {
-    return UNIT_LESSON_COUNTS[unit.toString()] || 13;
-  }
+  // Tab navigation sequence (Strictly: Tajweed -> Words -> Rules -> Translations)
+  const TAB_ORDER = ['tajweed', 'words', 'rules', 'ayahs'];
 
   // -------------------------------------------------------------
   // DOM Elements
   // -------------------------------------------------------------
+  // Tab Navigation Buttons & Views
   const tabTajweedBtn = document.getElementById('tabTajweedBtn');
-  const tabRulesBtn = document.getElementById('tabRulesBtn');
   const tabWordsBtn = document.getElementById('tabWordsBtn');
+  const tabRulesBtn = document.getElementById('tabRulesBtn');
   const tabAyahsBtn = document.getElementById('tabAyahsBtn');
-  
-  const viewTajweed = document.getElementById('viewTajweed');
-  const viewRules = document.getElementById('viewRules');
-  const viewWords = document.getElementById('viewWords');
-  const viewAyahs = document.getElementById('viewAyahs');
-  
-  const tajweedList = document.getElementById('tajweedList');
-  const rulesList = document.getElementById('rulesList');
-  const ruleUnitBar = document.getElementById('ruleUnitBar');
-  const ruleSelect = document.getElementById('ruleSelect');
-  const ruleCountDisplay = document.getElementById('ruleCountDisplay');
-  const ruleFilterRow = document.getElementById('ruleFilterRow');
-  const ruleSelectLabel = document.getElementById('ruleSelectLabel');
 
-  // Translations Elements
-  const ayahsList = document.getElementById('ayahsList');
-  const ayahUnitSelect = document.getElementById('ayahUnitSelect');
-  const ayahLessonSelect = document.getElementById('ayahLessonSelect');
-  const ayahUnitLabel = document.getElementById('ayahUnitLabel');
-  const ayahLessonLabel = document.getElementById('ayahLessonLabel');
-  const ayahFilterRow = document.getElementById('ayahFilterRow');
+  const viewTajweed = document.getElementById('viewTajweed');
+  const viewWords = document.getElementById('viewWords');
+  const viewRules = document.getElementById('viewRules');
+  const viewAyahs = document.getElementById('viewAyahs');
+
+  // Tajweed View Elements
+  const tajweedList = document.getElementById('tajweedList');
 
   // Words View Elements
   const searchInput = document.getElementById('searchInput');
   const clearSearchBtn = document.getElementById('clearSearchBtn');
   const alphabetBar = document.getElementById('alphabetBar');
   const dictionaryList = document.getElementById('dictionaryList');
-  const wordCountDisplay = document.getElementById('wordCount');
 
-  // Header Controls
+  // Rules View Elements
+  const ruleFilterRow = document.getElementById('ruleFilterRow');
+  const ruleUnitLabel = document.getElementById('ruleUnitLabel');
+  const ruleUnitSelect = document.getElementById('ruleUnitSelect');
+  const ruleSelectLabel = document.getElementById('ruleSelectLabel');
+  const ruleSelect = document.getElementById('ruleSelect');
+  const rulesList = document.getElementById('rulesList');
+
+  // Ayahs (Translations) View Elements
+  const ayahsList = document.getElementById('ayahsList');
+
+  // Header & Global Controls
   const themeToggleBtn = document.getElementById('themeToggleBtn');
   const langSwitcher = document.getElementById('langSwitcher');
   const toggleUrduBtn = document.getElementById('toggleUrduBtn');
   const toggleEnglishBtn = document.getElementById('toggleEnglishBtn');
-  
-  // Modal Elements
+  const backToTopBtn = document.getElementById('backToTopBtn');
+
+  // Course Outline Modal Elements
   const outlineToggleBtn = document.getElementById('outlineToggleBtn');
   const outlineModal = document.getElementById('outlineModal');
   const outlineCloseBtn = document.getElementById('outlineCloseBtn');
-  
-  const backToTopBtn = document.getElementById('backToTopBtn');
 
-  // Arabic Alphabet list for Words filter bar
+  // Arabic Alphabet list for the Words filter bar
   const ARABIC_ALPHABET = [
     'أ', 'ب', 'ت', 'ث', 'ج', 'ح', 'خ', 'د', 'ذ', 'ر', 
     'ز', 'س', 'ش', 'ص', 'ض', 'ط', 'ظ', 'ع', 'غ', 'ف', 
-    'ق', 'ك', 'ل', 'م', 'ن', 'ه', 'و', 'ي'
+    'ق', 'ك', 'ل', 'م', 'ن', 'هـ', 'و', 'ي'
   ];
 
   // -------------------------------------------------------------
-  // 1. Normalization Helpers
+  // 1. Text Normalization Helpers & Scroll Utility
   // -------------------------------------------------------------
-  function normalizeArabic(str) {
-    if (!str) return '';
-    return str
-      .replace(/[\u064B-\u065F\u0670\u06D6-\u06ED]/g, '') // strip tashkeel
-      .replace(/[إأآٱ]/g, 'ا')
-      .replace(/ة/g, 'ه')
-      .replace(/ى/g, 'ي')
-      .trim();
-  }
-
   function normalizeEnglish(str) {
     if (!str) return '';
     return str
+      .replace(/[āâäĀÂÄ]/g, 'a')
+      .replace(/[īîïĪÎÏ]/g, 'i')
+      .replace(/[ūûüŪÛÜ]/g, 'u')
+      .replace(/[ṣŝṢŜ]/g, 's')
+      .replace(/[ḍḌ]/g, 'd')
+      .replace(/[ṭṬ]/g, 't')
+      .replace(/[ẓẒ]/g, 'z')
+      .replace(/[ḥḤ]/g, 'h')
       .toLowerCase()
-      .replace(/[āáàâä]/g, 'a')
-      .replace(/[īíìîï]/g, 'i')
-      .replace(/[ūúùûü]/g, 'u')
-      .replace(/[ḍḏ]/g, 'd')
-      .replace(/[ṭ]/g, 't')
-      .replace(/[ṣ]/g, 's')
-      .replace(/[ẓ]/g, 'z')
-      .replace(/[ḥ]/g, 'h')
+      .replace(/[\u2018\u2019'`]/g, '')
       .replace(/[^a-z0-9]/g, '')
       .trim();
   }
 
+  function normalizeArabic(str) {
+    if (!str) return '';
+    return str
+      .replace(/[\u064B-\u065F\u0670\u0653\u06D6-\u06ED]/g, '')
+      .replace(/[\u0625\u0623\u0622\u0671\u0621]/g, 'ا')
+      .replace(/\u06A9/g, '\u0643')
+      .replace(/[\u06CC\u0649]/g, '\u064A')
+      .replace(/[\u06C1\u0629]/g, '\u0647')
+      .replace(/[\s\-\–\—\.\,\;\:\•\/\(\)\[\]\{\}]/g, '')
+      .trim();
+  }
+
+  function scrollToTopIfScrolled() {
+    if (window.scrollY > 40) {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+  }
+
   // -------------------------------------------------------------
-  // 2. Tab Navigation
+  // 2. Main Tabs Navigation (Tajweed -> Words -> Rules -> Translations)
   // -------------------------------------------------------------
-  function switchTab(newTab) {
-    activeTab = newTab;
+  function initTabs() {
+    if (tabTajweedBtn) {
+      tabTajweedBtn.addEventListener('click', () => switchTab('tajweed'));
+    }
+    if (tabWordsBtn) {
+      tabWordsBtn.addEventListener('click', () => switchTab('words'));
+    }
+    if (tabRulesBtn) {
+      tabRulesBtn.addEventListener('click', () => switchTab('rules'));
+    }
+    if (tabAyahsBtn) {
+      tabAyahsBtn.addEventListener('click', () => switchTab('ayahs'));
+    }
+  }
 
-    // Button states
-    if (tabTajweedBtn) tabTajweedBtn.classList.toggle('active', activeTab === 'tajweed');
-    if (tabRulesBtn) tabRulesBtn.classList.toggle('active', activeTab === 'rules');
-    if (tabWordsBtn) tabWordsBtn.classList.toggle('active', activeTab === 'words');
-    if (tabAyahsBtn) tabAyahsBtn.classList.toggle('active', activeTab === 'ayahs');
+  function switchTab(tab) {
+    activeTab = tab;
+    const isTajweed = tab === 'tajweed';
+    const isWords = tab === 'words';
+    const isRules = tab === 'rules';
+    const isAyahs = tab === 'ayahs';
 
-    if (tabTajweedBtn) tabTajweedBtn.setAttribute('aria-selected', activeTab === 'tajweed');
-    if (tabRulesBtn) tabRulesBtn.setAttribute('aria-selected', activeTab === 'rules');
-    if (tabWordsBtn) tabWordsBtn.setAttribute('aria-selected', activeTab === 'words');
-    if (tabAyahsBtn) tabAyahsBtn.setAttribute('aria-selected', activeTab === 'ayahs');
-
-    // View panels
-    if (viewTajweed) viewTajweed.style.display = activeTab === 'tajweed' ? 'block' : 'none';
-    if (viewRules) viewRules.style.display = activeTab === 'rules' ? 'block' : 'none';
-    if (viewWords) viewWords.style.display = activeTab === 'words' ? 'block' : 'none';
-    if (viewAyahs) viewAyahs.style.display = activeTab === 'ayahs' ? 'block' : 'none';
-
-    // Language switcher visibility: Hidden on Words (permanently bilingual), visible on Translations, Rules and Tajweed
-    if (langSwitcher) {
-      langSwitcher.style.display = activeTab === 'words' ? 'none' : 'inline-flex';
+    if (tabTajweedBtn) {
+      tabTajweedBtn.classList.toggle('active', isTajweed);
+      tabTajweedBtn.setAttribute('aria-selected', isTajweed ? 'true' : 'false');
+    }
+    if (tabWordsBtn) {
+      tabWordsBtn.classList.toggle('active', isWords);
+      tabWordsBtn.setAttribute('aria-selected', isWords ? 'true' : 'false');
+    }
+    if (tabRulesBtn) {
+      tabRulesBtn.classList.toggle('active', isRules);
+      tabRulesBtn.setAttribute('aria-selected', isRules ? 'true' : 'false');
+    }
+    if (tabAyahsBtn) {
+      tabAyahsBtn.classList.toggle('active', isAyahs);
+      tabAyahsBtn.setAttribute('aria-selected', isAyahs ? 'true' : 'false');
     }
 
-    // Render corresponding view
-    if (activeTab === 'words') {
-      renderWords();
-    } else if (activeTab === 'rules') {
-      populateRuleSelect();
-      renderRules();
-    } else if (activeTab === 'tajweed') {
+    if (viewTajweed) {
+      viewTajweed.style.display = isTajweed ? 'block' : 'none';
+    }
+    if (viewWords) {
+      viewWords.style.display = isWords ? 'block' : 'none';
+    }
+    if (viewRules) {
+      viewRules.style.display = isRules ? 'block' : 'none';
+    }
+    if (viewAyahs) {
+      viewAyahs.style.display = isAyahs ? 'block' : 'none';
+    }
+
+    updateToggleButtonsUI();
+    scrollToTopIfScrolled();
+
+    if (isTajweed) {
       renderTajweed();
-    } else if (activeTab === 'ayahs') {
-      populateAyahLessonsForUnit(activeAyahUnit);
+    } else if (isWords) {
+      renderWords();
+    } else if (isRules) {
+      renderRules();
+    } else if (isAyahs) {
       renderAyahs();
     }
-
-    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
   // -------------------------------------------------------------
-  // 3. Course Outline Modal Handlers
+  // 3. Alphabet Bar (Words View)
   // -------------------------------------------------------------
-  function openOutlineModal() {
-    if (!outlineModal) return;
-    outlineModal.classList.add('open');
-    outlineModal.setAttribute('aria-hidden', 'false');
-    document.body.style.overflow = 'hidden';
-  }
-
-  function closeOutlineModal() {
-    if (!outlineModal) return;
-    outlineModal.classList.remove('open');
-    outlineModal.setAttribute('aria-hidden', 'true');
-    document.body.style.overflow = '';
-  }
-
-  // -------------------------------------------------------------
-  // 4. Words Tab Logic
-  // -------------------------------------------------------------
-  function buildAlphabetBar() {
+  function initAlphabetBar() {
     if (!alphabetBar) return;
     alphabetBar.innerHTML = '';
 
-    // 'ALL' pill
     const allBtn = document.createElement('button');
-    allBtn.className = `alpha-pill ${activeLetter === 'ALL' ? 'active' : ''}`;
+    allBtn.className = 'letter-btn all-btn active';
     allBtn.textContent = 'All';
-    allBtn.setAttribute('aria-label', 'Show all letters');
-    allBtn.addEventListener('click', () => {
-      activeLetter = 'ALL';
-      document.querySelectorAll('.alpha-pill').forEach(b => b.classList.remove('active'));
-      allBtn.classList.add('active');
-      renderWords();
-    });
+    allBtn.setAttribute('data-letter', 'ALL');
+    allBtn.addEventListener('click', () => setLetterFilter('ALL'));
     alphabetBar.appendChild(allBtn);
 
-    // Letter pills
+    const letterCounts = {};
+    wordsCollection.forEach(w => {
+      if (w.letter) {
+        letterCounts[w.letter] = (letterCounts[w.letter] || 0) + 1;
+      }
+    });
+
     ARABIC_ALPHABET.forEach(letter => {
       const btn = document.createElement('button');
-      btn.className = `alpha-pill ${activeLetter === letter ? 'active' : ''}`;
+      btn.className = 'letter-btn';
       btn.textContent = letter;
-      btn.setAttribute('aria-label', `Filter by letter ${letter}`);
-      btn.addEventListener('click', () => {
-        activeLetter = letter;
-        document.querySelectorAll('.alpha-pill').forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-        renderWords();
-      });
+      btn.setAttribute('data-letter', letter);
+      const count = letterCounts[letter] || 0;
+      btn.title = `${letter} (${count} words)`;
+      
+      if (count === 0) {
+        btn.style.opacity = '0.35';
+        btn.style.cursor = 'default';
+      } else {
+        btn.addEventListener('click', () => setLetterFilter(letter));
+      }
+
       alphabetBar.appendChild(btn);
     });
   }
 
-  function getWordsCollection() {
-    if (typeof WORDS_DATA !== 'undefined' && Array.isArray(WORDS_DATA)) return WORDS_DATA;
-    if (typeof DICTIONARY_WORDS !== 'undefined' && Array.isArray(DICTIONARY_WORDS)) return DICTIONARY_WORDS;
-    if (typeof window !== 'undefined') {
-      if (window.WORDS_DATA && Array.isArray(window.WORDS_DATA)) return window.WORDS_DATA;
-      if (window.DICTIONARY_WORDS && Array.isArray(window.DICTIONARY_WORDS)) return window.DICTIONARY_WORDS;
+  function setLetterFilter(letter) {
+    activeLetter = letter;
+    document.querySelectorAll('.letter-btn').forEach(btn => {
+      btn.classList.toggle('active', btn.getAttribute('data-letter') === letter);
+    });
+    scrollToTopIfScrolled();
+    renderWords();
+  }
+
+  // -------------------------------------------------------------
+  // 4. Tab-Contextual Language Toggles
+  // -------------------------------------------------------------
+  function updateToggleButtonsUI() {
+    const isUr = singleLangMode === 'UR';
+
+    // Language switcher visibility: Hidden on Words tab (always bilingual), visible on Tajweed, Rules, and Translations
+    if (langSwitcher) {
+      langSwitcher.style.display = activeTab === 'words' ? 'none' : 'inline-flex';
     }
-    return [];
-  }
 
-  function getRulesCollection() {
-    if (typeof RULES_DATA !== 'undefined' && Array.isArray(RULES_DATA)) return RULES_DATA;
-    if (typeof window !== 'undefined' && window.RULES_DATA && Array.isArray(window.RULES_DATA)) return window.RULES_DATA;
-    if (typeof GRAMMAR_RULES !== 'undefined' && Array.isArray(GRAMMAR_RULES)) return GRAMMAR_RULES;
-    if (typeof window !== 'undefined' && window.GRAMMAR_RULES && Array.isArray(window.GRAMMAR_RULES)) return window.GRAMMAR_RULES;
-    return [];
-  }
+    if (toggleUrduBtn) toggleUrduBtn.classList.toggle('active', isUr);
+    if (toggleEnglishBtn) toggleEnglishBtn.classList.toggle('active', !isUr);
 
-  function getTajweedCollection() {
-    if (typeof TAJWEED_DATA !== 'undefined' && Array.isArray(TAJWEED_DATA)) return TAJWEED_DATA;
-    if (typeof window !== 'undefined' && window.TAJWEED_DATA && Array.isArray(window.TAJWEED_DATA)) return window.TAJWEED_DATA;
-    return [];
-  }
+    // Localize Filter Row Labels
+    if (ruleUnitLabel) ruleUnitLabel.textContent = isUr ? 'یونٹ' : 'Unit';
+    if (ruleSelectLabel) ruleSelectLabel.textContent = isUr ? 'قاعدہ' : 'Rule';
 
-  function getTranslationsCollection() {
-    if (typeof TRANSLATIONS_DATA !== 'undefined' && Array.isArray(TRANSLATIONS_DATA)) return TRANSLATIONS_DATA;
-    if (typeof QURANIC_AYAHS !== 'undefined' && Array.isArray(QURANIC_AYAHS)) return QURANIC_AYAHS;
-    if (typeof window !== 'undefined') {
-      if (window.TRANSLATIONS_DATA && Array.isArray(window.TRANSLATIONS_DATA)) return window.TRANSLATIONS_DATA;
-      if (window.QURANIC_AYAHS && Array.isArray(window.QURANIC_AYAHS)) return window.QURANIC_AYAHS;
+    // Localize Direction for Filter Rows
+    if (ruleFilterRow) ruleFilterRow.setAttribute('dir', isUr ? 'rtl' : 'ltr');
+
+    // Localize Unit dropdown options
+    if (ruleUnitSelect) {
+      Array.from(ruleUnitSelect.options).forEach(opt => {
+        const uVal = opt.value;
+        opt.textContent = isUr ? `\u200Fیونٹ ${uVal}` : `Unit ${uVal}`;
+      });
     }
-    return [];
+
+    populateRuleSelect();
   }
 
-  function filterWords() {
-    const allWords = getWordsCollection();
-    if (!allWords || allWords.length === 0) return [];
+  function initLanguageToggles() {
+    const savedSingleMode = localStorage.getItem('mq_single_lang_mode') || 'UR';
+    singleLangMode = savedSingleMode;
+    updateToggleButtonsUI();
 
-    let filtered = allWords;
-
-    // Filter by Alphabet Letter
-    if (activeLetter !== 'ALL') {
-      filtered = filtered.filter(w => {
-        if (!w.letter) return false;
-        if (activeLetter === 'أ') {
-          return w.letter === 'أ' || (w.cleanAr && w.cleanAr.startsWith('ا'));
+    if (toggleUrduBtn) {
+      toggleUrduBtn.addEventListener('click', () => {
+        singleLangMode = 'UR';
+        localStorage.setItem('mq_single_lang_mode', singleLangMode);
+        updateToggleButtonsUI();
+        if (activeTab === 'rules') {
+          renderRules();
+        } else if (activeTab === 'tajweed') {
+          renderTajweed();
         }
-        const lNorm = (w.letter || '').replace(/[\u0640]/g, '');
-        const aNorm = activeLetter.replace(/[\u0640]/g, '');
-        return lNorm === aNorm;
       });
     }
 
-    // Filter by Universal Search Query
-    if (searchQuery) {
-      const qNormAr = normalizeArabic(searchQuery);
-      const qNormEn = normalizeEnglish(searchQuery);
-      const qLower = searchQuery.toLowerCase().trim();
-
-      filtered = filtered.filter(w => {
-        // Arabic exact & diacritic-tolerant match
-        if (w.ar && w.ar.includes(searchQuery)) return true;
-        if (w.cleanAr && w.cleanAr.includes(qNormAr)) return true;
-
-        // Transliteration match
-        if (w.cleanTr && w.cleanTr.includes(qNormEn)) return true;
-        if (w.tr && w.tr.toLowerCase().includes(qLower)) return true;
-
-        // English translation match
-        if (w.cleanEn && w.cleanEn.includes(qNormEn)) return true;
-        if (w.en && w.en.toLowerCase().includes(qLower)) return true;
-
-        // Urdu translation match
-        if (w.ur && w.ur.includes(searchQuery)) return true;
-
-        return false;
+    if (toggleEnglishBtn) {
+      toggleEnglishBtn.addEventListener('click', () => {
+        singleLangMode = 'EN';
+        localStorage.setItem('mq_single_lang_mode', singleLangMode);
+        updateToggleButtonsUI();
+        if (activeTab === 'rules') {
+          renderRules();
+        } else if (activeTab === 'tajweed') {
+          renderTajweed();
+        }
       });
     }
-
-    return filtered;
   }
 
+  // -------------------------------------------------------------
+  // 5. Universal Filtering Engine (Words)
+  // -------------------------------------------------------------
+  function getFilteredWords() {
+    if (!wordsCollection || wordsCollection.length === 0) return [];
+    const rawQuery = searchQuery.trim();
+    const normEnQuery = normalizeEnglish(rawQuery);
+    const normArQuery = normalizeArabic(rawQuery);
+
+    if (rawQuery.length === 0) {
+      return wordsCollection.filter(w => {
+        if (activeLetter !== 'ALL' && w.letter !== activeLetter) return false;
+        return true;
+      });
+    }
+
+    // Bidirectional Al- prefix handling
+    let normArQueryWithoutAl = '';
+    if (normArQuery.startsWith('ال')) {
+      normArQueryWithoutAl = normArQuery.slice(2);
+    }
+    let normEnQueryWithoutAl = '';
+    if (normEnQuery.startsWith('al')) {
+      normEnQueryWithoutAl = normEnQuery.slice(2);
+    }
+
+    const scoredMatches = [];
+
+    wordsCollection.forEach(w => {
+      let score = 0;
+
+      // Decompose Arabic word variants
+      const normWordFull = normalizeArabic(w.ar);
+      let normWordWithoutAl = '';
+      if (normWordFull.startsWith('ال')) {
+        normWordWithoutAl = normWordFull.slice(2);
+      }
+
+      const parts = w.ar.split(/[(\/]/);
+      const normWordPrimary = normalizeArabic(parts[0]);
+      const normWordParen = parts.length > 1 ? normalizeArabic(parts[1]) : '';
+
+      // Decompose Transliteration variants
+      const normTrFull = normalizeEnglish(w.tr);
+      let normTrWithoutAl = '';
+      if (normTrFull.startsWith('al')) {
+        normTrWithoutAl = normTrFull.slice(2);
+      }
+
+      const trParts = (w.tr || '').split(/[(\/]/);
+      const normTrPrimary = normalizeEnglish(trParts[0]);
+      let normTrPrimaryWithoutAl = '';
+      if (normTrPrimary.startsWith('al')) {
+        normTrPrimaryWithoutAl = normTrPrimary.slice(2);
+      }
+      const normTrParen = trParts.length > 1 ? normalizeEnglish(trParts[1]) : '';
+
+      // Exact match on Arabic or Transliteration (Score: 1000)
+      const exactAr = normArQuery.length > 0 && (
+        normWordPrimary === normArQuery ||
+        (normWordParen && normWordParen === normArQuery) ||
+        normWordFull === normArQuery ||
+        (normArQueryWithoutAl && normWordFull === normArQueryWithoutAl) ||
+        (normWordWithoutAl && normArQuery === normWordWithoutAl)
+      );
+
+      const exactTr = normEnQuery.length > 0 && (
+        normTrPrimary === normEnQuery ||
+        (normTrParen && normTrParen === normEnQuery) ||
+        normTrFull === normEnQuery ||
+        (normEnQueryWithoutAl && (normTrFull === normEnQueryWithoutAl || normTrPrimary === normEnQueryWithoutAl)) ||
+        (normTrWithoutAl && normEnQuery === normTrWithoutAl) ||
+        (normTrPrimaryWithoutAl && normEnQuery === normTrPrimaryWithoutAl)
+      );
+
+      // Prefix match on Arabic or Transliteration (Score: 500)
+      const startsAr = normArQuery.length > 0 && (
+        normWordPrimary.startsWith(normArQuery) ||
+        (normWordParen && normWordParen.startsWith(normArQuery)) ||
+        normWordFull.startsWith(normArQuery) ||
+        (normArQueryWithoutAl && normWordFull.startsWith(normArQueryWithoutAl)) ||
+        (normWordWithoutAl && normWordWithoutAl.startsWith(normArQuery))
+      );
+
+      const startsTr = normEnQuery.length > 0 && (
+        normTrPrimary.startsWith(normEnQuery) ||
+        (normTrParen && normTrParen.startsWith(normEnQuery)) ||
+        normTrFull.startsWith(normEnQuery) ||
+        (normEnQueryWithoutAl && (normTrFull.startsWith(normEnQueryWithoutAl) || normTrPrimary.startsWith(normEnQueryWithoutAl))) ||
+        (normTrWithoutAl && normTrWithoutAl.startsWith(normEnQuery)) ||
+        (normTrPrimaryWithoutAl && normTrPrimaryWithoutAl.startsWith(normEnQuery))
+      );
+
+      // Substring match on Arabic or Transliteration (Score: 250)
+      const containsAr = normArQuery.length > 0 && (
+        normWordFull.includes(normArQuery) ||
+        normWordPrimary.includes(normArQuery) ||
+        (normWordParen && normWordParen.includes(normArQuery)) ||
+        (normArQueryWithoutAl && normWordFull.includes(normArQueryWithoutAl))
+      );
+
+      const containsTr = normEnQuery.length > 0 && (
+        normTrFull.includes(normEnQuery) ||
+        normTrPrimary.includes(normEnQuery) ||
+        (normTrParen && normTrParen.includes(normEnQuery)) ||
+        (normEnQueryWithoutAl && (normTrFull.includes(normEnQueryWithoutAl) || normTrPrimary.includes(normEnQueryWithoutAl)))
+      );
+
+      if (exactAr || exactTr) {
+        score = 1000;
+      } else if (startsAr || startsTr) {
+        score = 500;
+      } else if (containsAr || containsTr) {
+        score = 250;
+      } else {
+        // Meaning matches (Score: 10)
+        const containsEnMeaning = normEnQuery.length >= 3 && w.cleanEn && 
+          w.cleanEn.split(/\s+/).some(token => token === normEnQuery || token.startsWith(normEnQuery));
+        const normUr = normalizeArabic(w.ur);
+        const containsUrMeaning = normArQuery.length >= 3 && 
+          normUr.split(/\s+/).some(token => token === normArQuery || token.startsWith(normArQuery));
+
+        if (containsEnMeaning || containsUrMeaning) {
+          score = 10;
+        }
+      }
+
+      if (score > 0) {
+        scoredMatches.push({ word: w, score });
+      }
+    });
+
+    scoredMatches.sort((a, b) => {
+      if (b.score !== a.score) {
+        return b.score - a.score;
+      }
+      return a.word.idx - b.word.idx;
+    });
+
+    return scoredMatches.map(item => item.word);
+  }
+
+  // -------------------------------------------------------------
+  // 6. Render Words Dictionary List
+  // -------------------------------------------------------------
   function renderWords() {
     if (!dictionaryList) return;
+    const filteredWords = getFilteredWords();
 
-    const words = filterWords();
-    const count = words.length;
-
-    if (wordCountDisplay) {
-      if (searchQuery) {
-        wordCountDisplay.textContent = `Found ${count} word${count === 1 ? '' : 's'}`;
-      } else if (activeLetter !== 'ALL') {
-        wordCountDisplay.textContent = `${count} word${count === 1 ? '' : 's'} under letter ${activeLetter}`;
-      } else {
-        wordCountDisplay.textContent = `All ${count} Vocabulary Words`;
-      }
-    }
-
-    if (words.length === 0) {
-      const allWords = getWordsCollection();
-      if (!allWords || allWords.length === 0) {
-        dictionaryList.innerHTML = `
-          <div class="empty-state">
-            <div class="under-construction-badge">Under Construction</div>
-            <div class="empty-state-text">Under Construction</div>
-            <div class="empty-state-hint">Vocabulary lexicon dataset is currently under construction.</div>
-          </div>
-        `;
-        return;
-      }
+    if (filteredWords.length === 0) {
       dictionaryList.innerHTML = `
         <div class="empty-state">
-          <p class="empty-title">No matching words found</p>
-          <p class="empty-sub">Try searching without diacritics or browse by alphabetical letter.</p>
+          <div class="empty-state-text">No words found</div>
+          <div class="empty-state-hint">Try searching without diacritics / اعراب (e.g. متقون, الله) or transliteration (taqwa, lillah).</div>
         </div>
       `;
       return;
@@ -346,47 +471,44 @@
 
     const fragment = document.createDocumentFragment();
 
-    words.forEach(w => {
+    filteredWords.forEach(w => {
       const card = document.createElement('article');
 
       let posClass = 'is-noun';
       let badgeClass = 'badge-noun';
       let badgeText = 'Noun';
 
-      if (w.cat.includes('حَرْف')) {
+      const catStr = w.cat || '';
+      if (catStr.includes('حَرْف') || catStr.toLowerCase().includes('part')) {
         posClass = 'is-part';
         badgeClass = 'badge-part';
         badgeText = 'Particle';
-      } else if (w.cat.includes('عَلَم')) {
+      } else if (catStr.includes('عَلَم') || catStr.toLowerCase().includes('prop')) {
         posClass = 'is-prop';
         badgeClass = 'badge-prop';
         badgeText = 'Proper Noun';
-      } else if (w.cat.includes('فِعْل')) {
+      } else if (catStr.includes('فِعْل') || catStr.toLowerCase().includes('verb')) {
         posClass = 'is-verb';
         badgeClass = 'badge-verb';
         badgeText = 'Verb';
-      } else if (w.cat.includes('صِفَة')) {
+      } else if (catStr.includes('صِفَة') || catStr.toLowerCase().includes('adj')) {
         posClass = 'is-adj';
         badgeClass = 'badge-adj';
         badgeText = 'Adjective';
-      } else if (w.cat.includes('ظَرْف')) {
-        posClass = 'is-part';
-        badgeClass = 'badge-part';
-        badgeText = 'Adverb';
-      } else if (w.cat.includes('ضَمِير')) {
-        posClass = 'is-noun';
-        badgeClass = 'badge-noun';
-        badgeText = 'Pronoun';
-      } else {
+      } else if (catStr.includes('اسْم') || catStr.toLowerCase().includes('noun')) {
         posClass = 'is-noun';
         badgeClass = 'badge-noun';
         badgeText = 'Noun';
       }
 
       card.className = `dict-card ${posClass}`;
-      card.setAttribute('tabindex', '0');
 
-      const formattedIdx = String(w.idx).padStart(3, '0');
+      const meaningsHtml = `
+        <div class="meaning-urdu" dir="rtl">${w.ur}</div>
+        <div class="meaning-en">${w.en || ''}</div>
+      `;
+
+      const formattedIdx = String(w.idx).padStart(4, '0');
 
       card.innerHTML = `
         <div class="card-blend-top">
@@ -395,13 +517,12 @@
             <div class="card-arabic" dir="rtl" title="${w.ar}">${w.ar}</div>
           </div>
           <div class="card-blend-left">
-            <span class="card-tr">${w.tr}</span>
+            <span class="card-tr">${w.tr || ''}</span>
             <span class="card-badge ${badgeClass}">${badgeText}</span>
           </div>
         </div>
         <div class="card-meanings-row">
-          <div class="meaning-urdu" dir="rtl">${w.ur}</div>
-          <div class="meaning-en">${w.en || ''}</div>
+          ${meaningsHtml}
         </div>
       `;
 
@@ -413,498 +534,362 @@
   }
 
   // -------------------------------------------------------------
-  // 4b. Translations (Ayahs & Slices Practice) Logic
+  // 7. Multi-Unit Grammar Rules Reference (Units 1 to 5)
   // -------------------------------------------------------------
-  function getFilteredAyahs() {
-    const all = getTranslationsCollection();
-    if (!all || all.length === 0) return [];
-    return all.filter(a => {
-      if (a.unit.toString() !== activeAyahUnit) return false;
-      if (a.lesson.toString() !== activeAyahLesson) return false;
-      return true;
-    });
+  function getRulesForCurrentUnit() {
+    const unitNum = parseInt(activeRuleUnit, 10);
+    return rulesCollection.filter(r => r.unit === unitNum);
   }
 
-  function createAyahCard(a, idx) {
-    const card = document.createElement('article');
-    const isSlice = a.isSlice === true;
-    const isUr = singleLangMode === 'UR';
-    card.className = isSlice ? 'ayah-card slice-card' : 'ayah-card';
-    card.setAttribute('dir', isUr ? 'rtl' : 'ltr');
-
-    const sliceDividerHtml = ' <span class="slice-divider">/</span> ';
-    let arabicHtml = '';
-    let meaningText = '';
-
-    if (a.chunks && a.chunks.length > 0) {
-      const arSegments = a.chunks.map((c, cIdx) => 
-        `<span class="chunk-seg chunk-${cIdx % 6}">${c.ar}</span>`
-      );
-      arabicHtml = arSegments.join(isSlice ? sliceDividerHtml : ' ');
-
-      if (singleLangMode === 'UR') {
-        const urSegments = a.chunks.map((c, cIdx) => 
-          `<span class="chunk-seg chunk-${cIdx % 6}">${c.ur}</span>`
-        );
-        meaningText = urSegments.join(isSlice ? sliceDividerHtml : ' ');
-      } else {
-        const enSegments = a.chunks.map((c, cIdx) => 
-          `<span class="chunk-seg chunk-${cIdx % 6}">${c.en}</span>`
-        );
-        meaningText = enSegments.join(isSlice ? sliceDividerHtml : ' ');
-      }
-    } else {
-      arabicHtml = isSlice && a.arabic && a.arabic.includes('/')
-        ? a.arabic.split(/\s*\/\s*/).join(sliceDividerHtml)
-        : a.arabic;
-
-      if (singleLangMode === 'UR') {
-        meaningText = isSlice && a.urdu && a.urdu.includes('/')
-          ? a.urdu.split(/\s*\/\s*/).join(sliceDividerHtml)
-          : (a.urdu || '');
-      } else {
-        meaningText = isSlice && a.en && a.en.includes('/')
-          ? a.en.split(/\s*\/\s*/).join(sliceDividerHtml)
-          : (a.en || '');
-      }
-    }
-
-    let meaningsHtml = '';
-    let meaningsBoxClass = 'ayah-meanings';
-
-    if (singleLangMode === 'UR') {
-      meaningsHtml = `<div class="meaning-urdu" dir="rtl">${meaningText}</div>`;
-    } else {
-      meaningsBoxClass += ' single-en';
-      meaningsHtml = `<div class="meaning-en">${meaningText}</div>`;
-    }
-
-    // Zero pill labels per user specification: clean presentation
-    card.innerHTML = `
-      <div class="ayah-arabic font-ar" dir="rtl" lang="ar">
-        ${arabicHtml}
-      </div>
-      <div class="${meaningsBoxClass}">
-        ${meaningsHtml}
-      </div>
-    `;
-
-    return card;
-  }
-
-  function renderAyahs() {
-    if (!ayahsList) return;
-    const isUr = singleLangMode === 'UR';
-    const allTranslations = getTranslationsCollection();
-    if (!allTranslations || allTranslations.length === 0) {
-      ayahsList.innerHTML = `
-        <div class="empty-state">
-          <div class="under-construction-badge">Under Construction</div>
-          <div class="empty-state-text">Under Construction</div>
-          <div class="empty-state-hint">${isUr ? 'قرآنی ترجمہ و تمرین کا ڈیٹا فی الحال زیرِ تدوین ہے' : 'Translations and practice verses dataset is currently under construction.'}</div>
-        </div>
-      `;
-      return;
-    }
-    const filtered = getFilteredAyahs();
-
-    if (filtered.length === 0) {
-      ayahsList.innerHTML = `
-        <div class="empty-state">
-          <div class="under-construction-badge">Under Construction</div>
-          <div class="empty-state-text">Under Construction</div>
-          <div class="empty-state-hint">${isUr ? 'اس سبق کی قرآنی آیات زیرِ تدوین ہیں' : 'Practice verses for this lesson are currently under construction.'}</div>
-        </div>
-      `;
-      return;
-    }
-
-    const fragment = document.createDocumentFragment();
-
-    // Appended in the EXACT array order from dataset (preserves textbook sequence!)
-    filtered.forEach((a, idx) => {
-      fragment.appendChild(createAyahCard(a, idx));
-    });
-
-    // Lesson Next / Previous Navigation Footer
-    const totalLessons = getMaxLessonsForUnit(activeAyahUnit);
-    const curLessonNum = parseInt(activeAyahLesson, 10);
-    const prevDisabled = curLessonNum <= 1 ? 'disabled' : '';
-    const nextDisabled = curLessonNum >= totalLessons ? 'disabled' : '';
-
-    const prevText = isUr ? 'پچھلا سبق →' : '← Previous Lesson';
-    const nextText = isUr ? '← اگلا سبق' : 'Next Lesson →';
-    const counterText = isUr 
-      ? `\u200Fسبق ${toUrduDigits(curLessonNum)} از ${toUrduDigits(totalLessons)}` 
-      : `Lesson ${curLessonNum} of ${totalLessons}`;
-
-    const footer = document.createElement('footer');
-    footer.className = `ayah-lesson-footer ${isUr ? 'doc-rtl' : 'doc-ltr'}`;
-    footer.setAttribute('dir', isUr ? 'rtl' : 'ltr');
-    footer.innerHTML = `
-      <button id="ayahPrevLessonBtn" class="ayah-nav-action-btn btn-nav-prev" ${prevDisabled} title="${isUr ? 'پچھلا سبق' : 'Previous Lesson'}">
-        ${prevText}
-      </button>
-      <span class="ayah-counter-badge">${counterText}</span>
-      <button id="ayahNextLessonBtn" class="ayah-nav-action-btn btn-nav-next" ${nextDisabled} title="${isUr ? 'اگلا سبق' : 'Next Lesson'}">
-        ${nextText}
-      </button>
-    `;
-
-    fragment.appendChild(footer);
-
-    ayahsList.innerHTML = '';
-    ayahsList.appendChild(fragment);
-
-    // Attach footer event listeners
-    const prevBtn = document.getElementById('ayahPrevLessonBtn');
-    const nextBtn = document.getElementById('ayahNextLessonBtn');
-
-    if (prevBtn) {
-      prevBtn.addEventListener('click', () => {
-        if (curLessonNum > 1) {
-          activeAyahLesson = (curLessonNum - 1).toString();
-          if (ayahLessonSelect) ayahLessonSelect.value = activeAyahLesson;
-          renderAyahs();
-          window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
-      });
-    }
-
-    if (nextBtn) {
-      nextBtn.addEventListener('click', () => {
-        if (curLessonNum < totalLessons) {
-          activeAyahLesson = (curLessonNum + 1).toString();
-          if (ayahLessonSelect) ayahLessonSelect.value = activeAyahLesson;
-          renderAyahs();
-          window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
-      });
-    }
-  }
-
-  function populateAyahLessonsForUnit(unit) {
-    if (!ayahLessonSelect) return;
-    const isUr = singleLangMode === 'UR';
-    const totalLessons = getMaxLessonsForUnit(unit);
-    const previousVal = ayahLessonSelect.value;
-    ayahLessonSelect.innerHTML = '';
-
-    for (let i = 1; i <= totalLessons; i++) {
-      const opt = document.createElement('option');
-      opt.value = i.toString();
-      opt.textContent = isUr ? `\u200Fسبق ${toUrduDigits(i)}` : `Lesson ${i}`;
-      ayahLessonSelect.appendChild(opt);
-    }
-
-    if (previousVal && parseInt(previousVal, 10) <= totalLessons) {
-      ayahLessonSelect.value = previousVal;
-      activeAyahLesson = previousVal;
-    } else {
-      ayahLessonSelect.value = '1';
-      activeAyahLesson = '1';
-    }
-  }
-
-  // -------------------------------------------------------------
-  // 5. Grammar Rules Tab Logic (Unit-Scoped Architecture)
-  // -------------------------------------------------------------
   function populateRuleSelect() {
     if (!ruleSelect) return;
-    const allRules = getRulesCollection();
-    if (!allRules || allRules.length === 0) return;
     const isUr = singleLangMode === 'UR';
-    const unitRules = allRules.filter(r => r.unit === activeRuleUnit);
+    const unitRules = getRulesForCurrentUnit();
+    ruleSelect.innerHTML = '';
 
-    // Update Unit Pills active state and bilingual labels
-    if (ruleUnitBar) {
-      const pills = ruleUnitBar.querySelectorAll('.rule-unit-pill');
-      pills.forEach(pill => {
-        const uNum = parseInt(pill.getAttribute('data-unit'), 10);
-        const isActive = uNum === activeRuleUnit;
-        pill.classList.toggle('active', isActive);
-        pill.setAttribute('aria-selected', isActive ? 'true' : 'false');
+    // "All Rules" option (Brief Overview)
+    const allOpt = document.createElement('option');
+    allOpt.value = 'ALL';
+    allOpt.textContent = isUr ? 
+      `\u200Fتمام قواعد یونٹ ${activeRuleUnit} (مختصر خلاصہ)` : 
+      `All Unit ${activeRuleUnit} Rules (Brief Overview)`;
+    ruleSelect.appendChild(allOpt);
 
-        const uRules = allRules.filter(r => r.unit === uNum);
-        const titleSpan = pill.querySelector('.unit-pill-title');
-        const badgeSpan = pill.querySelector('.rule-unit-badge');
-        if (titleSpan) {
-          titleSpan.textContent = isUr ? `یونٹ ${toUrduDigits(uNum)}` : `Unit ${uNum}`;
-          if (isUr) titleSpan.classList.add('font-urdu');
-          else titleSpan.classList.remove('font-urdu');
-        }
-        if (badgeSpan) {
-          badgeSpan.textContent = isUr ? toUrduDigits(uRules.length) : uRules.length.toString();
-        }
-      });
-    }
-
-    // Populate ruleSelect options scoped strictly to active unit
-    const allLabel = isUr 
-      ? `تمام قواعد یونٹ ${toUrduDigits(activeRuleUnit)} (${toUrduDigits(unitRules.length)})`
-      : `All Unit ${activeRuleUnit} Rules (${unitRules.length} Rules)`;
-    
-    ruleSelect.innerHTML = `<option value="ALL">${allLabel}</option>`;
-
-    unitRules.forEach((r) => {
+    // Individual Rule Options
+    unitRules.forEach((r, idx) => {
       const opt = document.createElement('option');
-      opt.value = r.id;
-      const lessonLabel = isUr
-        ? `سبق ${toUrduDigits(r.lesson)}: ${r.operator} — ${r.titleUr}`
-        : `Lesson ${r.lesson}: ${r.operatorTr} — ${r.titleEn}`;
-      opt.textContent = lessonLabel;
+      opt.value = idx.toString();
+      const opText = r.operator || '';
+      const opTrText = r.operatorTr ? `(${r.operatorTr})` : '';
+      if (isUr) {
+        opt.textContent = `\u200Fقاعدہ ${idx + 1} (${opText}) • ${r.titleUr}`;
+      } else {
+        opt.textContent = `Rule ${idx + 1}: ${opText} ${opTrText} — ${r.titleEn}`;
+      }
       ruleSelect.appendChild(opt);
     });
 
-    ruleSelect.value = rulesDisplayMode === 'all' ? 'ALL' : activeRuleId;
-
-    if (ruleCountDisplay) {
-      ruleCountDisplay.textContent = isUr 
-        ? `${toUrduDigits(unitRules.length)} قواعد (یونٹ ${toUrduDigits(activeRuleUnit)})`
-        : `${unitRules.length} Rules (Unit ${activeRuleUnit})`;
+    if (rulesDisplayMode === 'all') {
+      ruleSelect.value = 'ALL';
+    } else {
+      if (activeRuleIndex >= unitRules.length) activeRuleIndex = 0;
+      ruleSelect.value = activeRuleIndex.toString();
     }
+  }
+
+  function initRuleFilters() {
+    if (ruleUnitSelect) {
+      ruleUnitSelect.value = activeRuleUnit;
+      ruleUnitSelect.addEventListener('change', () => {
+        activeRuleUnit = ruleUnitSelect.value;
+        activeRuleIndex = 0;
+        rulesDisplayMode = 'all';
+        populateRuleSelect();
+        scrollToTopIfScrolled();
+        renderRules();
+      });
+    }
+
+    if (ruleSelect) {
+      ruleSelect.addEventListener('change', () => {
+        const val = ruleSelect.value;
+        if (val === 'ALL') {
+          rulesDisplayMode = 'all';
+        } else {
+          rulesDisplayMode = 'island';
+          activeRuleIndex = parseInt(val, 10);
+        }
+        scrollToTopIfScrolled();
+        renderRules();
+      });
+    }
+
+    populateRuleSelect();
   }
 
   function renderRules() {
     if (!rulesList) return;
-    const allRules = getRulesCollection();
     const isUr = singleLangMode === 'UR';
-    if (!allRules || allRules.length === 0) {
+    const unitRules = getRulesForCurrentUnit();
+    const totalRules = unitRules.length;
+
+    if (totalRules === 0) {
       rulesList.innerHTML = `
         <div class="empty-state">
-          <div class="under-construction-badge">Under Construction</div>
-          <div class="empty-state-text">Under Construction</div>
-          <div class="empty-state-hint">${isUr ? 'قواعد کا ڈیٹا فی الحال زیرِ تدوین ہے' : 'Grammar rules dataset is currently under construction.'}</div>
-        </div>
-      `;
-      return;
-    }
-    const unitRules = allRules.filter(r => r.unit === activeRuleUnit);
-    if (!unitRules || unitRules.length === 0) {
-      const unitLabel = isUr ? `یونٹ ${toUrduDigits(activeRuleUnit)}` : `Unit ${activeRuleUnit}`;
-      rulesList.innerHTML = `
-        <div class="empty-state">
-          <div class="under-construction-badge">Under Construction</div>
-          <div class="empty-state-text">Under Construction</div>
-          <div class="empty-state-hint">${isUr ? `${unitLabel} کے قواعد فی الحال زیرِ تدوین ہیں` : `${unitLabel} grammar rules are currently under construction.`}</div>
+          <div class="empty-state-text">No rules available for Unit ${activeRuleUnit}</div>
         </div>
       `;
       return;
     }
 
+    if (activeRuleIndex < 0) activeRuleIndex = 0;
+    if (activeRuleIndex >= totalRules) activeRuleIndex = totalRules - 1;
+
+    // Synchronize top dropdown
     if (ruleSelect) {
-      ruleSelect.value = rulesDisplayMode === 'all' ? 'ALL' : activeRuleId;
+      ruleSelect.value = rulesDisplayMode === 'all' ? 'ALL' : activeRuleIndex.toString();
     }
 
-    function buildRuleCard(r, idxInUnit, isIsland, totalInUnit) {
-      const title = isUr ? r.titleUr : r.titleEn;
-      const effect = isUr ? r.caseEffectUr : r.caseEffectEn;
-      const exp = isUr ? r.explanationUr : r.explanationEn;
-      const formulaLabel = isUr ? 'نحوی قاعدہ / ساخت:' : 'Syntactic Formula / Pattern:';
-      const meaningLabel = isUr ? 'بنیادی مفہوم:' : 'Primary Meaning:';
-      const meaningText = isUr ? r.primaryMeaningUr : r.primaryMeaningEn;
+    const unitTitle = isUr ? 
+      (unitRules[0].unitTitleUr || `یونٹ ${activeRuleUnit}`) : 
+      (unitRules[0].unitTitleEn || `Unit ${activeRuleUnit}`);
 
-      // Sub-rules
+    // Build Single Rule Section (Island Stepper)
+    function buildRuleSection(r, idx, isSingleView) {
+      const secNum = idx + 1;
+      const titleBadge = isUr ? r.titleUr : r.titleEn;
+      const effectBadge = isUr ? (r.caseEffectUr || '') : (r.caseEffectEn || '');
+      const formulaLabel = isUr ? 'قاعدہ / کلیہ:' : 'Formula / Pattern:';
+      const meaningText = isUr ? (r.primaryMeaningUr || '') : (r.primaryMeaningEn || '');
+      const expText = isUr ? (r.explanationUr || '') : (r.explanationEn || '');
+      const ruleNumBadge = isUr ? `\u200Fقاعدہ ${secNum}` : `Rule ${secNum}`;
+      const opText = r.operator || '';
+      const opTrText = r.operatorTr ? `(${r.operatorTr})` : '';
+
+      // Sub-rules block
       let subRulesHtml = '';
       if (r.subRules && r.subRules.length > 0) {
-        const subTitle = isUr ? 'اہم ذیلی قواعد اور نحوی نکات:' : 'Lesson Sub-Rules & Syntactic Points:';
-        const subCards = r.subRules.map(sr => `
-          <div class="subrule-card ${isUr ? 'is-urdu' : 'is-english'}" dir="${isUr ? 'rtl' : 'ltr'}">
-            <h4 class="subrule-title ${isUr ? 'font-urdu' : ''}" dir="${isUr ? 'rtl' : 'ltr'}">${isUr ? sr.titleUr : sr.titleEn}</h4>
-            <p class="subrule-text ${isUr ? 'font-urdu' : ''}" dir="${isUr ? 'rtl' : 'ltr'}">${isUr ? sr.textUr : sr.textEn}</p>
-          </div>
-        `).join('');
-
+        const subTitle = isUr ? 'اہم ذیلی قواعد و مشقی نکات:' : 'Key Sub-rules & Drill Patterns:';
         subRulesHtml = `
-          <div class="rule-subrules-wrapper">
-            <div class="section-label ${isUr ? 'font-urdu' : ''}">${subTitle}</div>
-            <div class="subrules-grid">${subCards}</div>
+          <div class="doc-subrules-block">
+            <span class="doc-subrules-label">${subTitle}</span>
+            <ul class="doc-subrules-list">
+              ${r.subRules.map(sr => `
+                <li class="doc-subrule-item">
+                  <strong class="doc-subrule-title">${isUr ? sr.titleUr : sr.titleEn}:</strong>
+                  <span class="doc-subrule-text">${isUr ? sr.textUr : sr.textEn}</span>
+                </li>
+              `).join('')}
+            </ul>
           </div>
         `;
       }
 
-      // Examples
+      // Quranic Examples block
       let examplesHtml = '';
       if (r.examples && r.examples.length > 0) {
-        const exTitle = isUr ? 'قرآنی و نحوی مثالیں:' : 'Quranic & Pedagogical Examples:';
-        const rows = r.examples.map(ex => `
-          <div class="example-row ${isUr ? 'is-urdu' : 'is-english'}" dir="${isUr ? 'rtl' : 'ltr'}">
-            <div class="example-ar" dir="rtl" lang="ar">${ex.ar}</div>
-            <div class="example-trans ${isUr ? 'font-urdu' : ''}" dir="${isUr ? 'rtl' : 'ltr'}">
-              ${isUr ? ex.ur : ex.en}
+        const exTitle = isUr ? 'قرآنی تطبیقات و شواہد:' : 'Quranic Applications & Evidence:';
+        examplesHtml = `
+          <div class="doc-examples-block">
+            <span class="doc-examples-label">${exTitle}</span>
+            <div class="doc-examples-flow">
+              ${r.examples.map(ex => `
+                <div class="doc-example-row">
+                  <span class="doc-ex-ar font-ar" dir="rtl" lang="ar">${ex.ar}</span>
+                  <span class="doc-ex-sep">—</span>
+                  <span class="doc-ex-note">${isUr ? ex.ur : ex.en}</span>
+                </div>
+              `).join('')}
             </div>
           </div>
-        `).join('');
-
-        examplesHtml = `
-          <div class="rule-examples-wrapper">
-            <div class="section-label ${isUr ? 'font-urdu' : ''}">${exTitle}</div>
-            <div class="examples-list">${rows}</div>
-          </div>
         `;
       }
 
-      // Island view controls
-      let islandNavHtml = '';
-      if (isIsland) {
-        islandNavHtml = `
-          <div class="island-nav-bar">
-            <button class="island-nav-btn prev-rule-btn" ${idxInUnit === 0 ? 'disabled' : ''}>${isUr ? 'پچھلا سبق' : 'Previous Lesson'}</button>
-            <button class="island-nav-btn view-all-unit-btn">${isUr ? 'یونٹ کے تمام قواعد دیکھیں' : 'View All Unit Rules'}</button>
-            <button class="island-nav-btn next-rule-btn" ${idxInUnit === totalInUnit - 1 ? 'disabled' : ''}>${isUr ? 'اگلا سبق' : 'Next Lesson'}</button>
-          </div>
+      // Island Footer with Previous / Next Stepper
+      let footerHtml = '';
+      if (isSingleView) {
+        const prevDisabled = idx === 0 ? 'disabled' : '';
+        const nextDisabled = idx === totalRules - 1 ? 'disabled' : '';
+        const prevText = isUr ? 'پچھلا قاعدہ →' : '← Previous Rule';
+        const nextText = isUr ? '← اگلا قاعدہ' : 'Next Rule →';
+        const counterText = isUr ? `\u200Fقاعدہ ${secNum} از ${totalRules}` : `Rule ${secNum} of ${totalRules}`;
+
+        footerHtml = `
+          <footer class="rule-island-footer">
+            <button id="rulePrevBtn" class="rule-nav-action-btn btn-nav-prev" ${prevDisabled} title="${isUr ? 'پچھلا قاعدہ' : 'Previous Rule'}">
+              ${prevText}
+            </button>
+            <span class="rule-counter-badge">${counterText}</span>
+            <button id="ruleNextBtn" class="rule-nav-action-btn btn-nav-next" ${nextDisabled} title="${isUr ? 'اگلا قاعدہ' : 'Next Rule'}">
+              ${nextText}
+            </button>
+          </footer>
         `;
       }
-
-      const lessonBadgeText = isUr ? `سبق ${toUrduDigits(r.lesson)}` : `Lesson ${r.lesson}`;
-      const unitBadgeText = isUr ? `یونٹ ${toUrduDigits(r.unit)}` : `Unit ${r.unit}`;
 
       return `
-        <article class="rule-master-card ${isUr ? 'is-urdu' : 'is-english'}" id="rule-${r.id}" dir="${isUr ? 'rtl' : 'ltr'}">
-          <header class="rule-card-header">
-            <div class="rule-header-left">
-              <span class="rule-lesson-pill">${unitBadgeText} · ${lessonBadgeText}</span>
-              <span class="rule-id-badge">${r.id}</span>
-              <span class="rule-op-badge" dir="rtl" lang="ar">${Array.isArray(r.operator) ? r.operator.join(' ') : r.operator}</span>
-              <span class="rule-op-tr">${r.operatorTr}</span>
-            </div>
-            <div class="rule-header-right">
-              <span class="rule-role-tag">${r.arabicRole || ''}</span>
+        <section class="doc-section rule-card-island" id="rule-sec-${secNum}">
+          <header class="doc-section-header">
+            <div class="doc-sec-title-wrap">
+              <span class="rule-island-num-badge">${ruleNumBadge}</span>
+              <span class="doc-rule-operator font-ar" dir="rtl" lang="ar">${opText}</span>
+              <span class="doc-rule-op-tr" dir="ltr">${opTrText}</span>
+              <h2 class="doc-rule-title-text">${titleBadge}</h2>
             </div>
           </header>
 
-          <h2 class="rule-main-title ${isUr ? 'font-urdu' : ''}" dir="${isUr ? 'rtl' : 'ltr'}">
-            ${title}
-          </h2>
-
-          <div class="rule-specs-grid">
-            <div class="spec-card formula-card">
-              <span class="spec-label ${isUr ? 'font-urdu' : ''}">${formulaLabel}</span>
-              <div class="spec-value formula-text" dir="rtl" lang="ar">${r.formula}</div>
+          <div class="doc-section-body">
+            <div class="doc-formula-banner">
+              <span class="doc-formula-label"><strong>${formulaLabel}</strong></span>
+              <span class="doc-formula-code font-ar" dir="rtl" lang="ar">${r.formula || ''}</span>
             </div>
-            <div class="spec-card effect-card">
-              <span class="spec-label ${isUr ? 'font-urdu' : ''}">${isUr ? 'اعرابی اثر:' : 'Case Effect (I\'rab):'}</span>
-              <div class="spec-value ${isUr ? 'font-urdu' : ''}" dir="${isUr ? 'rtl' : 'ltr'}">${effect}</div>
+
+            <div class="doc-rule-meta-prose">
+              <div class="doc-meta-line"><strong>${isUr ? 'اعرابی اثر:' : 'Grammatical Effect (I\'rab):'}</strong> <span class="doc-effect-val">${effectBadge}</span></div>
+              <div class="doc-meta-line"><strong>${isUr ? 'بنیادی مفہوم:' : 'Primary Meaning:'}</strong> <span>${meaningText}</span></div>
+            </div>
+
+            <div class="doc-explanation-prose">
+              ${expText}
+            </div>
+
+            ${subRulesHtml}
+            ${examplesHtml}
+            ${footerHtml}
+          </div>
+        </section>
+      `;
+    }
+
+    // Build Brief Overview Card (Grid mode)
+    function buildRuleOverviewCard(r, idx) {
+      const secNum = idx + 1;
+      const title = isUr ? r.titleUr : r.titleEn;
+      const effect = isUr ? (r.caseEffectUr || '') : (r.caseEffectEn || '');
+      const meaning = isUr ? (r.primaryMeaningUr || '') : (r.primaryMeaningEn || '');
+      const effectLabel = isUr ? 'اعرابی اثر:' : 'Grammatical Effect:';
+      const meaningLabel = isUr ? 'بنیادی مفہوم:' : 'Primary Meaning:';
+      const viewRuleBtnText = isUr ? 'مکمل تفصیل ←' : 'Full Details →';
+      const opText = r.operator || '';
+      const opTrText = r.operatorTr ? `(${r.operatorTr})` : '';
+      const primaryExample = r.examples && r.examples.length > 0 ? r.examples[0] : null;
+
+      let exampleHtml = '';
+      if (primaryExample) {
+        exampleHtml = `
+          <div class="overview-ex-row">
+            <span class="overview-ex-ar font-ar" dir="rtl">${primaryExample.ar}</span>
+            <span class="overview-ex-sep">—</span>
+            <span class="overview-ex-note">${isUr ? primaryExample.ur : primaryExample.en}</span>
+          </div>
+        `;
+      }
+
+      return `
+        <article class="rule-overview-card" data-rule-idx="${idx}" title="${isUr ? 'اس قاعدے کی مکمل تفصیل دیکھیں' : 'View full rule details'}">
+          <header class="rule-overview-header">
+            <div class="rule-overview-title-group">
+              <span class="rule-overview-idx">${secNum}</span>
+              <span class="rule-overview-op font-ar" dir="rtl">${opText}</span>
+              <span class="rule-overview-tr" dir="ltr">${opTrText}</span>
+              <h3 class="rule-overview-title">${title}</h3>
+            </div>
+            <button class="rule-overview-jump-btn" data-rule-idx="${idx}">
+              ${viewRuleBtnText}
+            </button>
+          </header>
+
+          <div class="rule-overview-formula font-ar" dir="rtl">
+            ${r.formula || ''}
+          </div>
+
+          <div class="rule-overview-meta-row">
+            <div class="rule-overview-meta-item">
+              <span class="meta-label"><strong>${effectLabel}</strong></span>
+              <span class="meta-val">${effect}</span>
+            </div>
+            <div class="rule-overview-meta-item">
+              <span class="meta-label"><strong>${meaningLabel}</strong></span>
+              <span class="meta-val">${meaning}</span>
             </div>
           </div>
 
-          <div class="rule-meaning-box ${isUr ? 'is-urdu' : ''}" dir="${isUr ? 'rtl' : 'ltr'}">
-            <span class="meaning-label ${isUr ? 'font-urdu' : ''}">${meaningLabel}</span>
-            <span class="meaning-content ${isUr ? 'font-urdu' : ''}" dir="${isUr ? 'rtl' : 'ltr'}">${meaningText}</span>
-          </div>
-
-          <div class="rule-explanation-box ${isUr ? 'is-urdu' : ''}">
-            <p class="rule-exp-text ${isUr ? 'font-urdu' : ''}" dir="${isUr ? 'rtl' : 'ltr'}">
-              ${exp}
-            </p>
-          </div>
-
-          ${subRulesHtml}
-          ${examplesHtml}
-          ${islandNavHtml}
+          ${exampleHtml}
         </article>
       `;
     }
 
-    if (rulesDisplayMode === 'all' || activeRuleId === 'ALL') {
-      const uSample = unitRules[0];
-      const lessonNums = unitRules.map(r => r.lesson);
-      const minL = Math.min(...lessonNums);
-      const maxL = Math.max(...lessonNums);
-      const rangeText = isUr 
-        ? `اسباق ${toUrduDigits(minL)} تا ${toUrduDigits(maxL)} · کل ${toUrduDigits(unitRules.length)} قواعد`
-        : `Lessons ${minL}–${maxL} · ${unitRules.length} Rules`;
-      
-      const unitHeaderHtml = `
-        <div class="rules-unit-header-card ${isUr ? 'is-urdu' : ''}" dir="${isUr ? 'rtl' : 'ltr'}">
-          <div class="rules-unit-header-top">
-            <span class="rules-unit-badge-pill">${isUr ? `یونٹ ${toUrduDigits(activeRuleUnit)}` : `Unit ${activeRuleUnit}`}</span>
-            <span class="rules-unit-count-meta">${rangeText}</span>
-          </div>
-          ${isUr 
-            ? `<h2 class="rules-unit-title-ur">${uSample.unitTitleUr}</h2><h3 class="rules-unit-title-en">${uSample.unitTitleEn}</h3>`
-            : `<h2 class="rules-unit-title-en">${uSample.unitTitleEn}</h2><h3 class="rules-unit-title-ur">${uSample.unitTitleUr}</h3>`
-          }
+    let contentHtml = '';
+    if (rulesDisplayMode === 'island') {
+      contentHtml = buildRuleSection(unitRules[activeRuleIndex], activeRuleIndex, true);
+    } else {
+      contentHtml = `
+        <div class="rules-overview-lead">
+          <p class="rules-overview-intro">
+            ${isUr 
+              ? `یونٹ ${activeRuleUnit} کے تمام ${totalRules} قواعد کا جامع خلاصہ۔ تفصیلی وضاحت اور امثلہ کے لیے کسی بھی قاعدے پر کلک کریں۔` 
+              : `A concise high-yield overview of all ${totalRules} rules in Unit ${activeRuleUnit}. Click any rule card to view its full breakdown.`
+            }
+          </p>
+        </div>
+        <div class="rules-overview-grid">
+          ${unitRules.map((r, idx) => buildRuleOverviewCard(r, idx)).join('')}
         </div>
       `;
-
-      const cardsHtml = unitRules.map((r, i) => buildRuleCard(r, i, false, unitRules.length)).join('');
-      rulesList.innerHTML = `<div class="rules-all-container">${unitHeaderHtml}${cardsHtml}</div>`;
-    } else {
-      let activeIdx = unitRules.findIndex(r => r.id === activeRuleId);
-      if (activeIdx < 0) {
-        activeIdx = 0;
-        activeRuleId = unitRules[0].id;
-      }
-      const activeRule = unitRules[activeIdx];
-      rulesList.innerHTML = buildRuleCard(activeRule, activeIdx, true, unitRules.length);
-
-      // Attach Island Navigation listeners
-      const prevBtn = rulesList.querySelector('.prev-rule-btn');
-      const nextBtn = rulesList.querySelector('.next-rule-btn');
-      const viewAllBtn = rulesList.querySelector('.view-all-unit-btn');
-
-      if (prevBtn) {
-        prevBtn.addEventListener('click', () => {
-          if (activeIdx > 0) {
-            activeRuleId = unitRules[activeIdx - 1].id;
-            rulesDisplayMode = 'lesson';
-            populateRuleSelect();
-            renderRules();
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-          }
-        });
-      }
-
-      if (nextBtn) {
-        nextBtn.addEventListener('click', () => {
-          if (activeIdx < unitRules.length - 1) {
-            activeRuleId = unitRules[activeIdx + 1].id;
-            rulesDisplayMode = 'lesson';
-            populateRuleSelect();
-            renderRules();
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-          }
-        });
-      }
-
-      if (viewAllBtn) {
-        viewAllBtn.addEventListener('click', () => {
-          activeRuleId = 'ALL';
-          rulesDisplayMode = 'all';
-          populateRuleSelect();
-          renderRules();
-          window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
-      }
     }
+
+    rulesList.innerHTML = `
+      <article class="doc-sheet ${isUr ? 'doc-rtl' : 'doc-ltr'}" dir="${isUr ? 'rtl' : 'ltr'}">
+        <header class="doc-header simple-doc-header">
+          <h1 class="doc-title">${unitTitle}</h1>
+        </header>
+        <div class="doc-content-flow">
+          ${contentHtml}
+        </div>
+      </article>
+    `;
+
+    attachRuleNavListeners(unitRules);
+  }
+
+  function attachRuleNavListeners(unitRules) {
+    if (!rulesList) return;
+
+    // Island view Next & Prev buttons
+    const prevBtn = document.getElementById('rulePrevBtn');
+    const nextBtn = document.getElementById('ruleNextBtn');
+    if (prevBtn) {
+      prevBtn.addEventListener('click', () => {
+        if (activeRuleIndex > 0) {
+          activeRuleIndex--;
+          rulesDisplayMode = 'island';
+          if (ruleSelect) ruleSelect.value = activeRuleIndex.toString();
+          renderRules();
+          scrollToTopIfScrolled();
+        }
+      });
+    }
+    if (nextBtn) {
+      nextBtn.addEventListener('click', () => {
+        if (activeRuleIndex < unitRules.length - 1) {
+          activeRuleIndex++;
+          rulesDisplayMode = 'island';
+          if (ruleSelect) ruleSelect.value = activeRuleIndex.toString();
+          renderRules();
+          scrollToTopIfScrolled();
+        }
+      });
+    }
+
+    // Overview cards jump buttons
+    const overviewCards = rulesList.querySelectorAll('.rule-overview-card');
+    overviewCards.forEach(card => {
+      card.addEventListener('click', () => {
+        const targetIdx = parseInt(card.getAttribute('data-rule-idx'), 10);
+        if (!isNaN(targetIdx)) {
+          activeRuleIndex = targetIdx;
+          rulesDisplayMode = 'island';
+          if (ruleSelect) ruleSelect.value = activeRuleIndex.toString();
+          renderRules();
+          scrollToTopIfScrolled();
+        }
+      });
+    });
   }
 
   // -------------------------------------------------------------
-  // 6. Tajweed Tab Logic
+  // 8. Render Tajweed (Single Continuous Document Flow)
   // -------------------------------------------------------------
   function renderTajweed() {
-    if (!tajweedList) return;
-    const tajweedItems = getTajweedCollection();
+    if (!tajweedList || tajweedCollection.length === 0) return;
     const isUr = singleLangMode === 'UR';
-    if (!tajweedItems || tajweedItems.length === 0) {
-      tajweedList.innerHTML = `
-        <div class="empty-state">
-          <div class="under-construction-badge">Under Construction</div>
-          <div class="empty-state-text">Under Construction</div>
-          <div class="empty-state-hint">${isUr ? 'تجوید کا ماڈیول فی الحال زیرِ تدوین ہے' : 'Tajweed module is currently under construction.'}</div>
-        </div>
-      `;
-      return;
-    }
-
     const docTitle = isUr ? 'علمِ تجوید: بنیادی قواعد و مخارج' : 'Tajweed: Core Rules & Articulation Points';
 
-    const sectionsHtml = tajweedItems.map((item, idx) => {
+    const sectionsHtml = tajweedCollection.map((item, idx) => {
       const secNum = idx + 1;
       const title = isUr ? item.titleUr : item.titleEn;
       const topic = isUr ? item.topicUr : item.topicEn;
-      const points = isUr ? (item.pointsUr || []) : (item.pointsEn || []);
+      const points = isUr ? item.pointsUr : item.pointsEn;
       
       let topicHtml = topic ? `<div class="doc-topic"><p>${topic}</p></div>` : '';
 
@@ -933,7 +918,7 @@
             <span class="doc-examples-label">${exTitle}</span>
             <div class="doc-examples-flow">
               ${item.examples.map(ex => {
-                const note = isUr ? (ex.noteUr || ex.ur || '') : (ex.noteEn || ex.en || '');
+                const note = isUr ? (ex.noteUr || ex.noteEn || '') : (ex.noteEn || ex.noteUr || '');
                 return `
                   <div class="doc-example-row">
                     <span class="doc-ex-ar font-ar" dir="rtl" lang="ar">${ex.ar}</span>
@@ -962,267 +947,261 @@
     }).join('<hr class="doc-divider">');
 
     tajweedList.innerHTML = `
-      <div class="continuous-doc-wrapper">
-        <article class="doc-sheet ${isUr ? 'doc-rtl' : 'doc-ltr'}" dir="${isUr ? 'rtl' : 'ltr'}">
-          <header class="doc-header">
-            <span class="doc-header-tag">${isUr ? 'تجوید کا نصاب' : 'Tajweed Curriculum'}</span>
-            <h1 class="doc-title">${docTitle}</h1>
-            <p class="doc-subtitle">${isUr ? 'قرآن فہمی کے لیے تجوید کے بنیادی احکام کا جامع خلاصہ' : 'Comprehensive summary of fundamental tajweed rules for Quranic comprehension'}</p>
-            <div class="doc-meta-strip">
-              <span>${isUr ? 'مستند قواعد' : 'Authorized Rules'}</span>
-              <span>•</span>
-              <span>${isUr ? 'جامع امثلہ' : 'Practical Quranic Examples'}</span>
-              <span>•</span>
-              <span>${isUr ? `${toUrduDigits(tajweedItems.length)} ابواب` : `${tajweedItems.length} Core Sections`}</span>
-            </div>
-          </header>
-          <div class="doc-content-flow">
-            ${sectionsHtml}
-          </div>
-        </article>
-      </div>
+      <article class="doc-sheet ${isUr ? 'doc-rtl' : 'doc-ltr'}" dir="${isUr ? 'rtl' : 'ltr'}">
+        <header class="doc-header simple-doc-header">
+          <h1 class="doc-title">${docTitle}</h1>
+        </header>
+        <div class="doc-content-flow">
+          ${sectionsHtml}
+        </div>
+      </article>
     `;
   }
 
   // -------------------------------------------------------------
-  // 7. Global Event Bindings
+  // 9. Translations View (Under Construction State)
   // -------------------------------------------------------------
-  function bindEvents() {
-    // Tab Clicks
-    if (tabTajweedBtn) tabTajweedBtn.addEventListener('click', () => switchTab('tajweed'));
-    if (tabRulesBtn) tabRulesBtn.addEventListener('click', () => switchTab('rules'));
-    if (tabWordsBtn) tabWordsBtn.addEventListener('click', () => switchTab('words'));
-    if (tabAyahsBtn) tabAyahsBtn.addEventListener('click', () => switchTab('ayahs'));
+  function renderAyahs() {
+    if (!ayahsList) return;
+    const isUr = singleLangMode === 'UR';
 
-    // Translations Filters (Unit > Lesson strictly, no "All" filter)
-    if (ayahUnitSelect) {
-      ayahUnitSelect.addEventListener('change', () => {
-        activeAyahUnit = ayahUnitSelect.value;
-        activeAyahLesson = '1';
-        populateAyahLessonsForUnit(activeAyahUnit);
-        renderAyahs();
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      });
-    }
+    const titleText = isUr ? 'قرآنی آیات اور تراجم' : 'Quranic Verse Translations & Slices';
+    const headingText = isUr ? 'یہ ماڈیول تیاری کے مراحل میں ہے' : 'Translations Module Under Development';
+    const descText = isUr ? 
+      'قرآنی آیات اور الفاظ کے تراجم کا مستند اندراج اور تصدیق کا عمل جاری ہے۔ جلد ہی تمام درسی اسباق کے لفظی و بامحاورہ تراجم یہاں دستیاب ہوں گے۔' : 
+      'This module is currently being compiled and verified against authentic curriculum sources. Sliced phrase breakdowns and verified translations will be released here.';
+    const badgeText = isUr ? 'زیرِ تعمیر' : 'Under Construction';
 
-    if (ayahLessonSelect) {
-      ayahLessonSelect.addEventListener('change', () => {
-        activeAyahLesson = ayahLessonSelect.value;
-        renderAyahs();
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      });
-    }
+    ayahsList.innerHTML = `
+      <article class="doc-sheet ${isUr ? 'doc-rtl' : 'doc-ltr'}" dir="${isUr ? 'rtl' : 'ltr'}">
+        <header class="doc-header simple-doc-header">
+          <h1 class="doc-title">${titleText}</h1>
+        </header>
+        <div class="empty-state">
+          <span class="under-construction-badge">${badgeText}</span>
+          <div class="empty-state-text">${headingText}</div>
+          <div class="empty-state-hint">${descText}</div>
+        </div>
+      </article>
+    `;
+  }
 
-    // Search Box
-    if (searchInput) {
-      searchInput.addEventListener('input', (e) => {
-        searchQuery = e.target.value;
-        if (clearSearchBtn) {
-          clearSearchBtn.style.display = searchQuery ? 'inline-flex' : 'none';
-        }
+  // -------------------------------------------------------------
+  // 10. Search Event Handling (Words View)
+  // -------------------------------------------------------------
+  function initSearchEvents() {
+    if (!searchInput) return;
+    let debounceTimer;
+
+    searchInput.addEventListener('input', e => {
+      clearTimeout(debounceTimer);
+      const val = e.target.value;
+      if (clearSearchBtn) {
+        clearSearchBtn.style.display = val.length > 0 ? 'inline-flex' : 'none';
+      }
+
+      if (val.length > 0 && activeLetter !== 'ALL') {
+        activeLetter = 'ALL';
+        document.querySelectorAll('.letter-btn').forEach(btn => {
+          btn.classList.toggle('active', btn.getAttribute('data-letter') === 'ALL');
+        });
+      }
+
+      scrollToTopIfScrolled();
+
+      debounceTimer = setTimeout(() => {
+        searchQuery = val;
         renderWords();
-      });
-
-      // Quick shortcut [/]
-      window.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape') {
-          if (outlineModal && outlineModal.classList.contains('open')) {
-            closeOutlineModal();
-            return;
-          }
-          if (document.activeElement === searchInput) {
-            searchInput.value = '';
-            searchQuery = '';
-            clearSearchBtn.style.display = 'none';
-            searchInput.blur();
-            renderWords();
-          }
-        } else if (e.key === '/' && document.activeElement !== searchInput && (!outlineModal || !outlineModal.classList.contains('open'))) {
-          e.preventDefault();
-          if (activeTab !== 'words') switchTab('words');
-          searchInput.focus();
-          searchInput.select();
-        }
-      });
-    }
+      }, 80);
+    });
 
     if (clearSearchBtn) {
       clearSearchBtn.addEventListener('click', () => {
-        searchQuery = '';
         searchInput.value = '';
+        searchQuery = '';
         clearSearchBtn.style.display = 'none';
-        renderWords();
         searchInput.focus();
+        scrollToTopIfScrolled();
+        renderWords();
       });
     }
 
-    // Rules, Tajweed & Translations Language Toggles
-    if (toggleUrduBtn) {
-      toggleUrduBtn.addEventListener('click', () => {
-        singleLangMode = 'UR';
-        toggleUrduBtn.classList.add('active');
-        toggleEnglishBtn.classList.remove('active');
-
-        // Localize Translations Labels and Selectors
-        if (ayahUnitLabel) ayahUnitLabel.textContent = 'یونٹ';
-        if (ayahLessonLabel) ayahLessonLabel.textContent = 'سبق';
-        if (ayahFilterRow) ayahFilterRow.setAttribute('dir', 'rtl');
-        if (ayahUnitSelect) {
-          Array.from(ayahUnitSelect.options).forEach(opt => {
-            opt.textContent = `\u200Fیونٹ ${toUrduDigits(opt.value)}`;
-          });
+    window.addEventListener('keydown', e => {
+      if (e.key === 'Escape') {
+        if (outlineModal && outlineModal.classList.contains('open')) {
+          closeOutlineModal();
+          return;
         }
-        // Localize Rules Controls
-        if (ruleSelectLabel) ruleSelectLabel.textContent = 'سبق منتخب کریں:';
-        if (ruleFilterRow) ruleFilterRow.setAttribute('dir', 'rtl');
-
-        populateAyahLessonsForUnit(activeAyahUnit);
-        populateRuleSelect();
-
-        if (activeTab === 'rules') renderRules();
-        if (activeTab === 'tajweed') renderTajweed();
-        if (activeTab === 'ayahs') renderAyahs();
-      });
-    }
-
-    if (toggleEnglishBtn) {
-      toggleEnglishBtn.addEventListener('click', () => {
-        singleLangMode = 'EN';
-        toggleEnglishBtn.classList.add('active');
-        toggleUrduBtn.classList.remove('active');
-
-        // Localize Translations Labels and Selectors
-        if (ayahUnitLabel) ayahUnitLabel.textContent = 'Unit';
-        if (ayahLessonLabel) ayahLessonLabel.textContent = 'Lesson';
-        if (ayahFilterRow) ayahFilterRow.setAttribute('dir', 'ltr');
-        if (ayahUnitSelect) {
-          Array.from(ayahUnitSelect.options).forEach(opt => {
-            opt.textContent = `Unit ${opt.value}`;
-          });
+        if (document.activeElement === searchInput) {
+          searchInput.value = '';
+          searchQuery = '';
+          if (clearSearchBtn) clearSearchBtn.style.display = 'none';
+          searchInput.blur();
+          scrollToTopIfScrolled();
+          renderWords();
         }
-        // Localize Rules Controls
-        if (ruleSelectLabel) ruleSelectLabel.textContent = 'Select Lesson:';
-        if (ruleFilterRow) ruleFilterRow.setAttribute('dir', 'ltr');
+      } else if (e.key === '/' && !['INPUT', 'TEXTAREA', 'SELECT'].includes(document.activeElement.tagName) && outlineModal && !outlineModal.classList.contains('open')) {
+        e.preventDefault();
+        if (activeTab === 'words') {
+          searchInput.focus();
+          searchInput.select();
+        }
+      }
+    });
+  }
 
-        populateAyahLessonsForUnit(activeAyahUnit);
-        populateRuleSelect();
+  // -------------------------------------------------------------
+  // 11. Course Outline Modal Handlers
+  // -------------------------------------------------------------
+  function openOutlineModal() {
+    if (!outlineModal) return;
+    outlineModal.classList.add('open');
+    outlineModal.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  }
 
-        if (activeTab === 'rules') renderRules();
-        if (activeTab === 'tajweed') renderTajweed();
-        if (activeTab === 'ayahs') renderAyahs();
-      });
+  function closeOutlineModal() {
+    if (!outlineModal) return;
+    outlineModal.classList.remove('open');
+    outlineModal.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  }
+
+  function initOutlineModal() {
+    if (outlineToggleBtn) {
+      outlineToggleBtn.addEventListener('click', openOutlineModal);
     }
-
-    // Outline Modal Clicks
-    if (outlineToggleBtn) outlineToggleBtn.addEventListener('click', openOutlineModal);
-    if (outlineCloseBtn) outlineCloseBtn.addEventListener('click', closeOutlineModal);
+    if (outlineCloseBtn) {
+      outlineCloseBtn.addEventListener('click', closeOutlineModal);
+    }
     if (outlineModal) {
-      outlineModal.addEventListener('click', (e) => {
+      outlineModal.addEventListener('click', e => {
         if (e.target === outlineModal) {
           closeOutlineModal();
         }
       });
     }
+  }
 
-    // Unit Pills Navigation
-    if (ruleUnitBar) {
-      ruleUnitBar.addEventListener('click', (e) => {
-        const pill = e.target.closest('.rule-unit-pill');
-        if (!pill) return;
-        const newUnit = parseInt(pill.getAttribute('data-unit'), 10);
-        if (newUnit && newUnit !== activeRuleUnit) {
-          activeRuleUnit = newUnit;
-          activeRuleId = 'ALL';
-          rulesDisplayMode = 'all';
-          populateRuleSelect();
-          renderRules();
-          window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
-      });
-    }
+  // -------------------------------------------------------------
+  // 12. Theme Toggle (Dark / Light)
+  // -------------------------------------------------------------
+  function initTheme() {
+    const savedTheme = localStorage.getItem('mq_theme') || 'light';
+    applyTheme(savedTheme);
 
-    // Rules Select Dropdown (Unit-Scoped)
-    if (ruleSelect) {
-      ruleSelect.addEventListener('change', (e) => {
-        const val = e.target.value;
-        if (val === 'ALL') {
-          rulesDisplayMode = 'all';
-          activeRuleId = 'ALL';
-        } else {
-          rulesDisplayMode = 'lesson';
-          activeRuleId = val;
-        }
-        renderRules();
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      });
-    }
-
-    // Theme Toggle
     if (themeToggleBtn) {
-      const savedTheme = localStorage.getItem('companionTheme') || 'light';
-      if (savedTheme === 'dark') {
-        document.documentElement.setAttribute('data-theme', 'dark');
-        themeToggleBtn.textContent = 'Light';
-      }
-
       themeToggleBtn.addEventListener('click', () => {
-        const currentTheme = document.documentElement.getAttribute('data-theme');
-        if (currentTheme === 'dark') {
-          document.documentElement.removeAttribute('data-theme');
-          themeToggleBtn.textContent = 'Dark';
-          localStorage.setItem('companionTheme', 'light');
-        } else {
-          document.documentElement.setAttribute('data-theme', 'dark');
-          themeToggleBtn.textContent = 'Light';
-          localStorage.setItem('companionTheme', 'dark');
-        }
-      });
-    }
-
-    // Back to Top Button
-    if (backToTopBtn) {
-      window.addEventListener('scroll', () => {
-        if (window.scrollY > 300) {
-          backToTopBtn.classList.add('visible');
-        } else {
-          backToTopBtn.classList.remove('visible');
-        }
-      });
-
-      backToTopBtn.addEventListener('click', () => {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
+        const current = document.documentElement.getAttribute('data-theme') || 'light';
+        const next = current === 'dark' ? 'light' : 'dark';
+        applyTheme(next);
+        localStorage.setItem('mq_theme', next);
       });
     }
   }
 
+  function applyTheme(theme) {
+    if (theme === 'dark') {
+      document.documentElement.setAttribute('data-theme', 'dark');
+      if (themeToggleBtn) themeToggleBtn.textContent = 'Light';
+    } else {
+      document.documentElement.removeAttribute('data-theme');
+      if (themeToggleBtn) themeToggleBtn.textContent = 'Dark';
+    }
+  }
+
   // -------------------------------------------------------------
-  // 8. Initialization
+  // 13. Floating Back to Top Button
+  // -------------------------------------------------------------
+  function initBackToTop() {
+    if (!backToTopBtn) return;
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        backToTopBtn.classList.add('visible');
+      } else {
+        backToTopBtn.classList.remove('visible');
+      }
+    });
+
+    backToTopBtn.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  }
+
+  // -------------------------------------------------------------
+  // 14. Mobile Swipe Gestures
+  // -------------------------------------------------------------
+  let touchStartX = 0;
+  let touchStartY = 0;
+  let touchEndX = 0;
+  let touchEndY = 0;
+
+  function initSwipeGestures() {
+    const mainContainer = document.querySelector('.container') || document.body;
+
+    mainContainer.addEventListener('touchstart', (e) => {
+      if (e.target.closest('#alphabetBar') || e.target.closest('.modal-backdrop') || e.target.closest('.filter-select')) {
+        return;
+      }
+      touchStartX = e.changedTouches[0].clientX;
+      touchStartY = e.changedTouches[0].clientY;
+    }, { passive: true });
+
+    mainContainer.addEventListener('touchend', (e) => {
+      if (e.target.closest('#alphabetBar') || e.target.closest('.modal-backdrop') || e.target.closest('.filter-select')) {
+        return;
+      }
+      touchEndX = e.changedTouches[0].clientX;
+      touchEndY = e.changedTouches[0].clientY;
+      handleSwipe();
+    }, { passive: true });
+  }
+
+  function handleSwipe() {
+    const deltaX = touchEndX - touchStartX;
+    const deltaY = touchEndY - touchStartY;
+
+    if (Math.abs(deltaX) > 55 && Math.abs(deltaX) > Math.abs(deltaY) * 1.5) {
+      const currentIndex = TAB_ORDER.indexOf(activeTab);
+      if (currentIndex === -1) return;
+
+      if (deltaX < 0) {
+        // Swipe left -> Next tab
+        if (currentIndex < TAB_ORDER.length - 1) {
+          switchTab(TAB_ORDER[currentIndex + 1]);
+        }
+      } else {
+        // Swipe right -> Previous tab
+        if (currentIndex > 0) {
+          switchTab(TAB_ORDER[currentIndex - 1]);
+        }
+      }
+    }
+  }
+
+  // -------------------------------------------------------------
+  // 15. Bootstrap Application
   // -------------------------------------------------------------
   function init() {
-    if (singleLangMode === 'UR') {
-      if (ruleSelectLabel) ruleSelectLabel.textContent = 'سبق منتخب کریں:';
-      if (ruleFilterRow) ruleFilterRow.setAttribute('dir', 'rtl');
-      if (ayahUnitLabel) ayahUnitLabel.textContent = 'یونٹ';
-      if (ayahLessonLabel) ayahLessonLabel.textContent = 'سبق';
-      if (ayahFilterRow) ayahFilterRow.setAttribute('dir', 'rtl');
-    }
-    buildAlphabetBar();
-    populateRuleSelect();
-    populateAyahLessonsForUnit(activeAyahUnit);
-    renderRules();
-    renderTajweed();
-    renderAyahs();
-    bindEvents();
-
-    // Default startup state: Rules Tab active with pushed Unit 1 & 2 rules
-    switchTab('rules');
+    initTheme();
+    initLanguageToggles();
+    initTabs();
+    initSwipeGestures();
+    initAlphabetBar();
+    initRuleFilters();
+    initSearchEvents();
+    initOutlineModal();
+    initBackToTop();
+    renderWords(); // Defaults directly to Words view
   }
 
-  // Run on DOM ready
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', init);
   } else {
     init();
   }
-
 })();

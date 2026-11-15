@@ -27,26 +27,41 @@
   --font-ur-display: 'Gulzar', 'Noto Nastaliq Urdu', serif;
   --font-ur-reading: 'Noto Nastaliq Urdu', 'Gulzar', 'Jameel Noori Nastaleeq', 'Urdu Typesetting', serif;
   
-  /* Micro-Typography Badges — Classical Earth Pigment System (Zero AI Purple) */
+  /* Micro-Typography Badges & Distinct Card Rails — Historical Manuscript Pigments */
+  --rail-noun: #334155;
   --badge-noun-bg: #f1f5f9;
   --badge-noun-text: #334155;
   --badge-noun-border: #cbd5e1;
   
-  --badge-part-bg: #e6f6f4;
+  --rail-part: #0f766e;
+  --badge-part-bg: #f0fdfa;
   --badge-part-text: #0f766e;
   --badge-part-border: #99f6e4;
   
-  --badge-prop-bg: #fee2e2;
-  --badge-prop-text: #991b1b;
-  --badge-prop-border: #fecaca;
+  --rail-prop: #881337;
+  --badge-prop-bg: #fff1f2;
+  --badge-prop-text: #881337;
+  --badge-prop-border: #fecdd3;
   
-  --badge-verb-bg: #fef3c7;
-  --badge-verb-text: #92400e;
-  --badge-verb-border: #fde68a;
+  --rail-verb: #9c4a2f;
+  --badge-verb-bg: #faf3f0;
+  --badge-verb-text: #9c4a2f;
+  --badge-verb-border: #fed7aa;
   
-  --badge-adj-bg: #f7fee7;
-  --badge-adj-text: #365314;
-  --badge-adj-border: #d9f99d;
+  --rail-adj: #3f6244;
+  --badge-adj-bg: #f2f7f3;
+  --badge-adj-text: #3f6244;
+  --badge-adj-border: #c6e0c9;
+
+  --rail-pron: #335384;
+  --badge-pron-bg: #f0f4f9;
+  --badge-pron-text: #335384;
+  --badge-pron-border: #c8d8ea;
+
+  --rail-adv: #8c5e23;
+  --badge-adv-bg: #fbf7f0;
+  --badge-adv-text: #8c5e23;
+  --badge-adv-border: #f0debe;
   
   --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.04);
   --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.03);
@@ -395,42 +410,45 @@ input, textarea, select {
   background: var(--bg-surface);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-md);
-  padding: 1.2rem 1.45rem;
-  box-shadow: var(--shadow-sm);
+  padding: 1.25rem 1.45rem;
+  box-shadow: 0 1px 3px rgba(28, 25, 23, 0.04), 0 1px 2px rgba(28, 25, 23, 0.02);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 0.85rem;
   position: relative;
-  overflow: hidden;
   direction: rtl;
-  transition: border-color 0.22s var(--ease-spring), box-shadow 0.22s var(--ease-spring), transform 0.22s var(--ease-spring);
+  transition: border-color 0.2s var(--ease-spring), box-shadow 0.2s var(--ease-spring), transform 0.2s var(--ease-spring);
 }
+
+/* Integrated Native Accent Spine — Direct Right Border (3.5px Manuscript Rail) */
+.dict-card.is-noun { border-right: 3.5px solid var(--rail-noun); }
+.dict-card.is-part { border-right: 3.5px solid var(--rail-part); }
+.dict-card.is-prop { border-right: 3.5px solid var(--rail-prop); }
+.dict-card.is-verb { border-right: 3.5px solid var(--rail-verb); }
+.dict-card.is-adj  { border-right: 3.5px solid var(--rail-adj); }
+.dict-card.is-pron { border-right: 3.5px solid var(--rail-pron); }
+.dict-card.is-adv  { border-right: 3.5px solid var(--rail-adv); }
 
 .dict-card:hover {
-  border-color: var(--accent);
-  box-shadow: var(--shadow-md);
+  border-color: #d6d2c7;
+  box-shadow: 0 4px 12px -2px rgba(28, 25, 23, 0.06), 0 2px 4px -1px rgba(28, 25, 23, 0.03);
+  transform: translateY(-1px);
 }
+
+/* Preserve native spine color on hover without 4-sided glowing box */
+.dict-card.is-noun:hover { border-right-color: var(--rail-noun); }
+.dict-card.is-part:hover { border-right-color: var(--rail-part); }
+.dict-card.is-prop:hover { border-right-color: var(--rail-prop); }
+.dict-card.is-verb:hover { border-right-color: var(--rail-verb); }
+.dict-card.is-adj:hover  { border-right-color: var(--rail-adj); }
+.dict-card.is-pron:hover { border-right-color: var(--rail-pron); }
+.dict-card.is-adv:hover  { border-right-color: var(--rail-adv); }
 
 .dict-card:active {
-  transform: scale(0.992);
+  transform: scale(0.994);
+  box-shadow: var(--shadow-sm);
 }
-
-.dict-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  width: 4px;
-  border-radius: 0 var(--radius-md) var(--radius-md) 0;
-}
-
-.dict-card.is-noun::before { background: var(--badge-noun-text); }
-.dict-card.is-part::before { background: var(--badge-part-text); }
-.dict-card.is-prop::before { background: var(--badge-prop-text); }
-.dict-card.is-verb::before { background: var(--badge-verb-text); }
-.dict-card.is-adj::before { background: var(--badge-adj-text); }
 
 .card-blend-top {
   display: flex;
@@ -523,6 +541,18 @@ input, textarea, select {
   background: var(--badge-adj-bg);
   color: var(--badge-adj-text);
   border-color: var(--badge-adj-border);
+}
+
+.badge-pron {
+  background: var(--badge-pron-bg);
+  color: var(--badge-pron-text);
+  border-color: var(--badge-pron-border);
+}
+
+.badge-adv {
+  background: var(--badge-adv-bg);
+  color: var(--badge-adv-text);
+  border-color: var(--badge-adv-border);
 }
 
 .badge-default {
@@ -1889,20 +1919,32 @@ input, textarea, select {
    Rules Overview Grid (Brief Overview in One Place)
    ========================================================================== */
 .rules-overview-lead {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
   margin-bottom: 1.15rem;
 }
 
-.rules-overview-intro {
-  font-size: 0.92rem;
-  color: var(--text-secondary);
-  line-height: 1.6;
-  margin: 0;
+.rules-overview-badge {
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  background: var(--accent-light);
+  color: var(--accent);
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  border: 1px solid rgba(15, 118, 110, 0.25);
+  display: inline-flex;
+  align-items: center;
 }
 
-.doc-rtl .rules-overview-intro {
-  font-family: var(--font-ur-reading);
-  font-size: 1.05rem;
-  line-height: 1.9;
+.doc-rtl .rules-overview-badge {
+  font-family: 'Gulzar', serif !important;
+  font-size: 0.95rem;
+  font-weight: 400;
+  letter-spacing: 0;
+  padding: 0.15rem 0.85rem;
 }
 
 .rules-overview-grid {

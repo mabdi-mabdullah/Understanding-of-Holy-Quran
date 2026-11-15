@@ -1,6 +1,6 @@
-/**
+﻿/**
  * Quranic Arabic Study Companion — Application Logic
- * High-performance, diacritic-tolerant search across 2,030 Grand Master Base Words,
+ * High-performance, diacritic-tolerant search across 1,557 Master Base Words,
  * 83 Grammar Rules across Units 1 to 5, and authentic Tajweed modules.
  * Unified classical parchment design with fluid gestures, responsive navigation, and bilingual controls.
  * Zero emojis across all modules.
@@ -276,6 +276,12 @@
       });
     }
 
+    // Localize Segmented Unit Bar Pills
+    document.querySelectorAll('.rule-unit-pill').forEach(pill => {
+      const uVal = pill.getAttribute('data-unit');
+      pill.textContent = isUr ? `یونٹ ${uVal}` : `Unit ${uVal}`;
+    });
+
     populateRuleSelect();
   }
 
@@ -454,13 +460,127 @@
   }
 
   // -------------------------------------------------------------
-  // 6. Render Words Dictionary List
+  // 6. Render Words Dictionary List (High-Performance Chunked Infinite Stream)
   // -------------------------------------------------------------
+  const WORDS_BATCH_SIZE = 80;
+  let wordsRenderedCount = 0;
+  let wordsObserver = null;
+  let currentFilteredWords = [];
+
+  function createWordCard(w, isUr) {
+    const card = document.createElement('article');
+
+    let posClass = 'is-noun';
+    let badgeClass = 'badge-noun';
+    let badgeText = 'Noun';
+
+    const catStr = w.cat || '';
+    if (catStr.includes('حَرْف') || catStr.toLowerCase().includes('part')) {
+      posClass = 'is-part';
+      badgeClass = 'badge-part';
+      badgeText = 'Particle';
+    } else if (catStr.includes('عَلَم') || catStr.toLowerCase().includes('prop')) {
+      posClass = 'is-prop';
+      badgeClass = 'badge-prop';
+      badgeText = 'Proper Noun';
+    } else if (catStr.includes('فِعْل') || catStr.toLowerCase().includes('verb')) {
+      posClass = 'is-verb';
+      badgeClass = 'badge-verb';
+      badgeText = 'Verb';
+    } else if (catStr.includes('صِفَة') || catStr.toLowerCase().includes('adj')) {
+      posClass = 'is-adj';
+      badgeClass = 'badge-adj';
+      badgeText = 'Adjective';
+    } else if (catStr.includes('ضَمِير') || catStr.toLowerCase().includes('pron')) {
+      posClass = 'is-pron';
+      badgeClass = 'badge-pron';
+      badgeText = 'Pronoun';
+    } else if (catStr.includes('ظَرْف') || catStr.toLowerCase().includes('adv')) {
+      posClass = 'is-adv';
+      badgeClass = 'badge-adv';
+      badgeText = 'Adverb';
+    } else if (catStr.includes('اسْم') || catStr.toLowerCase().includes('noun')) {
+      posClass = 'is-noun';
+      badgeClass = 'badge-noun';
+      badgeText = 'Noun';
+    }
+
+    card.className = `dict-card ${posClass}`;
+
+    const meaningsHtml = `
+      <div class="meaning-urdu" dir="rtl">${w.ur}</div>
+      <div class="meaning-en">${w.en || ''}</div>
+    `;
+
+    const formattedIdx = String(w.idx).padStart(4, '0');
+
+    card.innerHTML = `
+      <div class="card-blend-top">
+        <div class="card-blend-right">
+          <span class="card-idx">${formattedIdx}</span>
+          <div class="card-arabic" dir="rtl" title="${w.ar}">${w.ar}</div>
+        </div>
+        <div class="card-blend-left">
+          <span class="card-tr">${w.tr || ''}</span>
+          <span class="card-badge ${badgeClass}">${badgeText}</span>
+        </div>
+      </div>
+      <div class="card-meanings-row">
+        ${meaningsHtml}
+      </div>
+    `;
+
+    return card;
+  }
+
+  function appendNextWordsBatch() {
+    if (!dictionaryList) return;
+    const isUr = singleLangMode === 'UR';
+    if (wordsRenderedCount >= currentFilteredWords.length) {
+      if (wordsObserver) {
+        wordsObserver.disconnect();
+        wordsObserver = null;
+      }
+      const sentinel = document.getElementById('wordsSentinel');
+      if (sentinel) sentinel.remove();
+      return;
+    }
+
+    const nextBatch = currentFilteredWords.slice(wordsRenderedCount, wordsRenderedCount + WORDS_BATCH_SIZE);
+    const fragment = document.createDocumentFragment();
+    nextBatch.forEach(w => {
+      fragment.appendChild(createWordCard(w, isUr));
+    });
+
+    const sentinel = document.getElementById('wordsSentinel');
+    if (sentinel) {
+      dictionaryList.insertBefore(fragment, sentinel);
+    } else {
+      dictionaryList.appendChild(fragment);
+    }
+
+    wordsRenderedCount += nextBatch.length;
+
+    if (wordsRenderedCount >= currentFilteredWords.length) {
+      if (wordsObserver) {
+        wordsObserver.disconnect();
+        wordsObserver = null;
+      }
+      if (sentinel) sentinel.remove();
+    }
+  }
+
   function renderWords() {
     if (!dictionaryList) return;
-    const filteredWords = getFilteredWords();
+    if (wordsObserver) {
+      wordsObserver.disconnect();
+      wordsObserver = null;
+    }
 
-    if (filteredWords.length === 0) {
+    currentFilteredWords = getFilteredWords();
+    wordsRenderedCount = 0;
+
+    if (currentFilteredWords.length === 0) {
       dictionaryList.innerHTML = `
         <div class="empty-state">
           <div class="empty-state-text">No words found</div>
@@ -470,68 +590,38 @@
       return;
     }
 
-    const fragment = document.createDocumentFragment();
-
-    filteredWords.forEach(w => {
-      const card = document.createElement('article');
-
-      let posClass = 'is-noun';
-      let badgeClass = 'badge-noun';
-      let badgeText = 'Noun';
-
-      const catStr = w.cat || '';
-      if (catStr.includes('حَرْف') || catStr.toLowerCase().includes('part')) {
-        posClass = 'is-part';
-        badgeClass = 'badge-part';
-        badgeText = 'Particle';
-      } else if (catStr.includes('عَلَم') || catStr.toLowerCase().includes('prop')) {
-        posClass = 'is-prop';
-        badgeClass = 'badge-prop';
-        badgeText = 'Proper Noun';
-      } else if (catStr.includes('فِعْل') || catStr.toLowerCase().includes('verb')) {
-        posClass = 'is-verb';
-        badgeClass = 'badge-verb';
-        badgeText = 'Verb';
-      } else if (catStr.includes('صِفَة') || catStr.toLowerCase().includes('adj')) {
-        posClass = 'is-adj';
-        badgeClass = 'badge-adj';
-        badgeText = 'Adjective';
-      } else if (catStr.includes('اسْم') || catStr.toLowerCase().includes('noun')) {
-        posClass = 'is-noun';
-        badgeClass = 'badge-noun';
-        badgeText = 'Noun';
-      }
-
-      card.className = `dict-card ${posClass}`;
-
-      const meaningsHtml = `
-        <div class="meaning-urdu" dir="rtl">${w.ur}</div>
-        <div class="meaning-en">${w.en || ''}</div>
-      `;
-
-      const formattedIdx = String(w.idx).padStart(4, '0');
-
-      card.innerHTML = `
-        <div class="card-blend-top">
-          <div class="card-blend-right">
-            <span class="card-idx">${formattedIdx}</span>
-            <div class="card-arabic" dir="rtl" title="${w.ar}">${w.ar}</div>
-          </div>
-          <div class="card-blend-left">
-            <span class="card-tr">${w.tr || ''}</span>
-            <span class="card-badge ${badgeClass}">${badgeText}</span>
-          </div>
-        </div>
-        <div class="card-meanings-row">
-          ${meaningsHtml}
-        </div>
-      `;
-
-      fragment.appendChild(card);
-    });
-
+    const isUr = singleLangMode === 'UR';
     dictionaryList.innerHTML = '';
+
+    const firstBatch = currentFilteredWords.slice(0, WORDS_BATCH_SIZE);
+    const fragment = document.createDocumentFragment();
+    firstBatch.forEach(w => {
+      fragment.appendChild(createWordCard(w, isUr));
+    });
     dictionaryList.appendChild(fragment);
+    wordsRenderedCount = firstBatch.length;
+
+    if (wordsRenderedCount < currentFilteredWords.length) {
+      const sentinel = document.createElement('div');
+      sentinel.id = 'wordsSentinel';
+      sentinel.className = 'words-sentinel';
+      sentinel.style.gridColumn = '1 / -1';
+      sentinel.style.height = '60px';
+      sentinel.style.display = 'flex';
+      sentinel.style.alignItems = 'center';
+      sentinel.style.justifyContent = 'center';
+      sentinel.style.color = 'var(--text-muted)';
+      sentinel.style.fontSize = '0.8rem';
+      dictionaryList.appendChild(sentinel);
+
+      wordsObserver = new IntersectionObserver((entries) => {
+        if (entries[0].isIntersecting) {
+          appendNextWordsBatch();
+        }
+      }, { rootMargin: '400px' });
+
+      wordsObserver.observe(sentinel);
+    }
   }
 
   // -------------------------------------------------------------
@@ -540,6 +630,13 @@
   function getRulesForCurrentUnit() {
     const unitNum = parseInt(activeRuleUnit, 10);
     return rulesCollection.filter(r => r.unit === unitNum);
+  }
+
+  function getRuleCleanTopic(r, isUr) {
+    if (!r) return '';
+    let raw = isUr ? (r.titleUr || '') : (r.titleEn || '');
+    raw = raw.replace(/^سبق\s*\d+\s*:\s*/i, '').replace(/^Lesson\s*\d+\s*:\s*/i, '');
+    return raw.trim();
   }
 
   function populateRuleSelect() {
@@ -552,19 +649,19 @@
       const allOpt = document.createElement('option');
       allOpt.value = 'ALL';
       allOpt.textContent = isUr ? 
-        `\u200Fتمام قواعد یونٹ ${activeRuleUnit} (مختصر خلاصہ)` : 
-        `All Unit ${activeRuleUnit} Rules (Brief Overview)`;
+        `\u200Fخلاصہ یونٹ ${activeRuleUnit}` : 
+        `Unit ${activeRuleUnit} Overview`;
       ruleSelect.appendChild(allOpt);
 
       unitRules.forEach((r, idx) => {
         const opt = document.createElement('option');
         opt.value = idx.toString();
-        const opText = r.operator || '';
-        const opTrText = r.operatorTr ? `(${r.operatorTr})` : '';
+        const cleanTopic = getRuleCleanTopic(r, isUr);
+        const opStr = r.operator ? `${r.operator} • ` : '';
         if (isUr) {
-          opt.textContent = `\u200Fقاعدہ ${idx + 1} (${opText}) • ${r.titleUr}`;
+          opt.textContent = `\u200Fقاعدہ ${idx + 1} • ${opStr}${cleanTopic}`;
         } else {
-          opt.textContent = `Rule ${idx + 1}: ${opText} ${opTrText} — ${r.titleEn}`;
+          opt.textContent = `Rule ${idx + 1}: ${opStr}${cleanTopic}`;
         }
         ruleSelect.appendChild(opt);
       });
@@ -592,7 +689,7 @@
       allDiv.innerHTML = `
         <div class="custom-opt-lead">
           <span class="custom-opt-badge badge-all">${isUr ? 'خلاصہ' : 'All'}</span>
-          <span class="custom-opt-title">${isUr ? `تمام قواعد یونٹ ${activeRuleUnit} (مختصر خلاصہ)` : `All Unit ${activeRuleUnit} Rules (Brief Overview)`}</span>
+          <span class="custom-opt-title">${isUr ? `خلاصہ یونٹ ${activeRuleUnit}` : `Unit ${activeRuleUnit} Overview`}</span>
         </div>
         <span class="custom-opt-check" aria-hidden="true">${checkSvg}</span>
       `;
@@ -616,16 +713,14 @@
         optDiv.setAttribute('aria-selected', isSelected ? 'true' : 'false');
 
         const opText = r.operator ? `<span class="custom-opt-operator font-ar" dir="rtl">${r.operator}</span>` : '';
-        const opTrText = r.operatorTr ? `<span class="custom-opt-tr" dir="ltr">(${r.operatorTr})</span>` : '';
-        const titleText = isUr ? r.titleUr : r.titleEn;
+        const cleanTopic = getRuleCleanTopic(r, isUr);
         const badgeText = isUr ? `قاعدہ ${idx + 1}` : `Rule ${idx + 1}`;
 
         optDiv.innerHTML = `
           <div class="custom-opt-lead">
             <span class="custom-opt-badge">${badgeText}</span>
             ${opText}
-            ${opTrText}
-            <span class="custom-opt-title">${titleText}</span>
+            <span class="custom-opt-title">${cleanTopic}</span>
           </div>
           <span class="custom-opt-check" aria-hidden="true">${checkSvg}</span>
         `;
@@ -659,22 +754,21 @@
       }
       if (customRuleTriggerTitle) {
         customRuleTriggerTitle.textContent = isUr ? 
-          `تمام قواعد یونٹ ${activeRuleUnit} (مختصر خلاصہ)` : 
-          `All Unit ${activeRuleUnit} Rules (Brief Overview)`;
+          `خلاصہ یونٹ ${activeRuleUnit}` : 
+          `Unit ${activeRuleUnit} Overview`;
       }
     } else {
       if (activeRuleIndex < 0) activeRuleIndex = 0;
       if (activeRuleIndex >= unitRules.length) activeRuleIndex = unitRules.length - 1;
       const curR = unitRules[activeRuleIndex];
+      const cleanTopic = getRuleCleanTopic(curR, isUr);
 
       if (customRuleTriggerBadge) {
         customRuleTriggerBadge.textContent = isUr ? `قاعدہ ${activeRuleIndex + 1}` : `Rule ${activeRuleIndex + 1}`;
       }
       if (customRuleTriggerTitle) {
-        const opStr = curR && curR.operator ? `${curR.operator} ` : '';
-        const opTrStr = curR && curR.operatorTr ? `(${curR.operatorTr}) ` : '';
-        const titleStr = isUr ? (curR ? curR.titleUr : '') : (curR ? curR.titleEn : '');
-        customRuleTriggerTitle.textContent = `${opStr}${opTrStr}— ${titleStr}`;
+        const opStr = curR && curR.operator ? `${curR.operator} · ` : '';
+        customRuleTriggerTitle.textContent = `${opStr}${cleanTopic}`;
       }
     }
 
@@ -855,7 +949,7 @@
       const secNum = idx + 1;
       const titleBadge = isUr ? r.titleUr : r.titleEn;
       const effectBadge = isUr ? (r.caseEffectUr || '') : (r.caseEffectEn || '');
-      const formulaLabel = isUr ? 'قاعدہ / کلیہ:' : 'Formula / Pattern:';
+      const formulaLabel = isUr ? 'کلیہ:' : 'Formula:';
       const meaningText = isUr ? (r.primaryMeaningUr || '') : (r.primaryMeaningEn || '');
       const expText = isUr ? (r.explanationUr || '') : (r.explanationEn || '');
       const ruleNumBadge = isUr ? `\u200Fقاعدہ ${secNum}` : `Rule ${secNum}`;
@@ -880,7 +974,7 @@
       // Sub-rules block
       let subRulesHtml = '';
       if (r.subRules && r.subRules.length > 0) {
-        const subTitle = isUr ? 'اہم ذیلی قواعد و مشقی نکات:' : 'Key Sub-rules & Drill Patterns:';
+        const subTitle = isUr ? 'اہم نکات:' : 'Key Notes:';
         subRulesHtml = `
           <div class="doc-subrules-block">
             <span class="doc-subrules-label">${subTitle}</span>
@@ -899,7 +993,7 @@
       // Quranic Examples block
       let examplesHtml = '';
       if (r.examples && r.examples.length > 0) {
-        const exTitle = isUr ? 'قرآنی تطبیقات و شواہد:' : 'Quranic Applications & Evidence:';
+        const exTitle = isUr ? 'قرآنی امثلہ:' : 'Quranic Examples:';
         examplesHtml = `
           <div class="doc-examples-block">
             <span class="doc-examples-label">${exTitle}</span>
@@ -957,8 +1051,8 @@
             </div>
 
             <div class="doc-rule-meta-prose">
-              <div class="doc-meta-line"><strong>${isUr ? 'اعرابی اثر:' : 'Grammatical Effect (I\'rab):'}</strong> <span class="doc-effect-val">${effectBadge}</span></div>
-              <div class="doc-meta-line"><strong>${isUr ? 'بنیادی مفہوم:' : 'Primary Meaning:'}</strong> <span>${meaningText}</span></div>
+              <div class="doc-meta-line"><strong>${isUr ? 'اعرابی اثر:' : 'I\'rab Effect:'}</strong> <span class="doc-effect-val">${effectBadge}</span></div>
+              <div class="doc-meta-line"><strong>${isUr ? 'مفہوم:' : 'Meaning:'}</strong> <span>${meaningText}</span></div>
             </div>
 
             <div class="doc-explanation-prose">
@@ -979,9 +1073,9 @@
       const title = isUr ? r.titleUr : r.titleEn;
       const effect = isUr ? (r.caseEffectUr || '') : (r.caseEffectEn || '');
       const meaning = isUr ? (r.primaryMeaningUr || '') : (r.primaryMeaningEn || '');
-      const effectLabel = isUr ? 'اعرابی اثر:' : 'Grammatical Effect:';
-      const meaningLabel = isUr ? 'بنیادی مفہوم:' : 'Primary Meaning:';
-      const viewRuleBtnText = isUr ? 'مکمل تفصیل ←' : 'Full Details →';
+      const effectLabel = isUr ? 'اعرابی اثر:' : 'I\'rab Effect:';
+      const meaningLabel = isUr ? 'مفہوم:' : 'Meaning:';
+      const viewRuleBtnText = isUr ? 'تفصیل ←' : 'Details →';
       const opText = r.operator || '';
       const opTrText = r.operatorTr ? `(${r.operatorTr})` : '';
       const primaryExample = r.examples && r.examples.length > 0 ? r.examples[0] : null;
@@ -1037,12 +1131,7 @@
     } else {
       contentHtml = `
         <div class="rules-overview-lead">
-          <p class="rules-overview-intro">
-            ${isUr 
-              ? `یونٹ ${activeRuleUnit} کے تمام ${totalRules} قواعد کا جامع خلاصہ۔ تفصیلی وضاحت اور امثلہ کے لیے کسی بھی قاعدے پر کلک کریں۔` 
-              : `A concise high-yield overview of all ${totalRules} rules in Unit ${activeRuleUnit}. Click any rule card to view its full breakdown.`
-            }
-          </p>
+          <span class="rules-overview-badge">${isUr ? `${totalRules} قواعد کا خلاصہ` : `${totalRules} Rules Overview`}</span>
         </div>
         <div class="rules-overview-grid">
           ${unitRules.map((r, idx) => buildRuleOverviewCard(r, idx)).join('')}
@@ -1431,3 +1520,5 @@
     init();
   }
 })();
+
+

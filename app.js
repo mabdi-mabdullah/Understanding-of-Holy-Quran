@@ -2,7 +2,7 @@
  * Quranic Arabic Study Companion — Application Logic
  * High-performance, diacritic-tolerant search across 2,030 Grand Master Base Words,
  * 83 Grammar Rules across Units 1 to 5, and authentic Tajweed modules.
- * Restored Beta App Design with full gestures, modals, theme persistence, and bilingual controls.
+ * Unified classical parchment design with fluid gestures, responsive navigation, and bilingual controls.
  * Zero emojis across all modules.
  */
 
@@ -50,6 +50,8 @@
 
   // Tajweed View Elements
   const tajweedList = document.getElementById('tajweedList');
+  const tajweedPrevTopicBtn = document.getElementById('tajweedPrevTopicBtn');
+  const tajweedNextTopicBtn = document.getElementById('tajweedNextTopicBtn');
 
   // Words View Elements
   const searchInput = document.getElementById('searchInput');
@@ -58,10 +60,13 @@
   const dictionaryList = document.getElementById('dictionaryList');
 
   // Rules View Elements
-  const ruleFilterRow = document.getElementById('ruleFilterRow');
-  const ruleUnitLabel = document.getElementById('ruleUnitLabel');
+  const ruleUnitBar = document.getElementById('ruleUnitBar');
+  const customRuleSelectWrapper = document.getElementById('customRuleSelectWrapper');
+  const customRuleTrigger = document.getElementById('customRuleTrigger');
+  const customRuleTriggerBadge = document.getElementById('customRuleTriggerBadge');
+  const customRuleTriggerTitle = document.getElementById('customRuleTriggerTitle');
+  const customRuleMenu = document.getElementById('customRuleMenu');
   const ruleUnitSelect = document.getElementById('ruleUnitSelect');
-  const ruleSelectLabel = document.getElementById('ruleSelectLabel');
   const ruleSelect = document.getElementById('ruleSelect');
   const rulesList = document.getElementById('rulesList');
 
@@ -69,16 +74,10 @@
   const ayahsList = document.getElementById('ayahsList');
 
   // Header & Global Controls
-  const themeToggleBtn = document.getElementById('themeToggleBtn');
   const langSwitcher = document.getElementById('langSwitcher');
   const toggleUrduBtn = document.getElementById('toggleUrduBtn');
   const toggleEnglishBtn = document.getElementById('toggleEnglishBtn');
   const backToTopBtn = document.getElementById('backToTopBtn');
-
-  // Course Outline Modal Elements
-  const outlineToggleBtn = document.getElementById('outlineToggleBtn');
-  const outlineModal = document.getElementById('outlineModal');
-  const outlineCloseBtn = document.getElementById('outlineCloseBtn');
 
   // Arabic Alphabet list for the Words filter bar
   const ARABIC_ALPHABET = [
@@ -238,6 +237,10 @@
   }
 
   function setLetterFilter(letter) {
+    // Toggle-to-reset: clicking an already active letter resets to 'ALL'
+    if (activeLetter === letter && letter !== 'ALL') {
+      letter = 'ALL';
+    }
     activeLetter = letter;
     document.querySelectorAll('.letter-btn').forEach(btn => {
       btn.classList.toggle('active', btn.getAttribute('data-letter') === letter);
@@ -260,12 +263,10 @@
     if (toggleUrduBtn) toggleUrduBtn.classList.toggle('active', isUr);
     if (toggleEnglishBtn) toggleEnglishBtn.classList.toggle('active', !isUr);
 
-    // Localize Filter Row Labels
-    if (ruleUnitLabel) ruleUnitLabel.textContent = isUr ? 'یونٹ' : 'Unit';
-    if (ruleSelectLabel) ruleSelectLabel.textContent = isUr ? 'قاعدہ' : 'Rule';
-
-    // Localize Direction for Filter Rows
-    if (ruleFilterRow) ruleFilterRow.setAttribute('dir', isUr ? 'rtl' : 'ltr');
+    // Localize direction for custom rule selector
+    if (customRuleSelectWrapper) {
+      customRuleSelectWrapper.setAttribute('dir', isUr ? 'rtl' : 'ltr');
+    }
 
     // Localize Unit dropdown options
     if (ruleUnitSelect) {
@@ -542,42 +543,253 @@
   }
 
   function populateRuleSelect() {
-    if (!ruleSelect) return;
     const isUr = singleLangMode === 'UR';
     const unitRules = getRulesForCurrentUnit();
-    ruleSelect.innerHTML = '';
 
-    // "All Rules" option (Brief Overview)
-    const allOpt = document.createElement('option');
-    allOpt.value = 'ALL';
-    allOpt.textContent = isUr ? 
-      `\u200Fتمام قواعد یونٹ ${activeRuleUnit} (مختصر خلاصہ)` : 
-      `All Unit ${activeRuleUnit} Rules (Brief Overview)`;
-    ruleSelect.appendChild(allOpt);
+    // 1. Synchronize Native Hidden Select (for accessibility and fallback)
+    if (ruleSelect) {
+      ruleSelect.innerHTML = '';
+      const allOpt = document.createElement('option');
+      allOpt.value = 'ALL';
+      allOpt.textContent = isUr ? 
+        `\u200Fتمام قواعد یونٹ ${activeRuleUnit} (مختصر خلاصہ)` : 
+        `All Unit ${activeRuleUnit} Rules (Brief Overview)`;
+      ruleSelect.appendChild(allOpt);
 
-    // Individual Rule Options
-    unitRules.forEach((r, idx) => {
-      const opt = document.createElement('option');
-      opt.value = idx.toString();
-      const opText = r.operator || '';
-      const opTrText = r.operatorTr ? `(${r.operatorTr})` : '';
-      if (isUr) {
-        opt.textContent = `\u200Fقاعدہ ${idx + 1} (${opText}) • ${r.titleUr}`;
+      unitRules.forEach((r, idx) => {
+        const opt = document.createElement('option');
+        opt.value = idx.toString();
+        const opText = r.operator || '';
+        const opTrText = r.operatorTr ? `(${r.operatorTr})` : '';
+        if (isUr) {
+          opt.textContent = `\u200Fقاعدہ ${idx + 1} (${opText}) • ${r.titleUr}`;
+        } else {
+          opt.textContent = `Rule ${idx + 1}: ${opText} ${opTrText} — ${r.titleEn}`;
+        }
+        ruleSelect.appendChild(opt);
+      });
+
+      if (rulesDisplayMode === 'all') {
+        ruleSelect.value = 'ALL';
       } else {
-        opt.textContent = `Rule ${idx + 1}: ${opText} ${opTrText} — ${r.titleEn}`;
+        if (activeRuleIndex >= unitRules.length) activeRuleIndex = 0;
+        ruleSelect.value = activeRuleIndex.toString();
       }
-      ruleSelect.appendChild(opt);
-    });
+    }
+
+    // 2. Populate Custom Apple Dropdown Menu Popover
+    if (customRuleMenu) {
+      customRuleMenu.innerHTML = '';
+      const checkSvg = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>';
+
+      // "All Rules (Overview)" Option
+      const allDiv = document.createElement('div');
+      allDiv.className = `custom-dropdown-opt ${rulesDisplayMode === 'all' ? 'active' : ''}`;
+      allDiv.setAttribute('role', 'option');
+      allDiv.setAttribute('data-value', 'ALL');
+      allDiv.setAttribute('tabindex', '0');
+      allDiv.setAttribute('aria-selected', rulesDisplayMode === 'all' ? 'true' : 'false');
+      allDiv.innerHTML = `
+        <div class="custom-opt-lead">
+          <span class="custom-opt-badge badge-all">${isUr ? 'خلاصہ' : 'All'}</span>
+          <span class="custom-opt-title">${isUr ? `تمام قواعد یونٹ ${activeRuleUnit} (مختصر خلاصہ)` : `All Unit ${activeRuleUnit} Rules (Brief Overview)`}</span>
+        </div>
+        <span class="custom-opt-check" aria-hidden="true">${checkSvg}</span>
+      `;
+      allDiv.addEventListener('click', () => {
+        rulesDisplayMode = 'all';
+        if (ruleSelect) ruleSelect.value = 'ALL';
+        closeCustomDropdown();
+        scrollToTopIfScrolled();
+        renderRules();
+      });
+      customRuleMenu.appendChild(allDiv);
+
+      // Rule Items
+      unitRules.forEach((r, idx) => {
+        const isSelected = rulesDisplayMode === 'island' && activeRuleIndex === idx;
+        const optDiv = document.createElement('div');
+        optDiv.className = `custom-dropdown-opt ${isSelected ? 'active' : ''}`;
+        optDiv.setAttribute('role', 'option');
+        optDiv.setAttribute('data-value', idx.toString());
+        optDiv.setAttribute('tabindex', '0');
+        optDiv.setAttribute('aria-selected', isSelected ? 'true' : 'false');
+
+        const opText = r.operator ? `<span class="custom-opt-operator font-ar" dir="rtl">${r.operator}</span>` : '';
+        const opTrText = r.operatorTr ? `<span class="custom-opt-tr" dir="ltr">(${r.operatorTr})</span>` : '';
+        const titleText = isUr ? r.titleUr : r.titleEn;
+        const badgeText = isUr ? `قاعدہ ${idx + 1}` : `Rule ${idx + 1}`;
+
+        optDiv.innerHTML = `
+          <div class="custom-opt-lead">
+            <span class="custom-opt-badge">${badgeText}</span>
+            ${opText}
+            ${opTrText}
+            <span class="custom-opt-title">${titleText}</span>
+          </div>
+          <span class="custom-opt-check" aria-hidden="true">${checkSvg}</span>
+        `;
+        optDiv.addEventListener('click', () => {
+          rulesDisplayMode = 'island';
+          activeRuleIndex = idx;
+          if (ruleSelect) ruleSelect.value = idx.toString();
+          closeCustomDropdown();
+          scrollToTopIfScrolled();
+          renderRules();
+        });
+        customRuleMenu.appendChild(optDiv);
+      });
+    }
+
+    syncCustomTriggerUI(unitRules);
+  }
+
+  function syncCustomTriggerUI(unitRules) {
+    if (!customRuleTrigger) return;
+    if (!unitRules) unitRules = getRulesForCurrentUnit();
+    const isUr = singleLangMode === 'UR';
+
+    if (customRuleSelectWrapper) {
+      customRuleSelectWrapper.setAttribute('dir', isUr ? 'rtl' : 'ltr');
+    }
 
     if (rulesDisplayMode === 'all') {
-      ruleSelect.value = 'ALL';
+      if (customRuleTriggerBadge) {
+        customRuleTriggerBadge.textContent = isUr ? 'خلاصہ' : 'Overview';
+      }
+      if (customRuleTriggerTitle) {
+        customRuleTriggerTitle.textContent = isUr ? 
+          `تمام قواعد یونٹ ${activeRuleUnit} (مختصر خلاصہ)` : 
+          `All Unit ${activeRuleUnit} Rules (Brief Overview)`;
+      }
     } else {
-      if (activeRuleIndex >= unitRules.length) activeRuleIndex = 0;
-      ruleSelect.value = activeRuleIndex.toString();
+      if (activeRuleIndex < 0) activeRuleIndex = 0;
+      if (activeRuleIndex >= unitRules.length) activeRuleIndex = unitRules.length - 1;
+      const curR = unitRules[activeRuleIndex];
+
+      if (customRuleTriggerBadge) {
+        customRuleTriggerBadge.textContent = isUr ? `قاعدہ ${activeRuleIndex + 1}` : `Rule ${activeRuleIndex + 1}`;
+      }
+      if (customRuleTriggerTitle) {
+        const opStr = curR && curR.operator ? `${curR.operator} ` : '';
+        const opTrStr = curR && curR.operatorTr ? `(${curR.operatorTr}) ` : '';
+        const titleStr = isUr ? (curR ? curR.titleUr : '') : (curR ? curR.titleEn : '');
+        customRuleTriggerTitle.textContent = `${opStr}${opTrStr}— ${titleStr}`;
+      }
+    }
+
+    // Sync active classes inside custom dropdown menu
+    if (customRuleMenu) {
+      const allOpts = customRuleMenu.querySelectorAll('.custom-dropdown-opt');
+      allOpts.forEach(opt => {
+        const val = opt.getAttribute('data-value');
+        const isActive = (rulesDisplayMode === 'all' && val === 'ALL') ||
+                         (rulesDisplayMode === 'island' && val === activeRuleIndex.toString());
+        opt.classList.toggle('active', isActive);
+        opt.setAttribute('aria-selected', isActive ? 'true' : 'false');
+      });
+    }
+  }
+
+  function toggleCustomDropdown() {
+    if (!customRuleSelectWrapper) return;
+    const isOpen = customRuleSelectWrapper.classList.contains('open');
+    if (isOpen) {
+      closeCustomDropdown();
+    } else {
+      openCustomDropdown();
+    }
+  }
+
+  function openCustomDropdown() {
+    if (!customRuleSelectWrapper) return;
+    customRuleSelectWrapper.classList.add('open');
+    if (customRuleTrigger) {
+      customRuleTrigger.setAttribute('aria-expanded', 'true');
+    }
+    // Scroll active item into view inside menu
+    if (customRuleMenu) {
+      const activeItem = customRuleMenu.querySelector('.custom-dropdown-opt.active');
+      if (activeItem) {
+        activeItem.scrollIntoView({ block: 'nearest' });
+      }
+    }
+  }
+
+  function closeCustomDropdown() {
+    if (!customRuleSelectWrapper) return;
+    customRuleSelectWrapper.classList.remove('open');
+    if (customRuleTrigger) {
+      customRuleTrigger.setAttribute('aria-expanded', 'false');
     }
   }
 
   function initRuleFilters() {
+    // 1-Click Segmented Unit Switcher Bar
+    const unitPills = document.querySelectorAll('.rule-unit-pill');
+    unitPills.forEach(pill => {
+      pill.addEventListener('click', () => {
+        const targetUnit = pill.getAttribute('data-unit');
+        if (targetUnit && targetUnit !== activeRuleUnit) {
+          activeRuleUnit = targetUnit;
+          activeRuleIndex = 0;
+          rulesDisplayMode = 'all';
+          if (ruleUnitSelect) ruleUnitSelect.value = activeRuleUnit;
+          populateRuleSelect();
+          scrollToTopIfScrolled();
+          renderRules();
+        }
+      });
+    });
+
+    // Custom Dropdown Trigger Click
+    if (customRuleTrigger) {
+      customRuleTrigger.addEventListener('click', (e) => {
+        e.stopPropagation();
+        toggleCustomDropdown();
+      });
+    }
+
+    // Dismiss on click outside
+    document.addEventListener('click', (e) => {
+      if (customRuleSelectWrapper && !customRuleSelectWrapper.contains(e.target)) {
+        closeCustomDropdown();
+      }
+    });
+
+    // Keyboard support for custom dropdown
+    if (customRuleSelectWrapper) {
+      customRuleSelectWrapper.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+          closeCustomDropdown();
+          if (customRuleTrigger) customRuleTrigger.focus();
+        } else if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
+          e.preventDefault();
+          if (!customRuleSelectWrapper.classList.contains('open')) {
+            openCustomDropdown();
+            return;
+          }
+          const opts = Array.from(customRuleMenu.querySelectorAll('.custom-dropdown-opt'));
+          if (opts.length === 0) return;
+          const focusedIdx = opts.findIndex(opt => opt === document.activeElement);
+          let nextIdx = 0;
+          if (focusedIdx === -1) {
+            nextIdx = 0;
+          } else if (e.key === 'ArrowDown') {
+            nextIdx = focusedIdx < opts.length - 1 ? focusedIdx + 1 : 0;
+          } else {
+            nextIdx = focusedIdx > 0 ? focusedIdx - 1 : opts.length - 1;
+          }
+          opts[nextIdx].focus();
+        } else if (e.key === 'Enter') {
+          if (document.activeElement && document.activeElement.classList.contains('custom-dropdown-opt')) {
+            e.preventDefault();
+            document.activeElement.click();
+          }
+        }
+      });
+    }
+
     if (ruleUnitSelect) {
       ruleUnitSelect.value = activeRuleUnit;
       ruleUnitSelect.addEventListener('change', () => {
@@ -625,10 +837,14 @@
     if (activeRuleIndex < 0) activeRuleIndex = 0;
     if (activeRuleIndex >= totalRules) activeRuleIndex = totalRules - 1;
 
-    // Synchronize top dropdown
+    // Synchronize top dropdown, custom select trigger, and unit pills
     if (ruleSelect) {
       ruleSelect.value = rulesDisplayMode === 'all' ? 'ALL' : activeRuleIndex.toString();
     }
+    syncCustomTriggerUI(unitRules);
+    document.querySelectorAll('.rule-unit-pill').forEach(pill => {
+      pill.classList.toggle('active', pill.getAttribute('data-unit') === activeRuleUnit.toString());
+    });
 
     const unitTitle = isUr ? 
       (unitRules[0].unitTitleUr || `یونٹ ${activeRuleUnit}`) : 
@@ -645,6 +861,21 @@
       const ruleNumBadge = isUr ? `\u200Fقاعدہ ${secNum}` : `Rule ${secNum}`;
       const opText = r.operator || '';
       const opTrText = r.operatorTr ? `(${r.operatorTr})` : '';
+
+      // Direct 1-Click Back to Overview Header for Island View
+      let topNavHtml = '';
+      if (isSingleView) {
+        const backBtnText = isUr ? `← تمام قواعد یونٹ ${activeRuleUnit}` : `← All Unit ${activeRuleUnit} Rules`;
+        const counterPill = isUr ? `\u200Fقاعدہ ${secNum} از ${totalRules}` : `Rule ${secNum} of ${totalRules}`;
+        topNavHtml = `
+          <div class="rule-island-top-nav">
+            <button id="ruleBackToOverviewBtn" class="rule-back-btn" title="${isUr ? 'تمام قواعد کی فہرست پر واپس جائیں' : 'Back to Unit Rules Overview'}">
+              ${backBtnText}
+            </button>
+            <span class="rule-island-counter-pill">${counterPill}</span>
+          </div>
+        `;
+      }
 
       // Sub-rules block
       let subRulesHtml = '';
@@ -709,6 +940,7 @@
 
       return `
         <section class="doc-section rule-card-island" id="rule-sec-${secNum}">
+          ${topNavHtml}
           <header class="doc-section-header">
             <div class="doc-sec-title-wrap">
               <span class="rule-island-num-badge">${ruleNumBadge}</span>
@@ -835,6 +1067,17 @@
   function attachRuleNavListeners(unitRules) {
     if (!rulesList) return;
 
+    // Island view Back to Overview button
+    const backBtn = document.getElementById('ruleBackToOverviewBtn');
+    if (backBtn) {
+      backBtn.addEventListener('click', () => {
+        rulesDisplayMode = 'all';
+        if (ruleSelect) ruleSelect.value = 'ALL';
+        renderRules();
+        scrollToTopIfScrolled();
+      });
+    }
+
     // Island view Next & Prev buttons
     const prevBtn = document.getElementById('rulePrevBtn');
     const nextBtn = document.getElementById('ruleNextBtn');
@@ -958,6 +1201,40 @@
     `;
   }
 
+  function initTajweedSkipper() {
+    if (tajweedNextTopicBtn) {
+      tajweedNextTopicBtn.addEventListener('click', () => {
+        if (!tajweedList) return;
+        const sections = Array.from(tajweedList.querySelectorAll('.doc-section'));
+        const nextSec = sections.find(sec => {
+          const rect = sec.getBoundingClientRect();
+          return rect.top > 120;
+        });
+        if (nextSec) {
+          nextSec.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        } else if (sections.length > 0) {
+          sections[sections.length - 1].scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    }
+
+    if (tajweedPrevTopicBtn) {
+      tajweedPrevTopicBtn.addEventListener('click', () => {
+        if (!tajweedList) return;
+        const sections = Array.from(tajweedList.querySelectorAll('.doc-section'));
+        const prevSec = sections.slice().reverse().find(sec => {
+          const rect = sec.getBoundingClientRect();
+          return rect.top < -30;
+        });
+        if (prevSec) {
+          prevSec.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        } else {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+      });
+    }
+  }
+
   // -------------------------------------------------------------
   // 9. Translations View (Under Construction State)
   // -------------------------------------------------------------
@@ -966,11 +1243,11 @@
     const isUr = singleLangMode === 'UR';
 
     const titleText = isUr ? 'قرآنی آیات اور تراجم' : 'Quranic Verse Translations & Slices';
-    const headingText = isUr ? 'یہ ماڈیول تیاری کے مراحل میں ہے' : 'Translations Module Under Development';
+    const headingText = isUr ? 'قرآنی آیات اور تراجم کا تدویناتی مرحلہ' : 'Translations & Phrase Breakdowns in Preparation';
     const descText = isUr ? 
       'قرآنی آیات اور الفاظ کے تراجم کا مستند اندراج اور تصدیق کا عمل جاری ہے۔ جلد ہی تمام درسی اسباق کے لفظی و بامحاورہ تراجم یہاں دستیاب ہوں گے۔' : 
       'This module is currently being compiled and verified against authentic curriculum sources. Sliced phrase breakdowns and verified translations will be released here.';
-    const badgeText = isUr ? 'زیرِ تعمیر' : 'Under Construction';
+    const badgeText = isUr ? 'زیرِ تدوین' : 'In Preparation';
 
     ayahsList.innerHTML = `
       <article class="doc-sheet ${isUr ? 'doc-rtl' : 'doc-ltr'}" dir="${isUr ? 'rtl' : 'ltr'}">
@@ -1028,10 +1305,6 @@
 
     window.addEventListener('keydown', e => {
       if (e.key === 'Escape') {
-        if (outlineModal && outlineModal.classList.contains('open')) {
-          closeOutlineModal();
-          return;
-        }
         if (document.activeElement === searchInput) {
           searchInput.value = '';
           searchQuery = '';
@@ -1040,7 +1313,7 @@
           scrollToTopIfScrolled();
           renderWords();
         }
-      } else if (e.key === '/' && !['INPUT', 'TEXTAREA', 'SELECT'].includes(document.activeElement.tagName) && outlineModal && !outlineModal.classList.contains('open')) {
+      } else if (e.key === '/' && !['INPUT', 'TEXTAREA', 'SELECT'].includes(document.activeElement.tagName)) {
         e.preventDefault();
         if (activeTab === 'words') {
           searchInput.focus();
@@ -1051,63 +1324,15 @@
   }
 
   // -------------------------------------------------------------
-  // 11. Course Outline Modal Handlers
+  // 11. Anti-Copy Protection
   // -------------------------------------------------------------
-  function openOutlineModal() {
-    if (!outlineModal) return;
-    outlineModal.classList.add('open');
-    outlineModal.setAttribute('aria-hidden', 'false');
-    document.body.style.overflow = 'hidden';
-  }
-
-  function closeOutlineModal() {
-    if (!outlineModal) return;
-    outlineModal.classList.remove('open');
-    outlineModal.setAttribute('aria-hidden', 'true');
-    document.body.style.overflow = '';
-  }
-
-  function initOutlineModal() {
-    if (outlineToggleBtn) {
-      outlineToggleBtn.addEventListener('click', openOutlineModal);
-    }
-    if (outlineCloseBtn) {
-      outlineCloseBtn.addEventListener('click', closeOutlineModal);
-    }
-    if (outlineModal) {
-      outlineModal.addEventListener('click', e => {
-        if (e.target === outlineModal) {
-          closeOutlineModal();
-        }
-      });
-    }
-  }
-
-  // -------------------------------------------------------------
-  // 12. Theme Toggle (Dark / Light)
-  // -------------------------------------------------------------
-  function initTheme() {
-    const savedTheme = localStorage.getItem('mq_theme') || 'light';
-    applyTheme(savedTheme);
-
-    if (themeToggleBtn) {
-      themeToggleBtn.addEventListener('click', () => {
-        const current = document.documentElement.getAttribute('data-theme') || 'light';
-        const next = current === 'dark' ? 'light' : 'dark';
-        applyTheme(next);
-        localStorage.setItem('mq_theme', next);
-      });
-    }
-  }
-
-  function applyTheme(theme) {
-    if (theme === 'dark') {
-      document.documentElement.setAttribute('data-theme', 'dark');
-      if (themeToggleBtn) themeToggleBtn.textContent = 'Light';
-    } else {
-      document.documentElement.removeAttribute('data-theme');
-      if (themeToggleBtn) themeToggleBtn.textContent = 'Dark';
-    }
+  function initAntiCopy() {
+    document.addEventListener('copy', e => {
+      const tag = e.target ? e.target.tagName : '';
+      if (tag !== 'INPUT' && tag !== 'TEXTAREA') {
+        e.preventDefault();
+      }
+    });
   }
 
   // -------------------------------------------------------------
@@ -1144,7 +1369,7 @@
     const mainContainer = document.querySelector('.container') || document.body;
 
     mainContainer.addEventListener('touchstart', (e) => {
-      if (e.target.closest('#alphabetBar') || e.target.closest('.modal-backdrop') || e.target.closest('.filter-select')) {
+      if (e.target.closest('#alphabetBar') || e.target.closest('.filter-select') || e.target.closest('.rule-unit-bar')) {
         return;
       }
       touchStartX = e.changedTouches[0].clientX;
@@ -1152,7 +1377,7 @@
     }, { passive: true });
 
     mainContainer.addEventListener('touchend', (e) => {
-      if (e.target.closest('#alphabetBar') || e.target.closest('.modal-backdrop') || e.target.closest('.filter-select')) {
+      if (e.target.closest('#alphabetBar') || e.target.closest('.filter-select') || e.target.closest('.rule-unit-bar')) {
         return;
       }
       touchEndX = e.changedTouches[0].clientX;
@@ -1187,14 +1412,15 @@
   // 15. Bootstrap Application
   // -------------------------------------------------------------
   function init() {
-    initTheme();
+    try { localStorage.removeItem('mq_theme'); } catch(e) {}
     initLanguageToggles();
     initTabs();
     initSwipeGestures();
     initAlphabetBar();
     initRuleFilters();
+    initTajweedSkipper();
     initSearchEvents();
-    initOutlineModal();
+    initAntiCopy();
     initBackToTop();
     renderWords(); // Defaults directly to Words view
   }

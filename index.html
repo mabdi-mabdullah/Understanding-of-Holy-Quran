@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lexicon (BETA) — Quranic Arabic Study Companion</title>
+  <title>Lexicon — Classical & Quranic Arabic Study Companion</title>
   <meta name="description" content="Alphabetical Quranic Arabic vocabulary dictionary (2,030 Grand Master Base Words), comprehensive Grammar Rules across Units 1 to 5, and authentic Tajweed modules. Fast, diacritic-tolerant search.">
   <meta name="theme-color" content="#0f766e">
 
   <!-- Open Graph Meta Tags -->
-  <meta property="og:title" content="Lexicon (BETA) — Quranic Arabic Study Companion">
+  <meta property="og:title" content="Lexicon — Classical & Quranic Arabic Study Companion">
   <meta property="og:description" content="Bilingual Quranic Arabic study companion: vocabulary dictionary, comprehensive grammar rules, and Tajweed.">
   <meta property="og:type" content="website">
 
@@ -27,7 +27,8 @@
     <header class="app-header">
       <div class="brand-wrapper">
         <h1 class="brand-title">
-          Lexicon <sub class="beta-tag">BETA</sub>
+          Lexicon
+          <span class="brand-subline">Classical &amp; Quranic Arabic</span>
         </h1>
       </div>
 
@@ -37,16 +38,6 @@
           <button id="toggleUrduBtn" class="lang-pill" title="Filter to Urdu only"><span class="font-urdu">اردو</span></button>
           <button id="toggleEnglishBtn" class="lang-pill" title="Filter to English only">English</button>
         </div>
-
-        <!-- Course Outline Button -->
-        <button id="outlineToggleBtn" class="btn-action highlight" aria-label="Open Course Outline">
-          Course Outline
-        </button>
-
-        <!-- Theme Toggle Button -->
-        <button id="themeToggleBtn" class="btn-action" aria-label="Toggle theme">
-          Dark
-        </button>
       </div>
     </header>
 
@@ -68,6 +59,13 @@
 
     <!-- Tab View 1: Tajweed (First tab in visual order, hidden initially) -->
     <div id="viewTajweed" class="tab-view" role="tabpanel" aria-labelledby="tabTajweedBtn" style="display: none;">
+      <!-- Quick Floating Topic Skipper -->
+      <div id="tajweedSkipper" class="tajweed-skipper" aria-label="Quick topic navigation">
+        <button id="tajweedPrevTopicBtn" class="skipper-btn" title="Previous Topic" type="button">&uarr; Prev</button>
+        <span class="skipper-sep" aria-hidden="true">|</span>
+        <button id="tajweedNextTopicBtn" class="skipper-btn skipper-btn-primary" title="Next Topic" type="button">&darr; Next Topic</button>
+      </div>
+
       <main id="tajweedList" class="continuous-doc-wrapper" aria-live="polite">
         <!-- Rendered dynamically by app.js as a single continuous long-form document -->
       </main>
@@ -86,7 +84,7 @@
             type="text" 
             id="searchInput" 
             class="search-input" 
-            placeholder="Search without diacritics / اعراب (e.g. متقون or taqwa)... [/]"
+            placeholder="Search Quranic vocabulary (e.g. متقون, taqwa, or pious)... [/]"
             autocomplete="off"
             autocorrect="off"
             spellcheck="false"
@@ -96,15 +94,12 @@
           </button>
         </div>
 
-        <!-- Search communication hint -->
-        <div class="search-hint-bar">
-          <span class="search-hint">Search without harakat (متقون, الله), by transliteration (taqwa, lillah), or by meaning.</span>
-        </div>
-
         <!-- Horizontal Alphabet Jump Bar -->
-        <nav id="alphabetBar" class="alphabet-bar" aria-label="Alphabetical navigation">
-          <!-- Rendered dynamically by app.js -->
-        </nav>
+        <div class="alphabet-bar-wrapper">
+          <nav id="alphabetBar" class="alphabet-bar" aria-label="Alphabetical navigation">
+            <!-- Rendered dynamically by app.js -->
+          </nav>
+        </div>
       </section>
 
       <!-- Word List Display -->
@@ -115,24 +110,49 @@
 
     <!-- Tab View 3: Grammar Rules Reference (Third tab in visual order, hidden initially) -->
     <div id="viewRules" class="tab-view" role="tabpanel" aria-labelledby="tabRulesBtn" style="display: none;">
-      <!-- Sticky Unit & Rule Selector -->
+      <!-- Sticky Unit & Rule Selector Control Deck -->
       <section class="search-controls">
-        <div class="ayah-filter-row" id="ruleFilterRow">
-          <div class="filter-box filter-box-unit">
-            <label for="ruleUnitSelect" id="ruleUnitLabel" class="filter-box-label">Unit</label>
-            <select id="ruleUnitSelect" class="filter-select">
+        <div class="rule-control-deck">
+          <!-- Direct 1-Click Unit Switcher Bar -->
+          <nav class="rule-unit-bar" id="ruleUnitBar" role="tablist" aria-label="Course Units">
+            <button class="rule-unit-pill active" data-unit="1" type="button">Unit 1 <span class="rule-unit-badge">19</span></button>
+            <button class="rule-unit-pill" data-unit="2" type="button">Unit 2 <span class="rule-unit-badge">13</span></button>
+            <button class="rule-unit-pill" data-unit="3" type="button">Unit 3 <span class="rule-unit-badge">10</span></button>
+            <button class="rule-unit-pill" data-unit="4" type="button">Unit 4 <span class="rule-unit-badge">18</span></button>
+            <button class="rule-unit-pill" data-unit="5" type="button">Unit 5 <span class="rule-unit-badge">23</span></button>
+          </nav>
+
+          <div class="rule-selector-row" id="ruleSelectorRow">
+            <!-- Custom Apple-Grade Rule Dropdown -->
+            <div class="custom-select-wrapper" id="customRuleSelectWrapper">
+              <button type="button" class="custom-select-trigger" id="customRuleTrigger" aria-haspopup="listbox" aria-expanded="false" aria-label="Select Rule">
+                <span class="custom-trigger-leading">
+                  <span class="custom-trigger-badge" id="customRuleTriggerBadge">Overview</span>
+                  <span class="custom-trigger-title" id="customRuleTriggerTitle">All Unit 1 Rules (Brief Overview)</span>
+                </span>
+                <span class="custom-trigger-chevron" aria-hidden="true">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="m6 9 6 6 6-6"/>
+                  </svg>
+                </span>
+              </button>
+
+              <!-- Custom Floating Dropdown Menu Popover -->
+              <div class="custom-dropdown-menu" id="customRuleMenu" role="listbox" aria-label="Rules List" tabindex="-1">
+                <!-- Populated dynamically by app.js -->
+              </div>
+            </div>
+
+            <!-- Hidden native selects kept for accessibility and programmatic syncing -->
+            <select id="ruleUnitSelect" class="filter-select visually-hidden" aria-hidden="true" tabindex="-1">
               <option value="1" selected>Unit 1</option>
               <option value="2">Unit 2</option>
               <option value="3">Unit 3</option>
               <option value="4">Unit 4</option>
               <option value="5">Unit 5</option>
             </select>
-          </div>
-
-          <div class="filter-box filter-box-main">
-            <label for="ruleSelect" id="ruleSelectLabel" class="filter-box-label">Rule</label>
-            <select id="ruleSelect" class="filter-select">
-              <!-- Populated dynamically by app.js: Rule 1, Rule 2, ... -->
+            <select id="ruleSelect" class="filter-select visually-hidden" aria-hidden="true" tabindex="-1">
+              <!-- Populated dynamically by app.js -->
             </select>
           </div>
         </div>
@@ -150,73 +170,6 @@
       </main>
     </div>
 
-  </div>
-
-  <!-- Course Outline Modal (Weeks 01 to 08) -->
-  <div id="outlineModal" class="modal-backdrop" aria-hidden="true" role="dialog" aria-labelledby="outlineModalTitle">
-    <div class="modal-content">
-      <div class="modal-header">
-        <div>
-          <h2 id="outlineModalTitle" class="modal-title">Course Outline (Weeks 01 – 08)</h2>
-          <p class="modal-subtitle">Weekly Roadmap (Weeks 01 – 08)</p>
-        </div>
-        <button id="outlineCloseBtn" class="modal-close-btn" aria-label="Close modal">&times;</button>
-      </div>
-
-      <!-- Weekly Roadmap (Weeks 1 to 8 only) -->
-      <div class="outline-section">
-        <h3 class="outline-section-title">Weekly Roadmap</h3>
-
-        <div class="week-list">
-          <div class="week-item">
-            <div class="week-item-title">Week 01: Introduction &amp; Tajweed Fundamentals</div>
-            <div class="week-item-desc">Definition and importance of Tajweed, fundamental articulation points (Makhārij), and basic recitation rules.</div>
-          </div>
-
-          <div class="week-item">
-            <div class="week-item-title">Week 02: Basic &amp; Famous Words of the Holy Quran</div>
-            <div class="week-item-desc">Introduction to basic Quranic vocabulary, Parts of Speech (Ism, Fi‘l, Ḥarf), Masculine vs. Feminine, Singular vs. Plural.</div>
-          </div>
-
-          <div class="week-item">
-            <div class="week-item-title">Week 03: Famous Attributes of Allah Mentioned in the Quran</div>
-            <div class="week-item-desc">Study and translation of selected Divine Names and Attributes in their Quranic context (Unit 1, Lesson 9).</div>
-          </div>
-
-          <div class="week-item">
-            <div class="week-item-title">Week 04: Demonstrative Pronouns (اسْمُ الْإِشَارَة) — هٰذَا and ذٰلِكَ</div>
-            <div class="week-item-desc">Near demonstrative (هٰذَا) and distant demonstrative (ذٰلِكَ), identifying the indicated noun (Mushārun Ilayh) in short Ayaat.</div>
-          </div>
-
-          <div class="week-item">
-            <div class="week-item-title">Week 05: Particles of Emphasis — إِنَّ and Assertive Lām لَـ</div>
-            <div class="week-item-desc">Particle of emphasis (Ḥarf Tawkīd), accusative case effect (Naṣb) on nominal sentences, and double-emphasis (Inna ... la-).</div>
-          </div>
-
-          <div class="week-item">
-            <div class="week-item-title">Week 06: Sessional Examination 1</div>
-            <div class="week-item-desc">Mid-term evaluation covering vocabulary and grammatical structures from Weeks 01 through 05.</div>
-          </div>
-
-          <div class="week-item">
-            <div class="week-item-title">Week 07: Prepositions of Direction and Instrumentality — إِلَىٰ and بِـ</div>
-            <div class="week-item-desc">Prepositions (Ḥurūf al-Jarr) and their genitive effect (Jarr / Kasrah) on subsequent nouns (Unit 2, Lessons 6 &amp; 7).</div>
-          </div>
-
-          <div class="week-item">
-            <div class="week-item-title">Week 08: The Descriptive Compound (صفت اور موصوف) &amp; Semester Review</div>
-            <div class="week-item-desc">Adjective phrases (مرکب توصیفی), 4-way mandatory agreement (gender, number, definiteness, and case), and synthesis for final review.</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="outline-section" style="margin-bottom: 0;">
-        <p style="font-size: 0.8rem; color: var(--text-muted); text-align: center;">
-          Press ESC or click outside to close
-        </p>
-      </div>
-
-    </div>
   </div>
 
   <!-- Floating Back to Top Button -->

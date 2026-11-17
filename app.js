@@ -1,6 +1,6 @@
 ﻿/**
  * Quranic Arabic Study Companion — Application Logic
- * High-performance, diacritic-tolerant search across 1,557 Master Base Words,
+ * High-performance, diacritic-tolerant search across 1,404 Master Base Words,
  * 83 Grammar Rules across Units 1 to 5, and authentic Tajweed modules.
  * Unified classical parchment design with fluid gestures, responsive navigation, and bilingual controls.
  * Zero emojis across all modules.
@@ -1520,5 +1520,7 @@
     init();
   }
 })();
+
+
 
 

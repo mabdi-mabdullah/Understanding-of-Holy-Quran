@@ -1,5 +1,5 @@
-﻿// Classical & Quranic Arabic Comprehensive Master Vocabulary Lexicon
-// Total Deduplicated Base Words: 1505
+// Classical & Quranic Arabic Comprehensive Master Vocabulary Lexicon
+// Total Deduplicated Base Words: 1404
 // Organized in Canonical Arabic Alphabetical Order (Hija'i: Alif to Ya)
 // Consolidated across Units 01, 02, 03, 04, and 05
 
@@ -29,24 +29,10 @@ var WORDS_DATA = [    {
         "ur": "باپ، والد",
         "en": "Father",
         "cleanEn": "father",
-        "occurrences": [ "U01-L07", "U04-L03" ]
+        "occurrences": [ "U01-L07", "U04-L03", "U05-L04" ]
     },
     {
         "idx": 3,
-        "ar": "آبَاءٌ",
-        "cleanAr": "اباء",
-        "letter": "أ",
-        "tr": "Ābā’",
-        "cleanTr": "aba",
-        "cat": "اسْمٌ",
-        "role": "Broken Plural / جَمْعُ تَكْسِير (أَب)",
-        "ur": "باپ دادا، آباؤ اجداد",
-        "en": "Forefathers, fathers",
-        "cleanEn": "forefathers fathers",
-        "occurrences": [ "U05-L04" ]
-    },
-    {
-        "idx": 4,
         "ar": "أَبْتَرٌ",
         "cleanAr": "ابتر",
         "letter": "أ",
@@ -60,7 +46,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L01" ]
     },
     {
-        "idx": 5,
+        "idx": 4,
         "ar": "أَبَدًا",
         "cleanAr": "ابدا",
         "letter": "أ",
@@ -74,21 +60,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L12" ]
     },
     {
-        "idx": 6,
-        "ar": "أَبْرَارٌ",
-        "cleanAr": "ابرار",
-        "letter": "أ",
-        "tr": "Abrār",
-        "cleanTr": "abrar",
-        "cat": "اسْمٌ",
-        "role": "Broken Plural / جَمْعُ تَكْسِير (بَرّ)",
-        "ur": "نیک لوگ، ابرار",
-        "en": "Righteous, virtuous",
-        "cleanEn": "righteous virtuous",
-        "occurrences": [ "U05-L04" ]
-    },
-    {
-        "idx": 7,
+        "idx": 5,
         "ar": "إِبْرَاهِيمٌ",
         "cleanAr": "ابراهيم",
         "letter": "أ",
@@ -102,35 +74,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L12", "U02-L01", "U02-L13", "U03-L03", "U05-L06" ]
     },
     {
-        "idx": 8,
-        "ar": "أَبْصَارٌ",
-        "cleanAr": "ابصار",
-        "letter": "أ",
-        "tr": "Absār",
-        "cleanTr": "absar",
-        "cat": "اسْمٌ",
-        "role": "Broken Plural / جَمْع (بَصَر)",
-        "ur": "آنکھیں، نگاہیں",
-        "en": "Sights, eyes, visions",
-        "cleanEn": "sights eyes visions",
-        "occurrences": [ "U04-L10", "U05-L08" ]
-    },
-    {
-        "idx": 9,
-        "ar": "أَبْعَدٌ",
-        "cleanAr": "ابعد",
-        "letter": "أ",
-        "tr": "Ab‘ad",
-        "cleanTr": "abad",
-        "cat": "اسْمٌ",
-        "role": "Superlative Noun / اسْمُ تَفْضِيل",
-        "ur": "سب سے زیادہ دور",
-        "en": "Farther, most distant",
-        "cleanEn": "farther most distant",
-        "occurrences": [ "U01-L19" ]
-    },
-    {
-        "idx": 10,
+        "idx": 6,
         "ar": "أَبْقَىٰ",
         "cleanAr": "ابقي",
         "letter": "أ",
@@ -141,10 +85,24 @@ var WORDS_DATA = [    {
         "ur": "سب سے زیادہ باقی رہنے والا، پائیدار تر",
         "en": "More / most lasting, enduring",
         "cleanEn": "more most lasting enduring",
-        "occurrences": [ "U03-L05", "U02-L02" ]
+        "occurrences": [ "U01-L19", "U03-L05" ]
     },
     {
-        "idx": 11,
+        "idx": 7,
+        "ar": "أَبْقَىٰ",
+        "cleanAr": "ابقي",
+        "letter": "أ",
+        "tr": "Abqā",
+        "cleanTr": "abqa",
+        "cat": "فِعْلٌ",
+        "role": "Verb (Form IV) / فِعْلٌ مَاضٍ",
+        "ur": "اس نے باقی رکھا، چھوڑ دیا",
+        "en": "He spared, left remaining",
+        "cleanEn": "he spared left remaining",
+        "occurrences": [ "U02-L02" ]
+    },
+    {
+        "idx": 8,
         "ar": "إِبِلٌ",
         "cleanAr": "ابل",
         "letter": "أ",
@@ -158,7 +116,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L06" ]
     },
     {
-        "idx": 12,
+        "idx": 9,
         "ar": "إِبْلِيسٌ",
         "cleanAr": "ابليس",
         "letter": "أ",
@@ -172,7 +130,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L09", "U02-L13" ]
     },
     {
-        "idx": 13,
+        "idx": 10,
         "ar": "ابْنٌ",
         "cleanAr": "ابن",
         "letter": "أ",
@@ -183,38 +141,10 @@ var WORDS_DATA = [    {
         "ur": "بیٹا، فرزند",
         "en": "Son",
         "cleanEn": "son",
-        "occurrences": [ "U03-L04", "U02-L13", "U03-L10", "U01-L06", "U05-L01" ]
+        "occurrences": [ "U01-L06", "U02-L13", "U03-L04", "U03-L10", "U05-L01", "U05-L04" ]
     },
     {
-        "idx": 14,
-        "ar": "أَبْنَاءٌ",
-        "cleanAr": "ابناء",
-        "letter": "أ",
-        "tr": "Abnā’",
-        "cleanTr": "abna",
-        "cat": "اسْمٌ",
-        "role": "Broken Plural / جَمْعُ تَكْسِير (ابْن)",
-        "ur": "بیٹے، فرزند",
-        "en": "Sons",
-        "cleanEn": "sons",
-        "occurrences": [ "U05-L04" ]
-    },
-    {
-        "idx": 15,
-        "ar": "أَبْوَابٌ",
-        "cleanAr": "ابواب",
-        "letter": "أ",
-        "tr": "Abwāb",
-        "cleanTr": "abwab",
-        "cat": "اسْمٌ",
-        "role": "Plural Noun / جَمْعُ بَاب",
-        "ur": "دروازے، پھاٹک",
-        "en": "Doors, gates",
-        "cleanEn": "doors gates",
-        "occurrences": [ "U04-L10" ]
-    },
-    {
-        "idx": 16,
+        "idx": 11,
         "ar": "أَبْيَضٌ",
         "cleanAr": "ابيض",
         "letter": "أ",
@@ -228,7 +158,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L03" ]
     },
     {
-        "idx": 17,
+        "idx": 12,
         "ar": "آتٍ",
         "cleanAr": "ات",
         "letter": "أ",
@@ -242,7 +172,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L06" ]
     },
     {
-        "idx": 18,
+        "idx": 13,
         "ar": "اتَّبَعَ",
         "cleanAr": "اتبع",
         "letter": "أ",
@@ -253,10 +183,10 @@ var WORDS_DATA = [    {
         "ur": "اس نے پیروی کی",
         "en": "Followed",
         "cleanEn": "followed",
-        "occurrences": [ "U02-L13", "U01-L17" ]
+        "occurrences": [ "U01-L17", "U02-L13" ]
     },
     {
-        "idx": 19,
+        "idx": 14,
         "ar": "أَتْرَابٌ",
         "cleanAr": "اتراب",
         "letter": "أ",
@@ -266,11 +196,11 @@ var WORDS_DATA = [    {
         "role": "Broken Plural / جَمْعُ تَكْسِير (تِرْب)",
         "ur": "ہم عمر، برابر کی عمر والے",
         "en": "Well-matched in age, peers",
-        "cleanEn": "wellmatched in age peers",
+        "cleanEn": "well matched in age peers",
         "occurrences": [ "U05-L06" ]
     },
     {
-        "idx": 20,
+        "idx": 15,
         "ar": "اتَّسَقَ",
         "cleanAr": "اتسق",
         "letter": "أ",
@@ -284,7 +214,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L10", "U02-L13" ]
     },
     {
-        "idx": 21,
+        "idx": 16,
         "ar": "أَتْقَىٰ",
         "cleanAr": "اتقي",
         "letter": "أ",
@@ -294,11 +224,11 @@ var WORDS_DATA = [    {
         "role": "Elative Adjective / اسْمُ تَفْضِيل",
         "ur": "سب سے زیادہ پرہیزگار، سب سے بڑا متقی",
         "en": "Most God-fearing, most righteous",
-        "cleanEn": "most godfearing most righteous",
+        "cleanEn": "most god fearing most righteous",
         "occurrences": [ "U05-L11" ]
     },
     {
-        "idx": 22,
+        "idx": 17,
         "ar": "آتِيَةٌ",
         "cleanAr": "اتيه",
         "letter": "أ",
@@ -312,35 +242,21 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L01", "U02-L08", "U02-L11", "U04-L12" ]
     },
     {
-        "idx": 23,
-        "ar": "آثَارٌ",
-        "cleanAr": "اثار",
-        "letter": "أ",
-        "tr": "Āthār",
-        "cleanTr": "athar",
-        "cat": "اسْمٌ",
-        "role": "Broken Plural / جَمْعُ تَكْسِير (أَثَر)",
-        "ur": "نقشِ قدم، پرانے نشانات",
-        "en": "Footsteps, traces, footsteps",
-        "cleanEn": "footsteps traces footsteps",
-        "occurrences": [ "U05-L16" ]
-    },
-    {
-        "idx": 24,
+        "idx": 18,
         "ar": "أَثَرٌ",
         "cleanAr": "اثر",
         "letter": "أ",
         "tr": "Athar",
         "cleanTr": "athar",
         "cat": "اسْمٌ",
-        "role": "Singular & Broken Plural",
+        "role": "Singular \u0026 Broken Plural",
         "ur": "اثر، نشان / آثار، علامات",
         "en": "Trace, footprint, mark, vestige",
         "cleanEn": "trace footprint mark vestige",
-        "occurrences": [ "U01-L10", "U03-L05" ]
+        "occurrences": [ "U01-L10", "U03-L05", "U05-L16" ]
     },
     {
-        "idx": 25,
+        "idx": 19,
         "ar": "إِثْمٌ",
         "cleanAr": "اثم",
         "letter": "أ",
@@ -351,10 +267,24 @@ var WORDS_DATA = [    {
         "ur": "گناہ، معصیت، نافرمانی",
         "en": "Sin, guilt, transgression, iniquity",
         "cleanEn": "sin guilt transgression iniquity",
-        "occurrences": [ "U02-L02", "U03-L01", "U03-L02", "U05-L21" ]
+        "occurrences": [ "U02-L02", "U03-L01", "U03-L02" ]
     },
     {
-        "idx": 26,
+        "idx": 20,
+        "ar": "آثِمٌ",
+        "cleanAr": "اثم",
+        "letter": "أ",
+        "tr": "Āthim",
+        "cleanTr": "athim",
+        "cat": "اسْمٌ",
+        "role": "Active Participle / اسْمُ فَاعِل (Plural: آثِمُونَ)",
+        "ur": "گناہ گار، خطا کار",
+        "en": "Sinner, guilty, transgressor",
+        "cleanEn": "sinner guilty transgressor",
+        "occurrences": [ "U05-L21" ]
+    },
+    {
+        "idx": 21,
         "ar": "أَجْرٌ",
         "cleanAr": "اجر",
         "letter": "أ",
@@ -368,7 +298,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L05", "U01-L06", "U02-L05", "U03-L01" ]
     },
     {
-        "idx": 27,
+        "idx": 22,
         "ar": "إِجْرَامٌ",
         "cleanAr": "اجرام",
         "letter": "أ",
@@ -382,21 +312,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L14" ]
     },
     {
-        "idx": 28,
-        "ar": "أَجْسَامٌ",
-        "cleanAr": "اجسام",
-        "letter": "أ",
-        "tr": "Ajsām",
-        "cleanTr": "ajsam",
-        "cat": "اسْمٌ",
-        "role": "Broken Plural / جَمْعُ تَكْسِير (جِسْم)",
-        "ur": "جسم، ڈیل ڈول",
-        "en": "Bodies, physiques",
-        "cleanEn": "bodies physiques",
-        "occurrences": [ "U05-L06" ]
-    },
-    {
-        "idx": 29,
+        "idx": 23,
         "ar": "أَجَلٌ",
         "cleanAr": "اجل",
         "letter": "أ",
@@ -406,16 +322,16 @@ var WORDS_DATA = [    {
         "role": "Noun (Time) / اسْمُ زَمَان",
         "ur": "مقررہ میعاد، وقت، موت کا وقت",
         "en": "Appointed term, fixed deadline, life-span",
-        "cleanEn": "appointed term fixed deadline lifespan",
+        "cleanEn": "appointed term fixed deadline life span",
         "occurrences": [ "U02-L06", "U03-L01", "U03-L02" ]
     },
     {
-        "idx": 30,
+        "idx": 24,
         "ar": "أَجْمَعُ",
         "cleanAr": "اجمع",
         "letter": "أ",
         "tr": "Ajma‘",
-        "cleanTr": "ajma'",
+        "cleanTr": "ajma",
         "cat": "اسْمٌ",
         "role": "Corroborative Noun / تَوْكِيد",
         "ur": "سب کے سب، تمام",
@@ -424,35 +340,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L06" ]
     },
     {
-        "idx": 31,
-        "ar": "أَحَبٌّ",
-        "cleanAr": "احب",
-        "letter": "أ",
-        "tr": "Ahabb",
-        "cleanTr": "ahabb",
-        "cat": "صِفَةٌ",
-        "role": "Superlative Adjective / اسْمُ التَّفْضِيل",
-        "ur": "زیادہ پسندیدہ، زیادہ پیارا",
-        "en": "Dearer, more beloved",
-        "cleanEn": "dearer more beloved",
-        "occurrences": [ "U04-L16", "U05-L16" ]
-    },
-    {
-        "idx": 32,
-        "ar": "أَحِبَّاءٌ",
-        "cleanAr": "احباء",
-        "letter": "أ",
-        "tr": "Ahibbā’",
-        "cleanTr": "ahibba",
-        "cat": "اسْمٌ",
-        "role": "Broken Plural / جَمْعُ تَكْسِير (حَبِيب)",
-        "ur": "پیارے، چہیتے، محبوب لوگ",
-        "en": "Beloved ones, favorites",
-        "cleanEn": "beloved ones favorites",
-        "occurrences": [ "U05-L04" ]
-    },
-    {
-        "idx": 33,
+        "idx": 25,
         "ar": "أَحَدٌ",
         "cleanAr": "احد",
         "letter": "أ",
@@ -466,7 +354,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L08", "U02-L04", "U04-L01" ]
     },
     {
-        "idx": 34,
+        "idx": 26,
         "ar": "إِحْسَانٌ",
         "cleanAr": "احسان",
         "letter": "أ",
@@ -480,49 +368,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L02", "U01-L03", "U02-L07" ]
     },
     {
-        "idx": 35,
-        "ar": "أَحْسَنٌ",
-        "cleanAr": "احسن",
-        "letter": "أ",
-        "tr": "Aḥsanu",
-        "cleanTr": "ahsanu",
-        "cat": "صِفَةٌ",
-        "role": "Superlative Adjective / اسْمُ التَّفْضِيل",
-        "ur": "زیادہ اچھا، سب سے بہتر، حسین تر",
-        "en": "Best, most excellent, fairest",
-        "cleanEn": "best most excellent fairest",
-        "occurrences": [ "U01-L08", "U01-L19", "U02-L05", "U04-L08" ]
-    },
-    {
-        "idx": 36,
-        "ar": "أَحَقٌّ",
-        "cleanAr": "احق",
-        "letter": "أ",
-        "tr": "Ahaqq",
-        "cleanTr": "ahaqq",
-        "cat": "صِفَةٌ",
-        "role": "Superlative Adjective / اسْمُ التَّفْضِيل",
-        "ur": "زیادہ حقدار، سب سے زیادہ لائق",
-        "en": "More entitled, having greater right",
-        "cleanEn": "more entitled having greater right",
-        "occurrences": [ "U04-L02", "U05-L14" ]
-    },
-    {
-        "idx": 37,
-        "ar": "أَحْكَمٌ",
-        "cleanAr": "احكم",
-        "letter": "أ",
-        "tr": "Aḥkam",
-        "cleanTr": "ahkam",
-        "cat": "اسْمٌ",
-        "role": "Superlative Noun / اسْمُ تَفْضِيل",
-        "ur": "سب سے بڑا حاکم، کمال حکمت والا",
-        "en": "Most just ruler, wisest",
-        "cleanEn": "most just ruler wisest",
-        "occurrences": [ "U01-L19" ]
-    },
-    {
-        "idx": 38,
+        "idx": 27,
         "ar": "أَحْمَدٌ",
         "cleanAr": "احمد",
         "letter": "أ",
@@ -536,21 +382,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L02" ]
     },
     {
-        "idx": 39,
-        "ar": "أَحْيَاءٌ",
-        "cleanAr": "احياء",
-        "letter": "أ",
-        "tr": "Ahyā’",
-        "cleanTr": "ahya",
-        "cat": "اسْمٌ",
-        "role": "Broken Plural / جَمْعُ تَكْسِير (حَيّ)",
-        "ur": "زندہ لوگ",
-        "en": "Alive, living",
-        "cleanEn": "alive living",
-        "occurrences": [ "U05-L07" ]
-    },
-    {
-        "idx": 40,
+        "idx": 28,
         "ar": "أَخٌ",
         "cleanAr": "اخ",
         "letter": "أ",
@@ -561,10 +393,10 @@ var WORDS_DATA = [    {
         "ur": "بھائی",
         "en": "Brother",
         "cleanEn": "brother",
-        "occurrences": [ "U04-L03" ]
+        "occurrences": [ "U04-L03", "U05-L02", "U05-L04" ]
     },
     {
-        "idx": 41,
+        "idx": 29,
         "ar": "أُخْتٌ",
         "cleanAr": "اخت",
         "letter": "أ",
@@ -578,7 +410,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L10", "U05-L01" ]
     },
     {
-        "idx": 42,
+        "idx": 30,
         "ar": "اخْتِلَافٌ",
         "cleanAr": "اختلاف",
         "letter": "أ",
@@ -592,35 +424,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L01" ]
     },
     {
-        "idx": 43,
-        "ar": "آخِذٌ",
-        "cleanAr": "اخذ",
-        "letter": "أ",
-        "tr": "Ākhidh",
-        "cleanTr": "akhidh",
-        "cat": "اسْمٌ",
-        "role": "Noun (Active Participle) / اسْمُ فَاعِل",
-        "ur": "پکڑنے والا، گرفت کرنے والا",
-        "en": "Taker, seizer, grasping",
-        "cleanEn": "taker seizer grasping",
-        "occurrences": [ "U03-L08", "U04-L01" ]
-    },
-    {
-        "idx": 44,
-        "ar": "أَخْذٌ",
-        "cleanAr": "اخذ",
-        "letter": "أ",
-        "tr": "Akhdh",
-        "cleanTr": "akhdh",
-        "cat": "اسْمٌ",
-        "role": "Noun (Verbal Noun) / مَصْدَر",
-        "ur": "پکڑ، گرفت، سزا",
-        "en": "Seizure, grasp, punishment",
-        "cleanEn": "seizure grasp punishment",
-        "occurrences": [ "U04-L02" ]
-    },
-    {
-        "idx": 45,
+        "idx": 31,
         "ar": "أَخَذَ",
         "cleanAr": "اخذ",
         "letter": "أ",
@@ -634,21 +438,35 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L01" ]
     },
     {
-        "idx": 46,
-        "ar": "آخِرٌ",
-        "cleanAr": "اخر",
+        "idx": 32,
+        "ar": "أَخْذٌ",
+        "cleanAr": "اخذ",
         "letter": "أ",
-        "tr": "Ākhir",
-        "cleanTr": "akhir",
-        "cat": "صِفَةٌ",
-        "role": "Noun / Adjective / صِفَة",
-        "ur": "سب سے آخری، ابدی",
-        "en": "Last",
-        "cleanEn": "last",
-        "occurrences": [ "U04-L01" ]
+        "tr": "Akhdh",
+        "cleanTr": "akhdh",
+        "cat": "اسْمٌ",
+        "role": "Noun (Verbal Noun) / مَصْدَر",
+        "ur": "پکڑ، گرفت، سزا",
+        "en": "Seizure, grasp, punishment",
+        "cleanEn": "seizure grasp punishment",
+        "occurrences": [ "U04-L02" ]
     },
     {
-        "idx": 47,
+        "idx": 33,
+        "ar": "آخِذٌ",
+        "cleanAr": "اخذ",
+        "letter": "أ",
+        "tr": "Ākhidh",
+        "cleanTr": "akhidh",
+        "cat": "اسْمٌ",
+        "role": "Noun (Active Participle) / اسْمُ فَاعِل",
+        "ur": "پکڑنے والا، گرفت کرنے والا",
+        "en": "Taker, seizer, grasping",
+        "cleanEn": "taker seizer grasping",
+        "occurrences": [ "U03-L08", "U04-L01" ]
+    },
+    {
+        "idx": 34,
         "ar": "آخَرٌ",
         "cleanAr": "اخر",
         "letter": "أ",
@@ -662,7 +480,21 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L07", "U05-L01" ]
     },
     {
-        "idx": 48,
+        "idx": 35,
+        "ar": "آخِرٌ",
+        "cleanAr": "اخر",
+        "letter": "أ",
+        "tr": "Ākhir",
+        "cleanTr": "akhir",
+        "cat": "صِفَةٌ",
+        "role": "Noun / Adjective / صِفَة",
+        "ur": "سب سے آخری، ابدی",
+        "en": "Last",
+        "cleanEn": "last",
+        "occurrences": [ "U04-L01" ]
+    },
+    {
+        "idx": 36,
         "ar": "إِخْرَاجٌ",
         "cleanAr": "اخراج",
         "letter": "أ",
@@ -676,7 +508,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L10" ]
     },
     {
-        "idx": 49,
+        "idx": 37,
         "ar": "آخِرَةٌ",
         "cleanAr": "اخره",
         "letter": "أ",
@@ -690,7 +522,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L04", "U01-L19", "U02-L02", "U02-L03", "U02-L07", "U02-L09", "U03-L03" ]
     },
     {
-        "idx": 50,
+        "idx": 38,
         "ar": "أَخْزَىٰ",
         "cleanAr": "اخزي",
         "letter": "أ",
@@ -704,21 +536,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L05" ]
     },
     {
-        "idx": 51,
-        "ar": "أَخْسَرُ",
-        "cleanAr": "اخسر",
-        "letter": "أ",
-        "tr": "Akhsar",
-        "cleanTr": "akhsar",
-        "cat": "اسْمٌ",
-        "role": "Superlative Noun / اسْمُ التَّفْضِيل",
-        "ur": "سب سے بڑا خسارہ پانے والا",
-        "en": "Greatest loser, most ruined",
-        "cleanEn": "greatest loser most ruined",
-        "occurrences": [ "U05-L05" ]
-    },
-    {
-        "idx": 52,
+        "idx": 39,
         "ar": "أَخْضَرٌ",
         "cleanAr": "اخضر",
         "letter": "أ",
@@ -732,35 +550,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L03" ]
     },
     {
-        "idx": 53,
-        "ar": "إِخْوَانٌ",
-        "cleanAr": "اخوان",
-        "letter": "أ",
-        "tr": "Ikhwān",
-        "cleanTr": "ikhwan",
-        "cat": "اسْمٌ",
-        "role": "Broken Plural / جَمْعُ تَكْسِير (أَخ)",
-        "ur": "بھائی، رفیق",
-        "en": "Brothers, companions",
-        "cleanEn": "brothers companions",
-        "occurrences": [ "U05-L04" ]
-    },
-    {
-        "idx": 54,
-        "ar": "إِخْوَةٌ",
-        "cleanAr": "اخوه",
-        "letter": "أ",
-        "tr": "Ikhwah",
-        "cleanTr": "ikhwah",
-        "cat": "اسْمٌ",
-        "role": "Broken Plural / جَمْعُ تَكْسِير (أَخ)",
-        "ur": "بھائی، دینی بھائی",
-        "en": "Brothers, brethren",
-        "cleanEn": "brothers brethren",
-        "occurrences": [ "U05-L02", "U05-L04" ]
-    },
-    {
-        "idx": 55,
+        "idx": 40,
         "ar": "أَدَاءٌ",
         "cleanAr": "اداء",
         "letter": "أ",
@@ -774,7 +564,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L05" ]
     },
     {
-        "idx": 56,
+        "idx": 41,
         "ar": "أَدْبَرَ",
         "cleanAr": "ادبر",
         "letter": "أ",
@@ -788,7 +578,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L10" ]
     },
     {
-        "idx": 57,
+        "idx": 42,
         "ar": "آدَمٌ",
         "cleanAr": "ادم",
         "letter": "أ",
@@ -802,7 +592,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L07", "U02-L06", "U02-L13", "U03-L04" ]
     },
     {
-        "idx": 58,
+        "idx": 43,
         "ar": "أَدْنَىٰ",
         "cleanAr": "ادني",
         "letter": "أ",
@@ -816,7 +606,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L19" ]
     },
     {
-        "idx": 59,
+        "idx": 44,
         "ar": "أَدْهَىٰ",
         "cleanAr": "ادهي",
         "letter": "أ",
@@ -830,7 +620,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L06" ]
     },
     {
-        "idx": 60,
+        "idx": 45,
         "ar": "إِذْ",
         "cleanAr": "اذ",
         "letter": "أ",
@@ -844,21 +634,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L08", "U02-L04", "U02-L13" ]
     },
     {
-        "idx": 61,
-        "ar": "إِذَا",
-        "cleanAr": "اذا",
-        "letter": "أ",
-        "tr": "Idhā",
-        "cleanTr": "idha",
-        "cat": "ظَرْفٌ",
-        "role": "Conditional Adverb / ظَرْفُ شَرْط",
-        "ur": "جب، جب کبھی، اچانک",
-        "en": "When, whenever, behold",
-        "cleanEn": "when whenever behold",
-        "occurrences": [ "U02-L10" ]
-    },
-    {
-        "idx": 62,
+        "idx": 46,
         "ar": "إِذًا",
         "cleanAr": "اذا",
         "letter": "أ",
@@ -872,7 +648,21 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L21" ]
     },
     {
-        "idx": 63,
+        "idx": 47,
+        "ar": "إِذَا",
+        "cleanAr": "اذا",
+        "letter": "أ",
+        "tr": "Idhā",
+        "cleanTr": "idha",
+        "cat": "ظَرْفٌ",
+        "role": "Conditional Adverb / ظَرْفُ شَرْط",
+        "ur": "جب، جب کبھی، اچانک",
+        "en": "When, whenever, behold",
+        "cleanEn": "when whenever behold",
+        "occurrences": [ "U02-L10" ]
+    },
+    {
+        "idx": 48,
         "ar": "أَذَاقَ",
         "cleanAr": "اذاق",
         "letter": "أ",
@@ -886,21 +676,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L06" ]
     },
     {
-        "idx": 64,
-        "ar": "آذَانٌ",
-        "cleanAr": "اذان",
-        "letter": "أ",
-        "tr": "Ādhān",
-        "cleanTr": "adhan",
-        "cat": "اسْمٌ",
-        "role": "Broken Plural / جَمْعُ تَكْسِير (أُذُن)",
-        "ur": "کان",
-        "en": "Ears",
-        "cleanEn": "ears",
-        "occurrences": [ "U05-L07" ]
-    },
-    {
-        "idx": 65,
+        "idx": 49,
         "ar": "أَذَانٌ",
         "cleanAr": "اذان",
         "letter": "أ",
@@ -914,21 +690,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L03", "U04-L03", "U05-L02" ]
     },
     {
-        "idx": 66,
-        "ar": "أَذَلُّ",
-        "cleanAr": "اذل",
-        "letter": "أ",
-        "tr": "Adhall",
-        "cleanTr": "adhall",
-        "cat": "اسْمٌ",
-        "role": "Superlative Noun / اسْمُ التَّفْضِيل",
-        "ur": "سب سے زیادہ ذلیل، حقیر ترین",
-        "en": "Lowest, most humiliated, abject",
-        "cleanEn": "lowest most humiliated abject",
-        "occurrences": [ "U05-L01" ]
-    },
-    {
-        "idx": 67,
+        "idx": 50,
         "ar": "أَذِلَّةٌ",
         "cleanAr": "اذله",
         "letter": "أ",
@@ -942,7 +704,21 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L09" ]
     },
     {
-        "idx": 68,
+        "idx": 51,
+        "ar": "أُذُنٌ",
+        "cleanAr": "اذن",
+        "letter": "أ",
+        "tr": "Udhun",
+        "cleanTr": "udhun",
+        "cat": "اسْمٌ",
+        "role": "Noun / اسْمٌ",
+        "ur": "کان",
+        "en": "Ear",
+        "cleanEn": "ear",
+        "occurrences": [ "U02-L07", "U05-L07" ]
+    },
+    {
+        "idx": 52,
         "ar": "إِذْنٌ",
         "cleanAr": "اذن",
         "letter": "أ",
@@ -956,21 +732,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L03", "U05-L07" ]
     },
     {
-        "idx": 69,
-        "ar": "أُذُنٌ",
-        "cleanAr": "اذن",
-        "letter": "أ",
-        "tr": "Udhun",
-        "cleanTr": "udhun",
-        "cat": "اسْمٌ",
-        "role": "Noun / اسْمٌ",
-        "ur": "کان",
-        "en": "Ear",
-        "cleanEn": "ear",
-        "occurrences": [ "U02-L07" ]
-    },
-    {
-        "idx": 70,
+        "idx": 53,
         "ar": "أَذًى",
         "cleanAr": "اذي",
         "letter": "أ",
@@ -984,7 +746,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L01" ]
     },
     {
-        "idx": 71,
+        "idx": 54,
         "ar": "أَرَادَ",
         "cleanAr": "اراد",
         "letter": "أ",
@@ -998,7 +760,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L06", "U02-L09" ]
     },
     {
-        "idx": 72,
+        "idx": 55,
         "ar": "أَرَائِكٌ",
         "cleanAr": "ارايك",
         "letter": "أ",
@@ -1012,21 +774,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L06" ]
     },
     {
-        "idx": 73,
-        "ar": "أَرْبَابٌ",
-        "cleanAr": "ارباب",
-        "letter": "أ",
-        "tr": "Arbāb",
-        "cleanTr": "arbab",
-        "cat": "اسْمٌ",
-        "role": "Broken Plural / جَمْعُ تَكْسِير (رَبّ)",
-        "ur": "جھوٹے پالنہار، ساختہ پروردگار",
-        "en": "Lords, masters",
-        "cleanEn": "lords masters",
-        "occurrences": [ "U05-L04" ]
-    },
-    {
-        "idx": 74,
+        "idx": 56,
         "ar": "أَرْبَعَةٌ",
         "cleanAr": "اربعه",
         "letter": "أ",
@@ -1040,21 +788,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L12" ]
     },
     {
-        "idx": 75,
-        "ar": "أَرْجُلٌ",
-        "cleanAr": "ارجل",
-        "letter": "أ",
-        "tr": "Arjul",
-        "cleanTr": "arjul",
-        "cat": "اسْمٌ",
-        "role": "Broken Plural / جَمْعُ تَكْسِير (رِجْل)",
-        "ur": "پاؤں، ٹانگیں",
-        "en": "Feet, legs",
-        "cleanEn": "feet legs",
-        "occurrences": [ "U05-L10" ]
-    },
-    {
-        "idx": 76,
+        "idx": 57,
         "ar": "أَرْضٌ",
         "cleanAr": "ارض",
         "letter": "أ",
@@ -1068,7 +802,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L05", "U01-L12", "U01-L13", "U02-L01", "U02-L03", "U02-L06", "U02-L11", "U02-L13", "U05-L01" ]
     },
     {
-        "idx": 77,
+        "idx": 58,
         "ar": "أَزْكَىٰ",
         "cleanAr": "ازكي",
         "letter": "أ",
@@ -1082,21 +816,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L08" ]
     },
     {
-        "idx": 78,
-        "ar": "أَزْوَاجٌ",
-        "cleanAr": "ازواج",
-        "letter": "أ",
-        "tr": "Azwāj",
-        "cleanTr": "azwaj",
-        "cat": "اسْمٌ",
-        "role": "Broken Plural / جَمْعُ تَكْسِير (زَوْج)",
-        "ur": "جوڑے، بیویاں، ساتھی",
-        "en": "Spouses, pairs, kinds",
-        "cleanEn": "spouses pairs kinds",
-        "occurrences": [ "U05-L04" ]
-    },
-    {
-        "idx": 79,
+        "idx": 59,
         "ar": "أَسَاطِيرٌ",
         "cleanAr": "اساطير",
         "letter": "أ",
@@ -1110,7 +830,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L03" ]
     },
     {
-        "idx": 80,
+        "idx": 60,
         "ar": "أَسْبَاطٌ",
         "cleanAr": "اسباط",
         "letter": "أ",
@@ -1124,7 +844,21 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L06" ]
     },
     {
-        "idx": 81,
+        "idx": 61,
+        "ar": "اسْتَطَاعَ",
+        "cleanAr": "استطاع",
+        "letter": "أ",
+        "tr": "Istaṭā‘a",
+        "cleanTr": "istataa",
+        "cat": "فِعْلٌ",
+        "role": "Verb (Form X) / فِعْلٌ مَاضٍ",
+        "ur": "وہ طاقت رکھتا تھا، اس نے استطاعت پائی",
+        "en": "He was able, had capability",
+        "cleanEn": "he was able had capability",
+        "occurrences": [ "U02-L09" ]
+    },
+    {
+        "idx": 62,
         "ar": "اسْتَعَانَ",
         "cleanAr": "استعان",
         "letter": "أ",
@@ -1138,7 +872,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L07" ]
     },
     {
-        "idx": 82,
+        "idx": 63,
         "ar": "اسْتَقَامَ",
         "cleanAr": "استقام",
         "letter": "أ",
@@ -1152,7 +886,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L08" ]
     },
     {
-        "idx": 83,
+        "idx": 64,
         "ar": "اسْتَوَىٰ",
         "cleanAr": "استوي",
         "letter": "أ",
@@ -1166,12 +900,12 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L07" ]
     },
     {
-        "idx": 84,
+        "idx": 65,
         "ar": "إِسْحَاقٌ",
         "cleanAr": "اسحاق",
         "letter": "أ",
         "tr": "Is-ḥāq",
-        "cleanTr": "ishaq",
+        "cleanTr": "is-haq",
         "cat": "عَلَمٌ",
         "role": "Proper Name (Prophet Isaac) / عَلَم",
         "ur": "حضرت اسحاق علیہ السلام",
@@ -1180,7 +914,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L07", "U02-L01", "U04-L04" ]
     },
     {
-        "idx": 85,
+        "idx": 66,
         "ar": "إِسْرَافٌ",
         "cleanAr": "اسراف",
         "letter": "أ",
@@ -1194,7 +928,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L05", "U05-L14" ]
     },
     {
-        "idx": 86,
+        "idx": 67,
         "ar": "أَسْفَرَ",
         "cleanAr": "اسفر",
         "letter": "أ",
@@ -1208,7 +942,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L10" ]
     },
     {
-        "idx": 87,
+        "idx": 68,
         "ar": "إِسْلَامٌ",
         "cleanAr": "اسلام",
         "letter": "أ",
@@ -1222,7 +956,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L01", "U02-L02", "U05-L06" ]
     },
     {
-        "idx": 88,
+        "idx": 69,
         "ar": "أَسْلِحَةٌ",
         "cleanAr": "اسلحه",
         "letter": "أ",
@@ -1236,7 +970,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L06" ]
     },
     {
-        "idx": 89,
+        "idx": 70,
         "ar": "اسْمٌ",
         "cleanAr": "اسم",
         "letter": "أ",
@@ -1247,24 +981,10 @@ var WORDS_DATA = [    {
         "ur": "نام، اسم",
         "en": "Name",
         "cleanEn": "name",
-        "occurrences": [ "U03-L05", "U01-L04", "U01-L10" ]
+        "occurrences": [ "U01-L04", "U01-L10", "U02-L13", "U03-L05", "U05-L19" ]
     },
     {
-        "idx": 90,
-        "ar": "أَسْمَاءٌ",
-        "cleanAr": "اسماء",
-        "letter": "أ",
-        "tr": "Asmā’",
-        "cleanTr": "asma",
-        "cat": "اسْمٌ",
-        "role": "Broken Plural / جَمْعُ تَكْسِير (اسْم)",
-        "ur": "من گھڑت نام",
-        "en": "Names",
-        "cleanEn": "names",
-        "occurrences": [ "U02-L13", "U05-L19" ]
-    },
-    {
-        "idx": 91,
+        "idx": 71,
         "ar": "إِسْمَاعِيلٌ",
         "cleanAr": "اسماعيل",
         "letter": "أ",
@@ -1278,35 +998,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L12", "U02-L01", "U02-L07" ]
     },
     {
-        "idx": 92,
-        "ar": "أَشَدٌّ",
-        "cleanAr": "اشد",
-        "letter": "أ",
-        "tr": "Ashaddu",
-        "cleanTr": "ashaddu",
-        "cat": "صِفَةٌ",
-        "role": "Superlative Adjective / اسْمُ التَّفْضِيل",
-        "ur": "سب سے زیادہ سخت، شدید تر",
-        "en": "More severe, stronger, most intense",
-        "cleanEn": "more severe stronger most intense",
-        "occurrences": [ "U01-L03", "U01-L19", "U02-L05", "U03-L05", "U04-L01" ]
-    },
-    {
-        "idx": 93,
-        "ar": "أَشِدَّاءٌ",
-        "cleanAr": "اشداء",
-        "letter": "أ",
-        "tr": "Ashiddā’",
-        "cleanTr": "ashidda",
-        "cat": "اسْمٌ",
-        "role": "Broken Plural / جَمْعُ تَكْسِير (شَدِيد)",
-        "ur": "بہت سخت، کڑے، طاقتور",
-        "en": "Fierce, stern, forceful",
-        "cleanEn": "fierce stern forceful",
-        "occurrences": [ "U05-L04" ]
-    },
-    {
-        "idx": 94,
+        "idx": 72,
         "ar": "أَشِرٌ",
         "cleanAr": "اشر",
         "letter": "أ",
@@ -1320,12 +1012,12 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L20" ]
     },
     {
-        "idx": 95,
-        "ar": "أَشَقٌّ",
+        "idx": 73,
+        "ar": "أَشَقُّ",
         "cleanAr": "اشق",
         "letter": "أ",
-        "tr": "Ashaqq",
-        "cleanTr": "ashaqq",
+        "tr": "Ashaqqu",
+        "cleanTr": "ashaqqu",
         "cat": "صِفَةٌ",
         "role": "Elative Adjective / اسْمُ تَفْضِيل",
         "ur": "زیادہ کٹھن، زیادہ تکلیف دہ",
@@ -1334,7 +1026,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L23" ]
     },
     {
-        "idx": 96,
+        "idx": 74,
         "ar": "أَشْقَىٰ",
         "cleanAr": "اشقي",
         "letter": "أ",
@@ -1343,12 +1035,12 @@ var WORDS_DATA = [    {
         "cat": "صِفَةٌ",
         "role": "Superlative Adjective / اسْمُ تَفْضِيل",
         "ur": "سب سے بڑا بدبخت، ازلی شقی",
-        "en": "Most Wretched, Unfortunate",
-        "cleanEn": "most wretched unfortunate",
+        "en": "The Most Wretched, Unfortunate",
+        "cleanEn": "the most wretched unfortunate",
         "occurrences": [ "U02-L09" ]
     },
     {
-        "idx": 97,
+        "idx": 75,
         "ar": "أَصَابَ",
         "cleanAr": "اصاب",
         "letter": "أ",
@@ -1362,7 +1054,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L11" ]
     },
     {
-        "idx": 98,
+        "idx": 76,
         "ar": "أَصْبَرَ",
         "cleanAr": "اصبر",
         "letter": "أ",
@@ -1376,35 +1068,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L04" ]
     },
     {
-        "idx": 99,
-        "ar": "أَصْحَابٌ",
-        "cleanAr": "اصحاب",
-        "letter": "أ",
-        "tr": "Ashāb",
-        "cleanTr": "ashab",
-        "cat": "اسْمٌ",
-        "role": "Broken Plural / جَمْعُ تَكْسِير (صَاحِب)",
-        "ur": "ساتھی، والے، اہل",
-        "en": "Companions, dwellers, people",
-        "cleanEn": "companions dwellers people",
-        "occurrences": [ "U05-L04" ]
-    },
-    {
-        "idx": 100,
-        "ar": "أَصْدَقٌ",
-        "cleanAr": "اصدق",
-        "letter": "أ",
-        "tr": "Aṣdaq",
-        "cleanTr": "asdaq",
-        "cat": "اسْمٌ",
-        "role": "Superlative Noun / اسْمُ تَفْضِيل",
-        "ur": "سب سے زیادہ سچا",
-        "en": "Most truthful",
-        "cleanEn": "most truthful",
-        "occurrences": [ "U01-L19" ]
-    },
-    {
-        "idx": 101,
+        "idx": 77,
         "ar": "أَصْلٌ",
         "cleanAr": "اصل",
         "letter": "أ",
@@ -1415,10 +1079,10 @@ var WORDS_DATA = [    {
         "ur": "جڑ، بنیاد، اصل",
         "en": "Root, base, foundation, origin",
         "cleanEn": "root base foundation origin",
-        "occurrences": [ "U04-L10" ]
+        "occurrences": [ "U04-L10", "U04-L11" ]
     },
     {
-        "idx": 102,
+        "idx": 78,
         "ar": "إِصْلَاحٌ",
         "cleanAr": "اصلاح",
         "letter": "أ",
@@ -1432,26 +1096,12 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L06", "U02-L09", "U04-L11", "U05-L21" ]
     },
     {
-        "idx": 103,
-        "ar": "أُصُولٌ",
-        "cleanAr": "اصول",
-        "letter": "أ",
-        "tr": "Uṣūl",
-        "cleanTr": "usul",
-        "cat": "اسْمٌ",
-        "role": "Plural Noun / جَمْعُ أَصْل",
-        "ur": "جڑیں، تنے، بنیادیں",
-        "en": "Roots, stems, trunks, foundations",
-        "cleanEn": "roots stems trunks foundations",
-        "occurrences": [ "U04-L11" ]
-    },
-    {
-        "idx": 104,
-        "ar": "أَضَلٌّ",
+        "idx": 79,
+        "ar": "أَضَلُّ",
         "cleanAr": "اضل",
         "letter": "أ",
-        "tr": "Adall",
-        "cleanTr": "adall",
+        "tr": "Aḍallu",
+        "cleanTr": "adallu",
         "cat": "صِفَةٌ",
         "role": "Elative Adjective / اسْمُ تَفْضِيل",
         "ur": "زیادہ بھٹکا ہوا، بدترین گمراہ",
@@ -1460,22 +1110,8 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L17" ]
     },
     {
-        "idx": 105,
-        "ar": "أَطْرَافٌ",
-        "cleanAr": "اطراف",
-        "letter": "أ",
-        "tr": "Aṭrāf",
-        "cleanTr": "atraf",
-        "cat": "اسْمٌ",
-        "role": "Plural Noun / جَمْعُ طَرَف",
-        "ur": "کنارے، اطراف، سرحدیں",
-        "en": "Borders, edges, sides, extremities",
-        "cleanEn": "borders edges sides extremities",
-        "occurrences": [ "U04-L11" ]
-    },
-    {
-        "idx": 106,
-        "ar": "أَطْهَرٌ",
+        "idx": 80,
+        "ar": "أَطْهَرُ",
         "cleanAr": "اطهر",
         "letter": "أ",
         "tr": "Aṭhar",
@@ -1488,21 +1124,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L12" ]
     },
     {
-        "idx": 107,
-        "ar": "أَظْلَمٌ",
-        "cleanAr": "اظلم",
-        "letter": "أ",
-        "tr": "Aẓlam",
-        "cleanTr": "azlam",
-        "cat": "اسْمٌ",
-        "role": "Superlative Noun / اسْمُ تَفْضِيل",
-        "ur": "سب سے بڑا ظالم",
-        "en": "Most unjust, more oppressive",
-        "cleanEn": "most unjust more oppressive",
-        "occurrences": [ "U01-L19" ]
-    },
-    {
-        "idx": 108,
+        "idx": 81,
         "ar": "أَعْجَبَ",
         "cleanAr": "اعجب",
         "letter": "أ",
@@ -1516,7 +1138,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L04" ]
     },
     {
-        "idx": 109,
+        "idx": 82,
         "ar": "أَعْجَمِيٌّ",
         "cleanAr": "اعجمي",
         "letter": "أ",
@@ -1526,25 +1148,11 @@ var WORDS_DATA = [    {
         "role": "Adjective / صِفَة",
         "ur": "غیر عربی، عجمی زبان والا",
         "en": "Non-Arabic, foreign",
-        "cleanEn": "nonarabic foreign",
+        "cleanEn": "non arabic foreign",
         "occurrences": [ "U03-L02" ]
     },
     {
-        "idx": 110,
-        "ar": "أَعْدَاءٌ",
-        "cleanAr": "اعداء",
-        "letter": "أ",
-        "tr": "A‘dā’",
-        "cleanTr": "ada",
-        "cat": "اسْمٌ",
-        "role": "Broken Plural / جَمْعُ تَكْسِير (عَدُوّ)",
-        "ur": "دشمن، عناد رکھنے والے",
-        "en": "Enemies",
-        "cleanEn": "enemies",
-        "occurrences": [ "U05-L04" ]
-    },
-    {
-        "idx": 111,
+        "idx": 83,
         "ar": "أَعْرَابٌ",
         "cleanAr": "اعراب",
         "letter": "أ",
@@ -1558,7 +1166,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L22" ]
     },
     {
-        "idx": 112,
+        "idx": 84,
         "ar": "أَعْرَجٌ",
         "cleanAr": "اعرج",
         "letter": "أ",
@@ -1572,35 +1180,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L04", "U05-L20" ]
     },
     {
-        "idx": 113,
-        "ar": "أَعْظَمٌ",
-        "cleanAr": "اعظم",
-        "letter": "أ",
-        "tr": "A‘ẓam",
-        "cleanTr": "azam",
-        "cat": "اسْمٌ",
-        "role": "Superlative Noun / اسْمُ تَفْضِيل",
-        "ur": "سب سے زیادہ عظیم، سب سے بڑا",
-        "en": "Greatest, mightiest",
-        "cleanEn": "greatest mightiest",
-        "occurrences": [ "U01-L19" ]
-    },
-    {
-        "idx": 114,
-        "ar": "أَعْلَمٌ",
-        "cleanAr": "اعلم",
-        "letter": "أ",
-        "tr": "A‘lam",
-        "cleanTr": "alam",
-        "cat": "صِفَةٌ",
-        "role": "Superlative Adjective / اسْمُ التَّفْضِيل",
-        "ur": "سب سے زیادہ جاننے والا، باخبر تر",
-        "en": "Best knowing, most knowledgeable",
-        "cleanEn": "best knowing most knowledgeable",
-        "occurrences": [ "U01-L19", "U04-L01", "U05-L02" ]
-    },
-    {
-        "idx": 115,
+        "idx": 85,
         "ar": "أَعْلَىٰ",
         "cleanAr": "اعلي",
         "letter": "أ",
@@ -1611,10 +1191,10 @@ var WORDS_DATA = [    {
         "ur": "سب سے بلند، اعلیٰ ترین",
         "en": "Most High, Supreme, Highest",
         "cleanEn": "most high supreme highest",
-        "occurrences": [ "U04-L04", "U05-L01" ]
+        "occurrences": [ "U01-L19", "U04-L04", "U05-L01" ]
     },
     {
-        "idx": 116,
+        "idx": 86,
         "ar": "أَعْمَىٰ",
         "cleanAr": "اعمي",
         "letter": "أ",
@@ -1628,35 +1208,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L04", "U04-L01", "U05-L20" ]
     },
     {
-        "idx": 117,
-        "ar": "أَعْنَاقٌ",
-        "cleanAr": "اعناق",
-        "letter": "أ",
-        "tr": "A‘nāq",
-        "cleanTr": "anaq",
-        "cat": "اسْمٌ",
-        "role": "Broken Plural / جَمْعُ تَكْسِير (عُنُق)",
-        "ur": "گردنیں",
-        "en": "Necks",
-        "cleanEn": "necks",
-        "occurrences": [ "U05-L17" ]
-    },
-    {
-        "idx": 118,
-        "ar": "أَعْيُنٌ",
-        "cleanAr": "اعين",
-        "letter": "أ",
-        "tr": "A‘yun",
-        "cleanTr": "ayun",
-        "cat": "اسْمٌ",
-        "role": "Broken Plural / جَمْعُ تَكْسِير (عَيْن)",
-        "ur": "آنکھیں",
-        "en": "Eyes",
-        "cleanEn": "eyes",
-        "occurrences": [ "U05-L10" ]
-    },
-    {
-        "idx": 119,
+        "idx": 87,
         "ar": "أَغْلَالٌ",
         "cleanAr": "اغلال",
         "letter": "أ",
@@ -1670,22 +1222,8 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L17" ]
     },
     {
-        "idx": 120,
-        "ar": "أَغْنِيَاءٌ",
-        "cleanAr": "اغنياء",
-        "letter": "أ",
-        "tr": "Aghniyā’",
-        "cleanTr": "aghniya",
-        "cat": "اسْمٌ",
-        "role": "Broken Plural / جَمْعُ تَكْسِير (غَنِيّ)",
-        "ur": "مالدار، دولت مند لوگ",
-        "en": "Rich, wealthy",
-        "cleanEn": "rich wealthy",
-        "occurrences": [ "U05-L04" ]
-    },
-    {
-        "idx": 121,
-        "ar": "أَفْصَحٌ",
+        "idx": 88,
+        "ar": "أَفْصَحُ",
         "cleanAr": "افصح",
         "letter": "أ",
         "tr": "Afṣaḥ",
@@ -1698,21 +1236,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L01" ]
     },
     {
-        "idx": 122,
-        "ar": "أَفْضَلٌ",
-        "cleanAr": "افضل",
-        "letter": "أ",
-        "tr": "Afḍal",
-        "cleanTr": "afdal",
-        "cat": "اسْمٌ",
-        "role": "Superlative Noun / اسْمُ تَفْضِيل",
-        "ur": "سب سے افضل، بہتر",
-        "en": "Superior, most virtuous",
-        "cleanEn": "superior most virtuous",
-        "occurrences": [ "U01-L19" ]
-    },
-    {
-        "idx": 123,
+        "idx": 89,
         "ar": "أُفُقٌ",
         "cleanAr": "افق",
         "letter": "أ",
@@ -1726,7 +1250,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L08" ]
     },
     {
-        "idx": 124,
+        "idx": 90,
         "ar": "إِفْكٌ",
         "cleanAr": "افك",
         "letter": "أ",
@@ -1740,7 +1264,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L09", "U03-L01", "U03-L02", "U05-L19" ]
     },
     {
-        "idx": 125,
+        "idx": 91,
         "ar": "أَفْوَاهٌ",
         "cleanAr": "افواه",
         "letter": "أ",
@@ -1754,7 +1278,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L07" ]
     },
     {
-        "idx": 126,
+        "idx": 92,
         "ar": "أَفْئِدَةٌ",
         "cleanAr": "افيده",
         "letter": "أ",
@@ -1768,36 +1292,8 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L12" ]
     },
     {
-        "idx": 127,
-        "ar": "أَقْرَبٌ",
-        "cleanAr": "اقرب",
-        "letter": "أ",
-        "tr": "Aqrab",
-        "cleanTr": "aqrab",
-        "cat": "صِفَةٌ",
-        "role": "Superlative Adjective / اسْمُ التَّفْضِيل",
-        "ur": "زیادہ قریب، سب سے نزدیک",
-        "en": "Closer, nearest",
-        "cleanEn": "closer nearest",
-        "occurrences": [ "U01-L19", "U04-L01", "U05-L13" ]
-    },
-    {
-        "idx": 128,
-        "ar": "أَقْسَطٌ",
-        "cleanAr": "اقسط",
-        "letter": "أ",
-        "tr": "Aqsat",
-        "cleanTr": "aqsat",
-        "cat": "صِفَةٌ",
-        "role": "Elative Adjective / اسْمُ تَفْضِيل",
-        "ur": "زیادہ منصفانہ، قرینِ عدل",
-        "en": "More equitable, just",
-        "cleanEn": "more equitable just",
-        "occurrences": [ "U05-L12" ]
-    },
-    {
-        "idx": 129,
-        "ar": "أَقْصَى",
+        "idx": 93,
+        "ar": "أَقْصَىٰ",
         "cleanAr": "اقصي",
         "letter": "أ",
         "tr": "Aqṣā",
@@ -1807,10 +1303,10 @@ var WORDS_DATA = [    {
         "ur": "دور ترین، بہت دور والا",
         "en": "Farthest, most remote",
         "cleanEn": "farthest most remote",
-        "occurrences": [ "U03-L03", "U02-L09" ]
+        "occurrences": [ "U03-L03" ]
     },
     {
-        "idx": 130,
+        "idx": 94,
         "ar": "أَقْفَالٌ",
         "cleanAr": "اقفال",
         "letter": "أ",
@@ -1824,8 +1320,8 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L20" ]
     },
     {
-        "idx": 131,
-        "ar": "أَقْوَمٌ",
+        "idx": 95,
+        "ar": "أَقْوَمُ",
         "cleanAr": "اقوم",
         "letter": "أ",
         "tr": "Aqwam",
@@ -1835,25 +1331,11 @@ var WORDS_DATA = [    {
         "ur": "زیادہ سیدھی، سب سے زیادہ درست و پائیدار",
         "en": "Most upright, straightest, firmer",
         "cleanEn": "most upright straightest firmer",
-        "occurrences": [ "U04-L09", "U05-L12" ]
+        "occurrences": [ "U01-L19", "U04-L09", "U05-L12" ]
     },
     {
-        "idx": 132,
-        "ar": "أَكْبَرٌ",
-        "cleanAr": "اكبر",
-        "letter": "أ",
-        "tr": "Akbaru",
-        "cleanTr": "akbaru",
-        "cat": "صِفَةٌ",
-        "role": "Superlative Adjective / اسْمُ التَّفْضِيل",
-        "ur": "سب سے بڑا، بہت بڑا",
-        "en": "Greater, greatest, supreme",
-        "cleanEn": "greater greatest supreme",
-        "occurrences": [ "U01-L19", "U02-L05", "U03-L02" ]
-    },
-    {
-        "idx": 133,
-        "ar": "أَكْثَرٌ",
+        "idx": 96,
+        "ar": "أَكْثَرُ",
         "cleanAr": "اكثر",
         "letter": "أ",
         "tr": "Akthar",
@@ -1866,7 +1348,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L07", "U05-L06" ]
     },
     {
-        "idx": 134,
+        "idx": 97,
         "ar": "إِكْرَاهٌ",
         "cleanAr": "اكراه",
         "letter": "أ",
@@ -1880,21 +1362,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L08" ]
     },
     {
-        "idx": 135,
-        "ar": "أَكْرَمٌ",
-        "cleanAr": "اكرم",
-        "letter": "أ",
-        "tr": "Akram",
-        "cleanTr": "akram",
-        "cat": "صِفَةٌ",
-        "role": "Elative Adjective / اسْمُ تَفْضِيل",
-        "ur": "سب سے زیادہ عزت والا، سخی ترین",
-        "en": "Most noble, most honorable",
-        "cleanEn": "most noble most honorable",
-        "occurrences": [ "U01-L19", "U05-L10" ]
-    },
-    {
-        "idx": 136,
+        "idx": 98,
         "ar": "أَكَلَ",
         "cleanAr": "اكل",
         "letter": "أ",
@@ -1905,10 +1373,24 @@ var WORDS_DATA = [    {
         "ur": "اس نے کھایا، استعمال کیا",
         "en": "He ate, consumed",
         "cleanEn": "he ate consumed",
-        "occurrences": [ "U01-L07", "U05-L02", "U02-L09" ]
+        "occurrences": [ "U01-L07", "U02-L09" ]
     },
     {
-        "idx": 137,
+        "idx": 99,
+        "ar": "آكِلٌ",
+        "cleanAr": "اكل",
+        "letter": "أ",
+        "tr": "Ākil",
+        "cleanTr": "akil",
+        "cat": "اسْمٌ",
+        "role": "Active Participle / اسْمُ فَاعِل (Plural: آكِلُونَ)",
+        "ur": "کھانے والا",
+        "en": "Eater, consumer",
+        "cleanEn": "eater consumer",
+        "occurrences": [ "U05-L02" ]
+    },
+    {
+        "idx": 100,
         "ar": "آلٌ",
         "cleanAr": "ال",
         "letter": "أ",
@@ -1922,21 +1404,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L04" ]
     },
     {
-        "idx": 138,
-        "ar": "إِلَّا",
-        "cleanAr": "الا",
-        "letter": "أ",
-        "tr": "Illā",
-        "cleanTr": "illa",
-        "cat": "حَرْفٌ",
-        "role": "Exceptive Particle / حَرْفُ اِسْتِثْنَاء و حَصْر",
-        "ur": "سوائے، مگر، بجز، کے علاوہ",
-        "en": "Except, unless, but, save",
-        "cleanEn": "except unless but save",
-        "occurrences": [ "U01-L06", "U02-L09", "U03-L03" ]
-    },
-    {
-        "idx": 139,
+        "idx": 101,
         "ar": "أَلَا",
         "cleanAr": "الا",
         "letter": "أ",
@@ -1950,7 +1418,35 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L06", "U05-L21" ]
     },
     {
-        "idx": 140,
+        "idx": 102,
+        "ar": "إِلَّا",
+        "cleanAr": "الا",
+        "letter": "أ",
+        "tr": "Illā",
+        "cleanTr": "illa",
+        "cat": "حَرْفٌ",
+        "role": "Exceptive Particle / حَرْفُ اِسْتِثْنَاء و حَصْر",
+        "ur": "سوائے، مگر، بجز، کے علاوہ",
+        "en": "Except, unless, but, save",
+        "cleanEn": "except unless but save",
+        "occurrences": [ "U01-L06", "U02-L09", "U03-L03" ]
+    },
+    {
+        "idx": 103,
+        "ar": "الْآنَ",
+        "cleanAr": "الان",
+        "letter": "أ",
+        "tr": "Al-Āna",
+        "cleanTr": "al-ana",
+        "cat": "ظَرْفٌ",
+        "role": "Adverb of Time / اسْمُ زَمَان",
+        "ur": "اب، ابھی، اس وقت",
+        "en": "Now, at this present moment",
+        "cleanEn": "now at this present moment",
+        "occurrences": [ "U02-L07" ]
+    },
+    {
+        "idx": 104,
         "ar": "آلَاءٌ",
         "cleanAr": "الاء",
         "letter": "أ",
@@ -1964,21 +1460,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L04" ]
     },
     {
-        "idx": 141,
-        "ar": "الْآنَ",
-        "cleanAr": "الان",
-        "letter": "أ",
-        "tr": "Al-Āna",
-        "cleanTr": "alana",
-        "cat": "ظَرْفٌ",
-        "role": "Adverb of Time / اسْمُ زَمَان",
-        "ur": "اب، ابھی، اس وقت",
-        "en": "Now, at this present moment",
-        "cleanEn": "now at this present moment",
-        "occurrences": [ "U02-L07" ]
-    },
-    {
-        "idx": 142,
+        "idx": 105,
         "ar": "الَّتِي",
         "cleanAr": "التي",
         "letter": "أ",
@@ -1992,12 +1474,12 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L03", "U01-L17" ]
     },
     {
-        "idx": 143,
+        "idx": 106,
         "ar": "الَّذِي",
         "cleanAr": "الذي",
         "letter": "أ",
         "tr": "Al-Ladhī",
-        "cleanTr": "alladhi",
+        "cleanTr": "al-ladhi",
         "cat": "ضَمِيرٌ",
         "role": "Relative Pronoun (Masc. Sing.) / اسْمُ مَوْصُول",
         "ur": "وہ جو، جس نے، جو شخص",
@@ -2006,12 +1488,12 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L01" ]
     },
     {
-        "idx": 144,
+        "idx": 107,
         "ar": "الَّذِينَ",
         "cleanAr": "الذين",
         "letter": "أ",
         "tr": "Al-Ladhīna",
-        "cleanTr": "alladhina",
+        "cleanTr": "al-ladhina",
         "cat": "ضَمِيرٌ",
         "role": "Relative Pronoun (Masc. Plural) / اسْمُ مَوْصُول",
         "ur": "جو لوگ، وہ سب جنہوں نے",
@@ -2020,21 +1502,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L03", "U02-L01", "U02-L07", "U05-L07" ]
     },
     {
-        "idx": 145,
-        "ar": "أَلْسِنَةٌ",
-        "cleanAr": "السنه",
-        "letter": "أ",
-        "tr": "Alsinah",
-        "cleanTr": "alsinah",
-        "cat": "اسْمٌ",
-        "role": "Broken Plural / جَمْعُ تَكْسِير (لِسَان)",
-        "ur": "زبانیں",
-        "en": "Tongues",
-        "cleanEn": "tongues",
-        "occurrences": [ "U05-L10" ]
-    },
-    {
-        "idx": 146,
+        "idx": 108,
         "ar": "أَلْفٌ",
         "cleanAr": "الف",
         "letter": "أ",
@@ -2048,7 +1516,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L06", "U03-L10" ]
     },
     {
-        "idx": 147,
+        "idx": 109,
         "ar": "أَلْقَىٰ",
         "cleanAr": "القي",
         "letter": "أ",
@@ -2062,7 +1530,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L04", "U02-L03", "U02-L06" ]
     },
     {
-        "idx": 148,
+        "idx": 110,
         "ar": "اللَّهُ",
         "cleanAr": "الله",
         "letter": "أ",
@@ -2076,7 +1544,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L01", "U01-L14", "U02-L01", "U02-L04", "U02-L05", "U02-L06", "U02-L08", "U02-L09", "U02-L11", "U02-L12", "U02-L13" ]
     },
     {
-        "idx": 149,
+        "idx": 111,
         "ar": "إِلٰهٌ",
         "cleanAr": "اله",
         "letter": "أ",
@@ -2087,24 +1555,10 @@ var WORDS_DATA = [    {
         "ur": "معبود، بندگی کے لائق ہستی",
         "en": "God, deity, object of worship",
         "cleanEn": "god deity object of worship",
-        "occurrences": [ "U01-L08", "U02-L08", "U02-L09", "U03-L01", "U04-L01", "U03-L10" ]
+        "occurrences": [ "U01-L08", "U02-L08", "U02-L09", "U03-L01", "U03-L10", "U04-L01", "U05-L04" ]
     },
     {
-        "idx": 150,
-        "ar": "آلِهَةٌ",
-        "cleanAr": "الهه",
-        "letter": "أ",
-        "tr": "Ālihah",
-        "cleanTr": "alihah",
-        "cat": "اسْمٌ",
-        "role": "Broken Plural / جَمْعُ تَكْسِير (إِلَـٰه)",
-        "ur": "معبودان باطل، دیوتا",
-        "en": "Deities, false gods",
-        "cleanEn": "deities false gods",
-        "occurrences": [ "U05-L04" ]
-    },
-    {
-        "idx": 151,
+        "idx": 112,
         "ar": "إِلَىٰ",
         "cleanAr": "الي",
         "letter": "أ",
@@ -2118,7 +1572,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L04", "U02-L06", "U03-L03" ]
     },
     {
-        "idx": 152,
+        "idx": 113,
         "ar": "إِلْيَاسٌ",
         "cleanAr": "الياس",
         "letter": "أ",
@@ -2132,12 +1586,12 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L12", "U05-L02" ]
     },
     {
-        "idx": 153,
+        "idx": 114,
         "ar": "الْيَسَعُ",
         "cleanAr": "اليسع",
         "letter": "أ",
         "tr": "Al-Yasa‘",
-        "cleanTr": "alyasa",
+        "cleanTr": "al-yasa",
         "cat": "عَلَمٌ",
         "role": "Proper Name (Prophet) / عَلَم",
         "ur": "حضرت الیسع علیہ السلام",
@@ -2146,7 +1600,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L12" ]
     },
     {
-        "idx": 154,
+        "idx": 115,
         "ar": "أَلِيمٌ",
         "cleanAr": "اليم",
         "letter": "أ",
@@ -2160,21 +1614,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L02", "U05-L02" ]
     },
     {
-        "idx": 155,
-        "ar": "أُمٌّ",
-        "cleanAr": "ام",
-        "letter": "أ",
-        "tr": "Umm",
-        "cleanTr": "umm",
-        "cat": "اسْمٌ",
-        "role": "Noun / اسْمٌ",
-        "ur": "ماں، والدہ، اصل",
-        "en": "Mother, source",
-        "cleanEn": "mother source",
-        "occurrences": [ "U01-L05", "U03-L06" ]
-    },
-    {
-        "idx": 156,
+        "idx": 116,
         "ar": "أَمْ",
         "cleanAr": "ام",
         "letter": "أ",
@@ -2188,7 +1628,21 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L04" ]
     },
     {
-        "idx": 157,
+        "idx": 117,
+        "ar": "أُمٌّ",
+        "cleanAr": "ام",
+        "letter": "أ",
+        "tr": "Umm",
+        "cleanTr": "umm",
+        "cat": "اسْمٌ",
+        "role": "Noun / اسْمٌ (Plural: أُمَّهَاتٌ)",
+        "ur": "ماں، والدہ، اصل",
+        "en": "Mother, source",
+        "cleanEn": "mother source",
+        "occurrences": [ "U01-L05", "U03-L06", "U05-L01" ]
+    },
+    {
+        "idx": 118,
         "ar": "أَمَّارَةٌ",
         "cleanAr": "اماره",
         "letter": "أ",
@@ -2202,7 +1656,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L08" ]
     },
     {
-        "idx": 158,
+        "idx": 119,
         "ar": "إِمَامٌ",
         "cleanAr": "امام",
         "letter": "أ",
@@ -2216,9 +1670,9 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L05" ]
     },
     {
-        "idx": 159,
+        "idx": 120,
         "ar": "أَمَانَةٌ",
-        "cleanAr": "امانة",
+        "cleanAr": "امانه",
         "letter": "أ",
         "tr": "Amānah",
         "cleanTr": "amanah",
@@ -2230,7 +1684,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L07" ]
     },
     {
-        "idx": 160,
+        "idx": 121,
         "ar": "أَمَانِيٌّ",
         "cleanAr": "اماني",
         "letter": "أ",
@@ -2244,49 +1698,21 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L06" ]
     },
     {
-        "idx": 161,
-        "ar": "أَمْرٌ",
+        "idx": 122,
+        "ar": "أَمَرُّ",
         "cleanAr": "امر",
         "letter": "أ",
-        "tr": "Amr",
-        "cleanTr": "amr",
-        "cat": "اسْمٌ",
-        "role": "Singular & Broken Plural",
-        "ur": "حکم، فرمان؛ کام، معاملہ، بات",
-        "en": "Command, decree; affair, matter",
-        "cleanEn": "command decree affair matter",
-        "occurrences": [ "U01-L04", "U01-L10", "U01-L16", "U02-L01", "U02-L08", "U05-L06" ]
-    },
-    {
-        "idx": 162,
-        "ar": "آمِرٌ",
-        "cleanAr": "امر",
-        "letter": "أ",
-        "tr": "Āmir",
-        "cleanTr": "amir",
-        "cat": "اسْمٌ",
-        "role": "Noun (Active Participle) / اسْمُ فَاعِل",
-        "ur": "حکم دینے والا",
-        "en": "Commander, enjoiner",
-        "cleanEn": "commander enjoiner",
-        "occurrences": [ "U03-L08" ]
-    },
-    {
-        "idx": 163,
-        "ar": "أَمَرٌّ",
-        "cleanAr": "امر",
-        "letter": "أ",
-        "tr": "Amarr",
-        "cleanTr": "amarr",
+        "tr": "Amarru",
+        "cleanTr": "amarru",
         "cat": "صِفَةٌ",
         "role": "Elative Adjective / اسْمُ تَفْضِيل",
         "ur": "زیادہ تلخ و کڑوی",
         "en": "More bitter",
         "cleanEn": "more bitter",
-        "occurrences": [ "U05-L06", "U05-L01" ]
+        "occurrences": [ "U05-L06" ]
     },
     {
-        "idx": 164,
+        "idx": 123,
         "ar": "أَمَرَ",
         "cleanAr": "امر",
         "letter": "أ",
@@ -2300,7 +1726,35 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L02" ]
     },
     {
-        "idx": 165,
+        "idx": 124,
+        "ar": "أَمْرٌ",
+        "cleanAr": "امر",
+        "letter": "أ",
+        "tr": "Amr",
+        "cleanTr": "amr",
+        "cat": "اسْمٌ",
+        "role": "Singular \u0026 Broken Plural",
+        "ur": "حکم، فرمان؛ کام، معاملہ، بات",
+        "en": "Command, decree; affair, matter",
+        "cleanEn": "command decree affair matter",
+        "occurrences": [ "U01-L04", "U01-L10", "U01-L16", "U02-L01", "U02-L08", "U03-L05", "U05-L06" ]
+    },
+    {
+        "idx": 125,
+        "ar": "آمِرٌ",
+        "cleanAr": "امر",
+        "letter": "أ",
+        "tr": "Āmir",
+        "cleanTr": "amir",
+        "cat": "اسْمٌ",
+        "role": "Active Participle / اسْمُ فَاعِل (Plural: آمِرُونَ)",
+        "ur": "حکم دینے والا",
+        "en": "Commander, enjoiner",
+        "cleanEn": "commander enjoiner",
+        "occurrences": [ "U03-L08", "U05-L01" ]
+    },
+    {
+        "idx": 126,
         "ar": "امْرَأَةٌ",
         "cleanAr": "امراه",
         "letter": "أ",
@@ -2314,7 +1768,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L04" ]
     },
     {
-        "idx": 166,
+        "idx": 127,
         "ar": "امْرُؤٌ",
         "cleanAr": "امرو",
         "letter": "أ",
@@ -2328,7 +1782,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L07" ]
     },
     {
-        "idx": 167,
+        "idx": 128,
         "ar": "أَمَلٌ",
         "cleanAr": "امل",
         "letter": "أ",
@@ -2342,7 +1796,21 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L22" ]
     },
     {
-        "idx": 168,
+        "idx": 129,
+        "ar": "أَمْنٌ",
+        "cleanAr": "امن",
+        "letter": "أ",
+        "tr": "Amn",
+        "cleanTr": "amn",
+        "cat": "اسْمٌ",
+        "role": "Verbal Noun / مَصْدَر",
+        "ur": "امن، سلامتی، بے خوفی",
+        "en": "Security, Safety, Peace",
+        "cleanEn": "security safety peace",
+        "occurrences": [ "U01-L04", "U02-L05", "U02-L07", "U05-L08" ]
+    },
+    {
+        "idx": 130,
         "ar": "آمَنَ",
         "cleanAr": "امن",
         "letter": "أ",
@@ -2356,21 +1824,35 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L15", "U02-L07" ]
     },
     {
-        "idx": 169,
-        "ar": "أَمْنٌ",
+        "idx": 131,
+        "ar": "آمِنٌ",
         "cleanAr": "امن",
         "letter": "أ",
-        "tr": "Amn",
-        "cleanTr": "amn",
+        "tr": "Āmin",
+        "cleanTr": "amin",
         "cat": "اسْمٌ",
-        "role": "Verbal Noun / مَصْدَر",
-        "ur": "امن، سلامتی، بے خوفی",
-        "en": "Security, Safety, Peace",
-        "cleanEn": "security safety peace",
-        "occurrences": [ "U01-L04", "U02-L05", "U05-L08", "U05-L05", "U02-L07" ]
+        "role": "Active Participle / اسْمُ فَاعِل (Plural: آمِنُونَ)",
+        "ur": "محفوظ، امن والا",
+        "en": "Safe, secure, free from fear",
+        "cleanEn": "safe secure free from fear",
+        "occurrences": [ "U05-L05" ]
     },
     {
-        "idx": 170,
+        "idx": 132,
+        "ar": "أَمَةٌ",
+        "cleanAr": "امه",
+        "letter": "أ",
+        "tr": "Amah",
+        "cleanTr": "amah",
+        "cat": "اسْمٌ",
+        "role": "Noun / اسْمٌ",
+        "ur": "لونڈی، کنیز، اللہ کی بندی",
+        "en": "Bondwoman, female servant / slave",
+        "cleanEn": "bondwoman female servant slave",
+        "occurrences": [ "U03-L03" ]
+    },
+    {
+        "idx": 133,
         "ar": "أُمَّةٌ",
         "cleanAr": "امه",
         "letter": "أ",
@@ -2384,63 +1866,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L04", "U01-L17", "U02-L03", "U03-L01", "U03-L02", "U05-L08" ]
     },
     {
-        "idx": 171,
-        "ar": "أَمَةٌ",
-        "cleanAr": "امه",
-        "letter": "أ",
-        "tr": "Amah",
-        "cleanTr": "amah",
-        "cat": "اسْمٌ",
-        "role": "Noun / اسْمٌ",
-        "ur": "لونڈی، کنیز، اللہ کی بندی",
-        "en": "Bondwoman, female servant / slave",
-        "cleanEn": "bondwoman female servant slave",
-        "occurrences": [ "U03-L03", "U05-L01" ]
-    },
-    {
-        "idx": 172,
-        "ar": "أَمْوَاتٌ",
-        "cleanAr": "اموات",
-        "letter": "أ",
-        "tr": "Amwāt",
-        "cleanTr": "amwat",
-        "cat": "اسْمٌ",
-        "role": "Broken Plural / جَمْعُ تَكْسِير (مَيِّت)",
-        "ur": "مردہ، بے جان لوگ",
-        "en": "Dead, lifeless",
-        "cleanEn": "dead lifeless",
-        "occurrences": [ "U05-L04" ]
-    },
-    {
-        "idx": 173,
-        "ar": "أَمْوَالٌ",
-        "cleanAr": "اموال",
-        "letter": "أ",
-        "tr": "Amwāl",
-        "cleanTr": "amwal",
-        "cat": "اسْمٌ",
-        "role": "Plural Noun / جَمْع (مَالٌ)",
-        "ur": "اموال، مال و دولت، املاک",
-        "en": "Wealth, properties, possessions",
-        "cleanEn": "wealth properties possessions",
-        "occurrences": [ "U02-L02", "U03-L03" ]
-    },
-    {
-        "idx": 174,
-        "ar": "أُمُورٌ",
-        "cleanAr": "امور",
-        "letter": "أ",
-        "tr": "Umūr",
-        "cleanTr": "umur",
-        "cat": "اسْمٌ",
-        "role": "Plural Noun / جَمْعُ أَمْر",
-        "ur": "معاملات، کام، احکام",
-        "en": "Affairs, matters, issues",
-        "cleanEn": "affairs matters issues",
-        "occurrences": [ "U03-L05" ]
-    },
-    {
-        "idx": 175,
+        "idx": 134,
         "ar": "أُمِّيٌّ",
         "cleanAr": "امي",
         "letter": "أ",
@@ -2454,7 +1880,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L16" ]
     },
     {
-        "idx": 176,
+        "idx": 135,
         "ar": "أَمِينَ",
         "cleanAr": "امين",
         "letter": "أ",
@@ -2468,35 +1894,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L02" ]
     },
     {
-        "idx": 177,
-        "ar": "إِنَّ",
-        "cleanAr": "ان",
-        "letter": "أ",
-        "tr": "Inna",
-        "cleanTr": "inna",
-        "cat": "حَرْفٌ",
-        "role": "Particle of Emphasis / حَرْفُ تَوْكِيد",
-        "ur": "بیشک، یقیناً، بلاشبہ",
-        "en": "Indeed, verily, truly, certainly",
-        "cleanEn": "indeed verily truly certainly",
-        "occurrences": [ "U01-L01", "U02-L01", "U03-L03" ]
-    },
-    {
-        "idx": 178,
-        "ar": "إِنْ",
-        "cleanAr": "ان",
-        "letter": "أ",
-        "tr": "In",
-        "cleanTr": "in",
-        "cat": "حَرْفٌ",
-        "role": "Conditional Particle / حَرْفُ شَرْطٍ",
-        "ur": "اگر",
-        "en": "If",
-        "cleanEn": "if",
-        "occurrences": [ "U01-L02" ]
-    },
-    {
-        "idx": 179,
+        "idx": 136,
         "ar": "أَنَّ",
         "cleanAr": "ان",
         "letter": "أ",
@@ -2507,10 +1905,10 @@ var WORDS_DATA = [    {
         "ur": "کہ، یہ کہ، بے شک",
         "en": "That, that indeed",
         "cleanEn": "that that indeed",
-        "occurrences": [ "U01-L02", "U02-L02", "U02-L03", "U02-L04", "U02-L07", "U02-L08", "U02-L09", "U02-L11", "U02-L12", "U02-L13" ]
+        "occurrences": [ "U01-L02", "U01-L17", "U02-L02", "U02-L03", "U02-L04", "U02-L07", "U02-L08", "U02-L09", "U02-L11", "U02-L12", "U02-L13" ]
     },
     {
-        "idx": 180,
+        "idx": 137,
         "ar": "أَنْ",
         "cleanAr": "ان",
         "letter": "أ",
@@ -2524,7 +1922,35 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L15" ]
     },
     {
-        "idx": 181,
+        "idx": 138,
+        "ar": "إِنَّ",
+        "cleanAr": "ان",
+        "letter": "أ",
+        "tr": "Inna",
+        "cleanTr": "inna",
+        "cat": "حَرْفٌ",
+        "role": "Particle of Emphasis / حَرْفُ تَوْكِيد",
+        "ur": "بیشک، یقیناً، بلاشبہ",
+        "en": "Indeed, verily, truly, certainly",
+        "cleanEn": "indeed verily truly certainly",
+        "occurrences": [ "U01-L01", "U02-L01", "U03-L03" ]
+    },
+    {
+        "idx": 139,
+        "ar": "إِنْ",
+        "cleanAr": "ان",
+        "letter": "أ",
+        "tr": "In",
+        "cleanTr": "in",
+        "cat": "حَرْفٌ",
+        "role": "Conditional Particle / حَرْفُ شَرْطٍ",
+        "ur": "اگر",
+        "en": "If",
+        "cleanEn": "if",
+        "occurrences": [ "U01-L02" ]
+    },
+    {
+        "idx": 140,
         "ar": "أَنَا",
         "cleanAr": "انا",
         "letter": "أ",
@@ -2535,10 +1961,10 @@ var WORDS_DATA = [    {
         "ur": "میں (ایک شخص: مذکر یا مؤنث)",
         "en": "I (first person singular)",
         "cleanEn": "i first person singular",
-        "occurrences": [ "U04-L13", "U02-L09" ]
+        "occurrences": [ "U02-L09", "U04-L13" ]
     },
     {
-        "idx": 182,
+        "idx": 141,
         "ar": "آنَاءٌ",
         "cleanAr": "اناء",
         "letter": "أ",
@@ -2552,7 +1978,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L05" ]
     },
     {
-        "idx": 183,
+        "idx": 142,
         "ar": "أَنْبَأَ",
         "cleanAr": "انبا",
         "letter": "أ",
@@ -2566,35 +1992,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L13" ]
     },
     {
-        "idx": 184,
-        "ar": "أَنبَاءٌ",
-        "cleanAr": "انباء",
-        "letter": "أ",
-        "tr": "Anbā’",
-        "cleanTr": "anba",
-        "cat": "اسْمٌ",
-        "role": "Plural Noun / جَمْعُ نَبَأ",
-        "ur": "خبریں، تاریخی واقعات، غیب کی اطلاعات",
-        "en": "News, tidings, historical narratives",
-        "cleanEn": "news tidings historical narratives",
-        "occurrences": [ "U03-L06" ]
-    },
-    {
-        "idx": 185,
-        "ar": "أَنْبِيَاءٌ",
-        "cleanAr": "انبياء",
-        "letter": "أ",
-        "tr": "Anbiyā’",
-        "cleanTr": "anbiya",
-        "cat": "اسْمٌ",
-        "role": "Broken Plural / جَمْعُ تَكْسِير (نَبِيّ)",
-        "ur": "انبیاء کرام، اللہ کے نبی",
-        "en": "Prophets",
-        "cleanEn": "prophets",
-        "occurrences": [ "U05-L04" ]
-    },
-    {
-        "idx": 186,
+        "idx": 143,
         "ar": "أَنْتَ",
         "cleanAr": "انت",
         "letter": "أ",
@@ -2608,7 +2006,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L09", "U04-L05" ]
     },
     {
-        "idx": 187,
+        "idx": 144,
         "ar": "انْتِقَامٌ",
         "cleanAr": "انتقام",
         "letter": "أ",
@@ -2622,7 +2020,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L04" ]
     },
     {
-        "idx": 188,
+        "idx": 145,
         "ar": "أَنْتُمْ",
         "cleanAr": "انتم",
         "letter": "أ",
@@ -2636,7 +2034,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L09" ]
     },
     {
-        "idx": 189,
+        "idx": 146,
         "ar": "أُنْثَىٰ",
         "cleanAr": "انثي",
         "letter": "أ",
@@ -2650,7 +2048,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L07", "U03-L07", "U05-L12" ]
     },
     {
-        "idx": 190,
+        "idx": 147,
         "ar": "إِنجِيلٌ",
         "cleanAr": "انجيل",
         "letter": "أ",
@@ -2664,21 +2062,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L12", "U02-L03" ]
     },
     {
-        "idx": 191,
-        "ar": "أَندَادٌ",
-        "cleanAr": "انداد",
-        "letter": "أ",
-        "tr": "Andād",
-        "cleanTr": "andad",
-        "cat": "اسْمٌ",
-        "role": "Broken Plural / جَمْعُ تَكْسِير (نِدّ)",
-        "ur": "ہمسر، مدمقابل، شریک",
-        "en": "Equals, rivals, peers",
-        "cleanEn": "equals rivals peers",
-        "occurrences": [ "U05-L04" ]
-    },
-    {
-        "idx": 192,
+        "idx": 148,
         "ar": "أَنْذَرَ",
         "cleanAr": "انذر",
         "letter": "أ",
@@ -2692,7 +2076,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L04" ]
     },
     {
-        "idx": 193,
+        "idx": 149,
         "ar": "أَنْزَلَ",
         "cleanAr": "انزل",
         "letter": "أ",
@@ -2703,10 +2087,10 @@ var WORDS_DATA = [    {
         "ur": "اس نے نازل کیا، اتارا",
         "en": "He sent down, revealed",
         "cleanEn": "he sent down revealed",
-        "occurrences": [ "U02-L05", "U01-L06" ]
+        "occurrences": [ "U01-L06", "U02-L05" ]
     },
     {
-        "idx": 194,
+        "idx": 150,
         "ar": "إِنْسٌ",
         "cleanAr": "انس",
         "letter": "أ",
@@ -2720,21 +2104,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L05" ]
     },
     {
-        "idx": 195,
-        "ar": "أَنسَابٌ",
-        "cleanAr": "انساب",
-        "letter": "أ",
-        "tr": "Ansāb",
-        "cleanTr": "ansab",
-        "cat": "اسْمٌ",
-        "role": "Broken Plural / جَمْعُ تَكْسِير (نَسَب)",
-        "ur": "رشتے داریاں، خاندانی نسبتیں",
-        "en": "Lineages, ties of kinship",
-        "cleanEn": "lineages ties of kinship",
-        "occurrences": [ "U05-L21" ]
-    },
-    {
-        "idx": 196,
+        "idx": 151,
         "ar": "إِنْسَانٌ",
         "cleanAr": "انسان",
         "letter": "أ",
@@ -2748,21 +2118,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L03", "U02-L01", "U02-L12", "U02-L13", "U03-L03" ]
     },
     {
-        "idx": 197,
-        "ar": "أَنصَارٌ",
-        "cleanAr": "انصار",
-        "letter": "أ",
-        "tr": "Ansār",
-        "cleanTr": "ansar",
-        "cat": "اسْمٌ",
-        "role": "Broken Plural / جَمْعُ تَكْسِير (نَاصِر)",
-        "ur": "مددگار، انصار",
-        "en": "Helpers, supporters",
-        "cleanEn": "helpers supporters",
-        "occurrences": [ "U05-L04" ]
-    },
-    {
-        "idx": 198,
+        "idx": 152,
         "ar": "أَنْعَامٌ",
         "cleanAr": "انعام",
         "letter": "أ",
@@ -2776,7 +2132,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L05", "U04-L01", "U05-L11" ]
     },
     {
-        "idx": 199,
+        "idx": 153,
         "ar": "أَنْفٌ",
         "cleanAr": "انف",
         "letter": "أ",
@@ -2790,7 +2146,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L07" ]
     },
     {
-        "idx": 200,
+        "idx": 154,
         "ar": "أَنْفَالٌ",
         "cleanAr": "انفال",
         "letter": "أ",
@@ -2804,21 +2160,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L02", "U05-L21" ]
     },
     {
-        "idx": 201,
-        "ar": "أَنفُسٌ",
-        "cleanAr": "انفس",
-        "letter": "أ",
-        "tr": "Anfus",
-        "cleanTr": "anfus",
-        "cat": "اسْمٌ",
-        "role": "Broken Plural / جَمْعُ تَكْسِير (نَفْس)",
-        "ur": "جانیں، نفس",
-        "en": "Souls, selves",
-        "cleanEn": "souls selves",
-        "occurrences": [ "U05-L07" ]
-    },
-    {
-        "idx": 202,
+        "idx": 155,
         "ar": "أَنكَالٌ",
         "cleanAr": "انكال",
         "letter": "أ",
@@ -2832,7 +2174,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L15" ]
     },
     {
-        "idx": 203,
+        "idx": 156,
         "ar": "إِنَّمَا",
         "cleanAr": "انما",
         "letter": "أ",
@@ -2846,21 +2188,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L04", "U03-L03", "U05-L19" ]
     },
     {
-        "idx": 204,
-        "ar": "أَنْهَارٌ",
-        "cleanAr": "انهار",
-        "letter": "أ",
-        "tr": "Anhār",
-        "cleanTr": "anhar",
-        "cat": "اسْمٌ",
-        "role": "Broken Plural / جَمْعُ تَكْسِير (نَهْر)",
-        "ur": "نہریں، ندیاں",
-        "en": "Rivers",
-        "cleanEn": "rivers",
-        "occurrences": [ "U04-L04", "U05-L12" ]
-    },
-    {
-        "idx": 205,
+        "idx": 157,
         "ar": "أَنَّىٰ",
         "cleanAr": "اني",
         "letter": "أ",
@@ -2874,7 +2202,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L20" ]
     },
     {
-        "idx": 206,
+        "idx": 158,
         "ar": "أَهْدَىٰ",
         "cleanAr": "اهدي",
         "letter": "أ",
@@ -2888,7 +2216,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L19", "U04-L01", "U05-L18" ]
     },
     {
-        "idx": 207,
+        "idx": 159,
         "ar": "أَهْلٌ",
         "cleanAr": "اهل",
         "letter": "أ",
@@ -2902,7 +2230,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L04", "U05-L01" ]
     },
     {
-        "idx": 208,
+        "idx": 160,
         "ar": "أَوْ",
         "cleanAr": "او",
         "letter": "أ",
@@ -2916,7 +2244,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L05", "U04-L01" ]
     },
     {
-        "idx": 209,
+        "idx": 161,
         "ar": "أَوَّاهٌ",
         "cleanAr": "اواه",
         "letter": "أ",
@@ -2926,11 +2254,11 @@ var WORDS_DATA = [    {
         "role": "Intensive Adjective / صِيغَةُ مُبَالَغَة (فَعَّال)",
         "ur": "آہیں بھرنے والا، نرم دل، خدا کے حضور گریہ کناں",
         "en": "Tender-hearted, sighing in prayer, deeply compassionate",
-        "cleanEn": "tenderhearted sighing in prayer deeply compassionate",
+        "cleanEn": "tender hearted sighing in prayer deeply compassionate",
         "occurrences": [ "U03-L08" ]
     },
     {
-        "idx": 210,
+        "idx": 162,
         "ar": "أَوْحَىٰ",
         "cleanAr": "اوحي",
         "letter": "أ",
@@ -2944,7 +2272,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L06" ]
     },
     {
-        "idx": 211,
+        "idx": 163,
         "ar": "أَوْقَدَ",
         "cleanAr": "اوقد",
         "letter": "أ",
@@ -2958,7 +2286,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L02" ]
     },
     {
-        "idx": 212,
+        "idx": 164,
         "ar": "أَوَّلٌ",
         "cleanAr": "اول",
         "letter": "أ",
@@ -2972,21 +2300,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L01", "U05-L01" ]
     },
     {
-        "idx": 213,
-        "ar": "أَوْلَادٌ",
-        "cleanAr": "اولاد",
-        "letter": "أ",
-        "tr": "Awlād",
-        "cleanTr": "awlad",
-        "cat": "اسْمٌ",
-        "role": "Broken Plural / جَمْعُ تَكْسِير (وَلَد)",
-        "ur": "اولاد، بچے",
-        "en": "Children, offspring",
-        "cleanEn": "children offspring",
-        "occurrences": [ "U05-L04" ]
-    },
-    {
-        "idx": 214,
+        "idx": 165,
         "ar": "أَوْلَجَ",
         "cleanAr": "اولج",
         "letter": "أ",
@@ -3000,35 +2314,21 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L03" ]
     },
     {
-        "idx": 215,
+        "idx": 166,
         "ar": "أُولُو",
         "cleanAr": "اولو",
         "letter": "أ",
         "tr": "Ulū",
         "cleanTr": "ulu",
         "cat": "اسْمٌ",
-        "role": "Plural Noun (Asmā' Sittah) / اسْمٌ بِمَعْنَى أَصْحَاب",
+        "role": "Plural Noun (Asmā\u0027 Sittah) / اسْمٌ بِمَعْنَى أَصْحَاب",
         "ur": "والے، اہل",
         "en": "Possessors of, endowed with, people of",
         "cleanEn": "possessors of endowed with people of",
         "occurrences": [ "U05-L04" ]
     },
     {
-        "idx": 216,
-        "ar": "أُولَىٰ",
-        "cleanAr": "اولي",
-        "letter": "أ",
-        "tr": "Ūlā",
-        "cleanTr": "ula",
-        "cat": "صِفَةٌ",
-        "role": "Ordinal / Superlative Adjective (Fem.) / صِفَة (مُؤَنَّث)",
-        "ur": "پہلی، سابقہ، دنیا کی موجودہ زندگی",
-        "en": "First, former, earlier (fem.)",
-        "cleanEn": "first former earlier fem",
-        "occurrences": [ "U01-L18", "U01-L19", "U02-L02", "U03-L06", "U05-L16" ]
-    },
-    {
-        "idx": 217,
+        "idx": 167,
         "ar": "أَوْلَىٰ",
         "cleanAr": "اولي",
         "letter": "أ",
@@ -3042,21 +2342,21 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L08", "U05-L07" ]
     },
     {
-        "idx": 218,
-        "ar": "أَوْلِيَاءٌ",
-        "cleanAr": "اولياء",
+        "idx": 168,
+        "ar": "أُولَىٰ",
+        "cleanAr": "اولي",
         "letter": "أ",
-        "tr": "Awliyā’",
-        "cleanTr": "awliya",
-        "cat": "اسْمٌ",
-        "role": "Broken Plural / جَمْعُ تَكْسِير (وَلِيّ)",
-        "ur": "دوست، سرپرست، حمایتی",
-        "en": "Friends, allies, protectors",
-        "cleanEn": "friends allies protectors",
-        "occurrences": [ "U05-L04" ]
+        "tr": "Ūlā",
+        "cleanTr": "ula",
+        "cat": "صِفَةٌ",
+        "role": "Ordinal / Superlative Adjective (Fem.) / صِفَة (مُؤَنَّث)",
+        "ur": "پہلی، سابقہ، دنیا کی موجودہ زندگی",
+        "en": "First, former, earlier (fem.)",
+        "cleanEn": "first former earlier fem",
+        "occurrences": [ "U01-L18", "U01-L19", "U02-L02", "U03-L06", "U05-L16" ]
     },
     {
-        "idx": 219,
+        "idx": 169,
         "ar": "أُولَٰئِكَ",
         "cleanAr": "اوليك",
         "letter": "أ",
@@ -3067,10 +2367,10 @@ var WORDS_DATA = [    {
         "ur": "وہ لوگ، یہی لوگ (مرد و خواتین)",
         "en": "Those, those people, these very ones",
         "cleanEn": "those those people these very ones",
-        "occurrences": [ "U05-L17", "U02-L04", "U02-L06", "U02-L12" ]
+        "occurrences": [ "U02-L04", "U02-L06", "U02-L12", "U05-L17" ]
     },
     {
-        "idx": 220,
+        "idx": 170,
         "ar": "أَيٌّ",
         "cleanAr": "اي",
         "letter": "أ",
@@ -3084,7 +2384,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L04" ]
     },
     {
-        "idx": 221,
+        "idx": 171,
         "ar": "إِيَابٌ",
         "cleanAr": "اياب",
         "letter": "أ",
@@ -3098,21 +2398,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L16" ]
     },
     {
-        "idx": 222,
-        "ar": "أَيْدٍ",
-        "cleanAr": "ايد",
-        "letter": "أ",
-        "tr": "Aydin",
-        "cleanTr": "aydin",
-        "cat": "اسْمٌ",
-        "role": "Broken Plural / جَمْعُ تَكْسِير (يَد)",
-        "ur": "ہاتھ",
-        "en": "Hands",
-        "cleanEn": "hands",
-        "occurrences": [ "U05-L06" ]
-    },
-    {
-        "idx": 223,
+        "idx": 172,
         "ar": "إِيمَانٌ",
         "cleanAr": "ايمان",
         "letter": "أ",
@@ -3126,35 +2412,21 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L03", "U02-L02", "U05-L06" ]
     },
     {
-        "idx": 224,
-        "ar": "أَيْمَانٌ",
-        "cleanAr": "ايمان",
-        "letter": "أ",
-        "tr": "Aymān",
-        "cleanTr": "ayman",
-        "cat": "اسْمٌ",
-        "role": "Broken Plural / جَمْعُ تَكْسِير (يَمِين)",
-        "ur": "قسمیں، حلف",
-        "en": "Oaths, vows",
-        "cleanEn": "oaths vows",
-        "occurrences": [ "U05-L11" ]
-    },
-    {
-        "idx": 225,
+        "idx": 173,
         "ar": "آيَةٌ",
         "cleanAr": "ايه",
         "letter": "أ",
         "tr": "Āyah",
         "cleanTr": "ayah",
         "cat": "اسْمٌ",
-        "role": "Singular & Sound Feminine Plural",
+        "role": "Singular \u0026 Sound Feminine Plural",
         "ur": "نشانی، آیت / نشانیاں، آیات",
         "en": "Sign, verse, divine miracle, token",
         "cleanEn": "sign verse divine miracle token",
         "occurrences": [ "U01-L02", "U01-L11", "U01-L18", "U03-L01" ]
     },
     {
-        "idx": 226,
+        "idx": 174,
         "ar": "أَيُّوبٌ",
         "cleanAr": "ايوب",
         "letter": "أ",
@@ -3168,7 +2440,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L12", "U02-L06" ]
     },
     {
-        "idx": 227,
+        "idx": 175,
         "ar": "بِ",
         "cleanAr": "ب",
         "letter": "ب",
@@ -3179,10 +2451,10 @@ var WORDS_DATA = [    {
         "ur": "ساتھ، کے ذریعے، کی مدد سے؛ پر، کو، کے بدلے",
         "en": "With, by, in, through, in exchange for",
         "cleanEn": "with by in through in exchange for",
-        "occurrences": [ "U01-L01", "U02-L07", "U03-L03", "U02-L04" ]
+        "occurrences": [ "U01-L01", "U02-L04", "U02-L07", "U03-L03" ]
     },
     {
-        "idx": 228,
+        "idx": 176,
         "ar": "بَابٌ",
         "cleanAr": "باب",
         "letter": "ب",
@@ -3193,10 +2465,24 @@ var WORDS_DATA = [    {
         "ur": "دروازہ، پھاٹک، داخلہ گاہ",
         "en": "Door, gate, entrance",
         "cleanEn": "door gate entrance",
-        "occurrences": [ "U01-L03", "U03-L01" ]
+        "occurrences": [ "U01-L03", "U03-L01", "U04-L10" ]
     },
     {
-        "idx": 229,
+        "idx": 177,
+        "ar": "بَارٌّ",
+        "cleanAr": "بار",
+        "letter": "ب",
+        "tr": "Bārr",
+        "cleanTr": "barr",
+        "cat": "اسْمٌ",
+        "role": "Active Participle / اسْمُ فَاعِل (Plural: أَبْرَارٌ / بَرَرَةٌ)",
+        "ur": "نیک، فرمانبردار",
+        "en": "Righteous, dutiful, pious",
+        "cleanEn": "righteous dutiful pious",
+        "occurrences": [ "U05-L04" ]
+    },
+    {
+        "idx": 178,
         "ar": "بَارِئٌ",
         "cleanAr": "باري",
         "letter": "ب",
@@ -3210,7 +2496,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L10" ]
     },
     {
-        "idx": 230,
+        "idx": 179,
         "ar": "بَأْسٌ",
         "cleanAr": "باس",
         "letter": "ب",
@@ -3224,7 +2510,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L01", "U05-L14", "U05-L22" ]
     },
     {
-        "idx": 231,
+        "idx": 180,
         "ar": "بَأْسَاءٌ",
         "cleanAr": "باساء",
         "letter": "ب",
@@ -3238,7 +2524,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L03" ]
     },
     {
-        "idx": 232,
+        "idx": 181,
         "ar": "بَاسِرَةٌ",
         "cleanAr": "باسره",
         "letter": "ب",
@@ -3252,7 +2538,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L21" ]
     },
     {
-        "idx": 233,
+        "idx": 182,
         "ar": "بَاطِلٌ",
         "cleanAr": "باطل",
         "letter": "ب",
@@ -3266,7 +2552,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L01", "U01-L12", "U01-L13", "U02-L01", "U02-L07", "U02-L12" ]
     },
     {
-        "idx": 234,
+        "idx": 183,
         "ar": "بَاطِنٌ",
         "cleanAr": "باطن",
         "letter": "ب",
@@ -3280,7 +2566,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L01" ]
     },
     {
-        "idx": 235,
+        "idx": 184,
         "ar": "بَاقِيَةٌ",
         "cleanAr": "باقيه",
         "letter": "ب",
@@ -3294,7 +2580,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L02", "U04-L07" ]
     },
     {
-        "idx": 236,
+        "idx": 185,
         "ar": "بَالِغَةٌ",
         "cleanAr": "بالغه",
         "letter": "ب",
@@ -3304,11 +2590,11 @@ var WORDS_DATA = [    {
         "role": "Adjective (Fem.) / صِفَة (مُؤَنَّث)",
         "ur": "مکمل، انتہائی مؤثر، انتہا کو پہنچی ہوئی",
         "en": "Decisive, conclusive, far-reaching, profound (fem.)",
-        "cleanEn": "decisive conclusive farreaching profound fem",
+        "cleanEn": "decisive conclusive far reaching profound fem",
         "occurrences": [ "U03-L03" ]
     },
     {
-        "idx": 237,
+        "idx": 186,
         "ar": "بَحْرٌ",
         "cleanAr": "بحر",
         "letter": "ب",
@@ -3322,7 +2608,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L03", "U02-L03", "U02-L10", "U03-L10" ]
     },
     {
-        "idx": 238,
+        "idx": 187,
         "ar": "بُخْلٌ",
         "cleanAr": "بخل",
         "letter": "ب",
@@ -3336,7 +2622,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L06", "U01-L07" ]
     },
     {
-        "idx": 239,
+        "idx": 188,
         "ar": "بَدَّلَ",
         "cleanAr": "بدل",
         "letter": "ب",
@@ -3350,7 +2636,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L05" ]
     },
     {
-        "idx": 240,
+        "idx": 189,
         "ar": "بَدِيعٌ",
         "cleanAr": "بديع",
         "letter": "ب",
@@ -3364,21 +2650,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L05" ]
     },
     {
-        "idx": 241,
-        "ar": "بِرٌّ",
-        "cleanAr": "بر",
-        "letter": "ب",
-        "tr": "Birr",
-        "cleanTr": "birr",
-        "cat": "اسْمٌ",
-        "role": "Noun / اسْمٌ",
-        "ur": "نیکی، بھلائی، تقویٰ، اطاعت",
-        "en": "Righteousness, Piety, Virtue",
-        "cleanEn": "righteousness piety virtue",
-        "occurrences": [ "U02-L07" ]
-    },
-    {
-        "idx": 242,
+        "idx": 190,
         "ar": "بَرٌّ",
         "cleanAr": "بر",
         "letter": "ب",
@@ -3392,7 +2664,21 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L03", "U02-L03" ]
     },
     {
-        "idx": 243,
+        "idx": 191,
+        "ar": "بِرٌّ",
+        "cleanAr": "بر",
+        "letter": "ب",
+        "tr": "Birr",
+        "cleanTr": "birr",
+        "cat": "اسْمٌ",
+        "role": "Noun / اسْمٌ",
+        "ur": "نیکی، بھلائی، تقویٰ، اطاعت",
+        "en": "Righteousness, Piety, Virtue",
+        "cleanEn": "righteousness piety virtue",
+        "occurrences": [ "U02-L07" ]
+    },
+    {
+        "idx": 192,
         "ar": "بَرَاءَةٌ",
         "cleanAr": "براءه",
         "letter": "ب",
@@ -3406,7 +2692,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L03" ]
     },
     {
-        "idx": 244,
+        "idx": 193,
         "ar": "بَرْدٌ",
         "cleanAr": "برد",
         "letter": "ب",
@@ -3420,21 +2706,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L13" ]
     },
     {
-        "idx": 245,
-        "ar": "بَرَرَةٌ",
-        "cleanAr": "برره",
-        "letter": "ب",
-        "tr": "Bararah",
-        "cleanTr": "bararah",
-        "cat": "اسْمٌ",
-        "role": "Broken Plural / جَمْعُ تَكْسِير (بَارّ)",
-        "ur": "نیک سیرت، پاک باز",
-        "en": "Noble, dutiful, righteous",
-        "cleanEn": "noble dutiful righteous",
-        "occurrences": [ "U05-L04" ]
-    },
-    {
-        "idx": 246,
+        "idx": 194,
         "ar": "بَرَكَةٌ",
         "cleanAr": "بركه",
         "letter": "ب",
@@ -3448,7 +2720,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L11", "U04-L08", "U05-L08" ]
     },
     {
-        "idx": 247,
+        "idx": 195,
         "ar": "بُرْهَانٌ",
         "cleanAr": "برهان",
         "letter": "ب",
@@ -3462,7 +2734,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L08", "U04-L04" ]
     },
     {
-        "idx": 248,
+        "idx": 196,
         "ar": "بَرِيءٌ",
         "cleanAr": "بريء",
         "letter": "ب",
@@ -3476,7 +2748,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L11", "U04-L03", "U05-L02", "U05-L09" ]
     },
     {
-        "idx": 249,
+        "idx": 197,
         "ar": "بَسَطَ",
         "cleanAr": "بسط",
         "letter": "ب",
@@ -3490,7 +2762,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L02" ]
     },
     {
-        "idx": 250,
+        "idx": 198,
         "ar": "بَسْطَةٌ",
         "cleanAr": "بسطه",
         "letter": "ب",
@@ -3504,7 +2776,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L06" ]
     },
     {
-        "idx": 251,
+        "idx": 199,
         "ar": "بَشَرٌ",
         "cleanAr": "بشر",
         "letter": "ب",
@@ -3518,7 +2790,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L08", "U02-L02", "U03-L04", "U05-L09" ]
     },
     {
-        "idx": 252,
+        "idx": 200,
         "ar": "بُشْرَىٰ",
         "cleanAr": "بشري",
         "letter": "ب",
@@ -3532,7 +2804,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L08", "U05-L02" ]
     },
     {
-        "idx": 253,
+        "idx": 201,
         "ar": "بَصَائِرٌ",
         "cleanAr": "بصاير",
         "letter": "ب",
@@ -3546,21 +2818,21 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L02" ]
     },
     {
-        "idx": 254,
+        "idx": 202,
         "ar": "بَصَرٌ",
         "cleanAr": "بصر",
         "letter": "ب",
         "tr": "Baṣar",
         "cleanTr": "basar",
         "cat": "اسْمٌ",
-        "role": "Singular & Broken Plural",
+        "role": "Singular \u0026 Broken Plural",
         "ur": "دیکھنا، نگاہ، آنکھ؛ بصارت، بینائی",
         "en": "Vision, Eye / Visions, Eyes",
         "cleanEn": "vision eye visions eyes",
-        "occurrences": [ "U01-L10", "U02-L01", "U04-L01" ]
+        "occurrences": [ "U01-L10", "U02-L01", "U04-L01", "U04-L10", "U05-L08" ]
     },
     {
-        "idx": 255,
+        "idx": 203,
         "ar": "بَصِيرٌ",
         "cleanAr": "بصير",
         "letter": "ب",
@@ -3570,11 +2842,11 @@ var WORDS_DATA = [    {
         "role": "Intensive Adjective / صِفَة مُشَبَّهَة",
         "ur": "سب کچھ دیکھنے والا، بصیر",
         "en": "All-Seeing (Divine Attribute)",
-        "cleanEn": "allseeing divine attribute",
+        "cleanEn": "all seeing divine attribute",
         "occurrences": [ "U01-L09", "U01-L14", "U02-L01", "U02-L11", "U04-L01", "U05-L04" ]
     },
     {
-        "idx": 256,
+        "idx": 204,
         "ar": "بَصِيرَةٌ",
         "cleanAr": "بصيره",
         "letter": "ب",
@@ -3588,7 +2860,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L08", "U02-L06", "U04-L03" ]
     },
     {
-        "idx": 257,
+        "idx": 205,
         "ar": "بَطْشٌ",
         "cleanAr": "بطش",
         "letter": "ب",
@@ -3602,7 +2874,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L22" ]
     },
     {
-        "idx": 258,
+        "idx": 206,
         "ar": "بَطْشَةٌ",
         "cleanAr": "بطشه",
         "letter": "ب",
@@ -3616,7 +2888,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L01" ]
     },
     {
-        "idx": 259,
+        "idx": 207,
         "ar": "بَطْنٌ",
         "cleanAr": "بطن",
         "letter": "ب",
@@ -3627,24 +2899,10 @@ var WORDS_DATA = [    {
         "ur": "پیٹ، شکم، باطن",
         "en": "Belly, womb, interior",
         "cleanEn": "belly womb interior",
-        "occurrences": [ "U04-L02" ]
+        "occurrences": [ "U04-L02", "U05-L06" ]
     },
     {
-        "idx": 260,
-        "ar": "بُطُونٌ",
-        "cleanAr": "بطون",
-        "letter": "ب",
-        "tr": "Buṭūn",
-        "cleanTr": "butun",
-        "cat": "اسْمٌ",
-        "role": "Broken Plural / جَمْعُ تَكْسِير (بَطْن)",
-        "ur": "پیٹ، شکم",
-        "en": "Bellies",
-        "cleanEn": "bellies",
-        "occurrences": [ "U05-L06" ]
-    },
-    {
-        "idx": 261,
+        "idx": 208,
         "ar": "بَعْثٌ",
         "cleanAr": "بعث",
         "letter": "ب",
@@ -3658,21 +2916,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L04", "U05-L10" ]
     },
     {
-        "idx": 262,
-        "ar": "بُعْدٌ",
-        "cleanAr": "بعد",
-        "letter": "ب",
-        "tr": "Bu‘d",
-        "cleanTr": "bud",
-        "cat": "اسْمٌ",
-        "role": "Noun / اسْمٌ",
-        "ur": "دوری، مسافت، فاصلہ",
-        "en": "Distance, separation, remoteness",
-        "cleanEn": "distance separation remoteness",
-        "occurrences": [ "U04-L14" ]
-    },
-    {
-        "idx": 263,
+        "idx": 209,
         "ar": "بَعْدَ",
         "cleanAr": "بعد",
         "letter": "ب",
@@ -3686,7 +2930,21 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L05" ]
     },
     {
-        "idx": 264,
+        "idx": 210,
+        "ar": "بُعْدٌ",
+        "cleanAr": "بعد",
+        "letter": "ب",
+        "tr": "Bu‘d",
+        "cleanTr": "bud",
+        "cat": "اسْمٌ",
+        "role": "Noun / اسْمٌ",
+        "ur": "دوری، مسافت، فاصلہ",
+        "en": "Distance, separation, remoteness",
+        "cleanEn": "distance separation remoteness",
+        "occurrences": [ "U04-L14" ]
+    },
+    {
+        "idx": 211,
         "ar": "بَعْضٌ",
         "cleanAr": "بعض",
         "letter": "ب",
@@ -3700,7 +2958,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L04", "U05-L03" ]
     },
     {
-        "idx": 265,
+        "idx": 212,
         "ar": "بَعْلٌ",
         "cleanAr": "بعل",
         "letter": "ب",
@@ -3714,7 +2972,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L14" ]
     },
     {
-        "idx": 266,
+        "idx": 213,
         "ar": "بَعِيدٌ",
         "cleanAr": "بعيد",
         "letter": "ب",
@@ -3725,10 +2983,10 @@ var WORDS_DATA = [    {
         "ur": "دور، بعید، پرے",
         "en": "Far, distant, remote",
         "cleanEn": "far distant remote",
-        "occurrences": [ "U03-L01" ]
+        "occurrences": [ "U01-L19", "U03-L01" ]
     },
     {
-        "idx": 267,
+        "idx": 214,
         "ar": "بَغْيٌ",
         "cleanAr": "بغي",
         "letter": "ب",
@@ -3742,7 +3000,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L10" ]
     },
     {
-        "idx": 268,
+        "idx": 215,
         "ar": "بَقَرَةٌ",
         "cleanAr": "بقره",
         "letter": "ب",
@@ -3756,7 +3014,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L12" ]
     },
     {
-        "idx": 269,
+        "idx": 216,
         "ar": "بَلْ",
         "cleanAr": "بل",
         "letter": "ب",
@@ -3770,7 +3028,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L03", "U05-L01" ]
     },
     {
-        "idx": 270,
+        "idx": 217,
         "ar": "بَلَا",
         "cleanAr": "بلا",
         "letter": "ب",
@@ -3784,35 +3042,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L05" ]
     },
     {
-        "idx": 271,
-        "ar": "بَلَاءٌ",
-        "cleanAr": "بلاء",
-        "letter": "ب",
-        "tr": "Balā’",
-        "cleanTr": "bala",
-        "cat": "اسْمٌ",
-        "role": "Noun / اسْمٌ",
-        "ur": "آزمائش، امتحان، مصیبت",
-        "en": "Trial, test, ordeal, severe affliction",
-        "cleanEn": "trial test ordeal severe affliction",
-        "occurrences": [ "U03-L01", "U05-L12" ]
-    },
-    {
-        "idx": 272,
-        "ar": "بِلَادٌ",
-        "cleanAr": "بلاد",
-        "letter": "ب",
-        "tr": "Bilād",
-        "cleanTr": "bilad",
-        "cat": "اسْمٌ",
-        "role": "Plural Noun / جَمْعُ بَلَد",
-        "ur": "شہر، بستیاں، ممالک",
-        "en": "Lands, cities, countries",
-        "cleanEn": "lands cities countries",
-        "occurrences": [ "U04-L12" ]
-    },
-    {
-        "idx": 273,
+        "idx": 218,
         "ar": "بَلَاغٌ",
         "cleanAr": "بلاغ",
         "letter": "ب",
@@ -3826,21 +3056,35 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L06", "U01-L15", "U02-L02", "U02-L09", "U03-L01", "U05-L15" ]
     },
     {
-        "idx": 274,
+        "idx": 219,
+        "ar": "بَلَاءٌ",
+        "cleanAr": "بلاء",
+        "letter": "ب",
+        "tr": "Balā’",
+        "cleanTr": "bala",
+        "cat": "اسْمٌ",
+        "role": "Noun / اسْمٌ",
+        "ur": "آزمائش، امتحان، مصیبت",
+        "en": "Trial, test, ordeal, severe affliction",
+        "cleanEn": "trial test ordeal severe affliction",
+        "occurrences": [ "U03-L01", "U05-L12" ]
+    },
+    {
+        "idx": 220,
         "ar": "بَلَدٌ",
         "cleanAr": "بلد",
         "letter": "ب",
         "tr": "Balad",
         "cleanTr": "balad",
         "cat": "اسْمٌ",
-        "role": "Noun of Place / اسْمُ مَكَان",
+        "role": "Noun of Place / اسْمُ مَكَان (Plural: بِلَادٌ)",
         "ur": "شہر، بستی، خطۂ ارض (مکہ مکرمہ)",
         "en": "City, land, country",
         "cleanEn": "city land country",
-        "occurrences": [ "U01-L15", "U02-L02", "U04-L05" ]
+        "occurrences": [ "U01-L15", "U02-L02", "U04-L05", "U04-L12" ]
     },
     {
-        "idx": 275,
+        "idx": 221,
         "ar": "بَلْدَةٌ",
         "cleanAr": "بلده",
         "letter": "ب",
@@ -3854,7 +3098,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L17" ]
     },
     {
-        "idx": 276,
+        "idx": 222,
         "ar": "بَلِيغٌ",
         "cleanAr": "بليغ",
         "letter": "ب",
@@ -3864,11 +3108,11 @@ var WORDS_DATA = [    {
         "role": "Adjective / صِفَة",
         "ur": "مؤثر، دل میں اتر جانے والی، فصیح",
         "en": "Effective, penetrating, eloquent, far-reaching",
-        "cleanEn": "effective penetrating eloquent farreaching",
+        "cleanEn": "effective penetrating eloquent far reaching",
         "occurrences": [ "U03-L02" ]
     },
     {
-        "idx": 277,
+        "idx": 223,
         "ar": "بِنْتٌ",
         "cleanAr": "بنت",
         "letter": "ب",
@@ -3882,7 +3126,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L01" ]
     },
     {
-        "idx": 278,
+        "idx": 224,
         "ar": "بُهْتَانٌ",
         "cleanAr": "بهتان",
         "letter": "ب",
@@ -3896,7 +3140,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L15", "U03-L01", "U05-L07" ]
     },
     {
-        "idx": 279,
+        "idx": 225,
         "ar": "بَيَانٌ",
         "cleanAr": "بيان",
         "letter": "ب",
@@ -3910,7 +3154,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L08", "U02-L02", "U05-L02" ]
     },
     {
-        "idx": 280,
+        "idx": 226,
         "ar": "بَيْتٌ",
         "cleanAr": "بيت",
         "letter": "ب",
@@ -3921,10 +3165,10 @@ var WORDS_DATA = [    {
         "ur": "گھر، مکان، کعبۃ اللہ",
         "en": "House, Sacred House (Kaaba)",
         "cleanEn": "house sacred house kaaba",
-        "occurrences": [ "U01-L01", "U01-L05", "U02-L05", "U02-L10", "U03-L03" ]
+        "occurrences": [ "U01-L01", "U01-L05", "U02-L05", "U02-L10", "U03-L03", "U05-L06" ]
     },
     {
-        "idx": 281,
+        "idx": 227,
         "ar": "بِئْسَ",
         "cleanAr": "بيس",
         "letter": "ب",
@@ -3938,7 +3182,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L06" ]
     },
     {
-        "idx": 282,
+        "idx": 228,
         "ar": "بَيْضَاءٌ",
         "cleanAr": "بيضاء",
         "letter": "ب",
@@ -3952,7 +3196,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L09", "U05-L02" ]
     },
     {
-        "idx": 283,
+        "idx": 229,
         "ar": "بَيْعٌ",
         "cleanAr": "بيع",
         "letter": "ب",
@@ -3966,7 +3210,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L05" ]
     },
     {
-        "idx": 284,
+        "idx": 230,
         "ar": "بَيْنَ",
         "cleanAr": "بين",
         "letter": "ب",
@@ -3977,38 +3221,24 @@ var WORDS_DATA = [    {
         "ur": "درمیان، بیچ میں",
         "en": "Between, among",
         "cleanEn": "between among",
-        "occurrences": [ "U02-L08", "U01-L05", "U04-L03" ]
+        "occurrences": [ "U01-L05", "U02-L08", "U04-L03" ]
     },
     {
-        "idx": 285,
+        "idx": 231,
         "ar": "بَيِّنَةٌ",
         "cleanAr": "بينه",
         "letter": "ب",
         "tr": "Bayyinah",
         "cleanTr": "bayyinah",
         "cat": "صِفَةٌ",
-        "role": "Singular & Sound Feminine Plural",
+        "role": "Singular \u0026 Sound Feminine Plural",
         "ur": "واضح دلیل / واضح دلائل، کھلے معجزات",
         "en": "Clear evidence, proof, manifest sign",
         "cleanEn": "clear evidence proof manifest sign",
         "occurrences": [ "U01-L11", "U02-L04", "U04-L03", "U05-L21" ]
     },
     {
-        "idx": 286,
-        "ar": "بُيُوتٌ",
-        "cleanAr": "بيوت",
-        "letter": "ب",
-        "tr": "Buyūt",
-        "cleanTr": "buyut",
-        "cat": "اسْمٌ",
-        "role": "Broken Plural / جَمْعُ تَكْسِير (بَيْت)",
-        "ur": "گھر، مکانات",
-        "en": "Houses, homes",
-        "cleanEn": "houses homes",
-        "occurrences": [ "U05-L06" ]
-    },
-    {
-        "idx": 287,
+        "idx": 232,
         "ar": "تَابُوتٌ",
         "cleanAr": "تابوت",
         "letter": "ت",
@@ -4022,7 +3252,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L04", "U02-L03" ]
     },
     {
-        "idx": 288,
+        "idx": 233,
         "ar": "تَأْوِيلٌ",
         "cleanAr": "تاويل",
         "letter": "ت",
@@ -4033,10 +3263,10 @@ var WORDS_DATA = [    {
         "ur": "انجام اور حتمی نتیجے کے لحاظ سے",
         "en": "Interpretation, ultimate outcome",
         "cleanEn": "interpretation ultimate outcome",
-        "occurrences": [ "U05-L22", "U02-L12" ]
+        "occurrences": [ "U02-L12", "U05-L22" ]
     },
     {
-        "idx": 289,
+        "idx": 234,
         "ar": "تَائِبٌ",
         "cleanAr": "تايب",
         "letter": "ت",
@@ -4050,7 +3280,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L08", "U05-L01" ]
     },
     {
-        "idx": 290,
+        "idx": 235,
         "ar": "تَبَابٌ",
         "cleanAr": "تباب",
         "letter": "ت",
@@ -4064,7 +3294,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L19" ]
     },
     {
-        "idx": 291,
+        "idx": 236,
         "ar": "تَبْدِيلٌ",
         "cleanAr": "تبديل",
         "letter": "ت",
@@ -4078,7 +3308,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L08", "U03-L06" ]
     },
     {
-        "idx": 292,
+        "idx": 237,
         "ar": "تِجَارَةٌ",
         "cleanAr": "تجاره",
         "letter": "ت",
@@ -4092,7 +3322,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L07", "U02-L04", "U05-L21" ]
     },
     {
-        "idx": 293,
+        "idx": 238,
         "ar": "تَحْتَ",
         "cleanAr": "تحت",
         "letter": "ت",
@@ -4106,7 +3336,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L10", "U05-L08" ]
     },
     {
-        "idx": 294,
+        "idx": 239,
         "ar": "تَحِيَّةٌ",
         "cleanAr": "تحيه",
         "letter": "ت",
@@ -4120,7 +3350,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L12", "U05-L06" ]
     },
     {
-        "idx": 295,
+        "idx": 240,
         "ar": "تَخْسِيرٌ",
         "cleanAr": "تخسير",
         "letter": "ت",
@@ -4134,7 +3364,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L04" ]
     },
     {
-        "idx": 296,
+        "idx": 241,
         "ar": "تَخْفِيفٌ",
         "cleanAr": "تخفيف",
         "letter": "ت",
@@ -4148,7 +3378,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L16" ]
     },
     {
-        "idx": 297,
+        "idx": 242,
         "ar": "تَذْكِرَةٌ",
         "cleanAr": "تذكره",
         "letter": "ت",
@@ -4162,7 +3392,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L17", "U01-L18", "U02-L01", "U04-L07", "U05-L02" ]
     },
     {
-        "idx": 298,
+        "idx": 243,
         "ar": "تَذْكِيرٌ",
         "cleanAr": "تذكير",
         "letter": "ت",
@@ -4176,7 +3406,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L14" ]
     },
     {
-        "idx": 299,
+        "idx": 244,
         "ar": "تُرَابٌ",
         "cleanAr": "تراب",
         "letter": "ت",
@@ -4190,7 +3420,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L03" ]
     },
     {
-        "idx": 300,
+        "idx": 245,
         "ar": "تَرَكَ",
         "cleanAr": "ترك",
         "letter": "ت",
@@ -4204,7 +3434,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L03" ]
     },
     {
-        "idx": 301,
+        "idx": 246,
         "ar": "تَسْبِيحٌ",
         "cleanAr": "تسبيح",
         "letter": "ت",
@@ -4218,7 +3448,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L06", "U04-L02" ]
     },
     {
-        "idx": 302,
+        "idx": 247,
         "ar": "تَسْنِيمٌ",
         "cleanAr": "تسنيم",
         "letter": "ت",
@@ -4232,7 +3462,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L02" ]
     },
     {
-        "idx": 303,
+        "idx": 248,
         "ar": "تَصْدِيقٌ",
         "cleanAr": "تصديق",
         "letter": "ت",
@@ -4246,7 +3476,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L08" ]
     },
     {
-        "idx": 304,
+        "idx": 249,
         "ar": "تَفَاخُرٌ",
         "cleanAr": "تفاخر",
         "letter": "ت",
@@ -4260,7 +3490,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L10" ]
     },
     {
-        "idx": 305,
+        "idx": 250,
         "ar": "تَفْسِيرٌ",
         "cleanAr": "تفسير",
         "letter": "ت",
@@ -4274,7 +3504,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L08", "U05-L22" ]
     },
     {
-        "idx": 306,
+        "idx": 251,
         "ar": "تَفْصِيلٌ",
         "cleanAr": "تفصيل",
         "letter": "ت",
@@ -4288,7 +3518,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L07", "U03-L05" ]
     },
     {
-        "idx": 307,
+        "idx": 252,
         "ar": "تَقَلُّبٌ",
         "cleanAr": "تقلب",
         "letter": "ت",
@@ -4302,7 +3532,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L06" ]
     },
     {
-        "idx": 308,
+        "idx": 253,
         "ar": "تَقْوَىٰ",
         "cleanAr": "تقوي",
         "letter": "ت",
@@ -4312,11 +3542,11 @@ var WORDS_DATA = [    {
         "role": "Noun (Verbal Noun) / مَصْدَر",
         "ur": "تقویٰ، پرہیزگاری، اللہ کا خوف؛ گناہوں سے بچنا",
         "en": "Piety, God-consciousness, righteousness",
-        "cleanEn": "piety godconsciousness righteousness",
+        "cleanEn": "piety god consciousness righteousness",
         "occurrences": [ "U01-L06", "U02-L02", "U03-L04", "U05-L12" ]
     },
     {
-        "idx": 309,
+        "idx": 254,
         "ar": "تَكَاثُرٌ",
         "cleanAr": "تكاثر",
         "letter": "ت",
@@ -4330,7 +3560,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L10" ]
     },
     {
-        "idx": 310,
+        "idx": 255,
         "ar": "تَكْبِيرٌ",
         "cleanAr": "تكبير",
         "letter": "ت",
@@ -4344,7 +3574,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L07" ]
     },
     {
-        "idx": 311,
+        "idx": 256,
         "ar": "تَلَا",
         "cleanAr": "تلا",
         "letter": "ت",
@@ -4358,7 +3588,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L10" ]
     },
     {
-        "idx": 312,
+        "idx": 257,
         "ar": "تِلَاوَةٌ",
         "cleanAr": "تلاوه",
         "letter": "ت",
@@ -4372,7 +3602,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L03" ]
     },
     {
-        "idx": 313,
+        "idx": 258,
         "ar": "تِلْكَ",
         "cleanAr": "تلك",
         "letter": "ت",
@@ -4386,7 +3616,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L10", "U01-L17" ]
     },
     {
-        "idx": 314,
+        "idx": 259,
         "ar": "تَمَنَّىٰ",
         "cleanAr": "تمني",
         "letter": "ت",
@@ -4400,7 +3630,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L04" ]
     },
     {
-        "idx": 315,
+        "idx": 260,
         "ar": "تَنْكِيلٌ",
         "cleanAr": "تنكيل",
         "letter": "ت",
@@ -4414,7 +3644,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L22" ]
     },
     {
-        "idx": 316,
+        "idx": 261,
         "ar": "تَهْلُكَةٌ",
         "cleanAr": "تهلكه",
         "letter": "ت",
@@ -4428,7 +3658,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L06" ]
     },
     {
-        "idx": 317,
+        "idx": 262,
         "ar": "تَوَّابٌ",
         "cleanAr": "تواب",
         "letter": "ت",
@@ -4438,11 +3668,11 @@ var WORDS_DATA = [    {
         "role": "Intensive Adjective / صِيغَةُ مُبَالَغَة (فَعَّال)",
         "ur": "بہت توبہ قبول کرنے والا، بار بار رحمت سے رجوع کرنے والا",
         "en": "Oft-Returning in mercy, Accepter of repentance",
-        "cleanEn": "oftreturning in mercy accepter of repentance",
+        "cleanEn": "oft returning in mercy accepter of repentance",
         "occurrences": [ "U02-L11", "U03-L08" ]
     },
     {
-        "idx": 318,
+        "idx": 263,
         "ar": "تَوْبَةٌ",
         "cleanAr": "توبه",
         "letter": "ت",
@@ -4456,7 +3686,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L01", "U01-L13" ]
     },
     {
-        "idx": 319,
+        "idx": 264,
         "ar": "تَوْرَاةٌ",
         "cleanAr": "توراه",
         "letter": "ت",
@@ -4470,7 +3700,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L12", "U02-L03" ]
     },
     {
-        "idx": 320,
+        "idx": 265,
         "ar": "تَوْفِيقٌ",
         "cleanAr": "توفيق",
         "letter": "ت",
@@ -4484,7 +3714,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L03", "U02-L09", "U05-L19" ]
     },
     {
-        "idx": 321,
+        "idx": 266,
         "ar": "تِينٌ",
         "cleanAr": "تين",
         "letter": "ت",
@@ -4498,7 +3728,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L10" ]
     },
     {
-        "idx": 322,
+        "idx": 267,
         "ar": "ثَابِتٌ",
         "cleanAr": "ثابت",
         "letter": "ث",
@@ -4512,7 +3742,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L10" ]
     },
     {
-        "idx": 323,
+        "idx": 268,
         "ar": "ثُبُوتٌ",
         "cleanAr": "ثبوت",
         "letter": "ث",
@@ -4526,7 +3756,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L11" ]
     },
     {
-        "idx": 324,
+        "idx": 269,
         "ar": "ثَرَىٰ",
         "cleanAr": "ثري",
         "letter": "ث",
@@ -4540,7 +3770,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L21" ]
     },
     {
-        "idx": 325,
+        "idx": 270,
         "ar": "ثُعْبَانٌ",
         "cleanAr": "ثعبان",
         "letter": "ث",
@@ -4554,7 +3784,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L01" ]
     },
     {
-        "idx": 326,
+        "idx": 271,
         "ar": "ثَقِيلٌ",
         "cleanAr": "ثقيل",
         "letter": "ث",
@@ -4568,7 +3798,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L02" ]
     },
     {
-        "idx": 327,
+        "idx": 272,
         "ar": "ثَلَاثٌ",
         "cleanAr": "ثلاث",
         "letter": "ث",
@@ -4582,7 +3812,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L08" ]
     },
     {
-        "idx": 328,
+        "idx": 273,
         "ar": "ثُلُثٌ",
         "cleanAr": "ثلث",
         "letter": "ث",
@@ -4592,11 +3822,11 @@ var WORDS_DATA = [    {
         "role": "Noun / اسْمٌ",
         "ur": "ایک تہائی، تیسرا حصہ",
         "en": "One-third",
-        "cleanEn": "onethird",
+        "cleanEn": "one third",
         "occurrences": [ "U04-L02" ]
     },
     {
-        "idx": 329,
+        "idx": 274,
         "ar": "ثُلَّةٌ",
         "cleanAr": "ثله",
         "letter": "ث",
@@ -4610,7 +3840,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L02" ]
     },
     {
-        "idx": 330,
+        "idx": 275,
         "ar": "ثُمَّ",
         "cleanAr": "ثم",
         "letter": "ث",
@@ -4624,7 +3854,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L04" ]
     },
     {
-        "idx": 331,
+        "idx": 276,
         "ar": "ثَمَرٌ",
         "cleanAr": "ثمر",
         "letter": "ث",
@@ -4635,24 +3865,24 @@ var WORDS_DATA = [    {
         "ur": "پھل، پیداوار، ثمر",
         "en": "Fruit, produce, yield",
         "cleanEn": "fruit produce yield",
-        "occurrences": [ "U04-L03", "U04-L12" ]
+        "occurrences": [ "U04-L03" ]
     },
     {
-        "idx": 332,
+        "idx": 277,
         "ar": "ثَمَرَةٌ",
         "cleanAr": "ثمره",
         "letter": "ث",
         "tr": "Thamarah",
         "cleanTr": "thamarah",
         "cat": "اسْمٌ",
-        "role": "Noun (Feminine) / اسْمٌ (مُؤَنَّث)",
+        "role": "Noun (Feminine) / اسْمٌ (Plural: ثَمَرَاتٌ)",
         "ur": "پھل / پھل، میوے",
         "en": "Fruit, produce",
         "cleanEn": "fruit produce",
-        "occurrences": [ "U01-L11" ]
+        "occurrences": [ "U01-L11", "U04-L12" ]
     },
     {
-        "idx": 333,
+        "idx": 278,
         "ar": "ثَمَنٌ",
         "cleanAr": "ثمن",
         "letter": "ث",
@@ -4666,7 +3896,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L01" ]
     },
     {
-        "idx": 334,
+        "idx": 279,
         "ar": "ثَمُودٌ",
         "cleanAr": "ثمود",
         "letter": "ث",
@@ -4680,7 +3910,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L01", "U05-L06" ]
     },
     {
-        "idx": 335,
+        "idx": 280,
         "ar": "ثَوَابٌ",
         "cleanAr": "ثواب",
         "letter": "ث",
@@ -4694,21 +3924,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L08", "U03-L05", "U05-L21", "U05-L22" ]
     },
     {
-        "idx": 336,
-        "ar": "جَاءَ",
-        "cleanAr": "جاء",
-        "letter": "ج",
-        "tr": "Jā’a",
-        "cleanTr": "jaa",
-        "cat": "فِعْلٌ",
-        "role": "Verb (Past) / فِعْلٌ مَاضٍ",
-        "ur": "وہ آیا، لے کر آیا",
-        "en": "He came, arrived",
-        "cleanEn": "he came arrived",
-        "occurrences": [ "U01-L08", "U02-L12", "U02-L07" ]
-    },
-    {
-        "idx": 337,
+        "idx": 281,
         "ar": "جَابِرٌ",
         "cleanAr": "جابر",
         "letter": "ج",
@@ -4722,7 +3938,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L08" ]
     },
     {
-        "idx": 338,
+        "idx": 282,
         "ar": "جَارٌ",
         "cleanAr": "جار",
         "letter": "ج",
@@ -4736,7 +3952,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L16", "U05-L12" ]
     },
     {
-        "idx": 339,
+        "idx": 283,
         "ar": "جَارِيَةٌ",
         "cleanAr": "جاريه",
         "letter": "ج",
@@ -4750,7 +3966,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L12" ]
     },
     {
-        "idx": 340,
+        "idx": 284,
         "ar": "جَازٍ",
         "cleanAr": "جاز",
         "letter": "ج",
@@ -4764,12 +3980,12 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L08" ]
     },
     {
-        "idx": 341,
+        "idx": 285,
         "ar": "جَاعِلٌ",
         "cleanAr": "جاعل",
         "letter": "ج",
         "tr": "Jā‘il",
-        "cleanTr": "ja'il",
+        "cleanTr": "jail",
         "cat": "اسْمٌ",
         "role": "Active Participle / اسْمُ فَاعِل",
         "ur": "بنانے والا، مقرر کرنے والا",
@@ -4778,7 +3994,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L01" ]
     },
     {
-        "idx": 342,
+        "idx": 286,
         "ar": "جَالُوتٌ",
         "cleanAr": "جالوت",
         "letter": "ج",
@@ -4792,7 +4008,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L08", "U05-L16" ]
     },
     {
-        "idx": 343,
+        "idx": 287,
         "ar": "جَامِعٌ",
         "cleanAr": "جامع",
         "letter": "ج",
@@ -4806,7 +4022,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L05", "U03-L08", "U05-L03" ]
     },
     {
-        "idx": 344,
+        "idx": 288,
         "ar": "جَانٌّ",
         "cleanAr": "جان",
         "letter": "ج",
@@ -4816,11 +4032,11 @@ var WORDS_DATA = [    {
         "role": "Noun / اسْمُ جِنْس",
         "ur": "جن، تیز دوڑنے والا سانپ",
         "en": "Jinn, swift-moving snake",
-        "cleanEn": "jinn swiftmoving snake",
+        "cleanEn": "jinn swift moving snake",
         "occurrences": [ "U05-L20" ]
     },
     {
-        "idx": 345,
+        "idx": 289,
         "ar": "جَاهَدَ",
         "cleanAr": "جاهد",
         "letter": "ج",
@@ -4834,7 +4050,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L02" ]
     },
     {
-        "idx": 346,
+        "idx": 290,
         "ar": "جَاهِلٌ",
         "cleanAr": "جاهل",
         "letter": "ج",
@@ -4848,7 +4064,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L08", "U05-L01" ]
     },
     {
-        "idx": 347,
+        "idx": 291,
         "ar": "جَاهِلِيَّةٌ",
         "cleanAr": "جاهليه",
         "letter": "ج",
@@ -4862,7 +4078,21 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L05" ]
     },
     {
-        "idx": 348,
+        "idx": 292,
+        "ar": "جَاءَ",
+        "cleanAr": "جاء",
+        "letter": "ج",
+        "tr": "Jā’a",
+        "cleanTr": "jaa",
+        "cat": "فِعْلٌ",
+        "role": "Verb (Past) / فِعْلٌ مَاضٍ",
+        "ur": "وہ آیا، لے کر آیا",
+        "en": "He came, arrived",
+        "cleanEn": "he came arrived",
+        "occurrences": [ "U01-L08", "U02-L07", "U02-L12" ]
+    },
+    {
+        "idx": 293,
         "ar": "جَبَّارٌ",
         "cleanAr": "جبار",
         "letter": "ج",
@@ -4872,25 +4102,11 @@ var WORDS_DATA = [    {
         "role": "Intensive Adjective / صِيغَةُ مُبَالَغَة (فَعَّال)",
         "ur": "زبردست اقتدار والا، شکستہ دلوں کو جوڑنے والا",
         "en": "All-Compelling, Irresistible Restorer",
-        "cleanEn": "allcompelling irresistible restorer",
+        "cleanEn": "all compelling irresistible restorer",
         "occurrences": [ "U03-L08" ]
     },
     {
-        "idx": 349,
-        "ar": "جِبَالٌ",
-        "cleanAr": "جبال",
-        "letter": "ج",
-        "tr": "Jibāl",
-        "cleanTr": "jibal",
-        "cat": "اسْمٌ",
-        "role": "Broken Plural / جَمْعُ تَكْسِير (جَبَل)",
-        "ur": "پہاڑ",
-        "en": "Mountains",
-        "cleanEn": "mountains",
-        "occurrences": [ "U02-L13", "U04-L01", "U05-L12" ]
-    },
-    {
-        "idx": 350,
+        "idx": 294,
         "ar": "جِبْرِيلٌ",
         "cleanAr": "جبريل",
         "letter": "ج",
@@ -4904,21 +4120,21 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L02" ]
     },
     {
-        "idx": 351,
+        "idx": 295,
         "ar": "جَبَلٌ",
         "cleanAr": "جبل",
         "letter": "ج",
         "tr": "Jabal",
         "cleanTr": "jabal",
         "cat": "اسْمٌ",
-        "role": "Plural Noun / جَمْع (جَبَلٌ)",
-        "ur": "پہاڑ، کوہسار",
-        "en": "Mountains",
-        "cleanEn": "mountains",
-        "occurrences": [ "U02-L02", "U02-L06" ]
+        "role": "Noun / اسْمٌ (Plural: جِبَالٌ)",
+        "ur": "پہاڑ",
+        "en": "Mountain",
+        "cleanEn": "mountain",
+        "occurrences": [ "U02-L02", "U02-L06", "U02-L13", "U04-L01", "U05-L12" ]
     },
     {
-        "idx": 352,
+        "idx": 296,
         "ar": "جَحِيمٌ",
         "cleanAr": "جحيم",
         "letter": "ج",
@@ -4932,7 +4148,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L03", "U03-L04" ]
     },
     {
-        "idx": 353,
+        "idx": 297,
         "ar": "جِدَارٌ",
         "cleanAr": "جدار",
         "letter": "ج",
@@ -4946,7 +4162,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L12" ]
     },
     {
-        "idx": 354,
+        "idx": 298,
         "ar": "جِدَالٌ",
         "cleanAr": "جدال",
         "letter": "ج",
@@ -4960,7 +4176,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L08" ]
     },
     {
-        "idx": 355,
+        "idx": 299,
         "ar": "جَرَمٌ",
         "cleanAr": "جرم",
         "letter": "ج",
@@ -4974,7 +4190,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L08" ]
     },
     {
-        "idx": 356,
+        "idx": 300,
         "ar": "جُرُوحٌ",
         "cleanAr": "جروح",
         "letter": "ج",
@@ -4988,7 +4204,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L07" ]
     },
     {
-        "idx": 357,
+        "idx": 301,
         "ar": "جَزَاءٌ",
         "cleanAr": "جزاء",
         "letter": "ج",
@@ -5002,21 +4218,21 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L01", "U01-L13", "U01-L16", "U04-L01", "U05-L03" ]
     },
     {
-        "idx": 358,
+        "idx": 302,
         "ar": "جِسْمٌ",
         "cleanAr": "جسم",
         "letter": "ج",
         "tr": "Jism",
         "cleanTr": "jism",
         "cat": "اسْمٌ",
-        "role": "Singular & Broken Plural",
+        "role": "Singular \u0026 Broken Plural",
         "ur": "جسم / اجسام، بدن",
         "en": "Body, Physical frame",
         "cleanEn": "body physical frame",
-        "occurrences": [ "U01-L03", "U01-L10", "U02-L03" ]
+        "occurrences": [ "U01-L03", "U01-L10", "U02-L03", "U05-L06" ]
     },
     {
-        "idx": 359,
+        "idx": 303,
         "ar": "جَعَلَ",
         "cleanAr": "جعل",
         "letter": "ج",
@@ -5030,7 +4246,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L01", "U02-L03" ]
     },
     {
-        "idx": 360,
+        "idx": 304,
         "ar": "جَلَالٌ",
         "cleanAr": "جلال",
         "letter": "ج",
@@ -5044,7 +4260,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L06", "U03-L04" ]
     },
     {
-        "idx": 361,
+        "idx": 305,
         "ar": "جُلُودٌ",
         "cleanAr": "جلود",
         "letter": "ج",
@@ -5058,7 +4274,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L06" ]
     },
     {
-        "idx": 362,
+        "idx": 306,
         "ar": "جَلَّى",
         "cleanAr": "جلي",
         "letter": "ج",
@@ -5072,7 +4288,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L10" ]
     },
     {
-        "idx": 363,
+        "idx": 307,
         "ar": "جَمَالٌ",
         "cleanAr": "جمال",
         "letter": "ج",
@@ -5086,7 +4302,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L05", "U05-L12" ]
     },
     {
-        "idx": 364,
+        "idx": 308,
         "ar": "جَمْعٌ",
         "cleanAr": "جمع",
         "letter": "ج",
@@ -5097,10 +4313,10 @@ var WORDS_DATA = [    {
         "ur": "جمع کرنا، اکٹھا کیا جانا، گروہ",
         "en": "Gathering, assembling, multitude",
         "cleanEn": "gathering assembling multitude",
-        "occurrences": [ "U03-L04", "U05-L06", "U03-L10", "U05-L22" ]
+        "occurrences": [ "U03-L04", "U03-L10", "U05-L06", "U05-L22" ]
     },
     {
-        "idx": 365,
+        "idx": 309,
         "ar": "جُمُعَةٌ",
         "cleanAr": "جمعه",
         "letter": "ج",
@@ -5114,7 +4330,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L03", "U03-L04" ]
     },
     {
-        "idx": 366,
+        "idx": 310,
         "ar": "جَمِيعًا",
         "cleanAr": "جميعا",
         "letter": "ج",
@@ -5128,7 +4344,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L08", "U02-L02", "U02-L11", "U03-L05", "U05-L03" ]
     },
     {
-        "idx": 367,
+        "idx": 311,
         "ar": "جِنٌّ",
         "cleanAr": "جن",
         "letter": "ج",
@@ -5142,7 +4358,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L06", "U02-L05" ]
     },
     {
-        "idx": 368,
+        "idx": 312,
         "ar": "جُنَاحٌ",
         "cleanAr": "جناح",
         "letter": "ج",
@@ -5156,7 +4372,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L08", "U05-L12" ]
     },
     {
-        "idx": 369,
+        "idx": 313,
         "ar": "جُندٌ",
         "cleanAr": "جند",
         "letter": "ج",
@@ -5167,10 +4383,24 @@ var WORDS_DATA = [    {
         "ur": "فوج، لشکر",
         "en": "Army, troops, host",
         "cleanEn": "army troops host",
-        "occurrences": [ "U05-L12", "U03-L10" ]
+        "occurrences": [ "U02-L08", "U03-L05", "U03-L10", "U05-L12", "U05-L16" ]
     },
     {
-        "idx": 370,
+        "idx": 314,
+        "ar": "جَنَّةٌ",
+        "cleanAr": "جنه",
+        "letter": "ج",
+        "tr": "Jannah",
+        "cleanTr": "jannah",
+        "cat": "اسْمٌ",
+        "role": "Singular \u0026 Sound Feminine Plural",
+        "ur": "جنت، باغ / باغات، جنتیں",
+        "en": "Garden / Gardens, Paradises",
+        "cleanEn": "garden gardens paradises",
+        "occurrences": [ "U01-L01", "U01-L11", "U01-L17", "U02-L03", "U02-L06", "U03-L03", "U05-L02" ]
+    },
+    {
+        "idx": 315,
         "ar": "جِنَّةٌ",
         "cleanAr": "جنه",
         "letter": "ج",
@@ -5184,35 +4414,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L05" ]
     },
     {
-        "idx": 371,
-        "ar": "جَنَّةٌ",
-        "cleanAr": "جنه",
-        "letter": "ج",
-        "tr": "Jannah",
-        "cleanTr": "jannah",
-        "cat": "اسْمٌ",
-        "role": "Singular & Sound Feminine Plural",
-        "ur": "جنت، باغ / باغات، جنتیں",
-        "en": "Garden / Gardens, Paradises",
-        "cleanEn": "garden gardens paradises",
-        "occurrences": [ "U01-L01", "U01-L11", "U01-L17", "U02-L03", "U02-L06", "U03-L03", "U05-L02" ]
-    },
-    {
-        "idx": 372,
-        "ar": "جُنُودٌ",
-        "cleanAr": "جنود",
-        "letter": "ج",
-        "tr": "Junūd",
-        "cleanTr": "junud",
-        "cat": "اسْمٌ",
-        "role": "Broken Plural / جَمْعُ تَكْسِير (جُند)",
-        "ur": "لشکر، افواج، سپاہی",
-        "en": "Hosts, soldiers, armies, forces",
-        "cleanEn": "hosts soldiers armies forces",
-        "occurrences": [ "U02-L08", "U03-L05", "U05-L16" ]
-    },
-    {
-        "idx": 373,
+        "idx": 316,
         "ar": "جِهَادٌ",
         "cleanAr": "جهاد",
         "letter": "ج",
@@ -5221,12 +4423,12 @@ var WORDS_DATA = [    {
         "cat": "اسْمٌ",
         "role": "Masdar (Form III) / مَصْدَرٌ",
         "ur": "جہاد، سخت جدوجہد، اعلائے کلمۃ اللہ کی کوشش",
-        "en": "Jihad, striving, supreme struggle in God's path",
-        "cleanEn": "jihad striving supreme struggle in gods path",
+        "en": "Jihad, striving, supreme struggle in God\u0027s path",
+        "cleanEn": "jihad striving supreme struggle in god s path",
         "occurrences": [ "U01-L02", "U01-L13", "U03-L01" ]
     },
     {
-        "idx": 374,
+        "idx": 317,
         "ar": "جَهَالَةٌ",
         "cleanAr": "جهاله",
         "letter": "ج",
@@ -5240,7 +4442,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L08" ]
     },
     {
-        "idx": 375,
+        "idx": 318,
         "ar": "جَهْلٌ",
         "cleanAr": "جهل",
         "letter": "ج",
@@ -5254,7 +4456,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L06" ]
     },
     {
-        "idx": 376,
+        "idx": 319,
         "ar": "جَهَنَّمٌ",
         "cleanAr": "جهنم",
         "letter": "ج",
@@ -5268,7 +4470,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L08", "U01-L17", "U02-L01", "U05-L02" ]
     },
     {
-        "idx": 377,
+        "idx": 320,
         "ar": "جَهُولٌ",
         "cleanAr": "جهول",
         "letter": "ج",
@@ -5282,7 +4484,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L04" ]
     },
     {
-        "idx": 378,
+        "idx": 321,
         "ar": "جَوَابٌ",
         "cleanAr": "جواب",
         "letter": "ج",
@@ -5296,7 +4498,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L02", "U01-L13" ]
     },
     {
-        "idx": 379,
+        "idx": 322,
         "ar": "جُوعٌ",
         "cleanAr": "جوع",
         "letter": "ج",
@@ -5310,7 +4512,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L05" ]
     },
     {
-        "idx": 380,
+        "idx": 323,
         "ar": "جَيْبٌ",
         "cleanAr": "جيب",
         "letter": "ج",
@@ -5324,7 +4526,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L06" ]
     },
     {
-        "idx": 381,
+        "idx": 324,
         "ar": "جِيدٌ",
         "cleanAr": "جيد",
         "letter": "ج",
@@ -5338,7 +4540,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L10" ]
     },
     {
-        "idx": 382,
+        "idx": 325,
         "ar": "حَاجَةٌ",
         "cleanAr": "حاجه",
         "letter": "ح",
@@ -5352,7 +4554,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L07" ]
     },
     {
-        "idx": 383,
+        "idx": 326,
         "ar": "حَاسِبٌ",
         "cleanAr": "حاسب",
         "letter": "ح",
@@ -5366,7 +4568,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L08", "U05-L01" ]
     },
     {
-        "idx": 384,
+        "idx": 327,
         "ar": "حَاسِدٌ",
         "cleanAr": "حاسد",
         "letter": "ح",
@@ -5380,7 +4582,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L04" ]
     },
     {
-        "idx": 385,
+        "idx": 328,
         "ar": "حَافِظٌ",
         "cleanAr": "حافظ",
         "letter": "ح",
@@ -5394,7 +4596,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L08", "U05-L01", "U05-L03" ]
     },
     {
-        "idx": 386,
+        "idx": 329,
         "ar": "حَاقَّةٌ",
         "cleanAr": "حاقه",
         "letter": "ح",
@@ -5408,21 +4610,21 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L21" ]
     },
     {
-        "idx": 387,
+        "idx": 330,
         "ar": "حَاكِمٌ",
         "cleanAr": "حاكم",
         "letter": "ح",
         "tr": "Ḥākim",
         "cleanTr": "hakim",
         "cat": "اسْمٌ",
-        "role": "Active Participle / اسْمُ فَاعِل",
+        "role": "Active Participle / اسْمُ فَاعِل (Plural: حُكَّامٌ)",
         "ur": "فیصلہ کرنے والا، حاکم",
         "en": "Judge, arbiter, ruler",
         "cleanEn": "judge arbiter ruler",
-        "occurrences": [ "U05-L02" ]
+        "occurrences": [ "U05-L02", "U05-L04" ]
     },
     {
-        "idx": 388,
+        "idx": 331,
         "ar": "حَالَةٌ",
         "cleanAr": "حاله",
         "letter": "ح",
@@ -5436,7 +4638,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L11" ]
     },
     {
-        "idx": 389,
+        "idx": 332,
         "ar": "حَامِدٌ",
         "cleanAr": "حامد",
         "letter": "ح",
@@ -5450,7 +4652,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L08", "U05-L01" ]
     },
     {
-        "idx": 390,
+        "idx": 333,
         "ar": "حُبٌّ",
         "cleanAr": "حب",
         "letter": "ح",
@@ -5461,10 +4663,10 @@ var WORDS_DATA = [    {
         "ur": "الفت، محبت، قلبی لگاؤ",
         "en": "Love, affection, devotion",
         "cleanEn": "love affection devotion",
-        "occurrences": [ "U01-L01", "U01-L03", "U03-L04", "U05-L22" ]
+        "occurrences": [ "U01-L01", "U01-L03", "U03-L04", "U04-L16", "U05-L16", "U05-L22" ]
     },
     {
-        "idx": 391,
+        "idx": 334,
         "ar": "حُبُكٌ",
         "cleanAr": "حبك",
         "letter": "ح",
@@ -5478,7 +4680,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L10" ]
     },
     {
-        "idx": 392,
+        "idx": 335,
         "ar": "حَبْلٌ",
         "cleanAr": "حبل",
         "letter": "ح",
@@ -5492,7 +4694,21 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L09", "U03-L05" ]
     },
     {
-        "idx": 393,
+        "idx": 336,
+        "ar": "حَبِيبٌ",
+        "cleanAr": "حبيب",
+        "letter": "ح",
+        "tr": "Ḥabīb",
+        "cleanTr": "habib",
+        "cat": "اسْمٌ",
+        "role": "Noun / اسْمٌ",
+        "ur": "محبوب، پیارا",
+        "en": "Beloved one, friend",
+        "cleanEn": "beloved one friend",
+        "occurrences": [ "U05-L04" ]
+    },
+    {
+        "idx": 337,
         "ar": "حَتَّىٰ",
         "cleanAr": "حتي",
         "letter": "ح",
@@ -5506,7 +4722,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L09" ]
     },
     {
-        "idx": 394,
+        "idx": 338,
         "ar": "حَجٌّ",
         "cleanAr": "حج",
         "letter": "ح",
@@ -5520,7 +4736,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L02", "U01-L13", "U02-L03", "U03-L04" ]
     },
     {
-        "idx": 395,
+        "idx": 339,
         "ar": "حِجَابٌ",
         "cleanAr": "حجاب",
         "letter": "ح",
@@ -5534,7 +4750,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L06" ]
     },
     {
-        "idx": 396,
+        "idx": 340,
         "ar": "حِجَارَةٌ",
         "cleanAr": "حجاره",
         "letter": "ح",
@@ -5548,7 +4764,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L01", "U05-L08" ]
     },
     {
-        "idx": 397,
+        "idx": 341,
         "ar": "حُجَّةٌ",
         "cleanAr": "حجه",
         "letter": "ح",
@@ -5562,35 +4778,21 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L02", "U02-L08", "U03-L03", "U05-L06" ]
     },
     {
-        "idx": 398,
+        "idx": 342,
         "ar": "حَدٌّ",
         "cleanAr": "حد",
         "letter": "ح",
         "tr": "Ḥadd",
         "cleanTr": "hadd",
         "cat": "اسْمٌ",
-        "role": "Singular & Broken Plural",
+        "role": "Singular \u0026 Broken Plural",
         "ur": "حد / حدود، الٰہی ضوابط",
         "en": "Limit / Limits, boundaries",
         "cleanEn": "limit limits boundaries",
-        "occurrences": [ "U01-L10" ]
+        "occurrences": [ "U01-L10", "U03-L05", "U05-L02" ]
     },
     {
-        "idx": 399,
-        "ar": "حُدُودٌ",
-        "cleanAr": "حدود",
-        "letter": "ح",
-        "tr": "Hudūd",
-        "cleanTr": "hudud",
-        "cat": "اسْمٌ",
-        "role": "Plural Noun / جَمْع (حَدّ)",
-        "ur": "حدود، پابندیاں، احکام کی سرحدیں",
-        "en": "Limits, boundaries, ordinances",
-        "cleanEn": "limits boundaries ordinances",
-        "occurrences": [ "U03-L05", "U05-L02" ]
-    },
-    {
-        "idx": 400,
+        "idx": 343,
         "ar": "حَدِيثٌ",
         "cleanAr": "حديث",
         "letter": "ح",
@@ -5604,7 +4806,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L02", "U03-L04", "U05-L22" ]
     },
     {
-        "idx": 401,
+        "idx": 344,
         "ar": "حَدِيدٌ",
         "cleanAr": "حديد",
         "letter": "ح",
@@ -5618,7 +4820,21 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L06", "U05-L08" ]
     },
     {
-        "idx": 402,
+        "idx": 345,
+        "ar": "حَرٌّ",
+        "cleanAr": "حر",
+        "letter": "ح",
+        "tr": "Ḥarr",
+        "cleanTr": "harr",
+        "cat": "اسْمٌ",
+        "role": "Noun / اسْمٌ",
+        "ur": "گرمی، تپش",
+        "en": "Heat, scorching warmth",
+        "cleanEn": "heat scorching warmth",
+        "occurrences": [ "U05-L22" ]
+    },
+    {
+        "idx": 346,
         "ar": "حُرٌّ",
         "cleanAr": "حر",
         "letter": "ح",
@@ -5629,10 +4845,10 @@ var WORDS_DATA = [    {
         "ur": "آزاد مرد",
         "en": "Free person",
         "cleanEn": "free person",
-        "occurrences": [ "U02-L07", "U05-L22" ]
+        "occurrences": [ "U02-L07" ]
     },
     {
-        "idx": 403,
+        "idx": 347,
         "ar": "حَرَامٌ",
         "cleanAr": "حرام",
         "letter": "ح",
@@ -5646,7 +4862,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L01", "U01-L15", "U03-L03" ]
     },
     {
-        "idx": 404,
+        "idx": 348,
         "ar": "حَرْبٌ",
         "cleanAr": "حرب",
         "letter": "ح",
@@ -5660,7 +4876,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L02" ]
     },
     {
-        "idx": 405,
+        "idx": 349,
         "ar": "حَرْثٌ",
         "cleanAr": "حرث",
         "letter": "ح",
@@ -5674,7 +4890,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L05", "U03-L05", "U05-L10" ]
     },
     {
-        "idx": 406,
+        "idx": 350,
         "ar": "حَرَجٌ",
         "cleanAr": "حرج",
         "letter": "ح",
@@ -5688,7 +4904,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L08", "U02-L03", "U04-L08", "U05-L20" ]
     },
     {
-        "idx": 407,
+        "idx": 351,
         "ar": "حُرْمَةٌ",
         "cleanAr": "حرمه",
         "letter": "ح",
@@ -5702,7 +4918,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L12" ]
     },
     {
-        "idx": 408,
+        "idx": 352,
         "ar": "حَرِيرٌ",
         "cleanAr": "حرير",
         "letter": "ح",
@@ -5716,7 +4932,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L06" ]
     },
     {
-        "idx": 409,
+        "idx": 353,
         "ar": "حَرِيقٌ",
         "cleanAr": "حريق",
         "letter": "ح",
@@ -5730,7 +4946,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L06", "U03-L04", "U05-L08" ]
     },
     {
-        "idx": 410,
+        "idx": 354,
         "ar": "حِزْبٌ",
         "cleanAr": "حزب",
         "letter": "ح",
@@ -5744,7 +4960,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L05", "U03-L10" ]
     },
     {
-        "idx": 411,
+        "idx": 355,
         "ar": "حُزْنٌ",
         "cleanAr": "حزن",
         "letter": "ح",
@@ -5758,7 +4974,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L05" ]
     },
     {
-        "idx": 412,
+        "idx": 356,
         "ar": "حِسَابٌ",
         "cleanAr": "حساب",
         "letter": "ح",
@@ -5772,7 +4988,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L06", "U03-L01", "U05-L06" ]
     },
     {
-        "idx": 413,
+        "idx": 357,
         "ar": "حَسْبٌ",
         "cleanAr": "حسب",
         "letter": "ح",
@@ -5783,10 +4999,10 @@ var WORDS_DATA = [    {
         "ur": "کافی، سہارا، کفایت کرنے والا",
         "en": "Sufficient, reliance, reckoner",
         "cleanEn": "sufficient reliance reckoner",
-        "occurrences": [ "U04-L06", "U05-L14", "U02-L13" ]
+        "occurrences": [ "U02-L13", "U04-L06", "U05-L14" ]
     },
     {
-        "idx": 414,
+        "idx": 358,
         "ar": "حُسْبَانٌ",
         "cleanAr": "حسبان",
         "letter": "ح",
@@ -5800,21 +5016,21 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L12" ]
     },
     {
-        "idx": 415,
+        "idx": 359,
         "ar": "حَسْرَةٌ",
         "cleanAr": "حسره",
         "letter": "ح",
         "tr": "Hasrah",
         "cleanTr": "hasrah",
         "cat": "اسْمٌ",
-        "role": "Singular & Sound Feminine Plural",
+        "role": "Singular \u0026 Sound Feminine Plural",
         "ur": "حسرت، شدید پچھتاوا، افسوس",
         "en": "Regret, anguish, sorrow, intense grief",
         "cleanEn": "regret anguish sorrow intense grief",
         "occurrences": [ "U01-L03", "U01-L11", "U03-L04", "U05-L02" ]
     },
     {
-        "idx": 416,
+        "idx": 360,
         "ar": "حَسَنٌ",
         "cleanAr": "حسن",
         "letter": "ح",
@@ -5825,24 +5041,24 @@ var WORDS_DATA = [    {
         "ur": "اچھا، عمدہ، پاکیزہ",
         "en": "Good, fair, excellent",
         "cleanEn": "good fair excellent",
-        "occurrences": [ "U04-L04" ]
+        "occurrences": [ "U01-L08", "U01-L19", "U02-L05", "U04-L04", "U04-L08" ]
     },
     {
-        "idx": 417,
+        "idx": 361,
         "ar": "حَسَنَةٌ",
         "cleanAr": "حسنه",
         "letter": "ح",
         "tr": "Ḥasanah",
         "cleanTr": "hasanah",
         "cat": "صِفَةٌ",
-        "role": "Singular & Sound Feminine Plural",
+        "role": "Noun (Feminine) / اسْمٌ (مُؤَنَّث) (Plural: حَسَنَاتٌ)",
         "ur": "نیکی، بھلائی، حسنِ سلوک",
         "en": "Good deed, merit, virtue, blessing",
         "cleanEn": "good deed merit virtue blessing",
         "occurrences": [ "U01-L04", "U01-L07", "U01-L11", "U02-L07" ]
     },
     {
-        "idx": 418,
+        "idx": 362,
         "ar": "حُسْنَىٰ",
         "cleanAr": "حسني",
         "letter": "ح",
@@ -5856,7 +5072,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L18", "U02-L02", "U02-L09", "U04-L04", "U05-L08" ]
     },
     {
-        "idx": 419,
+        "idx": 363,
         "ar": "حَسِيبٌ",
         "cleanAr": "حسيب",
         "letter": "ح",
@@ -5870,7 +5086,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L07", "U05-L22" ]
     },
     {
-        "idx": 420,
+        "idx": 364,
         "ar": "حَشْرٌ",
         "cleanAr": "حشر",
         "letter": "ح",
@@ -5884,7 +5100,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L01", "U01-L13", "U05-L16" ]
     },
     {
-        "idx": 421,
+        "idx": 365,
         "ar": "حَطَبٌ",
         "cleanAr": "حطب",
         "letter": "ح",
@@ -5898,7 +5114,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L11" ]
     },
     {
-        "idx": 422,
+        "idx": 366,
         "ar": "حَظٌّ",
         "cleanAr": "حظ",
         "letter": "ح",
@@ -5912,7 +5128,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L05" ]
     },
     {
-        "idx": 423,
+        "idx": 367,
         "ar": "حَفِيٌّ",
         "cleanAr": "حفي",
         "letter": "ح",
@@ -5926,7 +5142,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L20" ]
     },
     {
-        "idx": 424,
+        "idx": 368,
         "ar": "حَفِيظٌ",
         "cleanAr": "حفيظ",
         "letter": "ح",
@@ -5940,7 +5156,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L09", "U04-L06", "U05-L08" ]
     },
     {
-        "idx": 425,
+        "idx": 369,
         "ar": "حَقٌّ",
         "cleanAr": "حق",
         "letter": "ح",
@@ -5951,24 +5167,10 @@ var WORDS_DATA = [    {
         "ur": "حق، سچ، ثابت شدہ حقیقت",
         "en": "Truth, reality, undeniable fact",
         "cleanEn": "truth reality undeniable fact",
-        "occurrences": [ "U01-L01", "U01-L12", "U01-L13", "U01-L16", "U02-L01", "U02-L02", "U02-L06", "U02-L07", "U02-L09", "U02-L11", "U02-L12", "U03-L01", "U05-L03", "U05-L17" ]
+        "occurrences": [ "U01-L01", "U01-L12", "U01-L13", "U01-L16", "U02-L01", "U02-L02", "U02-L06", "U02-L07", "U02-L09", "U02-L11", "U02-L12", "U03-L01", "U04-L02", "U05-L03", "U05-L14", "U05-L17" ]
     },
     {
-        "idx": 426,
-        "ar": "حُكَّامٌ",
-        "cleanAr": "حكام",
-        "letter": "ح",
-        "tr": "Hukkām",
-        "cleanTr": "hukkam",
-        "cat": "اسْمٌ",
-        "role": "Broken Plural / جَمْعُ تَكْسِير (حَاكِم)",
-        "ur": "حکمران، فیصلے کرنے والے",
-        "en": "Rulers, governors, judges",
-        "cleanEn": "rulers governors judges",
-        "occurrences": [ "U05-L04" ]
-    },
-    {
-        "idx": 427,
+        "idx": 370,
         "ar": "حُكْمٌ",
         "cleanAr": "حكم",
         "letter": "ح",
@@ -5979,10 +5181,10 @@ var WORDS_DATA = [    {
         "ur": "فیصلہ، حکم، حاکمیت، اختیار",
         "en": "Judgment, decree, command, wisdom, rule",
         "cleanEn": "judgment decree command wisdom rule",
-        "occurrences": [ "U02-L02", "U03-L01", "U05-L22" ]
+        "occurrences": [ "U01-L19", "U02-L02", "U03-L01", "U05-L22" ]
     },
     {
-        "idx": 428,
+        "idx": 371,
         "ar": "حِكْمَةٌ",
         "cleanAr": "حكمه",
         "letter": "ح",
@@ -5996,7 +5198,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L04", "U01-L07", "U02-L05" ]
     },
     {
-        "idx": 429,
+        "idx": 372,
         "ar": "حَكِيمٌ",
         "cleanAr": "حكيم",
         "letter": "ح",
@@ -6010,7 +5212,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L09", "U01-L14", "U02-L01", "U02-L11", "U02-L12", "U03-L02", "U05-L02" ]
     },
     {
-        "idx": 430,
+        "idx": 373,
         "ar": "حِلٌّ",
         "cleanAr": "حل",
         "letter": "ح",
@@ -6024,7 +5226,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L12", "U03-L05", "U04-L05", "U05-L10" ]
     },
     {
-        "idx": 431,
+        "idx": 374,
         "ar": "حَلَالٌ",
         "cleanAr": "حلال",
         "letter": "ح",
@@ -6038,7 +5240,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L01", "U01-L15", "U04-L04" ]
     },
     {
-        "idx": 432,
+        "idx": 375,
         "ar": "حَلِيمٌ",
         "cleanAr": "حليم",
         "letter": "ح",
@@ -6052,7 +5254,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L09", "U01-L14", "U02-L01", "U02-L11", "U03-L08" ]
     },
     {
-        "idx": 433,
+        "idx": 376,
         "ar": "حِمَارٌ",
         "cleanAr": "حمار",
         "letter": "ح",
@@ -6066,7 +5268,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L04" ]
     },
     {
-        "idx": 434,
+        "idx": 377,
         "ar": "حَمَّالَةٌ",
         "cleanAr": "حماله",
         "letter": "ح",
@@ -6080,7 +5282,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L11" ]
     },
     {
-        "idx": 435,
+        "idx": 378,
         "ar": "حَمْدٌ",
         "cleanAr": "حمد",
         "letter": "ح",
@@ -6094,7 +5296,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L01", "U01-L13", "U02-L02", "U03-L06" ]
     },
     {
-        "idx": 436,
+        "idx": 379,
         "ar": "حَمِيدٌ",
         "cleanAr": "حميد",
         "letter": "ح",
@@ -6108,7 +5310,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L09", "U01-L14", "U02-L01", "U02-L11", "U04-L01", "U05-L07" ]
     },
     {
-        "idx": 437,
+        "idx": 380,
         "ar": "حَمِيمٌ",
         "cleanAr": "حميم",
         "letter": "ح",
@@ -6122,7 +5324,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L06", "U05-L08" ]
     },
     {
-        "idx": 438,
+        "idx": 381,
         "ar": "حِنْثٌ",
         "cleanAr": "حنث",
         "letter": "ح",
@@ -6136,7 +5338,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L03" ]
     },
     {
-        "idx": 439,
+        "idx": 382,
         "ar": "حَنِيفٌ",
         "cleanAr": "حنيف",
         "letter": "ح",
@@ -6150,7 +5352,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L12", "U04-L17" ]
     },
     {
-        "idx": 440,
+        "idx": 383,
         "ar": "حَوْلٌ",
         "cleanAr": "حول",
         "letter": "ح",
@@ -6164,7 +5366,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L10" ]
     },
     {
-        "idx": 441,
+        "idx": 384,
         "ar": "حَيٌّ",
         "cleanAr": "حي",
         "letter": "ح",
@@ -6174,11 +5376,11 @@ var WORDS_DATA = [    {
         "role": "Divine Attribute / اسْمٌ مِن أَسْمَاءِ الله",
         "ur": "ہمیشہ زندہ رہنے والا، خود زندہ",
         "en": "The Ever-Living (Divine Attribute)",
-        "cleanEn": "the everliving divine attribute",
-        "occurrences": [ "U01-L05", "U02-L04", "U04-L01", "U05-L19" ]
+        "cleanEn": "the ever living divine attribute",
+        "occurrences": [ "U01-L05", "U02-L04", "U04-L01", "U05-L07", "U05-L19" ]
     },
     {
-        "idx": 442,
+        "idx": 385,
         "ar": "حَيَاةٌ",
         "cleanAr": "حياه",
         "letter": "ح",
@@ -6192,7 +5394,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L04", "U02-L03", "U02-L07", "U03-L03" ]
     },
     {
-        "idx": 443,
+        "idx": 386,
         "ar": "حِينَ",
         "cleanAr": "حين",
         "letter": "ح",
@@ -6206,7 +5408,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L06", "U03-L07" ]
     },
     {
-        "idx": 444,
+        "idx": 387,
         "ar": "حَيَّةٌ",
         "cleanAr": "حيه",
         "letter": "ح",
@@ -6220,7 +5422,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L09" ]
     },
     {
-        "idx": 445,
+        "idx": 388,
         "ar": "حَيَوَانٌ",
         "cleanAr": "حيوان",
         "letter": "ح",
@@ -6234,7 +5436,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L09" ]
     },
     {
-        "idx": 446,
+        "idx": 389,
         "ar": "خَارِجٌ",
         "cleanAr": "خارج",
         "letter": "خ",
@@ -6248,7 +5450,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L05" ]
     },
     {
-        "idx": 447,
+        "idx": 390,
         "ar": "خَاسِرٌ",
         "cleanAr": "خاسر",
         "letter": "خ",
@@ -6259,10 +5461,10 @@ var WORDS_DATA = [    {
         "ur": "نقصان اٹھانے والا، خسارے والا",
         "en": "Loser, ruined one",
         "cleanEn": "loser ruined one",
-        "occurrences": [ "U03-L08", "U05-L01" ]
+        "occurrences": [ "U03-L08", "U05-L01", "U05-L05" ]
     },
     {
-        "idx": 448,
+        "idx": 391,
         "ar": "خَاشِعَةٌ",
         "cleanAr": "خاشعه",
         "letter": "خ",
@@ -6276,7 +5478,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L10", "U05-L01" ]
     },
     {
-        "idx": 449,
+        "idx": 392,
         "ar": "خَافَ",
         "cleanAr": "خاف",
         "letter": "خ",
@@ -6290,21 +5492,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L07" ]
     },
     {
-        "idx": 450,
-        "ar": "خَالَةٌ",
-        "cleanAr": "خالة",
-        "letter": "خ",
-        "tr": "Khālah",
-        "cleanTr": "khalah",
-        "cat": "اسْمٌ",
-        "role": "Noun (Feminine) / اسْمٌ",
-        "ur": "خالہ",
-        "en": "Maternal aunt",
-        "cleanEn": "maternal aunt",
-        "occurrences": [ "U05-L01" ]
-    },
-    {
-        "idx": 451,
+        "idx": 393,
         "ar": "خَالِدٌ",
         "cleanAr": "خالد",
         "letter": "خ",
@@ -6318,7 +5506,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L03", "U03-L08", "U04-L01", "U05-L01" ]
     },
     {
-        "idx": 452,
+        "idx": 394,
         "ar": "خَالِصٌ",
         "cleanAr": "خالص",
         "letter": "خ",
@@ -6329,24 +5517,10 @@ var WORDS_DATA = [    {
         "ur": "خالص، بے آمیزش، بالکل پاک",
         "en": "Pure, unadulterated, sincere",
         "cleanEn": "pure unadulterated sincere",
-        "occurrences": [ "U03-L03" ]
+        "occurrences": [ "U03-L03", "U04-L08", "U05-L15" ]
     },
     {
-        "idx": 453,
-        "ar": "خَالِصَةٌ",
-        "cleanAr": "خالصه",
-        "letter": "خ",
-        "tr": "Khālisah",
-        "cleanTr": "khalisah",
-        "cat": "صِفَةٌ",
-        "role": "Adjective (Fem.) / صِفَة (مُؤَنَّث)",
-        "ur": "خالص، مخصوص، بے آمیز",
-        "en": "Pure, exclusive, solely (fem.)",
-        "cleanEn": "pure exclusive solely fem",
-        "occurrences": [ "U04-L08", "U05-L15" ]
-    },
-    {
-        "idx": 454,
+        "idx": 395,
         "ar": "خَالِقٌ",
         "cleanAr": "خالق",
         "letter": "خ",
@@ -6360,7 +5534,21 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L01", "U01-L09", "U03-L05", "U03-L08", "U04-L01", "U05-L01" ]
     },
     {
-        "idx": 455,
+        "idx": 396,
+        "ar": "خَالَةٌ",
+        "cleanAr": "خاله",
+        "letter": "خ",
+        "tr": "Khālah",
+        "cleanTr": "khalah",
+        "cat": "اسْمٌ",
+        "role": "Noun (Feminine) / اسْمٌ",
+        "ur": "خالہ",
+        "en": "Maternal aunt",
+        "cleanEn": "maternal aunt",
+        "occurrences": [ "U05-L01" ]
+    },
+    {
+        "idx": 397,
         "ar": "خَامِدٌ",
         "cleanAr": "خامد",
         "letter": "خ",
@@ -6374,7 +5562,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L05" ]
     },
     {
-        "idx": 456,
+        "idx": 398,
         "ar": "خَاوِيَةٌ",
         "cleanAr": "خاويه",
         "letter": "خ",
@@ -6388,7 +5576,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L09", "U05-L06" ]
     },
     {
-        "idx": 457,
+        "idx": 399,
         "ar": "خَائِفٌ",
         "cleanAr": "خايف",
         "letter": "خ",
@@ -6402,21 +5590,21 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L08", "U05-L01" ]
     },
     {
-        "idx": 458,
+        "idx": 400,
         "ar": "خَبَرٌ",
         "cleanAr": "خبر",
         "letter": "خ",
         "tr": "Khabar",
         "cleanTr": "khabar",
         "cat": "اسْمٌ",
-        "role": "Singular & Broken Plural",
+        "role": "Singular \u0026 Broken Plural",
         "ur": "خبر / اخبار، خبریں",
         "en": "News, report, information",
         "cleanEn": "news report information",
         "occurrences": [ "U01-L03", "U01-L10" ]
     },
     {
-        "idx": 459,
+        "idx": 401,
         "ar": "خَبِيثٌ",
         "cleanAr": "خبيث",
         "letter": "خ",
@@ -6427,24 +5615,10 @@ var WORDS_DATA = [    {
         "ur": "ناپاک، گھٹیا، برا، پلید",
         "en": "Bad, evil, impure, vile, corrupt",
         "cleanEn": "bad evil impure vile corrupt",
-        "occurrences": [ "U01-L07", "U03-L01", "U05-L01" ]
+        "occurrences": [ "U01-L07", "U01-L11", "U03-L01", "U05-L01" ]
     },
     {
-        "idx": 460,
-        "ar": "خَبِيثَةٌ",
-        "cleanAr": "خبيثه",
-        "letter": "خ",
-        "tr": "Khabīthah",
-        "cleanTr": "khabithah",
-        "cat": "صِفَةٌ",
-        "role": "Adjective (Feminine) / صِفَة (مُؤَنَّث) (Plural: الْخَبِيثَاتُ)",
-        "ur": "پلید عورت / پلید عورتیں، ناپاک چیزیں",
-        "en": "Corrupt woman / Corrupt women, impure things",
-        "cleanEn": "corrupt woman corrupt women impure things",
-        "occurrences": [ "U01-L11", "U03-L01" ]
-    },
-    {
-        "idx": 461,
+        "idx": 402,
         "ar": "خَبِيرٌ",
         "cleanAr": "خبير",
         "letter": "خ",
@@ -6454,11 +5628,11 @@ var WORDS_DATA = [    {
         "role": "Intensive Adjective / اسْمٌ مِن أَسْمَاءِ الله",
         "ur": "باخبر، ہر راز کا جاننے والا",
         "en": "All-Aware, Fully Acquainted",
-        "cleanEn": "allaware fully acquainted",
+        "cleanEn": "all aware fully acquainted",
         "occurrences": [ "U01-L09", "U01-L14", "U02-L01", "U04-L01", "U05-L08" ]
     },
     {
-        "idx": 462,
+        "idx": 403,
         "ar": "خِتَامٌ",
         "cleanAr": "ختام",
         "letter": "خ",
@@ -6472,7 +5646,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L02" ]
     },
     {
-        "idx": 463,
+        "idx": 404,
         "ar": "خَذُولٌ",
         "cleanAr": "خذول",
         "letter": "خ",
@@ -6486,7 +5660,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L12" ]
     },
     {
-        "idx": 464,
+        "idx": 405,
         "ar": "خَرَابٌ",
         "cleanAr": "خراب",
         "letter": "خ",
@@ -6500,7 +5674,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L11" ]
     },
     {
-        "idx": 465,
+        "idx": 406,
         "ar": "خَرَاجٌ",
         "cleanAr": "خراج",
         "letter": "خ",
@@ -6514,7 +5688,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L07" ]
     },
     {
-        "idx": 466,
+        "idx": 407,
         "ar": "خَرَجَ",
         "cleanAr": "خرج",
         "letter": "خ",
@@ -6528,7 +5702,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L08" ]
     },
     {
-        "idx": 467,
+        "idx": 408,
         "ar": "خُرُوجٌ",
         "cleanAr": "خروج",
         "letter": "خ",
@@ -6542,7 +5716,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L06", "U03-L04" ]
     },
     {
-        "idx": 468,
+        "idx": 409,
         "ar": "خَزَائِنٌ",
         "cleanAr": "خزاين",
         "letter": "خ",
@@ -6556,7 +5730,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L04", "U05-L06" ]
     },
     {
-        "idx": 469,
+        "idx": 410,
         "ar": "خِزْيٌ",
         "cleanAr": "خزي",
         "letter": "خ",
@@ -6570,7 +5744,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L16", "U02-L01", "U02-L03", "U03-L01", "U05-L02" ]
     },
     {
-        "idx": 470,
+        "idx": 411,
         "ar": "خُسْرٌ",
         "cleanAr": "خسر",
         "letter": "خ",
@@ -6584,7 +5758,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L03" ]
     },
     {
-        "idx": 471,
+        "idx": 412,
         "ar": "خُسْرَانٌ",
         "cleanAr": "خسران",
         "letter": "خ",
@@ -6598,7 +5772,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L01" ]
     },
     {
-        "idx": 472,
+        "idx": 413,
         "ar": "خَشْيَةٌ",
         "cleanAr": "خشيه",
         "letter": "خ",
@@ -6612,7 +5786,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L06", "U03-L05", "U05-L07" ]
     },
     {
-        "idx": 473,
+        "idx": 414,
         "ar": "خَصْمٌ",
         "cleanAr": "خصم",
         "letter": "خ",
@@ -6626,21 +5800,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L04" ]
     },
     {
-        "idx": 474,
-        "ar": "خِطْءٌ",
-        "cleanAr": "خطء",
-        "letter": "خ",
-        "tr": "Khit’",
-        "cleanTr": "khit",
-        "cat": "اسْمٌ",
-        "role": "Noun / اسْمٌ",
-        "ur": "گناہ، خطا، جرم",
-        "en": "Sin, fault, grave offence",
-        "cleanEn": "sin fault grave offence",
-        "occurrences": [ "U05-L07" ]
-    },
-    {
-        "idx": 475,
+        "idx": 415,
         "ar": "خَطَأٌ",
         "cleanAr": "خطا",
         "letter": "خ",
@@ -6654,23 +5814,9 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L05" ]
     },
     {
-        "idx": 476,
-        "ar": "خَطَايَا",
-        "cleanAr": "خطايا",
-        "letter": "خ",
-        "tr": "Khaṭāyā",
-        "cleanTr": "khataya",
-        "cat": "اسْمٌ",
-        "role": "Broken Plural / جَمْعُ تَكْسِير (خَطِيئَة)",
-        "ur": "خطائیں، گناہ",
-        "en": "Sins, mistakes, faults",
-        "cleanEn": "sins mistakes faults",
-        "occurrences": [ "U05-L14" ]
-    },
-    {
-        "idx": 477,
+        "idx": 416,
         "ar": "خُطْوَةٌ",
-        "cleanAr": "خطوة",
+        "cleanAr": "خطوه",
         "letter": "خ",
         "tr": "Khuṭwah",
         "cleanTr": "khutwah",
@@ -6682,7 +5828,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L05" ]
     },
     {
-        "idx": 478,
+        "idx": 417,
         "ar": "خَطِيئَةٌ",
         "cleanAr": "خطييه",
         "letter": "خ",
@@ -6693,10 +5839,38 @@ var WORDS_DATA = [    {
         "ur": "خطا، لغزش / خطائیں، گناہ",
         "en": "Sin, fault, mistake",
         "cleanEn": "sin fault mistake",
-        "occurrences": [ "U01-L11" ]
+        "occurrences": [ "U01-L11", "U05-L14" ]
     },
     {
-        "idx": 479,
+        "idx": 418,
+        "ar": "خِطْءٌ",
+        "cleanAr": "خطء",
+        "letter": "خ",
+        "tr": "Khit’",
+        "cleanTr": "khit",
+        "cat": "اسْمٌ",
+        "role": "Noun / اسْمٌ",
+        "ur": "گناہ، خطا، جرم",
+        "en": "Sin, fault, grave offence",
+        "cleanEn": "sin fault grave offence",
+        "occurrences": [ "U05-L07" ]
+    },
+    {
+        "idx": 419,
+        "ar": "خَلَّاقٌ",
+        "cleanAr": "خلاق",
+        "letter": "خ",
+        "tr": "Khallāq",
+        "cleanTr": "khallaq",
+        "cat": "صِفَةٌ",
+        "role": "Intensive Adjective / صِيغَةُ مُبَالَغَة (فَعَّال)",
+        "ur": "بڑا پیدا کرنے والا، بار بار تخلیق کرنے والا",
+        "en": "Supreme Creator, All-Creator",
+        "cleanEn": "supreme creator all creator",
+        "occurrences": [ "U03-L08", "U04-L01" ]
+    },
+    {
+        "idx": 420,
         "ar": "خَلَاقٌ",
         "cleanAr": "خلاق",
         "letter": "خ",
@@ -6710,35 +5884,35 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L23" ]
     },
     {
-        "idx": 480,
-        "ar": "خَلَّاقٌ",
-        "cleanAr": "خلاق",
+        "idx": 421,
+        "ar": "خَلَقَ",
+        "cleanAr": "خلق",
         "letter": "خ",
-        "tr": "Khallāq",
-        "cleanTr": "khallaq",
-        "cat": "صِفَةٌ",
-        "role": "Intensive Adjective / صِيغَةُ مُبَالَغَة (فَعَّال)",
-        "ur": "بڑا پیدا کرنے والا، بار بار تخلیق کرنے والا",
-        "en": "Supreme Creator, All-Creator",
-        "cleanEn": "supreme creator allcreator",
-        "occurrences": [ "U03-L08", "U04-L01" ]
+        "tr": "Khalaqa",
+        "cleanTr": "khalaqa",
+        "cat": "فِعْلٌ",
+        "role": "Verb (Past) / فِعْلٌ مَاضٍ",
+        "ur": "اس نے پیدا کیا، تخلیق فرمایا",
+        "en": "He created, made",
+        "cleanEn": "he created made",
+        "occurrences": [ "U01-L03", "U02-L13" ]
     },
     {
-        "idx": 481,
-        "ar": "خُلَفَاءٌ",
-        "cleanAr": "خلفاء",
+        "idx": 422,
+        "ar": "خَلْقٌ",
+        "cleanAr": "خلق",
         "letter": "خ",
-        "tr": "Khulafā’",
-        "cleanTr": "khulafa",
+        "tr": "Khalq",
+        "cleanTr": "khalq",
         "cat": "اسْمٌ",
-        "role": "Broken Plural / جَمْعُ تَكْسِير (خَلِيفَة)",
-        "ur": "جانشین، خلیفہ لوگ",
-        "en": "Successors, vicegerents",
-        "cleanEn": "successors vicegerents",
-        "occurrences": [ "U05-L04" ]
+        "role": "Verbal Noun / مَصْدَر",
+        "ur": "پیدائش، تخلیق، بناوٹ؛ مخلوق",
+        "en": "Creation, creating, creature, physical constitution",
+        "cleanEn": "creation creating creature physical constitution",
+        "occurrences": [ "U01-L04", "U02-L03", "U02-L06", "U05-L22" ]
     },
     {
-        "idx": 482,
+        "idx": 423,
         "ar": "خُلُقٌ",
         "cleanAr": "خلق",
         "letter": "خ",
@@ -6752,35 +5926,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L04", "U02-L08", "U03-L01", "U05-L03" ]
     },
     {
-        "idx": 483,
-        "ar": "خَلْقٌ",
-        "cleanAr": "خلق",
-        "letter": "خ",
-        "tr": "Khalq",
-        "cleanTr": "khalq",
-        "cat": "اسْمٌ",
-        "role": "Verbal Noun / مَصْدَر",
-        "ur": "پیدائش، تخلیق، بناوٹ؛ مخلوق",
-        "en": "Creation, creating, creature, physical constitution",
-        "cleanEn": "creation creating creature physical constitution",
-        "occurrences": [ "U01-L04", "U02-L03", "U02-L06" ]
-    },
-    {
-        "idx": 484,
-        "ar": "خَلَقَ",
-        "cleanAr": "خلق",
-        "letter": "خ",
-        "tr": "Khalaqa",
-        "cleanTr": "khalaqa",
-        "cat": "فِعْلٌ",
-        "role": "Verb (Past) / فِعْلٌ مَاضٍ",
-        "ur": "اس نے پیدا کیا، تخلیق فرمایا",
-        "en": "He created, made",
-        "cleanEn": "he created made",
-        "occurrences": [ "U01-L03", "U02-L13", "U05-L22" ]
-    },
-    {
-        "idx": 485,
+        "idx": 424,
         "ar": "خُلُودٌ",
         "cleanAr": "خلود",
         "letter": "خ",
@@ -6794,21 +5940,21 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L04" ]
     },
     {
-        "idx": 486,
+        "idx": 425,
         "ar": "خَلِيفَةٌ",
         "cleanAr": "خليفه",
         "letter": "خ",
         "tr": "Khalīfah",
         "cleanTr": "khalifah",
         "cat": "اسْمٌ",
-        "role": "Noun / اسْمٌ",
+        "role": "Noun / اسْمٌ (Plural: خُلَفَاءٌ)",
         "ur": "جانشین، خلیفہ، نائب",
         "en": "Successor, viceroy, vicegerent",
         "cleanEn": "successor viceroy vicegerent",
-        "occurrences": [ "U01-L03", "U04-L16" ]
+        "occurrences": [ "U01-L03", "U04-L16", "U05-L04" ]
     },
     {
-        "idx": 487,
+        "idx": 426,
         "ar": "خَمْرٌ",
         "cleanAr": "خمر",
         "letter": "خ",
@@ -6822,7 +5968,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L03", "U04-L07" ]
     },
     {
-        "idx": 488,
+        "idx": 427,
         "ar": "خِنْزِيرٌ",
         "cleanAr": "خنزير",
         "letter": "خ",
@@ -6836,7 +5982,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L04" ]
     },
     {
-        "idx": 489,
+        "idx": 428,
         "ar": "خَوْضٌ",
         "cleanAr": "خوض",
         "letter": "خ",
@@ -6850,7 +5996,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L06" ]
     },
     {
-        "idx": 490,
+        "idx": 429,
         "ar": "خَوْفٌ",
         "cleanAr": "خوف",
         "letter": "خ",
@@ -6864,7 +6010,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L05", "U02-L04", "U02-L05" ]
     },
     {
-        "idx": 491,
+        "idx": 430,
         "ar": "خِيَانَةٌ",
         "cleanAr": "خيانه",
         "letter": "خ",
@@ -6878,7 +6024,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L07" ]
     },
     {
-        "idx": 492,
+        "idx": 431,
         "ar": "خَيْرٌ",
         "cleanAr": "خير",
         "letter": "خ",
@@ -6889,10 +6035,10 @@ var WORDS_DATA = [    {
         "ur": "بھلائی، نیکی، بہتر، بہترین",
         "en": "Good, goodness, wealth, welfare",
         "cleanEn": "good goodness wealth welfare",
-        "occurrences": [ "U01-L01", "U01-L11", "U01-L13", "U01-L16", "U01-L19", "U02-L02", "U02-L12", "U03-L01", "U02-L03", "U05-L08" ]
+        "occurrences": [ "U01-L01", "U01-L11", "U01-L13", "U01-L16", "U01-L19", "U02-L02", "U02-L03", "U02-L12", "U03-L01", "U05-L08" ]
     },
     {
-        "idx": 493,
+        "idx": 432,
         "ar": "خَيْطٌ",
         "cleanAr": "خيط",
         "letter": "خ",
@@ -6906,7 +6052,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L03" ]
     },
     {
-        "idx": 494,
+        "idx": 433,
         "ar": "دَابَّةٌ",
         "cleanAr": "دابه",
         "letter": "د",
@@ -6920,7 +6066,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L07" ]
     },
     {
-        "idx": 495,
+        "idx": 434,
         "ar": "دَاحِضَةٌ",
         "cleanAr": "داحضه",
         "letter": "د",
@@ -6934,7 +6080,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L06" ]
     },
     {
-        "idx": 496,
+        "idx": 435,
         "ar": "دَارٌ",
         "cleanAr": "دار",
         "letter": "د",
@@ -6948,7 +6094,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L03", "U05-L03" ]
     },
     {
-        "idx": 497,
+        "idx": 436,
         "ar": "دَاعٍ",
         "cleanAr": "داع",
         "letter": "د",
@@ -6962,7 +6108,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L06", "U04-L18" ]
     },
     {
-        "idx": 498,
+        "idx": 437,
         "ar": "دَافِعٌ",
         "cleanAr": "دافع",
         "letter": "د",
@@ -6976,7 +6122,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L23" ]
     },
     {
-        "idx": 499,
+        "idx": 438,
         "ar": "دَاوُودٌ",
         "cleanAr": "داوود",
         "letter": "د",
@@ -6990,7 +6136,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L12", "U02-L04", "U02-L13", "U03-L04" ]
     },
     {
-        "idx": 500,
+        "idx": 439,
         "ar": "دَائِمٌ",
         "cleanAr": "دايم",
         "letter": "د",
@@ -7004,7 +6150,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L05" ]
     },
     {
-        "idx": 501,
+        "idx": 440,
         "ar": "دُخَانٌ",
         "cleanAr": "دخان",
         "letter": "د",
@@ -7015,10 +6161,10 @@ var WORDS_DATA = [    {
         "ur": "دھواں",
         "en": "Smoke",
         "cleanEn": "smoke",
-        "occurrences": [ "U04-L09", "U02-L12" ]
+        "occurrences": [ "U02-L12", "U04-L09" ]
     },
     {
-        "idx": 502,
+        "idx": 441,
         "ar": "دَخَلَ",
         "cleanAr": "دخل",
         "letter": "د",
@@ -7032,7 +6178,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L05" ]
     },
     {
-        "idx": 503,
+        "idx": 442,
         "ar": "دَرَجَةٌ",
         "cleanAr": "درجه",
         "letter": "د",
@@ -7046,7 +6192,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L11", "U01-L18", "U04-L04", "U05-L08" ]
     },
     {
-        "idx": 504,
+        "idx": 443,
         "ar": "دَعَا",
         "cleanAr": "دعا",
         "letter": "د",
@@ -7060,7 +6206,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L06", "U02-L06" ]
     },
     {
-        "idx": 505,
+        "idx": 444,
         "ar": "دُعَاءٌ",
         "cleanAr": "دعاء",
         "letter": "د",
@@ -7074,7 +6220,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L04", "U02-L09", "U02-L12", "U03-L05", "U05-L03" ]
     },
     {
-        "idx": 506,
+        "idx": 445,
         "ar": "دَعْوَةٌ",
         "cleanAr": "دعوه",
         "letter": "د",
@@ -7088,7 +6234,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L04" ]
     },
     {
-        "idx": 507,
+        "idx": 446,
         "ar": "دَعْوَىٰ",
         "cleanAr": "دعوي",
         "letter": "د",
@@ -7102,7 +6248,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L06" ]
     },
     {
-        "idx": 508,
+        "idx": 447,
         "ar": "دِفْءٌ",
         "cleanAr": "دفء",
         "letter": "د",
@@ -7116,7 +6262,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L12" ]
     },
     {
-        "idx": 509,
+        "idx": 448,
         "ar": "دُنْيَا",
         "cleanAr": "دنيا",
         "letter": "د",
@@ -7130,7 +6276,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L04", "U01-L17", "U02-L03", "U02-L07", "U03-L03" ]
     },
     {
-        "idx": 510,
+        "idx": 449,
         "ar": "دِهَانٌ",
         "cleanAr": "دهان",
         "letter": "د",
@@ -7144,7 +6290,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L01" ]
     },
     {
-        "idx": 511,
+        "idx": 450,
         "ar": "دَهْرٌ",
         "cleanAr": "دهر",
         "letter": "د",
@@ -7158,7 +6304,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L09" ]
     },
     {
-        "idx": 512,
+        "idx": 451,
         "ar": "دُونَ",
         "cleanAr": "دون",
         "letter": "د",
@@ -7172,7 +6318,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L10", "U03-L04", "U05-L08" ]
     },
     {
-        "idx": 513,
+        "idx": 452,
         "ar": "دِينٌ",
         "cleanAr": "دين",
         "letter": "د",
@@ -7186,7 +6332,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L01", "U01-L13", "U02-L01", "U02-L03", "U02-L08", "U03-L03", "U05-L22" ]
     },
     {
-        "idx": 514,
+        "idx": 453,
         "ar": "دِينَارٌ",
         "cleanAr": "دينار",
         "letter": "د",
@@ -7197,10 +6343,10 @@ var WORDS_DATA = [    {
         "ur": "دینار، سونے کا سکہ",
         "en": "Dinar (gold coin)",
         "cleanEn": "dinar gold coin",
-        "occurrences": [ "U02-L07", "U01-L06" ]
+        "occurrences": [ "U01-L06", "U02-L07" ]
     },
     {
-        "idx": 515,
+        "idx": 454,
         "ar": "ذَاتٌ",
         "cleanAr": "ذات",
         "letter": "ذ",
@@ -7214,7 +6360,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L10", "U04-L04" ]
     },
     {
-        "idx": 516,
+        "idx": 455,
         "ar": "ذَاكِرٌ",
         "cleanAr": "ذاكر",
         "letter": "ذ",
@@ -7225,10 +6371,10 @@ var WORDS_DATA = [    {
         "ur": "یاد کرنے والا، ذکر کرنے والا",
         "en": "Remembering, mentioning",
         "cleanEn": "remembering mentioning",
-        "occurrences": [ "U03-L08", "U05-L01", "U01-L16", "U02-L13" ]
+        "occurrences": [ "U01-L16", "U02-L13", "U03-L08", "U05-L01" ]
     },
     {
-        "idx": 517,
+        "idx": 456,
         "ar": "ذَاهِبٌ",
         "cleanAr": "ذاهب",
         "letter": "ذ",
@@ -7242,7 +6388,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L16" ]
     },
     {
-        "idx": 518,
+        "idx": 457,
         "ar": "ذَائِقَةٌ",
         "cleanAr": "ذايقه",
         "letter": "ذ",
@@ -7256,7 +6402,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L07" ]
     },
     {
-        "idx": 519,
+        "idx": 458,
         "ar": "ذَرَّةٌ",
         "cleanAr": "ذره",
         "letter": "ذ",
@@ -7270,7 +6416,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L02" ]
     },
     {
-        "idx": 520,
+        "idx": 459,
         "ar": "ذُرِّيَّةٌ",
         "cleanAr": "ذريه",
         "letter": "ذ",
@@ -7284,35 +6430,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L02", "U05-L07" ]
     },
     {
-        "idx": 521,
-        "ar": "ذِكْرٌ",
-        "cleanAr": "ذكر",
-        "letter": "ذ",
-        "tr": "Dhikr",
-        "cleanTr": "dhikr",
-        "cat": "اسْمٌ",
-        "role": "Masdar / مَصْدَرٌ",
-        "ur": "ذکر، یاد دہانی، نصیحت، قرآنِ مجید",
-        "en": "Remembrance, Reminder, The Quran",
-        "cleanEn": "remembrance reminder the quran",
-        "occurrences": [ "U01-L01", "U01-L13", "U01-L15", "U01-L18", "U02-L05", "U03-L01" ]
-    },
-    {
-        "idx": 522,
-        "ar": "ذَكَرَ",
-        "cleanAr": "ذكر",
-        "letter": "ذ",
-        "tr": "Dhakara",
-        "cleanTr": "dhakara",
-        "cat": "فِعْلٌ",
-        "role": "Verb (Past) / فِعْلٌ مَاضٍ",
-        "ur": "اس نے یاد کیا، ذکر کیا",
-        "en": "He remembered, commemorated",
-        "cleanEn": "he remembered commemorated",
-        "occurrences": [ "U01-L05" ]
-    },
-    {
-        "idx": 523,
+        "idx": 460,
         "ar": "ذَكَرٌ",
         "cleanAr": "ذكر",
         "letter": "ذ",
@@ -7326,7 +6444,35 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L02", "U05-L12" ]
     },
     {
-        "idx": 524,
+        "idx": 461,
+        "ar": "ذَكَرَ",
+        "cleanAr": "ذكر",
+        "letter": "ذ",
+        "tr": "Dhakara",
+        "cleanTr": "dhakara",
+        "cat": "فِعْلٌ",
+        "role": "Verb (Past) / فِعْلٌ مَاضٍ",
+        "ur": "اس نے یاد کیا، ذکر کیا",
+        "en": "He remembered, commemorated",
+        "cleanEn": "he remembered commemorated",
+        "occurrences": [ "U01-L05" ]
+    },
+    {
+        "idx": 462,
+        "ar": "ذِكْرٌ",
+        "cleanAr": "ذكر",
+        "letter": "ذ",
+        "tr": "Dhikr",
+        "cleanTr": "dhikr",
+        "cat": "اسْمٌ",
+        "role": "Masdar / مَصْدَرٌ",
+        "ur": "ذکر، یاد دہانی، نصیحت، قرآنِ مجید",
+        "en": "Remembrance, Reminder, The Quran",
+        "cleanEn": "remembrance reminder the quran",
+        "occurrences": [ "U01-L01", "U01-L13", "U01-L15", "U01-L18", "U02-L05", "U03-L01", "U05-L14" ]
+    },
+    {
+        "idx": 463,
         "ar": "ذِكْرَىٰ",
         "cleanAr": "ذكري",
         "letter": "ذ",
@@ -7340,21 +6486,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L16", "U02-L03", "U05-L02" ]
     },
     {
-        "idx": 525,
-        "ar": "ذُكُورٌ",
-        "cleanAr": "ذكور",
-        "letter": "ذ",
-        "tr": "Dhukūr",
-        "cleanTr": "dhukur",
-        "cat": "اسْمٌ",
-        "role": "Broken Plural / جَمْعُ تَكْسِير (ذَكَر)",
-        "ur": "مرد، لڑکے",
-        "en": "Males",
-        "cleanEn": "males",
-        "occurrences": [ "U05-L14" ]
-    },
-    {
-        "idx": 526,
+        "idx": 464,
         "ar": "ذُلٌّ",
         "cleanAr": "ذل",
         "letter": "ذ",
@@ -7365,10 +6497,10 @@ var WORDS_DATA = [    {
         "ur": "عاجزی، فروتنی، ذلت",
         "en": "Humility, submission, submissiveness",
         "cleanEn": "humility submission submissiveness",
-        "occurrences": [ "U02-L05" ]
+        "occurrences": [ "U02-L05", "U05-L01" ]
     },
     {
-        "idx": 527,
+        "idx": 465,
         "ar": "ذٰلِكَ",
         "cleanAr": "ذلك",
         "letter": "ذ",
@@ -7382,7 +6514,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L16", "U02-L01", "U02-L04", "U02-L08", "U02-L12", "U05-L12" ]
     },
     {
-        "idx": 528,
+        "idx": 466,
         "ar": "ذِلَّةٌ",
         "cleanAr": "ذله",
         "letter": "ذ",
@@ -7393,10 +6525,10 @@ var WORDS_DATA = [    {
         "ur": "رسوائی، خواری، ذلت",
         "en": "Humiliation, abasement",
         "cleanEn": "humiliation abasement",
-        "occurrences": [ "U01-L13", "U05-L07", "U01-L02" ]
+        "occurrences": [ "U01-L02", "U01-L13", "U05-L07" ]
     },
     {
-        "idx": 529,
+        "idx": 467,
         "ar": "ذَنبٌ",
         "cleanAr": "ذنب",
         "letter": "ذ",
@@ -7410,7 +6542,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L06", "U05-L08" ]
     },
     {
-        "idx": 530,
+        "idx": 468,
         "ar": "ذَهَبٌ",
         "cleanAr": "ذهب",
         "letter": "ذ",
@@ -7424,49 +6556,21 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L05" ]
     },
     {
-        "idx": 531,
+        "idx": 469,
         "ar": "ذُو",
         "cleanAr": "ذو",
         "letter": "ذ",
         "tr": "Dhū",
         "cleanTr": "dhu",
         "cat": "اسْمٌ",
-        "role": "Possessive Noun (Asmā' Sittah) / اسْمٌ بِمَعْنَى صَاحِب",
+        "role": "Possessive Noun (Asmā\u0027 Sittah) / اسْمٌ بِمَعْنَى صَاحِب",
         "ur": "والا، صاحبِ، مالک (جیسے ذو الجلال)",
         "en": "Possessor of, owner of, endowed with",
         "cleanEn": "possessor of owner of endowed with",
         "occurrences": [ "U01-L07", "U02-L04", "U03-L04" ]
     },
     {
-        "idx": 532,
-        "ar": "رُءُوسٌ",
-        "cleanAr": "رءوس",
-        "letter": "ر",
-        "tr": "Ru’ūs",
-        "cleanTr": "ruus",
-        "cat": "اسْمٌ",
-        "role": "Broken Plural / جَمْعُ تَكْسِير (رَأْس)",
-        "ur": "سر",
-        "en": "Heads",
-        "cleanEn": "heads",
-        "occurrences": [ "U05-L10" ]
-    },
-    {
-        "idx": 533,
-        "ar": "رَءُوفٌ",
-        "cleanAr": "رءوف",
-        "letter": "ر",
-        "tr": "Ra’ūf",
-        "cleanTr": "rauf",
-        "cat": "صِفَةٌ",
-        "role": "Divine Attribute / اسْمٌ مِن أَسْمَاءِ الله",
-        "ur": "نہایت شفقت فرمانے والا، مہربان",
-        "en": "Full of pity, Most Kind, Compassionate",
-        "cleanEn": "full of pity most kind compassionate",
-        "occurrences": [ "U02-L11", "U04-L08", "U05-L04" ]
-    },
-    {
-        "idx": 534,
+        "idx": 470,
         "ar": "رَاجِعٌ",
         "cleanAr": "راجع",
         "letter": "ر",
@@ -7480,7 +6584,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L08" ]
     },
     {
-        "idx": 535,
+        "idx": 471,
         "ar": "رَاجِمٌ",
         "cleanAr": "راجم",
         "letter": "ر",
@@ -7494,7 +6598,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L08", "U05-L01" ]
     },
     {
-        "idx": 536,
+        "idx": 472,
         "ar": "رَازِقٌ",
         "cleanAr": "رازق",
         "letter": "ر",
@@ -7508,21 +6612,21 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L08" ]
     },
     {
-        "idx": 537,
+        "idx": 473,
         "ar": "رَأْسٌ",
         "cleanAr": "راس",
         "letter": "ر",
         "tr": "Ra’s",
         "cleanTr": "ras",
         "cat": "اسْمٌ",
-        "role": "Noun / اسْمٌ",
+        "role": "Noun / اسْمٌ (Plural: رُءُوسٌ)",
         "ur": "سر، کھوپڑی",
         "en": "Head",
         "cleanEn": "head",
-        "occurrences": [ "U04-L02" ]
+        "occurrences": [ "U04-L02", "U05-L10" ]
     },
     {
-        "idx": 538,
+        "idx": 474,
         "ar": "رَاشِدٌ",
         "cleanAr": "راشد",
         "letter": "ر",
@@ -7536,7 +6640,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L05" ]
     },
     {
-        "idx": 539,
+        "idx": 475,
         "ar": "رَاضٍ",
         "cleanAr": "راض",
         "letter": "ر",
@@ -7546,11 +6650,11 @@ var WORDS_DATA = [    {
         "role": "Noun (Active Participle) / اسْمُ فَاعِل",
         "ur": "راضی، خوشنود",
         "en": "Contented, well-pleased",
-        "cleanEn": "contented wellpleased",
+        "cleanEn": "contented well pleased",
         "occurrences": [ "U03-L08" ]
     },
     {
-        "idx": 540,
+        "idx": 476,
         "ar": "رَاضِيَةٌ",
         "cleanAr": "راضيه",
         "letter": "ر",
@@ -7560,11 +6664,11 @@ var WORDS_DATA = [    {
         "role": "Adjective (Fem.) / صِفَة (مُؤَنَّث)",
         "ur": "پسندیدہ، من پسند، چین والی",
         "en": "Pleasant, well-pleasing, contented (fem.)",
-        "cleanEn": "pleasant wellpleasing contented fem",
+        "cleanEn": "pleasant well pleasing contented fem",
         "occurrences": [ "U03-L03", "U05-L21" ]
     },
     {
-        "idx": 541,
+        "idx": 477,
         "ar": "رَاعٍ",
         "cleanAr": "راع",
         "letter": "ر",
@@ -7578,7 +6682,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L07" ]
     },
     {
-        "idx": 542,
+        "idx": 478,
         "ar": "رَاغِبٌ",
         "cleanAr": "راغب",
         "letter": "ر",
@@ -7592,7 +6696,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L08", "U05-L01" ]
     },
     {
-        "idx": 543,
+        "idx": 479,
         "ar": "رَافِعٌ",
         "cleanAr": "رافع",
         "letter": "ر",
@@ -7606,7 +6710,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L13" ]
     },
     {
-        "idx": 544,
+        "idx": 480,
         "ar": "رَاكِعٌ",
         "cleanAr": "راكع",
         "letter": "ر",
@@ -7620,7 +6724,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L06", "U03-L08", "U05-L01" ]
     },
     {
-        "idx": 545,
+        "idx": 481,
         "ar": "رَبٌّ",
         "cleanAr": "رب",
         "letter": "ر",
@@ -7631,10 +6735,10 @@ var WORDS_DATA = [    {
         "ur": "رب، پالنے والا، مالک و آقا",
         "en": "Lord, Sustainer, Master, Cherisher",
         "cleanEn": "lord sustainer master cherisher",
-        "occurrences": [ "U01-L01", "U02-L04", "U02-L11", "U02-L13", "U03-L04" ]
+        "occurrences": [ "U01-L01", "U02-L04", "U02-L11", "U02-L13", "U03-L04", "U05-L04" ]
     },
     {
-        "idx": 546,
+        "idx": 482,
         "ar": "رِبَا",
         "cleanAr": "ربا",
         "letter": "ر",
@@ -7648,7 +6752,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L05" ]
     },
     {
-        "idx": 547,
+        "idx": 483,
         "ar": "رُبُعٌ",
         "cleanAr": "ربع",
         "letter": "ر",
@@ -7658,25 +6762,11 @@ var WORDS_DATA = [    {
         "role": "Fractional Noun / اسْمُ كَسْر",
         "ur": "چوتھائی حصہ (۱/۴)",
         "en": "One fourth (1/4)",
-        "cleanEn": "one fourth 14",
+        "cleanEn": "one fourth 1 4",
         "occurrences": [ "U05-L12" ]
     },
     {
-        "idx": 548,
-        "ar": "رِجَالٌ",
-        "cleanAr": "رجال",
-        "letter": "ر",
-        "tr": "Rijāl",
-        "cleanTr": "rijal",
-        "cat": "اسْمٌ",
-        "role": "Broken Plural / جَمْعُ تَكْسِير (رَجُل)",
-        "ur": "مرد، اشخاص",
-        "en": "Men",
-        "cleanEn": "men",
-        "occurrences": [ "U05-L04" ]
-    },
-    {
-        "idx": 549,
+        "idx": 484,
         "ar": "رِجْزٌ",
         "cleanAr": "رجز",
         "letter": "ر",
@@ -7690,7 +6780,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L05", "U05-L08" ]
     },
     {
-        "idx": 550,
+        "idx": 485,
         "ar": "رِجْسٌ",
         "cleanAr": "رجس",
         "letter": "ر",
@@ -7701,10 +6791,10 @@ var WORDS_DATA = [    {
         "ur": "گندگی، عذاب، پلیدی",
         "en": "Abomination, spiritual filth, punishment",
         "cleanEn": "abomination spiritual filth punishment",
-        "occurrences": [ "U05-L06", "U02-L12" ]
+        "occurrences": [ "U02-L12", "U05-L06" ]
     },
     {
-        "idx": 551,
+        "idx": 486,
         "ar": "رَجْعٌ",
         "cleanAr": "رجع",
         "letter": "ر",
@@ -7718,7 +6808,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L16", "U03-L01" ]
     },
     {
-        "idx": 552,
+        "idx": 487,
         "ar": "رُجْعَىٰ",
         "cleanAr": "رجعي",
         "letter": "ر",
@@ -7732,35 +6822,35 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L07" ]
     },
     {
-        "idx": 553,
-        "ar": "رِجْلٌ",
-        "cleanAr": "رجل",
-        "letter": "ر",
-        "tr": "Rijl",
-        "cleanTr": "rijl",
-        "cat": "اسْمٌ",
-        "role": "Noun (Singular) / اسْمٌ (مُفْرَد)",
-        "ur": "ٹانگ، پاؤں، قدم",
-        "en": "Leg, foot",
-        "cleanEn": "leg foot",
-        "occurrences": [ "U03-L10" ]
-    },
-    {
-        "idx": 554,
+        "idx": 488,
         "ar": "رَجُلٌ",
         "cleanAr": "رجل",
         "letter": "ر",
         "tr": "Rajul",
         "cleanTr": "rajul",
         "cat": "اسْمٌ",
-        "role": "Noun / اسْمٌ",
+        "role": "Noun / اسْمٌ (Plural: رِجَالٌ)",
         "ur": "مرد، آدمی، انسان",
         "en": "Man",
         "cleanEn": "man",
-        "occurrences": [ "U02-L02" ]
+        "occurrences": [ "U02-L02", "U05-L04" ]
     },
     {
-        "idx": 555,
+        "idx": 489,
+        "ar": "رِجْلٌ",
+        "cleanAr": "رجل",
+        "letter": "ر",
+        "tr": "Rijl",
+        "cleanTr": "rijl",
+        "cat": "اسْمٌ",
+        "role": "Noun / اسْمٌ (Plural: أَرْجُلٌ)",
+        "ur": "ٹانگ، پاؤں، قدم",
+        "en": "Leg, foot",
+        "cleanEn": "leg foot",
+        "occurrences": [ "U03-L10", "U05-L10" ]
+    },
+    {
+        "idx": 490,
         "ar": "رَجِيمٌ",
         "cleanAr": "رجيم",
         "letter": "ر",
@@ -7774,21 +6864,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L08", "U05-L20" ]
     },
     {
-        "idx": 556,
-        "ar": "رُحَمَاءٌ",
-        "cleanAr": "رحماء",
-        "letter": "ر",
-        "tr": "Ruhamā’",
-        "cleanTr": "ruhama",
-        "cat": "اسْمٌ",
-        "role": "Broken Plural / جَمْعُ تَكْسِير (رَحِيم)",
-        "ur": "آپس میں نہایت رحم دل",
-        "en": "Merciful, compassionate",
-        "cleanEn": "merciful compassionate",
-        "occurrences": [ "U05-L06" ]
-    },
-    {
-        "idx": 557,
+        "idx": 491,
         "ar": "رَحْمٰنٌ",
         "cleanAr": "رحمن",
         "letter": "ر",
@@ -7802,7 +6878,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L09", "U02-L02", "U02-L03", "U02-L09" ]
     },
     {
-        "idx": 558,
+        "idx": 492,
         "ar": "رَحْمَةٌ",
         "cleanAr": "رحمه",
         "letter": "ر",
@@ -7816,7 +6892,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L05", "U02-L03", "U03-L05" ]
     },
     {
-        "idx": 559,
+        "idx": 493,
         "ar": "رَحِيمٌ",
         "cleanAr": "رحيم",
         "letter": "ر",
@@ -7827,10 +6903,10 @@ var WORDS_DATA = [    {
         "ur": "نہایت مہربان، مسلسل رحم فرمانے والا",
         "en": "Most Merciful, Constantly Compassionate",
         "cleanEn": "most merciful constantly compassionate",
-        "occurrences": [ "U01-L14", "U02-L01", "U02-L11", "U03-L08" ]
+        "occurrences": [ "U01-L14", "U02-L01", "U02-L11", "U03-L08", "U05-L06" ]
     },
     {
-        "idx": 560,
+        "idx": 494,
         "ar": "رَدَّ",
         "cleanAr": "رد",
         "letter": "ر",
@@ -7844,7 +6920,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L06" ]
     },
     {
-        "idx": 561,
+        "idx": 495,
         "ar": "رَزَّاقٌ",
         "cleanAr": "رزاق",
         "letter": "ر",
@@ -7854,11 +6930,11 @@ var WORDS_DATA = [    {
         "role": "Intensive Adjective / صِيغَةُ مُبَالَغَة (فَعَّال)",
         "ur": "بہت رزق دینے والا، سب کو روزی پہنچانے والا",
         "en": "Supreme Provider, All-Sustainer",
-        "cleanEn": "supreme provider allsustainer",
+        "cleanEn": "supreme provider all sustainer",
         "occurrences": [ "U03-L08", "U04-L01" ]
     },
     {
-        "idx": 562,
+        "idx": 496,
         "ar": "رِزْقٌ",
         "cleanAr": "رزق",
         "letter": "ر",
@@ -7869,10 +6945,10 @@ var WORDS_DATA = [    {
         "ur": "روزی، عطا، خوراک، وسائلِ زندگی",
         "en": "Sustenance, provision, livelihood, divine gift",
         "cleanEn": "sustenance provision livelihood divine gift",
-        "occurrences": [ "U01-L13", "U02-L03", "U03-L01", "U01-L02" ]
+        "occurrences": [ "U01-L02", "U01-L13", "U02-L03", "U03-L01" ]
     },
     {
-        "idx": 563,
+        "idx": 497,
         "ar": "رِسَالَةٌ",
         "cleanAr": "رساله",
         "letter": "ر",
@@ -7886,21 +6962,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L11", "U03-L05" ]
     },
     {
-        "idx": 564,
-        "ar": "رُسُلٌ",
-        "cleanAr": "رسل",
-        "letter": "ر",
-        "tr": "Rusul",
-        "cleanTr": "rusul",
-        "cat": "اسْمٌ",
-        "role": "Broken Plural / جَمْعُ تَكْسِير (رَسُول)",
-        "ur": "رسولانِ الٰہی، پیغمبر",
-        "en": "Messengers",
-        "cleanEn": "messengers",
-        "occurrences": [ "U05-L04" ]
-    },
-    {
-        "idx": 565,
+        "idx": 498,
         "ar": "رَسُولٌ",
         "cleanAr": "رسول",
         "letter": "ر",
@@ -7911,10 +6973,10 @@ var WORDS_DATA = [    {
         "ur": "رسول، پیغام رساں، اللہ کا پیغمبر",
         "en": "Messenger, apostle, divine emissary",
         "cleanEn": "messenger apostle divine emissary",
-        "occurrences": [ "U01-L01", "U01-L02", "U01-L15", "U02-L02", "U02-L09", "U02-L11", "U02-L13", "U03-L01", "U03-L02" ]
+        "occurrences": [ "U01-L01", "U01-L02", "U01-L15", "U02-L02", "U02-L09", "U02-L11", "U02-L13", "U03-L01", "U03-L02", "U05-L04" ]
     },
     {
-        "idx": 566,
+        "idx": 499,
         "ar": "رَشَادٌ",
         "cleanAr": "رشاد",
         "letter": "ر",
@@ -7928,7 +6990,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L04" ]
     },
     {
-        "idx": 567,
+        "idx": 500,
         "ar": "رُشْدٌ",
         "cleanAr": "رشد",
         "letter": "ر",
@@ -7942,7 +7004,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L06", "U03-L04" ]
     },
     {
-        "idx": 568,
+        "idx": 501,
         "ar": "رَشِيدٌ",
         "cleanAr": "رشيد",
         "letter": "ر",
@@ -7952,11 +7014,11 @@ var WORDS_DATA = [    {
         "role": "Adjective / صِفَة",
         "ur": "نیک بخت، سوجھ بوجھ والا، بھلا آدمی",
         "en": "Right-minded, righteous man",
-        "cleanEn": "rightminded righteous man",
+        "cleanEn": "right minded righteous man",
         "occurrences": [ "U05-L21" ]
     },
     {
-        "idx": 569,
+        "idx": 502,
         "ar": "رِضْوَانٌ",
         "cleanAr": "رضوان",
         "letter": "ر",
@@ -7967,10 +7029,10 @@ var WORDS_DATA = [    {
         "ur": "خوشنودی، رضامندی، کامل رضا",
         "en": "Good pleasure, acceptance, divine contentment",
         "cleanEn": "good pleasure acceptance divine contentment",
-        "occurrences": [ "U03-L03", "U01-L07" ]
+        "occurrences": [ "U01-L07", "U03-L03" ]
     },
     {
-        "idx": 570,
+        "idx": 503,
         "ar": "رَضِيَ",
         "cleanAr": "رضي",
         "letter": "ر",
@@ -7984,7 +7046,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L03" ]
     },
     {
-        "idx": 571,
+        "idx": 504,
         "ar": "رَفَثٌ",
         "cleanAr": "رفث",
         "letter": "ر",
@@ -7998,7 +7060,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L08" ]
     },
     {
-        "idx": 572,
+        "idx": 505,
         "ar": "رَفَعَ",
         "cleanAr": "رفع",
         "letter": "ر",
@@ -8012,7 +7074,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L02", "U02-L06" ]
     },
     {
-        "idx": 573,
+        "idx": 506,
         "ar": "رَقٌّ",
         "cleanAr": "رق",
         "letter": "ر",
@@ -8026,7 +7088,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L10" ]
     },
     {
-        "idx": 574,
+        "idx": 507,
         "ar": "رَمَضَانٌ",
         "cleanAr": "رمضان",
         "letter": "ر",
@@ -8040,7 +7102,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L06" ]
     },
     {
-        "idx": 575,
+        "idx": 508,
         "ar": "رَمِيمٌ",
         "cleanAr": "رميم",
         "letter": "ر",
@@ -8054,7 +7116,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L01" ]
     },
     {
-        "idx": 576,
+        "idx": 509,
         "ar": "رَهْبَةٌ",
         "cleanAr": "رهبه",
         "letter": "ر",
@@ -8068,8 +7130,8 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L22" ]
     },
     {
-        "idx": 577,
-        "ar": "رَوَاسِيٌ",
+        "idx": 510,
+        "ar": "رَوَاسِيَ",
         "cleanAr": "رواسي",
         "letter": "ر",
         "tr": "Rawāsiya",
@@ -8082,21 +7144,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L03" ]
     },
     {
-        "idx": 578,
-        "ar": "رُوحٌ",
-        "cleanAr": "روح",
-        "letter": "ر",
-        "tr": "Rūh",
-        "cleanTr": "ruh",
-        "cat": "اسْمٌ",
-        "role": "Noun / اسْمٌ",
-        "ur": "روح، جان؛ حضرت جبرائیل علیہ السلام، وحی",
-        "en": "Spirit, soul, Angel Gabriel, divine revelation",
-        "cleanEn": "spirit soul angel gabriel divine revelation",
-        "occurrences": [ "U01-L06", "U02-L07", "U04-L04", "U05-L14" ]
-    },
-    {
-        "idx": 579,
+        "idx": 511,
         "ar": "رَوْحٌ",
         "cleanAr": "روح",
         "letter": "ر",
@@ -8110,12 +7158,26 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L06" ]
     },
     {
-        "idx": 580,
+        "idx": 512,
+        "ar": "رُوحٌ",
+        "cleanAr": "روح",
+        "letter": "ر",
+        "tr": "Rūh",
+        "cleanTr": "ruh",
+        "cat": "اسْمٌ",
+        "role": "Noun / اسْمٌ",
+        "ur": "روح، جان؛ حضرت جبرائیل علیہ السلام، وحی",
+        "en": "Spirit, soul, Angel Gabriel, divine revelation",
+        "cleanEn": "spirit soul angel gabriel divine revelation",
+        "occurrences": [ "U01-L06", "U02-L07", "U04-L04", "U05-L14" ]
+    },
+    {
+        "idx": 513,
         "ar": "رُؤْيَا",
         "cleanAr": "رويا",
         "letter": "ر",
         "tr": "Ru’yā",
-        "cleanTr": "ru'ya",
+        "cleanTr": "ruya",
         "cat": "اسْمٌ",
         "role": "Noun / اسْمٌ",
         "ur": "خواب، سچی رویا",
@@ -8124,7 +7186,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L14" ]
     },
     {
-        "idx": 581,
+        "idx": 514,
         "ar": "رِئَاءٌ",
         "cleanAr": "رياء",
         "letter": "ر",
@@ -8138,7 +7200,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L05" ]
     },
     {
-        "idx": 582,
+        "idx": 515,
         "ar": "رَيْبٌ",
         "cleanAr": "ريب",
         "letter": "ر",
@@ -8152,7 +7214,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L16", "U02-L03", "U02-L08", "U04-L04", "U05-L02" ]
     },
     {
-        "idx": 583,
+        "idx": 516,
         "ar": "رِيحٌ",
         "cleanAr": "ريح",
         "letter": "ر",
@@ -8166,21 +7228,21 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L01" ]
     },
     {
-        "idx": 584,
-        "ar": "زَادَ",
-        "cleanAr": "زاد",
-        "letter": "ز",
-        "tr": "Zāda",
-        "cleanTr": "zada",
-        "cat": "فِعْلٌ",
-        "role": "Verb (Past) / فِعْلٌ مَاضٍ",
-        "ur": "اس نے بڑھا دیا، زیادہ کیا",
-        "en": "He increased, augmented",
-        "cleanEn": "he increased augmented",
-        "occurrences": [ "U01-L06" ]
+        "idx": 517,
+        "ar": "رَءُوفٌ",
+        "cleanAr": "رءوف",
+        "letter": "ر",
+        "tr": "Ra’ūf",
+        "cleanTr": "rauf",
+        "cat": "صِفَةٌ",
+        "role": "Divine Attribute / اسْمٌ مِن أَسْمَاءِ الله",
+        "ur": "نہایت شفقت فرمانے والا، مہربان",
+        "en": "Full of pity, Most Kind, Compassionate",
+        "cleanEn": "full of pity most kind compassionate",
+        "occurrences": [ "U02-L11", "U04-L08", "U05-L04" ]
     },
     {
-        "idx": 585,
+        "idx": 518,
         "ar": "زَادٌ",
         "cleanAr": "زاد",
         "letter": "ز",
@@ -8194,7 +7256,21 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L06" ]
     },
     {
-        "idx": 586,
+        "idx": 519,
+        "ar": "زَادَ",
+        "cleanAr": "زاد",
+        "letter": "ز",
+        "tr": "Zāda",
+        "cleanTr": "zada",
+        "cat": "فِعْلٌ",
+        "role": "Verb (Past) / فِعْلٌ مَاضٍ",
+        "ur": "اس نے بڑھا دیا، زیادہ کیا",
+        "en": "He increased, augmented",
+        "cleanEn": "he increased augmented",
+        "occurrences": [ "U01-L06" ]
+    },
+    {
+        "idx": 520,
         "ar": "زَارِعٌ",
         "cleanAr": "زارع",
         "letter": "ز",
@@ -8208,7 +7284,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L20" ]
     },
     {
-        "idx": 587,
+        "idx": 521,
         "ar": "زَاهِدٌ",
         "cleanAr": "زاهد",
         "letter": "ز",
@@ -8222,7 +7298,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L02" ]
     },
     {
-        "idx": 588,
+        "idx": 522,
         "ar": "زُبُرٌ",
         "cleanAr": "زبر",
         "letter": "ز",
@@ -8236,7 +7312,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L07", "U05-L03" ]
     },
     {
-        "idx": 589,
+        "idx": 523,
         "ar": "زَجْرَةٌ",
         "cleanAr": "زجره",
         "letter": "ز",
@@ -8250,7 +7326,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L09" ]
     },
     {
-        "idx": 590,
+        "idx": 524,
         "ar": "زَفِيرٌ",
         "cleanAr": "زفير",
         "letter": "ز",
@@ -8264,7 +7340,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L08" ]
     },
     {
-        "idx": 591,
+        "idx": 525,
         "ar": "زَكَاةٌ",
         "cleanAr": "زكاه",
         "letter": "ز",
@@ -8278,7 +7354,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L01", "U02-L02", "U05-L05" ]
     },
     {
-        "idx": 592,
+        "idx": 526,
         "ar": "زَكَرِيَّا",
         "cleanAr": "زكريا",
         "letter": "ز",
@@ -8292,7 +7368,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L12", "U02-L13", "U05-L02" ]
     },
     {
-        "idx": 593,
+        "idx": 527,
         "ar": "زِلْزَالٌ",
         "cleanAr": "زلزال",
         "letter": "ز",
@@ -8306,7 +7382,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L01" ]
     },
     {
-        "idx": 594,
+        "idx": 528,
         "ar": "زَلْزَلَةٌ",
         "cleanAr": "زلزله",
         "letter": "ز",
@@ -8320,7 +7396,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L05", "U03-L05" ]
     },
     {
-        "idx": 595,
+        "idx": 529,
         "ar": "زَمْهَرِيرٌ",
         "cleanAr": "زمهرير",
         "letter": "ز",
@@ -8334,7 +7410,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L12" ]
     },
     {
-        "idx": 596,
+        "idx": 530,
         "ar": "زَهَقَ",
         "cleanAr": "زهق",
         "letter": "ز",
@@ -8348,7 +7424,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L12" ]
     },
     {
-        "idx": 597,
+        "idx": 531,
         "ar": "زَهُوقٌ",
         "cleanAr": "زهوق",
         "letter": "ز",
@@ -8362,7 +7438,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L12" ]
     },
     {
-        "idx": 598,
+        "idx": 532,
         "ar": "زَوَالٌ",
         "cleanAr": "زوال",
         "letter": "ز",
@@ -8376,7 +7452,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L23" ]
     },
     {
-        "idx": 599,
+        "idx": 533,
         "ar": "زَوْجٌ",
         "cleanAr": "زوج",
         "letter": "ز",
@@ -8387,10 +7463,10 @@ var WORDS_DATA = [    {
         "ur": "جوڑا، شوہر یا بیوی",
         "en": "Spouse, mate, pair",
         "cleanEn": "spouse mate pair",
-        "occurrences": [ "U03-L10" ]
+        "occurrences": [ "U03-L10", "U05-L04" ]
     },
     {
-        "idx": 600,
+        "idx": 534,
         "ar": "زَوْجَةٌ",
         "cleanAr": "زوجه",
         "letter": "ز",
@@ -8404,7 +7480,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L05" ]
     },
     {
-        "idx": 601,
+        "idx": 535,
         "ar": "زَيْتُونٌ",
         "cleanAr": "زيتون",
         "letter": "ز",
@@ -8418,7 +7494,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L10" ]
     },
     {
-        "idx": 602,
+        "idx": 536,
         "ar": "زِينَةٌ",
         "cleanAr": "زينه",
         "letter": "ز",
@@ -8432,7 +7508,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L06", "U03-L03", "U05-L01" ]
     },
     {
-        "idx": 603,
+        "idx": 537,
         "ar": "سَابِقٌ",
         "cleanAr": "سابق",
         "letter": "س",
@@ -8446,7 +7522,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L05" ]
     },
     {
-        "idx": 604,
+        "idx": 538,
         "ar": "سَاجِدٌ",
         "cleanAr": "ساجد",
         "letter": "س",
@@ -8460,7 +7536,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L06", "U03-L08", "U05-L01" ]
     },
     {
-        "idx": 605,
+        "idx": 539,
         "ar": "سَاجِرٌ",
         "cleanAr": "ساجر",
         "letter": "س",
@@ -8471,10 +7547,10 @@ var WORDS_DATA = [    {
         "ur": "بھڑکانے والے، آگ دہکانے والے",
         "en": "One who kindles fire",
         "cleanEn": "one who kindles fire",
-        "occurrences": [ "U05-L01", "U02-L02", "U02-L13" ]
+        "occurrences": [ "U02-L02", "U02-L13", "U05-L01" ]
     },
     {
-        "idx": 606,
+        "idx": 540,
         "ar": "سَاحِرٌ",
         "cleanAr": "ساحر",
         "letter": "س",
@@ -8485,10 +7561,10 @@ var WORDS_DATA = [    {
         "ur": "جادوگر، فریبِ نظر دکھانے والا",
         "en": "Magician, sorcerer",
         "cleanEn": "magician sorcerer",
-        "occurrences": [ "U01-L06", "U02-L01", "U02-L13", "U03-L01", "U03-L02", "U03-L10" ]
+        "occurrences": [ "U01-L06", "U02-L01", "U02-L13", "U03-L01", "U03-L02", "U03-L10", "U05-L04" ]
     },
     {
-        "idx": 607,
+        "idx": 541,
         "ar": "سَاخِرٌ",
         "cleanAr": "ساخر",
         "letter": "س",
@@ -8502,7 +7578,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L02" ]
     },
     {
-        "idx": 608,
+        "idx": 542,
         "ar": "سَاعَةٌ",
         "cleanAr": "ساعه",
         "letter": "س",
@@ -8516,7 +7592,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L18", "U02-L01", "U02-L08", "U02-L11", "U03-L04", "U05-L06" ]
     },
     {
-        "idx": 609,
+        "idx": 543,
         "ar": "سَالِمٌ",
         "cleanAr": "سالم",
         "letter": "س",
@@ -8530,7 +7606,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L05" ]
     },
     {
-        "idx": 610,
+        "idx": 544,
         "ar": "سَامِرِيٌّ",
         "cleanAr": "سامري",
         "letter": "س",
@@ -8540,11 +7616,11 @@ var WORDS_DATA = [    {
         "role": "Proper Name / عَلَم",
         "ur": "سامری (بچھڑے کا فتنہ برپا کرنے والا)",
         "en": "As-Samiri (instigator of the golden calf)",
-        "cleanEn": "assamiri instigator of the golden calf",
+        "cleanEn": "as samiri instigator of the golden calf",
         "occurrences": [ "U02-L13" ]
     },
     {
-        "idx": 611,
+        "idx": 545,
         "ar": "سَامِعٌ",
         "cleanAr": "سامع",
         "letter": "س",
@@ -8558,7 +7634,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L08" ]
     },
     {
-        "idx": 612,
+        "idx": 546,
         "ar": "سَاهٍ",
         "cleanAr": "ساه",
         "letter": "س",
@@ -8572,7 +7648,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L07" ]
     },
     {
-        "idx": 613,
+        "idx": 547,
         "ar": "سَائِلٌ",
         "cleanAr": "سايل",
         "letter": "س",
@@ -8586,35 +7662,21 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L02", "U05-L02" ]
     },
     {
-        "idx": 614,
+        "idx": 548,
         "ar": "سَبَأٌ",
         "cleanAr": "سبا",
         "letter": "س",
         "tr": "Saba’",
-        "cleanTr": "saba'",
+        "cleanTr": "saba",
         "cat": "عَلَمٌ",
         "role": "Proper Noun / اسْمُ عَلَم",
         "ur": "قومِ سبا (یمن کا قدیم علاقہ)",
         "en": "Sheba (ancient land/tribe)",
-        "cleanEn": "sheba ancient landtribe",
+        "cleanEn": "sheba ancient land tribe",
         "occurrences": [ "U05-L07" ]
     },
     {
-        "idx": 615,
-        "ar": "سَبْحٌ",
-        "cleanAr": "سبح",
-        "letter": "س",
-        "tr": "Sabḥ",
-        "cleanTr": "sabh",
-        "cat": "اسْمٌ",
-        "role": "Noun (Verbal Noun) / مَصْدَر",
-        "ur": "تیرنا، مصروفیات کی کثرت، فرصتِ عمل",
-        "en": "Swimming, prolonged occupation, wide course",
-        "cleanEn": "swimming prolonged occupation wide course",
-        "occurrences": [ "U04-L08" ]
-    },
-    {
-        "idx": 616,
+        "idx": 549,
         "ar": "سَبَّحَ",
         "cleanAr": "سبح",
         "letter": "س",
@@ -8628,7 +7690,21 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L02" ]
     },
     {
-        "idx": 617,
+        "idx": 550,
+        "ar": "سَبْحٌ",
+        "cleanAr": "سبح",
+        "letter": "س",
+        "tr": "Sabḥ",
+        "cleanTr": "sabh",
+        "cat": "اسْمٌ",
+        "role": "Noun (Verbal Noun) / مَصْدَر",
+        "ur": "تیرنا، مصروفیات کی کثرت، فرصتِ عمل",
+        "en": "Swimming, prolonged occupation, wide course",
+        "cleanEn": "swimming prolonged occupation wide course",
+        "occurrences": [ "U04-L08" ]
+    },
+    {
+        "idx": 551,
         "ar": "سُبْحَانٌ",
         "cleanAr": "سبحان",
         "letter": "س",
@@ -8642,7 +7718,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L15", "U02-L08", "U04-L02" ]
     },
     {
-        "idx": 618,
+        "idx": 552,
         "ar": "سَبْعَةٌ",
         "cleanAr": "سبعه",
         "letter": "س",
@@ -8656,12 +7732,12 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L12" ]
     },
     {
-        "idx": 619,
+        "idx": 553,
         "ar": "سَبْعُونَ",
         "cleanAr": "سبعون",
         "letter": "س",
         "tr": "Sab‘ūn",
-        "cleanTr": "sab'un",
+        "cleanTr": "sabun",
         "cat": "اسْمٌ",
         "role": "Cardinal Number / عَدَد عُقُود",
         "ur": "ستر (۷۰)",
@@ -8670,7 +7746,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L15" ]
     },
     {
-        "idx": 620,
+        "idx": 554,
         "ar": "سَبِيلٌ",
         "cleanAr": "سبيل",
         "letter": "س",
@@ -8684,7 +7760,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L06", "U05-L03" ]
     },
     {
-        "idx": 621,
+        "idx": 555,
         "ar": "سِجْنٌ",
         "cleanAr": "سجن",
         "letter": "س",
@@ -8698,7 +7774,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L03", "U04-L16" ]
     },
     {
-        "idx": 622,
+        "idx": 556,
         "ar": "سَجَىٰ",
         "cleanAr": "سجي",
         "letter": "س",
@@ -8712,7 +7788,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L10" ]
     },
     {
-        "idx": 623,
+        "idx": 557,
         "ar": "سِجِّينٌ",
         "cleanAr": "سجين",
         "letter": "س",
@@ -8726,7 +7802,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L04" ]
     },
     {
-        "idx": 624,
+        "idx": 558,
         "ar": "سَحَّارٌ",
         "cleanAr": "سحار",
         "letter": "س",
@@ -8740,7 +7816,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L08" ]
     },
     {
-        "idx": 625,
+        "idx": 559,
         "ar": "سُحْتٌ",
         "cleanAr": "سحت",
         "letter": "س",
@@ -8754,7 +7830,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L02" ]
     },
     {
-        "idx": 626,
+        "idx": 560,
         "ar": "سِحْرٌ",
         "cleanAr": "سحر",
         "letter": "س",
@@ -8765,24 +7841,10 @@ var WORDS_DATA = [    {
         "ur": "جادو، افسوں، سحر انگیزی",
         "en": "Magic, sorcery, enchantment",
         "cleanEn": "magic sorcery enchantment",
-        "occurrences": [ "U02-L01", "U03-L01", "U03-L02", "U05-L06", "U03-L10" ]
+        "occurrences": [ "U02-L01", "U03-L01", "U03-L02", "U03-L10", "U05-L06" ]
     },
     {
-        "idx": 627,
-        "ar": "سَحَرَةٌ",
-        "cleanAr": "سحره",
-        "letter": "س",
-        "tr": "Saharah",
-        "cleanTr": "saharah",
-        "cat": "اسْمٌ",
-        "role": "Broken Plural / جَمْعُ تَكْسِير (سَاحِر)",
-        "ur": "جادوگر لوگ",
-        "en": "Magicians, sorcerers",
-        "cleanEn": "magicians sorcerers",
-        "occurrences": [ "U05-L04" ]
-    },
-    {
-        "idx": 628,
+        "idx": 561,
         "ar": "سَدِيدٌ",
         "cleanAr": "سديد",
         "letter": "س",
@@ -8796,21 +7858,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L02" ]
     },
     {
-        "idx": 629,
-        "ar": "سَرَّاءٌ",
-        "cleanAr": "سراء",
-        "letter": "س",
-        "tr": "Sarrā’",
-        "cleanTr": "sarra",
-        "cat": "اسْمٌ",
-        "role": "Noun / اسْمٌ",
-        "ur": "خوش حالی، راحت، فراخیِ رزق",
-        "en": "Prosperity, ease, abundance, times of happiness",
-        "cleanEn": "prosperity ease abundance times of happiness",
-        "occurrences": [ "U02-L03" ]
-    },
-    {
-        "idx": 630,
+        "idx": 562,
         "ar": "سِرَاجٌ",
         "cleanAr": "سراج",
         "letter": "س",
@@ -8824,7 +7872,21 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L18" ]
     },
     {
-        "idx": 631,
+        "idx": 563,
+        "ar": "سَرَّاءٌ",
+        "cleanAr": "سراء",
+        "letter": "س",
+        "tr": "Sarrā’",
+        "cleanTr": "sarra",
+        "cat": "اسْمٌ",
+        "role": "Noun / اسْمٌ",
+        "ur": "خوش حالی، راحت، فراخیِ رزق",
+        "en": "Prosperity, ease, abundance, times of happiness",
+        "cleanEn": "prosperity ease abundance times of happiness",
+        "occurrences": [ "U02-L03" ]
+    },
+    {
+        "idx": 564,
         "ar": "سُرُرٌ",
         "cleanAr": "سرر",
         "letter": "س",
@@ -8838,7 +7900,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L12" ]
     },
     {
-        "idx": 632,
+        "idx": 565,
         "ar": "سُرُورٌ",
         "cleanAr": "سرور",
         "letter": "س",
@@ -8852,7 +7914,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L06" ]
     },
     {
-        "idx": 633,
+        "idx": 566,
         "ar": "سَرِيعٌ",
         "cleanAr": "سريع",
         "letter": "س",
@@ -8866,7 +7928,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L03", "U03-L04" ]
     },
     {
-        "idx": 634,
+        "idx": 567,
         "ar": "سَطَحَ",
         "cleanAr": "سطح",
         "letter": "س",
@@ -8880,7 +7942,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L06" ]
     },
     {
-        "idx": 635,
+        "idx": 568,
         "ar": "سَطَرَ",
         "cleanAr": "سطر",
         "letter": "س",
@@ -8894,7 +7956,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L04" ]
     },
     {
-        "idx": 636,
+        "idx": 569,
         "ar": "سُعُرٌ",
         "cleanAr": "سعر",
         "letter": "س",
@@ -8908,21 +7970,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L02" ]
     },
     {
-        "idx": 637,
-        "ar": "سَعْيٌ",
-        "cleanAr": "سعي",
-        "letter": "س",
-        "tr": "Sa‘y",
-        "cleanTr": "say",
-        "cat": "اسْمٌ",
-        "role": "Noun (Verbal Noun) / مَصْدَر",
-        "ur": "کوشش، محنت، دوڑ دھوپ",
-        "en": "Effort, striving, endeavor",
-        "cleanEn": "effort striving endeavor",
-        "occurrences": [ "U04-L11", "U05-L10" ]
-    },
-    {
-        "idx": 638,
+        "idx": 570,
         "ar": "سَعَىٰ",
         "cleanAr": "سعي",
         "letter": "س",
@@ -8936,7 +7984,21 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L02" ]
     },
     {
-        "idx": 639,
+        "idx": 571,
+        "ar": "سَعْيٌ",
+        "cleanAr": "سعي",
+        "letter": "س",
+        "tr": "Sa‘y",
+        "cleanTr": "say",
+        "cat": "اسْمٌ",
+        "role": "Noun (Verbal Noun) / مَصْدَر",
+        "ur": "کوشش، محنت، دوڑ دھوپ",
+        "en": "Effort, striving, endeavor",
+        "cleanEn": "effort striving endeavor",
+        "occurrences": [ "U04-L11", "U05-L10" ]
+    },
+    {
+        "idx": 572,
         "ar": "سَعِيرٌ",
         "cleanAr": "سعير",
         "letter": "س",
@@ -8950,7 +8012,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L03", "U03-L04" ]
     },
     {
-        "idx": 640,
+        "idx": 573,
         "ar": "سَفَاهَةٌ",
         "cleanAr": "سفاهه",
         "letter": "س",
@@ -8964,7 +8026,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L16", "U05-L03" ]
     },
     {
-        "idx": 641,
+        "idx": 574,
         "ar": "سَفَرٌ",
         "cleanAr": "سفر",
         "letter": "س",
@@ -8978,21 +8040,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L02", "U01-L13", "U02-L04", "U05-L14" ]
     },
     {
-        "idx": 642,
-        "ar": "سُفَهَاءٌ",
-        "cleanAr": "سفهاء",
-        "letter": "س",
-        "tr": "Sufahā’",
-        "cleanTr": "sufaha",
-        "cat": "اسْمٌ",
-        "role": "Broken Plural / جَمْعُ تَكْسِير (سَفِيه)",
-        "ur": "بے وقوف، کم عقل لوگ",
-        "en": "Foolish, simpletons",
-        "cleanEn": "foolish simpletons",
-        "occurrences": [ "U05-L04" ]
-    },
-    {
-        "idx": 643,
+        "idx": 575,
         "ar": "سَفِينَةٌ",
         "cleanAr": "سفينه",
         "letter": "س",
@@ -9006,7 +8054,21 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L03", "U03-L07" ]
     },
     {
-        "idx": 644,
+        "idx": 576,
+        "ar": "سَفِيهٌ",
+        "cleanAr": "سفيه",
+        "letter": "س",
+        "tr": "Safīh",
+        "cleanTr": "safih",
+        "cat": "اسْمٌ",
+        "role": "Noun / اسْمٌ",
+        "ur": "بے وقوف، نادان",
+        "en": "Foolish, senseless, ignorant",
+        "cleanEn": "foolish senseless ignorant",
+        "occurrences": [ "U05-L04" ]
+    },
+    {
+        "idx": 577,
         "ar": "سَقَرٌ",
         "cleanAr": "سقر",
         "letter": "س",
@@ -9020,7 +8082,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L21" ]
     },
     {
-        "idx": 645,
+        "idx": 578,
         "ar": "سَقْفٌ",
         "cleanAr": "سقف",
         "letter": "س",
@@ -9034,7 +8096,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L10", "U03-L03" ]
     },
     {
-        "idx": 646,
+        "idx": 579,
         "ar": "سَقِيمٌ",
         "cleanAr": "سقيم",
         "letter": "س",
@@ -9048,7 +8110,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L01" ]
     },
     {
-        "idx": 647,
+        "idx": 580,
         "ar": "سُكَارَىٰ",
         "cleanAr": "سكاري",
         "letter": "س",
@@ -9062,7 +8124,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L09" ]
     },
     {
-        "idx": 648,
+        "idx": 581,
         "ar": "سَكْرَةٌ",
         "cleanAr": "سكره",
         "letter": "س",
@@ -9076,7 +8138,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L06" ]
     },
     {
-        "idx": 649,
+        "idx": 582,
         "ar": "سَكَنٌ",
         "cleanAr": "سكن",
         "letter": "س",
@@ -9090,7 +8152,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L07" ]
     },
     {
-        "idx": 650,
+        "idx": 583,
         "ar": "سَكِينَةٌ",
         "cleanAr": "سكينه",
         "letter": "س",
@@ -9104,7 +8166,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L03", "U05-L08" ]
     },
     {
-        "idx": 651,
+        "idx": 584,
         "ar": "سَلَامٌ",
         "cleanAr": "سلام",
         "letter": "س",
@@ -9118,7 +8180,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L08", "U02-L04", "U02-L13", "U03-L04", "U05-L02" ]
     },
     {
-        "idx": 652,
+        "idx": 585,
         "ar": "سُلْطَانٌ",
         "cleanAr": "سلطان",
         "letter": "س",
@@ -9132,7 +8194,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L09", "U03-L01", "U05-L08" ]
     },
     {
-        "idx": 653,
+        "idx": 586,
         "ar": "سَلْوَىٰ",
         "cleanAr": "سلوي",
         "letter": "س",
@@ -9146,7 +8208,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L08" ]
     },
     {
-        "idx": 654,
+        "idx": 587,
         "ar": "سُلَيْمَانٌ",
         "cleanAr": "سليمان",
         "letter": "س",
@@ -9160,21 +8222,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L12", "U02-L06", "U03-L04" ]
     },
     {
-        "idx": 655,
-        "ar": "سَمَاءٌ",
-        "cleanAr": "سماء",
-        "letter": "س",
-        "tr": "Samā’",
-        "cleanTr": "sama",
-        "cat": "اسْمٌ",
-        "role": "Singular & Sound Feminine Plural",
-        "ur": "آسمان، فلک، بلندی",
-        "en": "Sky, Heaven, Firmament",
-        "cleanEn": "sky heaven firmament",
-        "occurrences": [ "U01-L04", "U01-L11", "U01-L12", "U01-L13", "U02-L03", "U02-L05", "U02-L06", "U02-L10", "U02-L13", "U03-L03", "U05-L02" ]
-    },
-    {
-        "idx": 656,
+        "idx": 588,
         "ar": "سَمَّاعٌ",
         "cleanAr": "سماع",
         "letter": "س",
@@ -9188,7 +8236,21 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L08", "U05-L12" ]
     },
     {
-        "idx": 657,
+        "idx": 589,
+        "ar": "سَمَاءٌ",
+        "cleanAr": "سماء",
+        "letter": "س",
+        "tr": "Samā’",
+        "cleanTr": "sama",
+        "cat": "اسْمٌ",
+        "role": "Singular \u0026 Sound Feminine Plural",
+        "ur": "آسمان، فلک، بلندی",
+        "en": "Sky, Heaven, Firmament",
+        "cleanEn": "sky heaven firmament",
+        "occurrences": [ "U01-L04", "U01-L11", "U01-L12", "U01-L13", "U02-L03", "U02-L05", "U02-L06", "U02-L10", "U02-L13", "U03-L03", "U05-L02" ]
+    },
+    {
+        "idx": 590,
         "ar": "سَمْعٌ",
         "cleanAr": "سمع",
         "letter": "س",
@@ -9202,7 +8264,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L01", "U04-L02" ]
     },
     {
-        "idx": 658,
+        "idx": 591,
         "ar": "سَمُومٌ",
         "cleanAr": "سموم",
         "letter": "س",
@@ -9216,7 +8278,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L04" ]
     },
     {
-        "idx": 659,
+        "idx": 592,
         "ar": "سَمِيعٌ",
         "cleanAr": "سميع",
         "letter": "س",
@@ -9226,11 +8288,11 @@ var WORDS_DATA = [    {
         "role": "Adjective / Divine Attribute",
         "ur": "سب کچھ سننے والا، سمیع",
         "en": "All-Hearing (Divine Attribute)",
-        "cleanEn": "allhearing divine attribute",
+        "cleanEn": "all hearing divine attribute",
         "occurrences": [ "U01-L09", "U01-L14", "U02-L01", "U02-L11", "U04-L01" ]
     },
     {
-        "idx": 660,
+        "idx": 593,
         "ar": "سِنٌّ",
         "cleanAr": "سن",
         "letter": "س",
@@ -9244,21 +8306,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L07" ]
     },
     {
-        "idx": 661,
-        "ar": "سُنَّةٌ",
-        "cleanAr": "سنه",
-        "letter": "س",
-        "tr": "Sunnah",
-        "cleanTr": "sunnah",
-        "cat": "اسْمٌ",
-        "role": "Noun / اسْمٌ",
-        "ur": "طریقہ، دستور، ضابطہ، سنت",
-        "en": "Way, established practice, rule, sunnah",
-        "cleanEn": "way established practice rule sunnah",
-        "occurrences": [ "U01-L07", "U03-L05", "U05-L14" ]
-    },
-    {
-        "idx": 662,
+        "idx": 594,
         "ar": "سَنَةٌ",
         "cleanAr": "سنه",
         "letter": "س",
@@ -9272,35 +8320,21 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L02" ]
     },
     {
-        "idx": 663,
-        "ar": "سُوءٌ",
-        "cleanAr": "سوء",
+        "idx": 595,
+        "ar": "سُنَّةٌ",
+        "cleanAr": "سنه",
         "letter": "س",
-        "tr": "Sū’",
-        "cleanTr": "su",
+        "tr": "Sunnah",
+        "cleanTr": "sunnah",
         "cat": "اسْمٌ",
         "role": "Noun / اسْمٌ",
-        "ur": "برائی، بدترین انجام، تکلیف",
-        "en": "Evil, badness, terrible outcome, harm",
-        "cleanEn": "evil badness terrible outcome harm",
-        "occurrences": [ "U02-L07", "U03-L04", "U05-L02" ]
+        "ur": "طریقہ، دستور، ضابطہ، سنت",
+        "en": "Way, established practice, rule, sunnah",
+        "cleanEn": "way established practice rule sunnah",
+        "occurrences": [ "U01-L07", "U03-L05", "U05-L14" ]
     },
     {
-        "idx": 664,
-        "ar": "سَوَاءٌ",
-        "cleanAr": "سواء",
-        "letter": "س",
-        "tr": "Sawā’",
-        "cleanTr": "sawa",
-        "cat": "صِفَةٌ",
-        "role": "Noun / صِفَة",
-        "ur": "برابر، یکساں",
-        "en": "Equal, alike, the same",
-        "cleanEn": "equal alike the same",
-        "occurrences": [ "U05-L08" ]
-    },
-    {
-        "idx": 665,
+        "idx": 596,
         "ar": "سُؤَالٌ",
         "cleanAr": "سوال",
         "letter": "س",
@@ -9314,7 +8348,21 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L03" ]
     },
     {
-        "idx": 666,
+        "idx": 597,
+        "ar": "سَوَاءٌ",
+        "cleanAr": "سواء",
+        "letter": "س",
+        "tr": "Sawā’",
+        "cleanTr": "sawa",
+        "cat": "صِفَةٌ",
+        "role": "Noun / صِفَة",
+        "ur": "برابر، یکساں",
+        "en": "Equal, alike, the same",
+        "cleanEn": "equal alike the same",
+        "occurrences": [ "U05-L08" ]
+    },
+    {
+        "idx": 598,
         "ar": "سُورَةٌ",
         "cleanAr": "سوره",
         "letter": "س",
@@ -9328,7 +8376,21 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L01", "U01-L13", "U05-L08" ]
     },
     {
-        "idx": 667,
+        "idx": 599,
+        "ar": "سُوءٌ",
+        "cleanAr": "سوء",
+        "letter": "س",
+        "tr": "Sū’",
+        "cleanTr": "su",
+        "cat": "اسْمٌ",
+        "role": "Noun / اسْمٌ",
+        "ur": "برائی، بدترین انجام، تکلیف",
+        "en": "Evil, badness, terrible outcome, harm",
+        "cleanEn": "evil badness terrible outcome harm",
+        "occurrences": [ "U02-L07", "U03-L04", "U05-L02" ]
+    },
+    {
+        "idx": 600,
         "ar": "سَيِّدٌ",
         "cleanAr": "سيد",
         "letter": "س",
@@ -9342,7 +8404,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L17" ]
     },
     {
-        "idx": 668,
+        "idx": 601,
         "ar": "سِيمَا",
         "cleanAr": "سيما",
         "letter": "س",
@@ -9356,35 +8418,21 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L06" ]
     },
     {
-        "idx": 669,
+        "idx": 602,
         "ar": "سَيِّئَةٌ",
         "cleanAr": "سييه",
         "letter": "س",
         "tr": "Sayyi’ah",
         "cleanTr": "sayyiah",
         "cat": "صِفَةٌ",
-        "role": "Singular & Sound Feminine Plural",
+        "role": "Singular \u0026 Sound Feminine Plural",
         "ur": "برائی / برائیاں، سیئات",
         "en": "Evil deed, sin, penalty of wrong",
         "cleanEn": "evil deed sin penalty of wrong",
-        "occurrences": [ "U01-L07", "U01-L11", "U04-L10", "U02-L05" ]
+        "occurrences": [ "U01-L07", "U01-L11", "U02-L05", "U04-L10" ]
     },
     {
-        "idx": 670,
-        "ar": "شَاءَ",
-        "cleanAr": "شاء",
-        "letter": "ش",
-        "tr": "Shā’a",
-        "cleanTr": "shaa",
-        "cat": "فِعْلٌ",
-        "role": "Verb (Past) / فِعْلٌ مَاضٍ",
-        "ur": "اس نے چاہا، ارادہ کیا",
-        "en": "He willed, wished",
-        "cleanEn": "he willed wished",
-        "occurrences": [ "U01-L02" ]
-    },
-    {
-        "idx": 671,
+        "idx": 603,
         "ar": "شَاخِصَةٌ",
         "cleanAr": "شاخصه",
         "letter": "ش",
@@ -9398,7 +8446,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L09" ]
     },
     {
-        "idx": 672,
+        "idx": 604,
         "ar": "شَارِبٌ",
         "cleanAr": "شارب",
         "letter": "ش",
@@ -9412,7 +8460,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L02" ]
     },
     {
-        "idx": 673,
+        "idx": 605,
         "ar": "شَاعِرٌ",
         "cleanAr": "شاعر",
         "letter": "ش",
@@ -9423,10 +8471,10 @@ var WORDS_DATA = [    {
         "ur": "شاعر، منظوم کلام کہنے والا",
         "en": "Poet",
         "cleanEn": "poet",
-        "occurrences": [ "U01-L07", "U02-L02", "U03-L04", "U04-L01" ]
+        "occurrences": [ "U01-L07", "U02-L02", "U03-L04", "U04-L01", "U05-L04" ]
     },
     {
-        "idx": 674,
+        "idx": 606,
         "ar": "شَافِعٌ",
         "cleanAr": "شافع",
         "letter": "ش",
@@ -9440,7 +8488,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L23" ]
     },
     {
-        "idx": 675,
+        "idx": 607,
         "ar": "شَاكِرٌ",
         "cleanAr": "شاكر",
         "letter": "ش",
@@ -9454,7 +8502,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L09", "U01-L14", "U02-L01", "U03-L08", "U05-L01" ]
     },
     {
-        "idx": 676,
+        "idx": 608,
         "ar": "شَانِئٌ",
         "cleanAr": "شاني",
         "letter": "ش",
@@ -9468,7 +8516,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L06" ]
     },
     {
-        "idx": 677,
+        "idx": 609,
         "ar": "شَاهِدٌ",
         "cleanAr": "شاهد",
         "letter": "ش",
@@ -9482,7 +8530,21 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L10", "U04-L11", "U05-L02" ]
     },
     {
-        "idx": 678,
+        "idx": 610,
+        "ar": "شَاءَ",
+        "cleanAr": "شاء",
+        "letter": "ش",
+        "tr": "Shā’a",
+        "cleanTr": "shaa",
+        "cat": "فِعْلٌ",
+        "role": "Verb (Past) / فِعْلٌ مَاضٍ",
+        "ur": "اس نے چاہا، ارادہ کیا",
+        "en": "He willed, wished",
+        "cleanEn": "he willed wished",
+        "occurrences": [ "U01-L02" ]
+    },
+    {
+        "idx": 611,
         "ar": "شَتَّىٰ",
         "cleanAr": "شتي",
         "letter": "ش",
@@ -9496,7 +8558,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L11" ]
     },
     {
-        "idx": 679,
+        "idx": 612,
         "ar": "شَجَرٌ",
         "cleanAr": "شجر",
         "letter": "ش",
@@ -9510,7 +8572,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L12" ]
     },
     {
-        "idx": 680,
+        "idx": 613,
         "ar": "شَجَرَةٌ",
         "cleanAr": "شجره",
         "letter": "ش",
@@ -9524,7 +8586,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L17", "U02-L05", "U03-L01", "U03-L02" ]
     },
     {
-        "idx": 681,
+        "idx": 614,
         "ar": "شَدِيدٌ",
         "cleanAr": "شديد",
         "letter": "ش",
@@ -9535,10 +8597,10 @@ var WORDS_DATA = [    {
         "ur": "سخت، شدید، زور دار",
         "en": "Severe, intense, harsh, stern",
         "cleanEn": "severe intense harsh stern",
-        "occurrences": [ "U01-L01", "U01-L08", "U03-L01", "U05-L02" ]
+        "occurrences": [ "U01-L01", "U01-L03", "U01-L08", "U01-L19", "U02-L05", "U03-L01", "U03-L05", "U04-L01", "U05-L02", "U05-L04" ]
     },
     {
-        "idx": 682,
+        "idx": 615,
         "ar": "شَرٌّ",
         "cleanAr": "شر",
         "letter": "ش",
@@ -9552,7 +8614,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L01", "U01-L13", "U01-L19", "U02-L12", "U03-L04", "U04-L01" ]
     },
     {
-        "idx": 683,
+        "idx": 616,
         "ar": "شَرَابٌ",
         "cleanAr": "شراب",
         "letter": "ش",
@@ -9566,7 +8628,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L04", "U05-L08" ]
     },
     {
-        "idx": 684,
+        "idx": 617,
         "ar": "شِرْبٌ",
         "cleanAr": "شرب",
         "letter": "ش",
@@ -9580,7 +8642,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L17", "U04-L12" ]
     },
     {
-        "idx": 685,
+        "idx": 618,
         "ar": "شِرْذِمَةٌ",
         "cleanAr": "شرذمه",
         "letter": "ش",
@@ -9594,7 +8656,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L18" ]
     },
     {
-        "idx": 686,
+        "idx": 619,
         "ar": "شِرْكٌ",
         "cleanAr": "شرك",
         "letter": "ش",
@@ -9605,24 +8667,10 @@ var WORDS_DATA = [    {
         "ur": "شریک ٹھہرانا، ساجھے داری؛ اللہ کے ساتھ کسی کو شریک کرنا",
         "en": "Polytheism, associating partners with Allah",
         "cleanEn": "polytheism associating partners with allah",
-        "occurrences": [ "U01-L13", "U02-L01", "U03-L03", "U05-L08", "U01-L01" ]
+        "occurrences": [ "U01-L01", "U01-L13", "U02-L01", "U03-L03", "U05-L08" ]
     },
     {
-        "idx": 687,
-        "ar": "شُرَكَاءٌ",
-        "cleanAr": "شركاء",
-        "letter": "ش",
-        "tr": "Shurakā’",
-        "cleanTr": "shuraka",
-        "cat": "اسْمٌ",
-        "role": "Broken Plural / جَمْعُ تَكْسِير (شَرِيك)",
-        "ur": "شریک ٹھہرائے گئے، ساجھی دار",
-        "en": "Partners, associates",
-        "cleanEn": "partners associates",
-        "occurrences": [ "U05-L04" ]
-    },
-    {
-        "idx": 688,
+        "idx": 620,
         "ar": "شَرَىٰ",
         "cleanAr": "شري",
         "letter": "ش",
@@ -9636,7 +8684,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L05" ]
     },
     {
-        "idx": 689,
+        "idx": 621,
         "ar": "شَرِيعَةٌ",
         "cleanAr": "شريعه",
         "letter": "ش",
@@ -9645,12 +8693,12 @@ var WORDS_DATA = [    {
         "cat": "اسْمٌ",
         "role": "Noun / اسْمٌ",
         "ur": "شریعت، دین کا واضح راستہ، قانونِ الٰہی",
-        "en": "Divine Law, Clear Way (Shari'ah)",
-        "cleanEn": "divine law clear way shariah",
+        "en": "Divine Law, Clear Way (Shari\u0027ah)",
+        "cleanEn": "divine law clear way shari ah",
         "occurrences": [ "U01-L05", "U02-L04" ]
     },
     {
-        "idx": 690,
+        "idx": 622,
         "ar": "شَرِيكٌ",
         "cleanAr": "شريك",
         "letter": "ش",
@@ -9661,10 +8709,10 @@ var WORDS_DATA = [    {
         "ur": "ساجھی، شریک، حصہ دار",
         "en": "Partner, associate, sharer",
         "cleanEn": "partner associate sharer",
-        "occurrences": [ "U01-L03", "U02-L08", "U04-L04" ]
+        "occurrences": [ "U01-L03", "U02-L08", "U04-L04", "U05-L04" ]
     },
     {
-        "idx": 691,
+        "idx": 623,
         "ar": "شَعَائِرٌ",
         "cleanAr": "شعاير",
         "letter": "ش",
@@ -9678,21 +8726,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L06" ]
     },
     {
-        "idx": 692,
-        "ar": "شُعَرَاءٌ",
-        "cleanAr": "شعراء",
-        "letter": "ش",
-        "tr": "Shu‘arā’",
-        "cleanTr": "shuara",
-        "cat": "اسْمٌ",
-        "role": "Broken Plural / جَمْعُ تَكْسِير (شَاعِر)",
-        "ur": "شعراء، شعر کہنے والے",
-        "en": "Poets",
-        "cleanEn": "poets",
-        "occurrences": [ "U05-L04" ]
-    },
-    {
-        "idx": 693,
+        "idx": 624,
         "ar": "شُعَيْبٌ",
         "cleanAr": "شعيب",
         "letter": "ش",
@@ -9701,12 +8735,12 @@ var WORDS_DATA = [    {
         "cat": "عَلَمٌ",
         "role": "Proper Name (Prophet) / عَلَم",
         "ur": "حضرت شعیب علیہ السلام",
-        "en": "Prophet Shu'ayb",
-        "cleanEn": "prophet shuayb",
+        "en": "Prophet Shu\u0027ayb",
+        "cleanEn": "prophet shu ayb",
         "occurrences": [ "U02-L13" ]
     },
     {
-        "idx": 694,
+        "idx": 625,
         "ar": "شُغُلٌ",
         "cleanAr": "شغل",
         "letter": "ش",
@@ -9720,21 +8754,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L04" ]
     },
     {
-        "idx": 695,
-        "ar": "شِفَاءٌ",
-        "cleanAr": "شفاء",
-        "letter": "ش",
-        "tr": "Shifā’",
-        "cleanTr": "shifa",
-        "cat": "اسْمٌ",
-        "role": "Indefinite Noun / اسْمٌ نَكِرَة",
-        "ur": "شفا، تندرستی، بیماری سے نجات",
-        "en": "Healing, cure, remedy",
-        "cleanEn": "healing cure remedy",
-        "occurrences": [ "U01-L13", "U04-L01", "U01-L02" ]
-    },
-    {
-        "idx": 696,
+        "idx": 626,
         "ar": "شَفَاعَةٌ",
         "cleanAr": "شفاعه",
         "letter": "ش",
@@ -9745,10 +8765,24 @@ var WORDS_DATA = [    {
         "ur": "شفاعت، سفارش، مغفرت کی التجا",
         "en": "Intercession, mediation",
         "cleanEn": "intercession mediation",
-        "occurrences": [ "U01-L03", "U02-L02", "U04-L12", "U05-L21", "U03-L10" ]
+        "occurrences": [ "U01-L03", "U02-L02", "U03-L10", "U04-L12", "U05-L21" ]
     },
     {
-        "idx": 697,
+        "idx": 627,
+        "ar": "شِفَاءٌ",
+        "cleanAr": "شفاء",
+        "letter": "ش",
+        "tr": "Shifā’",
+        "cleanTr": "shifa",
+        "cat": "اسْمٌ",
+        "role": "Indefinite Noun / اسْمٌ نَكِرَة",
+        "ur": "شفا، تندرستی، بیماری سے نجات",
+        "en": "Healing, cure, remedy",
+        "cleanEn": "healing cure remedy",
+        "occurrences": [ "U01-L02", "U01-L13", "U04-L01" ]
+    },
+    {
+        "idx": 628,
         "ar": "شَفْعٌ",
         "cleanAr": "شفع",
         "letter": "ش",
@@ -9762,21 +8796,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L10" ]
     },
     {
-        "idx": 698,
-        "ar": "شُفَعَاءٌ",
-        "cleanAr": "شفعاء",
-        "letter": "ش",
-        "tr": "Shufa‘ā’",
-        "cleanTr": "shufaa",
-        "cat": "اسْمٌ",
-        "role": "Broken Plural / جَمْعُ تَكْسِير (شَفِيع)",
-        "ur": "سفارش کرنے والے، شفاعت کار",
-        "en": "Intercessors",
-        "cleanEn": "intercessors",
-        "occurrences": [ "U05-L04" ]
-    },
-    {
-        "idx": 699,
+        "idx": 629,
         "ar": "شَفَةٌ",
         "cleanAr": "شفه",
         "letter": "ش",
@@ -9790,7 +8810,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L10" ]
     },
     {
-        "idx": 700,
+        "idx": 630,
         "ar": "شَفِيعٌ",
         "cleanAr": "شفيع",
         "letter": "ش",
@@ -9801,10 +8821,10 @@ var WORDS_DATA = [    {
         "ur": "سفارشی، شفاعت کرنے والا",
         "en": "Intercessor, mediator",
         "cleanEn": "intercessor mediator",
-        "occurrences": [ "U04-L12" ]
+        "occurrences": [ "U04-L12", "U05-L04" ]
     },
     {
-        "idx": 701,
+        "idx": 631,
         "ar": "شِقَاقٌ",
         "cleanAr": "شقاق",
         "letter": "ش",
@@ -9818,7 +8838,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L03", "U03-L03", "U05-L19" ]
     },
     {
-        "idx": 702,
+        "idx": 632,
         "ar": "شَكٌّ",
         "cleanAr": "شك",
         "letter": "ش",
@@ -9832,7 +8852,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L06", "U02-L03", "U03-L06" ]
     },
     {
-        "idx": 703,
+        "idx": 633,
         "ar": "شُكْرٌ",
         "cleanAr": "شكر",
         "letter": "ش",
@@ -9846,7 +8866,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L01" ]
     },
     {
-        "idx": 704,
+        "idx": 634,
         "ar": "شَكْلٌ",
         "cleanAr": "شكل",
         "letter": "ش",
@@ -9860,7 +8880,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L02" ]
     },
     {
-        "idx": 705,
+        "idx": 635,
         "ar": "شَكُورٌ",
         "cleanAr": "شكور",
         "letter": "ش",
@@ -9874,7 +8894,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L09", "U01-L14", "U02-L01", "U03-L08", "U05-L15" ]
     },
     {
-        "idx": 706,
+        "idx": 636,
         "ar": "شِمَالٌ",
         "cleanAr": "شمال",
         "letter": "ش",
@@ -9888,7 +8908,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L05", "U04-L03" ]
     },
     {
-        "idx": 707,
+        "idx": 637,
         "ar": "شَمْسٌ",
         "cleanAr": "شمس",
         "letter": "ش",
@@ -9902,35 +8922,21 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L02", "U01-L08", "U01-L12", "U01-L13", "U02-L02", "U02-L10", "U04-L03", "U05-L12" ]
     },
     {
-        "idx": 708,
+        "idx": 638,
         "ar": "شَهَادَةٌ",
         "cleanAr": "شهاده",
         "letter": "ش",
         "tr": "Shahādah",
         "cleanTr": "shahadah",
         "cat": "اسْمٌ",
-        "role": "Singular & Sound Feminine Plural",
+        "role": "Singular \u0026 Sound Feminine Plural",
         "ur": "گواہی، شہادت؛ حاضر کائنات (غیب کے مقابلے میں)",
         "en": "Testimony, martyrdom, witnessed realm",
         "cleanEn": "testimony martyrdom witnessed realm",
-        "occurrences": [ "U01-L06", "U01-L11", "U02-L02", "U03-L05", "U05-L14", "U05-L07" ]
+        "occurrences": [ "U01-L06", "U01-L11", "U02-L02", "U03-L05", "U05-L07", "U05-L14" ]
     },
     {
-        "idx": 709,
-        "ar": "شُهَدَاءٌ",
-        "cleanAr": "شهداء",
-        "letter": "ش",
-        "tr": "Shuhadā’",
-        "cleanTr": "shuhada",
-        "cat": "اسْمٌ",
-        "role": "Broken Plural / جَمْعُ تَكْسِير (شَهِيد)",
-        "ur": "گواہ لوگ / راہِ خدا کے شہید",
-        "en": "Witnesses / martyrs",
-        "cleanEn": "witnesses martyrs",
-        "occurrences": [ "U05-L04" ]
-    },
-    {
-        "idx": 710,
+        "idx": 639,
         "ar": "شَهْرٌ",
         "cleanAr": "شهر",
         "letter": "ش",
@@ -9944,7 +8950,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L06", "U03-L06", "U03-L10" ]
     },
     {
-        "idx": 711,
+        "idx": 640,
         "ar": "شَهْوَةٌ",
         "cleanAr": "شهوه",
         "letter": "ش",
@@ -9958,7 +8964,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L11", "U03-L04" ]
     },
     {
-        "idx": 712,
+        "idx": 641,
         "ar": "شَهِيدٌ",
         "cleanAr": "شهيد",
         "letter": "ش",
@@ -9968,11 +8974,11 @@ var WORDS_DATA = [    {
         "role": "Adjective / Noun / صِفَة / اسْمٌ",
         "ur": "گواہ، حاضر؛ اللہ کی راہ میں جان قربان کرنے والا",
         "en": "Witness, All-Observing, Present, Martyr",
-        "cleanEn": "witness allobserving present martyr",
-        "occurrences": [ "U01-L02", "U01-L05", "U01-L09", "U01-L14", "U03-L07", "U04-L01", "U03-L10" ]
+        "cleanEn": "witness all observing present martyr",
+        "occurrences": [ "U01-L02", "U01-L05", "U01-L09", "U01-L14", "U03-L07", "U03-L10", "U04-L01", "U05-L04" ]
     },
     {
-        "idx": 713,
+        "idx": 642,
         "ar": "شَهِيقٌ",
         "cleanAr": "شهيق",
         "letter": "ش",
@@ -9986,7 +8992,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L08" ]
     },
     {
-        "idx": 714,
+        "idx": 643,
         "ar": "شَوْبٌ",
         "cleanAr": "شوب",
         "letter": "ش",
@@ -10000,7 +9006,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L08" ]
     },
     {
-        "idx": 715,
+        "idx": 644,
         "ar": "شُورَىٰ",
         "cleanAr": "شوري",
         "letter": "ش",
@@ -10014,21 +9020,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L06" ]
     },
     {
-        "idx": 716,
-        "ar": "شَيْءٌ",
-        "cleanAr": "شيء",
-        "letter": "ش",
-        "tr": "Shay’",
-        "cleanTr": "shay",
-        "cat": "اسْمٌ",
-        "role": "Singular & Broken Plural",
-        "ur": "چیز / اشیاء، چیزیں",
-        "en": "Thing, Entity, Matter",
-        "cleanEn": "thing entity matter",
-        "occurrences": [ "U01-L05", "U01-L10", "U02-L01", "U02-L04", "U02-L05", "U03-L01", "U03-L02" ]
-    },
-    {
-        "idx": 717,
+        "idx": 645,
         "ar": "شَيْخٌ",
         "cleanAr": "شيخ",
         "letter": "ش",
@@ -10042,7 +9034,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L14" ]
     },
     {
-        "idx": 718,
+        "idx": 646,
         "ar": "شَيْطَانٌ",
         "cleanAr": "شيطان",
         "letter": "ش",
@@ -10056,7 +9048,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L01", "U01-L10", "U01-L13", "U02-L01", "U02-L02", "U02-L09", "U03-L03", "U05-L04" ]
     },
     {
-        "idx": 719,
+        "idx": 647,
         "ar": "شِيعَةٌ",
         "cleanAr": "شيعه",
         "letter": "ش",
@@ -10070,7 +9062,21 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L02" ]
     },
     {
-        "idx": 720,
+        "idx": 648,
+        "ar": "شَيْءٌ",
+        "cleanAr": "شيء",
+        "letter": "ش",
+        "tr": "Shay’",
+        "cleanTr": "shay",
+        "cat": "اسْمٌ",
+        "role": "Singular \u0026 Broken Plural",
+        "ur": "چیز / اشیاء، چیزیں",
+        "en": "Thing, Entity, Matter",
+        "cleanEn": "thing entity matter",
+        "occurrences": [ "U01-L05", "U01-L10", "U02-L01", "U02-L04", "U02-L05", "U03-L01", "U03-L02" ]
+    },
+    {
+        "idx": 649,
         "ar": "صَابِرٌ",
         "cleanAr": "صابر",
         "letter": "ص",
@@ -10084,7 +9090,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L08", "U05-L01" ]
     },
     {
-        "idx": 721,
+        "idx": 650,
         "ar": "صَاحِبٌ",
         "cleanAr": "صاحب",
         "letter": "ص",
@@ -10095,10 +9101,10 @@ var WORDS_DATA = [    {
         "ur": "ساتھی، رفیق، ہم نشین",
         "en": "Companion, associate, fellow",
         "cleanEn": "companion associate fellow",
-        "occurrences": [ "U04-L03" ]
+        "occurrences": [ "U04-L03", "U05-L04" ]
     },
     {
-        "idx": 722,
+        "idx": 651,
         "ar": "صَادِقٌ",
         "cleanAr": "صادق",
         "letter": "ص",
@@ -10109,10 +9115,10 @@ var WORDS_DATA = [    {
         "ur": "سچا، راست باز",
         "en": "Truthful, honest, sincere",
         "cleanEn": "truthful honest sincere",
-        "occurrences": [ "U03-L08", "U05-L01" ]
+        "occurrences": [ "U01-L19", "U03-L08", "U05-L01" ]
     },
     {
-        "idx": 723,
+        "idx": 652,
         "ar": "صَاغِرٌ",
         "cleanAr": "صاغر",
         "letter": "ص",
@@ -10126,7 +9132,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L05" ]
     },
     {
-        "idx": 724,
+        "idx": 653,
         "ar": "صَالِحٌ",
         "cleanAr": "صالح",
         "letter": "ص",
@@ -10137,24 +9143,10 @@ var WORDS_DATA = [    {
         "ur": "نیک، صالح؛ حضرت صالح علیہ السلام",
         "en": "Righteous, pious; Prophet Salih",
         "cleanEn": "righteous pious prophet salih",
-        "occurrences": [ "U01-L02", "U02-L11", "U02-L13", "U03-L04", "U05-L02", "U02-L05", "U04-L07" ]
+        "occurrences": [ "U01-L02", "U01-L11", "U02-L05", "U02-L11", "U02-L13", "U03-L04", "U04-L07", "U05-L02" ]
     },
     {
-        "idx": 725,
-        "ar": "صَالِحَةٌ",
-        "cleanAr": "صالحه",
-        "letter": "ص",
-        "tr": "Ṣāliḥah",
-        "cleanTr": "salihah",
-        "cat": "صِفَةٌ",
-        "role": "Adjective (Fem.) / صِفَة (مُؤَنَّث)",
-        "ur": "نیک عمل / نیک اعمال، صالحات",
-        "en": "Righteous deed, virtuous woman",
-        "cleanEn": "righteous deed virtuous woman",
-        "occurrences": [ "U01-L11" ]
-    },
-    {
-        "idx": 726,
+        "idx": 654,
         "ar": "صَامِتٌ",
         "cleanAr": "صامت",
         "letter": "ص",
@@ -10168,7 +9160,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L09" ]
     },
     {
-        "idx": 727,
+        "idx": 655,
         "ar": "صَبَّارٌ",
         "cleanAr": "صبار",
         "letter": "ص",
@@ -10182,7 +9174,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L08" ]
     },
     {
-        "idx": 728,
+        "idx": 656,
         "ar": "صُبْحٌ",
         "cleanAr": "صبح",
         "letter": "ص",
@@ -10196,7 +9188,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L06", "U02-L10", "U05-L07" ]
     },
     {
-        "idx": 729,
+        "idx": 657,
         "ar": "صَبْرٌ",
         "cleanAr": "صبر",
         "letter": "ص",
@@ -10210,7 +9202,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L08", "U02-L07" ]
     },
     {
-        "idx": 730,
+        "idx": 658,
         "ar": "صِبْغَةٌ",
         "cleanAr": "صبغه",
         "letter": "ص",
@@ -10224,7 +9216,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L05", "U03-L05", "U05-L13", "U05-L22" ]
     },
     {
-        "idx": 731,
+        "idx": 659,
         "ar": "صُحُفٌ",
         "cleanAr": "صحف",
         "letter": "ص",
@@ -10238,7 +9230,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L06" ]
     },
     {
-        "idx": 732,
+        "idx": 660,
         "ar": "صَدٌّ",
         "cleanAr": "صد",
         "letter": "ص",
@@ -10252,7 +9244,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L07" ]
     },
     {
-        "idx": 733,
+        "idx": 661,
         "ar": "صِدْقٌ",
         "cleanAr": "صدق",
         "letter": "ص",
@@ -10263,24 +9255,24 @@ var WORDS_DATA = [    {
         "ur": "سچائی، راستی، صداقت",
         "en": "Truthfulness, sincerity, uprightness",
         "cleanEn": "truthfulness sincerity uprightness",
-        "occurrences": [ "U02-L07", "U05-L06", "U01-L04", "U05-L19" ]
+        "occurrences": [ "U01-L04", "U02-L07", "U05-L06", "U05-L19" ]
     },
     {
-        "idx": 734,
+        "idx": 662,
         "ar": "صَدَقَةٌ",
         "cleanAr": "صدقه",
         "letter": "ص",
         "tr": "Ṣadaqah",
         "cleanTr": "sadaqah",
         "cat": "اسْمٌ",
-        "role": "Singular & Sound Feminine Plural",
+        "role": "Singular \u0026 Sound Feminine Plural",
         "ur": "صدقہ، خیرات، مالی ایثار",
         "en": "Charity, almsgiving, voluntary gift",
         "cleanEn": "charity almsgiving voluntary gift",
         "occurrences": [ "U01-L11", "U03-L03" ]
     },
     {
-        "idx": 735,
+        "idx": 663,
         "ar": "صُدُورٌ",
         "cleanAr": "صدور",
         "letter": "ص",
@@ -10294,21 +9286,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L05", "U05-L10" ]
     },
     {
-        "idx": 736,
-        "ar": "صِدِّيقٌ",
-        "cleanAr": "صديق",
-        "letter": "ص",
-        "tr": "Ṣiddīq",
-        "cleanTr": "siddiq",
-        "cat": "صِفَةٌ",
-        "role": "Adjective (Intensive) / صِفَةُ مُبَالَغَة",
-        "ur": "نہایت سچا، تصدیق کرنے والا",
-        "en": "Eminently truthful, Devout believer",
-        "cleanEn": "eminently truthful devout believer",
-        "occurrences": [ "U02-L12", "U02-L13", "U05-L05" ]
-    },
-    {
-        "idx": 737,
+        "idx": 664,
         "ar": "صَدِيقٌ",
         "cleanAr": "صديق",
         "letter": "ص",
@@ -10322,7 +9300,21 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L23" ]
     },
     {
-        "idx": 738,
+        "idx": 665,
+        "ar": "صِدِّيقٌ",
+        "cleanAr": "صديق",
+        "letter": "ص",
+        "tr": "Ṣiddīq",
+        "cleanTr": "siddiq",
+        "cat": "صِفَةٌ",
+        "role": "Adjective (Intensive) / صِفَةُ مُبَالَغَة",
+        "ur": "نہایت سچا، تصدیق کرنے والا",
+        "en": "Eminently truthful, Devout believer",
+        "cleanEn": "eminently truthful devout believer",
+        "occurrences": [ "U02-L12", "U02-L13", "U05-L05" ]
+    },
+    {
+        "idx": 666,
         "ar": "صِدِّيقَةٌ",
         "cleanAr": "صديقه",
         "letter": "ص",
@@ -10336,7 +9328,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L02" ]
     },
     {
-        "idx": 739,
+        "idx": 667,
         "ar": "صِرَاطٌ",
         "cleanAr": "صراط",
         "letter": "ص",
@@ -10350,7 +9342,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L15", "U02-L06", "U03-L01" ]
     },
     {
-        "idx": 740,
+        "idx": 668,
         "ar": "صَرِيمٌ",
         "cleanAr": "صريم",
         "letter": "ص",
@@ -10364,7 +9356,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L01" ]
     },
     {
-        "idx": 741,
+        "idx": 669,
         "ar": "صَفٌّ",
         "cleanAr": "صف",
         "letter": "ص",
@@ -10378,7 +9370,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L03" ]
     },
     {
-        "idx": 742,
+        "idx": 670,
         "ar": "صَفَا",
         "cleanAr": "صفا",
         "letter": "ص",
@@ -10392,7 +9384,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L12", "U02-L01", "U03-L06" ]
     },
     {
-        "idx": 743,
+        "idx": 671,
         "ar": "صَفْرَاءٌ",
         "cleanAr": "صفراء",
         "letter": "ص",
@@ -10406,21 +9398,21 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L12" ]
     },
     {
-        "idx": 744,
+        "idx": 672,
         "ar": "صَلَاةٌ",
         "cleanAr": "صلاه",
         "letter": "ص",
         "tr": "Ṣalāh",
         "cleanTr": "salah",
         "cat": "اسْمٌ",
-        "role": "Singular & Sound Feminine Plural",
+        "role": "Singular \u0026 Sound Feminine Plural",
         "ur": "نماز، دعا، درود، رحمت",
         "en": "Prayer, Formal worship, Blessing",
         "cleanEn": "prayer formal worship blessing",
-        "occurrences": [ "U01-L08", "U01-L11", "U02-L01", "U02-L07", "U05-L06", "U02-L04", "U05-L17", "U02-L09" ]
+        "occurrences": [ "U01-L08", "U01-L11", "U02-L01", "U02-L04", "U02-L07", "U02-L09", "U05-L06", "U05-L17" ]
     },
     {
-        "idx": 745,
+        "idx": 673,
         "ar": "صُلْحٌ",
         "cleanAr": "صلح",
         "letter": "ص",
@@ -10434,21 +9426,21 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L01" ]
     },
     {
-        "idx": 746,
+        "idx": 674,
         "ar": "صَوْتٌ",
         "cleanAr": "صوت",
         "letter": "ص",
         "tr": "Ṣawt",
         "cleanTr": "sawt",
         "cat": "اسْمٌ",
-        "role": "Singular & Broken Plural",
+        "role": "Singular \u0026 Broken Plural",
         "ur": "آواز / اصوات، آوازیں",
         "en": "Voice / Voices",
         "cleanEn": "voice voices",
         "occurrences": [ "U01-L10" ]
     },
     {
-        "idx": 747,
+        "idx": 675,
         "ar": "صُورَةٌ",
         "cleanAr": "صوره",
         "letter": "ص",
@@ -10462,7 +9454,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L04" ]
     },
     {
-        "idx": 748,
+        "idx": 676,
         "ar": "صَوْمٌ",
         "cleanAr": "صوم",
         "letter": "ص",
@@ -10476,7 +9468,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L02" ]
     },
     {
-        "idx": 749,
+        "idx": 677,
         "ar": "صِيَامٌ",
         "cleanAr": "صيام",
         "letter": "ص",
@@ -10490,7 +9482,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L05", "U03-L04", "U05-L12" ]
     },
     {
-        "idx": 750,
+        "idx": 678,
         "ar": "صَيِّبٌ",
         "cleanAr": "صيب",
         "letter": "ص",
@@ -10504,7 +9496,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L05" ]
     },
     {
-        "idx": 751,
+        "idx": 679,
         "ar": "صَيْحَةٌ",
         "cleanAr": "صيحه",
         "letter": "ص",
@@ -10518,7 +9510,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L01" ]
     },
     {
-        "idx": 752,
+        "idx": 680,
         "ar": "ضَالٌّ",
         "cleanAr": "ضال",
         "letter": "ض",
@@ -10532,7 +9524,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L01" ]
     },
     {
-        "idx": 753,
+        "idx": 681,
         "ar": "ضُحَىٰ",
         "cleanAr": "ضحي",
         "letter": "ض",
@@ -10546,21 +9538,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L10" ]
     },
     {
-        "idx": 754,
-        "ar": "ضُرٌّ",
-        "cleanAr": "ضر",
-        "letter": "ض",
-        "tr": "Ḍurr",
-        "cleanTr": "durr",
-        "cat": "اسْمٌ",
-        "role": "Noun / اسْمٌ",
-        "ur": "نقصان، تکلیف، بیماری، مصیبت",
-        "en": "Harm, adversity, affliction, distress",
-        "cleanEn": "harm adversity affliction distress",
-        "occurrences": [ "U04-L02" ]
-    },
-    {
-        "idx": 755,
+        "idx": 682,
         "ar": "ضَرٌّ",
         "cleanAr": "ضر",
         "letter": "ض",
@@ -10574,7 +9552,21 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L08" ]
     },
     {
-        "idx": 756,
+        "idx": 683,
+        "ar": "ضُرٌّ",
+        "cleanAr": "ضر",
+        "letter": "ض",
+        "tr": "Ḍurr",
+        "cleanTr": "durr",
+        "cat": "اسْمٌ",
+        "role": "Noun / اسْمٌ",
+        "ur": "نقصان، تکلیف، بیماری، مصیبت",
+        "en": "Harm, adversity, affliction, distress",
+        "cleanEn": "harm adversity affliction distress",
+        "occurrences": [ "U04-L02" ]
+    },
+    {
+        "idx": 684,
         "ar": "ضَرَّاءٌ",
         "cleanAr": "ضراء",
         "letter": "ض",
@@ -10588,21 +9580,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L03" ]
     },
     {
-        "idx": 757,
-        "ar": "ضَرْبٌ",
-        "cleanAr": "ضرب",
-        "letter": "ض",
-        "tr": "Ḍarb",
-        "cleanTr": "darb",
-        "cat": "اسْمٌ",
-        "role": "Masdar / مَصْدَرٌ",
-        "ur": "مارنا، ضرب، مثال بیان کرنا",
-        "en": "Striking, setting forth (an example)",
-        "cleanEn": "striking setting forth an example",
-        "occurrences": [ "U01-L04" ]
-    },
-    {
-        "idx": 758,
+        "idx": 685,
         "ar": "ضَرَبَ",
         "cleanAr": "ضرب",
         "letter": "ض",
@@ -10616,7 +9594,21 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L02" ]
     },
     {
-        "idx": 759,
+        "idx": 686,
+        "ar": "ضَرْبٌ",
+        "cleanAr": "ضرب",
+        "letter": "ض",
+        "tr": "Ḍarb",
+        "cleanTr": "darb",
+        "cat": "اسْمٌ",
+        "role": "Masdar / مَصْدَرٌ",
+        "ur": "مارنا، ضرب، مثال بیان کرنا",
+        "en": "Striking, setting forth (an example)",
+        "cleanEn": "striking setting forth an example",
+        "occurrences": [ "U01-L04" ]
+    },
+    {
+        "idx": 687,
         "ar": "ضَرِيعٌ",
         "cleanAr": "ضريع",
         "letter": "ض",
@@ -10625,12 +9617,12 @@ var WORDS_DATA = [    {
         "cat": "اسْمٌ",
         "role": "Noun / اسْمٌ",
         "ur": "سوکھا زہریلا کانٹا، دوزخیوں کا کڑوا کھانا",
-        "en": "Dhari' (dry, bitter, thorny plant in Hell)",
+        "en": "Dhari\u0027 (dry, bitter, thorny plant in Hell)",
         "cleanEn": "dhari dry bitter thorny plant in hell",
         "occurrences": [ "U02-L09", "U05-L08" ]
     },
     {
-        "idx": 760,
+        "idx": 688,
         "ar": "ضِعْفٌ",
         "cleanAr": "ضعف",
         "letter": "ض",
@@ -10644,21 +9636,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L03" ]
     },
     {
-        "idx": 761,
-        "ar": "ضُعَفَاءٌ",
-        "cleanAr": "ضعفاء",
-        "letter": "ض",
-        "tr": "Du‘afā’",
-        "cleanTr": "duafa",
-        "cat": "اسْمٌ",
-        "role": "Broken Plural / جَمْعُ تَكْسِير (ضَعِيف)",
-        "ur": "کمزور، ناتواں لوگ",
-        "en": "Weak, oppressed",
-        "cleanEn": "weak oppressed",
-        "occurrences": [ "U05-L04" ]
-    },
-    {
-        "idx": 762,
+        "idx": 689,
         "ar": "ضَعِيفٌ",
         "cleanAr": "ضعيف",
         "letter": "ض",
@@ -10669,10 +9647,10 @@ var WORDS_DATA = [    {
         "ur": "کمزور، ناتواں، بودا",
         "en": "Weak, feeble, frail",
         "cleanEn": "weak feeble frail",
-        "occurrences": [ "U01-L03", "U01-L05", "U03-L06" ]
+        "occurrences": [ "U01-L03", "U01-L05", "U03-L06", "U05-L04" ]
     },
     {
-        "idx": 763,
+        "idx": 690,
         "ar": "ضَلَالٌ",
         "cleanAr": "ضلال",
         "letter": "ض",
@@ -10686,7 +9664,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L01", "U03-L02", "U05-L01" ]
     },
     {
-        "idx": 764,
+        "idx": 691,
         "ar": "ضَلَالَةٌ",
         "cleanAr": "ضلاله",
         "letter": "ض",
@@ -10700,7 +9678,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L03", "U02-L07", "U04-L16" ]
     },
     {
-        "idx": 765,
+        "idx": 692,
         "ar": "ضَنكٌ",
         "cleanAr": "ضنك",
         "letter": "ض",
@@ -10714,7 +9692,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L04" ]
     },
     {
-        "idx": 766,
+        "idx": 693,
         "ar": "ضَيْفٌ",
         "cleanAr": "ضيف",
         "letter": "ض",
@@ -10728,7 +9706,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L15", "U05-L18" ]
     },
     {
-        "idx": 767,
+        "idx": 694,
         "ar": "ضَيِّقٌ",
         "cleanAr": "ضيق",
         "letter": "ض",
@@ -10742,7 +9720,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L02" ]
     },
     {
-        "idx": 768,
+        "idx": 695,
         "ar": "طَارِقٌ",
         "cleanAr": "طارق",
         "letter": "ط",
@@ -10752,11 +9730,11 @@ var WORDS_DATA = [    {
         "role": "Active Participle / اسْمٌ",
         "ur": "رات کو چمکنے والا روشن ستارہ",
         "en": "Night-Comer, piercing star",
-        "cleanEn": "nightcomer piercing star",
+        "cleanEn": "night comer piercing star",
         "occurrences": [ "U05-L21" ]
     },
     {
-        "idx": 769,
+        "idx": 696,
         "ar": "طَاعَةٌ",
         "cleanAr": "طاعه",
         "letter": "ط",
@@ -10770,7 +9748,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L06" ]
     },
     {
-        "idx": 770,
+        "idx": 697,
         "ar": "طَاغٍ",
         "cleanAr": "طاغ",
         "letter": "ط",
@@ -10784,7 +9762,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L20" ]
     },
     {
-        "idx": 771,
+        "idx": 698,
         "ar": "طَاغُوتٌ",
         "cleanAr": "طاغوت",
         "letter": "ط",
@@ -10795,10 +9773,10 @@ var WORDS_DATA = [    {
         "ur": "سرکش، باطل معبود، شیطان",
         "en": "False deities, rebellious tyrants",
         "cleanEn": "false deities rebellious tyrants",
-        "occurrences": [ "U02-L06", "U05-L06", "U02-L03" ]
+        "occurrences": [ "U02-L03", "U02-L06", "U05-L06" ]
     },
     {
-        "idx": 772,
+        "idx": 699,
         "ar": "طَاقَةٌ",
         "cleanAr": "طاقه",
         "letter": "ط",
@@ -10812,7 +9790,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L03", "U02-L08", "U05-L16" ]
     },
     {
-        "idx": 773,
+        "idx": 700,
         "ar": "طَائِرٌ",
         "cleanAr": "طاير",
         "letter": "ط",
@@ -10826,7 +9804,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L06" ]
     },
     {
-        "idx": 774,
+        "idx": 701,
         "ar": "طَائِفٌ",
         "cleanAr": "طايف",
         "letter": "ط",
@@ -10837,10 +9815,10 @@ var WORDS_DATA = [    {
         "ur": "چکر لگانے والی آفت، رات کی بلا",
         "en": "Visitation, affliction striking by night",
         "cleanEn": "visitation affliction striking by night",
-        "occurrences": [ "U04-L07", "U03-L10" ]
+        "occurrences": [ "U03-L10", "U04-L07" ]
     },
     {
-        "idx": 775,
+        "idx": 702,
         "ar": "طَائِفَةٌ",
         "cleanAr": "طايفه",
         "letter": "ط",
@@ -10854,21 +9832,21 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L06", "U03-L10", "U05-L08" ]
     },
     {
-        "idx": 776,
+        "idx": 703,
         "ar": "طَرَفٌ",
         "cleanAr": "طرف",
         "letter": "ط",
         "tr": "Ṭaraf",
         "cleanTr": "taraf",
         "cat": "اسْمٌ",
-        "role": "Singular & Broken Plural",
+        "role": "Singular \u0026 Broken Plural",
         "ur": "کنارہ / اطراف، کنارے",
         "en": "Side, End / Sides, Ends",
         "cleanEn": "side end sides ends",
-        "occurrences": [ "U01-L10" ]
+        "occurrences": [ "U01-L10", "U04-L11" ]
     },
     {
-        "idx": 777,
+        "idx": 704,
         "ar": "طَرِيقٌ",
         "cleanAr": "طريق",
         "letter": "ط",
@@ -10882,7 +9860,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L04", "U02-L03", "U02-L06", "U03-L01" ]
     },
     {
-        "idx": 778,
+        "idx": 705,
         "ar": "طَرِيقَةٌ",
         "cleanAr": "طريقه",
         "letter": "ط",
@@ -10896,7 +9874,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L08", "U02-L04" ]
     },
     {
-        "idx": 779,
+        "idx": 706,
         "ar": "طَعَامٌ",
         "cleanAr": "طعام",
         "letter": "ط",
@@ -10910,7 +9888,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L04", "U02-L04", "U03-L01", "U05-L08" ]
     },
     {
-        "idx": 780,
+        "idx": 707,
         "ar": "طُغْيَانٌ",
         "cleanAr": "طغيان",
         "letter": "ط",
@@ -10924,7 +9902,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L01", "U05-L06" ]
     },
     {
-        "idx": 781,
+        "idx": 708,
         "ar": "طِفْلٌ",
         "cleanAr": "طفل",
         "letter": "ط",
@@ -10938,7 +9916,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L17" ]
     },
     {
-        "idx": 782,
+        "idx": 709,
         "ar": "طَلَاقٌ",
         "cleanAr": "طلاق",
         "letter": "ط",
@@ -10952,7 +9930,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L05" ]
     },
     {
-        "idx": 783,
+        "idx": 710,
         "ar": "طُلُوعٌ",
         "cleanAr": "طلوع",
         "letter": "ط",
@@ -10966,7 +9944,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L02", "U04-L11" ]
     },
     {
-        "idx": 784,
+        "idx": 711,
         "ar": "طَوْدٌ",
         "cleanAr": "طود",
         "letter": "ط",
@@ -10980,7 +9958,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L01" ]
     },
     {
-        "idx": 785,
+        "idx": 712,
         "ar": "طُورٌ",
         "cleanAr": "طور",
         "letter": "ط",
@@ -10994,7 +9972,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L10", "U03-L03" ]
     },
     {
-        "idx": 786,
+        "idx": 713,
         "ar": "طُوفَانٌ",
         "cleanAr": "طوفان",
         "letter": "ط",
@@ -11008,7 +9986,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L01", "U01-L13", "U05-L08" ]
     },
     {
-        "idx": 787,
+        "idx": 714,
         "ar": "طُولٌ",
         "cleanAr": "طول",
         "letter": "ط",
@@ -11022,7 +10000,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L05" ]
     },
     {
-        "idx": 788,
+        "idx": 715,
         "ar": "طَوِيلٌ",
         "cleanAr": "طويل",
         "letter": "ط",
@@ -11036,7 +10014,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L08" ]
     },
     {
-        "idx": 789,
+        "idx": 716,
         "ar": "طَيِّبٌ",
         "cleanAr": "طيب",
         "letter": "ط",
@@ -11047,10 +10025,10 @@ var WORDS_DATA = [    {
         "ur": "عمدہ، پاک، پاکیزہ، حلال",
         "en": "Good, pure, wholesome, pleasant",
         "cleanEn": "good pure wholesome pleasant",
-        "occurrences": [ "U01-L07", "U03-L01", "U02-L05", "U05-L01" ]
+        "occurrences": [ "U01-L07", "U01-L11", "U02-L05", "U03-L01", "U05-L01" ]
     },
     {
-        "idx": 790,
+        "idx": 717,
         "ar": "طَيِّبَةٌ",
         "cleanAr": "طيبه",
         "letter": "ط",
@@ -11064,7 +10042,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L11", "U03-L01" ]
     },
     {
-        "idx": 791,
+        "idx": 718,
         "ar": "طِينٌ",
         "cleanAr": "طين",
         "letter": "ط",
@@ -11073,12 +10051,12 @@ var WORDS_DATA = [    {
         "cat": "اسْمٌ",
         "role": "Noun / اسْمٌ",
         "ur": "گیلی گوندھی مٹی، گارا",
-        "en": "Clay, Potter's clay, Mud",
-        "cleanEn": "clay potters clay mud",
+        "en": "Clay, Potter\u0027s clay, Mud",
+        "cleanEn": "clay potter s clay mud",
         "occurrences": [ "U02-L04", "U05-L08" ]
     },
     {
-        "idx": 792,
+        "idx": 719,
         "ar": "ظَالِمٌ",
         "cleanAr": "ظالم",
         "letter": "ظ",
@@ -11089,10 +10067,10 @@ var WORDS_DATA = [    {
         "ur": "ظلم کرنے والا، ناانصافی کرنے والا",
         "en": "Wrongdoer, oppressor, unjust",
         "cleanEn": "wrongdoer oppressor unjust",
-        "occurrences": [ "U03-L08", "U04-L01", "U01-L01", "U05-L01" ]
+        "occurrences": [ "U01-L01", "U01-L19", "U03-L08", "U04-L01", "U05-L01" ]
     },
     {
-        "idx": 793,
+        "idx": 720,
         "ar": "ظَاهِرٌ",
         "cleanAr": "ظاهر",
         "letter": "ظ",
@@ -11106,7 +10084,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L01" ]
     },
     {
-        "idx": 794,
+        "idx": 721,
         "ar": "ظِلَالٌ",
         "cleanAr": "ظلال",
         "letter": "ظ",
@@ -11120,7 +10098,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L02" ]
     },
     {
-        "idx": 795,
+        "idx": 722,
         "ar": "ظَلَّامٌ",
         "cleanAr": "ظلام",
         "letter": "ظ",
@@ -11134,21 +10112,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L08", "U05-L20" ]
     },
     {
-        "idx": 796,
-        "ar": "ظُلَلٌ",
-        "cleanAr": "ظلل",
-        "letter": "ظ",
-        "tr": "Zulal",
-        "cleanTr": "zulal",
-        "cat": "اسْمٌ",
-        "role": "Broken Plural / جَمْع (ظُلَّة)",
-        "ur": "آگ کے سائبان، تہ بہ تہ بادل",
-        "en": "Canopies (of fire), coverings",
-        "cleanEn": "canopies of fire coverings",
-        "occurrences": [ "U05-L08" ]
-    },
-    {
-        "idx": 797,
+        "idx": 723,
         "ar": "ظُلْمٌ",
         "cleanAr": "ظلم",
         "letter": "ظ",
@@ -11159,38 +10123,38 @@ var WORDS_DATA = [    {
         "ur": "ظلم، ناانصافی، بے جا تصرف، شرک",
         "en": "Injustice, oppression, wrongdoing",
         "cleanEn": "injustice oppression wrongdoing",
-        "occurrences": [ "U01-L01", "U01-L03", "U02-L08", "U03-L01", "U05-L06", "U01-L04", "U02-L03", "U03-L06" ]
+        "occurrences": [ "U01-L01", "U01-L03", "U02-L08", "U03-L01", "U05-L06" ]
     },
     {
-        "idx": 798,
+        "idx": 724,
         "ar": "ظُلْمَةٌ",
         "cleanAr": "ظلمه",
         "letter": "ظ",
         "tr": "Ẓulmah",
         "cleanTr": "zulmah",
         "cat": "اسْمٌ",
-        "role": "Noun (Feminine) / اسْمٌ (مُؤَنَّث)",
+        "role": "Noun (Feminine) / اسْمٌ (Plural: ظُلُمَاتٌ)",
         "ur": "اندھیرا / اندھیرے، تاریکیاں",
         "en": "Darkness, obscurity",
         "cleanEn": "darkness obscurity",
-        "occurrences": [ "U01-L11" ]
+        "occurrences": [ "U01-L04", "U01-L11", "U02-L03", "U03-L06" ]
     },
     {
-        "idx": 799,
+        "idx": 725,
         "ar": "ظُلَّةٌ",
         "cleanAr": "ظله",
         "letter": "ظ",
         "tr": "Zullah",
         "cleanTr": "zullah",
         "cat": "اسْمٌ",
-        "role": "Noun / اسْمٌ",
+        "role": "Noun / اسْمٌ (Plural: ظُلَلٌ)",
         "ur": "بادل کی طرح اوپر چھا جانے والا سائبان",
         "en": "A dark cloud, canopy",
         "cleanEn": "a dark cloud canopy",
-        "occurrences": [ "U05-L20" ]
+        "occurrences": [ "U05-L08", "U05-L20" ]
     },
     {
-        "idx": 800,
+        "idx": 726,
         "ar": "ظَلُومٌ",
         "cleanAr": "ظلوم",
         "letter": "ظ",
@@ -11204,21 +10168,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L01", "U03-L08" ]
     },
     {
-        "idx": 801,
-        "ar": "ظَنَّ",
-        "cleanAr": "ظن",
-        "letter": "ظ",
-        "tr": "Ẓanna",
-        "cleanTr": "zanna",
-        "cat": "فِعْلٌ",
-        "role": "Verb (Past) / فِعْلٌ مَاضٍ",
-        "ur": "اس نے گمان کیا، خیال کیا",
-        "en": "He thought, assumed, conjectured",
-        "cleanEn": "he thought assumed conjectured",
-        "occurrences": [ "U01-L05" ]
-    },
-    {
-        "idx": 802,
+        "idx": 727,
         "ar": "ظَنٌّ",
         "cleanAr": "ظن",
         "letter": "ظ",
@@ -11232,7 +10182,21 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L07", "U02-L01", "U03-L04", "U05-L10" ]
     },
     {
-        "idx": 803,
+        "idx": 728,
+        "ar": "ظَنَّ",
+        "cleanAr": "ظن",
+        "letter": "ظ",
+        "tr": "Ẓanna",
+        "cleanTr": "zanna",
+        "cat": "فِعْلٌ",
+        "role": "Verb (Past) / فِعْلٌ مَاضٍ",
+        "ur": "اس نے گمان کیا، خیال کیا",
+        "en": "He thought, assumed, conjectured",
+        "cleanEn": "he thought assumed conjectured",
+        "occurrences": [ "U01-L05" ]
+    },
+    {
+        "idx": 729,
         "ar": "ظَهْرٌ",
         "cleanAr": "ظهر",
         "letter": "ظ",
@@ -11243,24 +10207,10 @@ var WORDS_DATA = [    {
         "ur": "پیٹھ، کمر، پشت",
         "en": "Back, rear",
         "cleanEn": "back rear",
-        "occurrences": [ "U04-L02" ]
+        "occurrences": [ "U04-L02", "U05-L10" ]
     },
     {
-        "idx": 804,
-        "ar": "ظُهُورٌ",
-        "cleanAr": "ظهور",
-        "letter": "ظ",
-        "tr": "Zuhūr",
-        "cleanTr": "zuhur",
-        "cat": "اسْمٌ",
-        "role": "Broken Plural / جَمْعُ تَكْسِير (ظَهْر)",
-        "ur": "پیٹھیں، پشتیں",
-        "en": "Backs",
-        "cleanEn": "backs",
-        "occurrences": [ "U05-L10" ]
-    },
-    {
-        "idx": 805,
+        "idx": 730,
         "ar": "ظَهِيرٌ",
         "cleanAr": "ظهير",
         "letter": "ظ",
@@ -11274,7 +10224,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L03", "U05-L23" ]
     },
     {
-        "idx": 806,
+        "idx": 731,
         "ar": "عَابِدٌ",
         "cleanAr": "عابد",
         "letter": "ع",
@@ -11288,7 +10238,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L07", "U03-L08", "U04-L13", "U05-L01" ]
     },
     {
-        "idx": 807,
+        "idx": 732,
         "ar": "عَادٌ",
         "cleanAr": "عاد",
         "letter": "ع",
@@ -11299,15 +10249,15 @@ var WORDS_DATA = [    {
         "ur": "قومِ عاد (حضرت ہودؑ کی قوم)",
         "en": "‘Aad (ancient Arabian tribe)",
         "cleanEn": "aad ancient arabian tribe",
-        "occurrences": [ "U01-L17", "U05-L06", "U05-L05" ]
+        "occurrences": [ "U01-L17", "U05-L05", "U05-L06" ]
     },
     {
-        "idx": 808,
+        "idx": 733,
         "ar": "عَادِلٌ",
         "cleanAr": "عادل",
         "letter": "ع",
         "tr": "‘Ādil",
-        "cleanTr": "'adil",
+        "cleanTr": "adil",
         "cat": "اسْمٌ",
         "role": "Active Participle / اسْمُ فَاعِل",
         "ur": "انصاف پسند، برابر ٹھہرانے والا",
@@ -11316,7 +10266,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L01" ]
     },
     {
-        "idx": 809,
+        "idx": 734,
         "ar": "عَاصِمٌ",
         "cleanAr": "عاصم",
         "letter": "ع",
@@ -11330,7 +10280,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L08", "U03-L06", "U05-L21" ]
     },
     {
-        "idx": 810,
+        "idx": 735,
         "ar": "عَاقِبَةٌ",
         "cleanAr": "عاقبه",
         "letter": "ع",
@@ -11344,12 +10294,12 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L05", "U02-L01", "U05-L02", "U05-L03" ]
     },
     {
-        "idx": 811,
+        "idx": 736,
         "ar": "عَاقِلٌ",
         "cleanAr": "عاقل",
         "letter": "ع",
         "tr": "‘Āqil",
-        "cleanTr": "'aqil",
+        "cleanTr": "aqil",
         "cat": "اسْمٌ",
         "role": "Active Participle / اسْمُ فَاعِل",
         "ur": "عقل مند، سمجھ دار",
@@ -11358,12 +10308,12 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L01" ]
     },
     {
-        "idx": 812,
+        "idx": 737,
         "ar": "عَاكِفٌ",
         "cleanAr": "عاكف",
         "letter": "ع",
         "tr": "‘Ākif",
-        "cleanTr": "'akif",
+        "cleanTr": "akif",
         "cat": "اسْمٌ",
         "role": "Active Participle / اسْمُ فَاعِل",
         "ur": "عبادت گزار، جم کر بیٹھنے والا",
@@ -11372,7 +10322,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L09" ]
     },
     {
-        "idx": 813,
+        "idx": 738,
         "ar": "عَالٍ",
         "cleanAr": "عال",
         "letter": "ع",
@@ -11386,35 +10336,35 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L02" ]
     },
     {
-        "idx": 814,
+        "idx": 739,
         "ar": "عَالَمٌ",
         "cleanAr": "عالم",
         "letter": "ع",
         "tr": "‘Ālam",
-        "cleanTr": "'alam",
+        "cleanTr": "alam",
         "cat": "اسْمٌ",
-        "role": "Noun / اسْمٌ",
+        "role": "Noun / اسْمٌ (Plural: عَالَمُونَ)",
         "ur": "جہان، کائنات، تمام مخلوقات",
         "en": "World, universe, realm, creation",
         "cleanEn": "world universe realm creation",
         "occurrences": [ "U03-L04", "U05-L02" ]
     },
     {
-        "idx": 815,
+        "idx": 740,
         "ar": "عَالِمٌ",
         "cleanAr": "عالم",
         "letter": "ع",
         "tr": "‘Ālim",
         "cleanTr": "alim",
         "cat": "صِفَةٌ",
-        "role": "Noun (Active Participle) / اسْمُ فَاعِل",
+        "role": "Active Participle / اسْمُ فَاعِل (Plural: عَالِمُونَ / عُلَمَاءُ)",
         "ur": "جاننے والا، علم رکھنے والا",
         "en": "Scholar, knowing, knowledgeable",
         "cleanEn": "scholar knowing knowledgeable",
-        "occurrences": [ "U01-L05", "U01-L09", "U03-L08", "U05-L01" ]
+        "occurrences": [ "U01-L05", "U01-L09", "U03-L08", "U05-L01", "U05-L04" ]
     },
     {
-        "idx": 816,
+        "idx": 741,
         "ar": "عَالِيَةٌ",
         "cleanAr": "عاليه",
         "letter": "ع",
@@ -11428,7 +10378,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L03", "U05-L21" ]
     },
     {
-        "idx": 817,
+        "idx": 742,
         "ar": "عَامِلٌ",
         "cleanAr": "عامل",
         "letter": "ع",
@@ -11442,21 +10392,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L16", "U05-L03" ]
     },
     {
-        "idx": 818,
-        "ar": "عِبَادٌ",
-        "cleanAr": "عباد",
-        "letter": "ع",
-        "tr": "‘Ibād",
-        "cleanTr": "ibad",
-        "cat": "اسْمٌ",
-        "role": "Broken Plural / جَمْعُ تَكْسِير (عَبْد)",
-        "ur": "بندے، عبادت گزار لوگ",
-        "en": "Servants, worshippers, slaves of Allah",
-        "cleanEn": "servants worshippers slaves of allah",
-        "occurrences": [ "U01-L03", "U05-L04", "U02-L09", "U02-L13" ]
-    },
-    {
-        "idx": 819,
+        "idx": 743,
         "ar": "عِبَادَةٌ",
         "cleanAr": "عباده",
         "letter": "ع",
@@ -11470,7 +10406,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L05", "U04-L14" ]
     },
     {
-        "idx": 820,
+        "idx": 744,
         "ar": "عَبْدٌ",
         "cleanAr": "عبد",
         "letter": "ع",
@@ -11481,10 +10417,10 @@ var WORDS_DATA = [    {
         "ur": "غلام، بندگی کرنے والا انسان",
         "en": "Servant, Slave (of Allah), Human",
         "cleanEn": "servant slave of allah human",
-        "occurrences": [ "U01-L05", "U02-L07", "U03-L03" ]
+        "occurrences": [ "U01-L03", "U01-L05", "U02-L07", "U02-L09", "U02-L13", "U03-L03", "U05-L04" ]
     },
     {
-        "idx": 821,
+        "idx": 745,
         "ar": "عِبْرَةٌ",
         "cleanAr": "عبره",
         "letter": "ع",
@@ -11498,7 +10434,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L02", "U01-L18", "U02-L03", "U05-L12" ]
     },
     {
-        "idx": 822,
+        "idx": 746,
         "ar": "عُجَابٌ",
         "cleanAr": "عجاب",
         "letter": "ع",
@@ -11512,7 +10448,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L02" ]
     },
     {
-        "idx": 823,
+        "idx": 747,
         "ar": "عَجَبٌ",
         "cleanAr": "عجب",
         "letter": "ع",
@@ -11526,7 +10462,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L02" ]
     },
     {
-        "idx": 824,
+        "idx": 748,
         "ar": "عَجُوزٌ",
         "cleanAr": "عجوز",
         "letter": "ع",
@@ -11540,7 +10476,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L13" ]
     },
     {
-        "idx": 825,
+        "idx": 749,
         "ar": "عَجُولٌ",
         "cleanAr": "عجول",
         "letter": "ع",
@@ -11554,7 +10490,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L12" ]
     },
     {
-        "idx": 826,
+        "idx": 750,
         "ar": "عَجِيبٌ",
         "cleanAr": "عجيب",
         "letter": "ع",
@@ -11568,7 +10504,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L02" ]
     },
     {
-        "idx": 827,
+        "idx": 751,
         "ar": "عَدَاوَةٌ",
         "cleanAr": "عداوه",
         "letter": "ع",
@@ -11582,7 +10518,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L08", "U05-L22" ]
     },
     {
-        "idx": 828,
+        "idx": 752,
         "ar": "عَدْلٌ",
         "cleanAr": "عدل",
         "letter": "ع",
@@ -11596,7 +10532,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L02", "U01-L13", "U02-L07" ]
     },
     {
-        "idx": 829,
+        "idx": 753,
         "ar": "عِدَّةٌ",
         "cleanAr": "عده",
         "letter": "ع",
@@ -11610,7 +10546,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L07" ]
     },
     {
-        "idx": 830,
+        "idx": 754,
         "ar": "عَدُوٌّ",
         "cleanAr": "عدو",
         "letter": "ع",
@@ -11621,10 +10557,10 @@ var WORDS_DATA = [    {
         "ur": "دشمن، مخالف، عداوت رکھنے والا",
         "en": "Enemy, adversary, opponent",
         "cleanEn": "enemy adversary opponent",
-        "occurrences": [ "U01-L15", "U02-L01", "U02-L02", "U03-L01", "U03-L02", "U05-L02" ]
+        "occurrences": [ "U01-L15", "U02-L01", "U02-L02", "U03-L01", "U03-L02", "U05-L02", "U05-L04" ]
     },
     {
-        "idx": 831,
+        "idx": 755,
         "ar": "عُدْوَانٌ",
         "cleanAr": "عدوان",
         "letter": "ع",
@@ -11638,7 +10574,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L04" ]
     },
     {
-        "idx": 832,
+        "idx": 756,
         "ar": "عَذَابٌ",
         "cleanAr": "عذاب",
         "letter": "ع",
@@ -11652,7 +10588,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L04", "U02-L03", "U02-L05", "U02-L11", "U03-L01", "U03-L02", "U05-L22" ]
     },
     {
-        "idx": 833,
+        "idx": 757,
         "ar": "عَذْبٌ",
         "cleanAr": "عذب",
         "letter": "ع",
@@ -11666,7 +10602,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L15" ]
     },
     {
-        "idx": 834,
+        "idx": 758,
         "ar": "عَرَبِيٌّ",
         "cleanAr": "عربي",
         "letter": "ع",
@@ -11680,35 +10616,21 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L03", "U03-L01" ]
     },
     {
-        "idx": 835,
+        "idx": 759,
         "ar": "عَرْشٌ",
         "cleanAr": "عرش",
         "letter": "ع",
         "tr": "‘Arsh",
         "cleanTr": "arsh",
         "cat": "اسْمٌ",
-        "role": "Indefinite Noun / اسْمٌ نَكِرَة",
+        "role": "Indefinite Noun / اسْمٌ نَكِرَة (Plural: عُرُوشٌ)",
         "ur": "تخت، عرشِ معلیٰ، رب کا عظیم عرش",
         "en": "Throne, supreme seat of sovereignty",
         "cleanEn": "throne supreme seat of sovereignty",
-        "occurrences": [ "U01-L02", "U01-L13", "U02-L04", "U03-L01" ]
+        "occurrences": [ "U01-L02", "U01-L13", "U02-L04", "U03-L01", "U04-L11" ]
     },
     {
-        "idx": 836,
-        "ar": "عَرْضٌ",
-        "cleanAr": "عرض",
-        "letter": "ع",
-        "tr": "‘Arḍ",
-        "cleanTr": "ard",
-        "cat": "اسْمٌ",
-        "role": "Noun / اسْمٌ",
-        "ur": "چوڑائی، عرض، پھیلاؤ",
-        "en": "Width, breadth, expanse",
-        "cleanEn": "width breadth expanse",
-        "occurrences": [ "U01-L05", "U04-L10" ]
-    },
-    {
-        "idx": 837,
+        "idx": 760,
         "ar": "عَرَضٌ",
         "cleanAr": "عرض",
         "letter": "ع",
@@ -11722,21 +10644,21 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L05" ]
     },
     {
-        "idx": 838,
-        "ar": "عُرُوشٌ",
-        "cleanAr": "عروش",
+        "idx": 761,
+        "ar": "عَرْضٌ",
+        "cleanAr": "عرض",
         "letter": "ع",
-        "tr": "‘Urūsh",
-        "cleanTr": "urush",
+        "tr": "‘Arḍ",
+        "cleanTr": "ard",
         "cat": "اسْمٌ",
-        "role": "Plural Noun / جَمْعُ عَرْش",
-        "ur": "چھتیں، ٹٹیاں، چھپر",
-        "en": "Roofs, trellises, canopies",
-        "cleanEn": "roofs trellises canopies",
-        "occurrences": [ "U04-L11" ]
+        "role": "Noun / اسْمٌ",
+        "ur": "چوڑائی، عرض، پھیلاؤ",
+        "en": "Width, breadth, expanse",
+        "cleanEn": "width breadth expanse",
+        "occurrences": [ "U01-L05", "U04-L10" ]
     },
     {
-        "idx": 839,
+        "idx": 762,
         "ar": "عَزْمٌ",
         "cleanAr": "عزم",
         "letter": "ع",
@@ -11750,7 +10672,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L04", "U04-L04" ]
     },
     {
-        "idx": 840,
+        "idx": 763,
         "ar": "عِزَّةٌ",
         "cleanAr": "عزه",
         "letter": "ع",
@@ -11764,7 +10686,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L02", "U01-L13", "U02-L01", "U05-L02" ]
     },
     {
-        "idx": 841,
+        "idx": 764,
         "ar": "عُزَيْرٌ",
         "cleanAr": "عزير",
         "letter": "ع",
@@ -11778,7 +10700,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L05" ]
     },
     {
-        "idx": 842,
+        "idx": 765,
         "ar": "عَزِيزٌ",
         "cleanAr": "عزيز",
         "letter": "ع",
@@ -11788,11 +10710,11 @@ var WORDS_DATA = [    {
         "role": "Divine Attribute / اسْمٌ مِن أَسْمَاءِ الله",
         "ur": "عزیزِ مصر، حاکم، صاحبِ اقتدار",
         "en": "All-Mighty, Prevailing (Divine Attribute)",
-        "cleanEn": "allmighty prevailing divine attribute",
+        "cleanEn": "all mighty prevailing divine attribute",
         "occurrences": [ "U01-L09", "U01-L14", "U02-L01", "U02-L11", "U02-L13", "U03-L04", "U05-L03" ]
     },
     {
-        "idx": 843,
+        "idx": 766,
         "ar": "عُسْرٌ",
         "cleanAr": "عسر",
         "letter": "ع",
@@ -11806,7 +10728,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L06" ]
     },
     {
-        "idx": 844,
+        "idx": 767,
         "ar": "عُسْرَىٰ",
         "cleanAr": "عسري",
         "letter": "ع",
@@ -11820,7 +10742,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L02" ]
     },
     {
-        "idx": 845,
+        "idx": 768,
         "ar": "عَسَىٰ",
         "cleanAr": "عسي",
         "letter": "ع",
@@ -11834,7 +10756,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L12" ]
     },
     {
-        "idx": 846,
+        "idx": 769,
         "ar": "عَسِيرٌ",
         "cleanAr": "عسير",
         "letter": "ع",
@@ -11848,7 +10770,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L02", "U05-L02" ]
     },
     {
-        "idx": 847,
+        "idx": 770,
         "ar": "عِشَاءٌ",
         "cleanAr": "عشاء",
         "letter": "ع",
@@ -11862,7 +10784,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L07" ]
     },
     {
-        "idx": 848,
+        "idx": 771,
         "ar": "عَشْرٌ",
         "cleanAr": "عشر",
         "letter": "ع",
@@ -11876,7 +10798,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L10" ]
     },
     {
-        "idx": 849,
+        "idx": 772,
         "ar": "عِشْرُونَ",
         "cleanAr": "عشرون",
         "letter": "ع",
@@ -11890,7 +10812,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L12" ]
     },
     {
-        "idx": 850,
+        "idx": 773,
         "ar": "عَشِيٌّ",
         "cleanAr": "عشي",
         "letter": "ع",
@@ -11904,7 +10826,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L07" ]
     },
     {
-        "idx": 851,
+        "idx": 774,
         "ar": "عَشِيرٌ",
         "cleanAr": "عشير",
         "letter": "ع",
@@ -11918,7 +10840,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L21" ]
     },
     {
-        "idx": 852,
+        "idx": 775,
         "ar": "عَشِيرَةٌ",
         "cleanAr": "عشيره",
         "letter": "ع",
@@ -11932,7 +10854,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L10" ]
     },
     {
-        "idx": 853,
+        "idx": 776,
         "ar": "عَصًا",
         "cleanAr": "عصا",
         "letter": "ع",
@@ -11946,7 +10868,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L14" ]
     },
     {
-        "idx": 854,
+        "idx": 777,
         "ar": "عُصْبَةٌ",
         "cleanAr": "عصبه",
         "letter": "ع",
@@ -11960,7 +10882,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L13" ]
     },
     {
-        "idx": 855,
+        "idx": 778,
         "ar": "عَصْرٌ",
         "cleanAr": "عصر",
         "letter": "ع",
@@ -11974,7 +10896,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L10" ]
     },
     {
-        "idx": 856,
+        "idx": 779,
         "ar": "عَصِيٌّ",
         "cleanAr": "عصي",
         "letter": "ع",
@@ -11988,7 +10910,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L12" ]
     },
     {
-        "idx": 857,
+        "idx": 780,
         "ar": "عَطَاءٌ",
         "cleanAr": "عطاء",
         "letter": "ع",
@@ -11999,10 +10921,10 @@ var WORDS_DATA = [    {
         "ur": "بخشش، عطا، انعام",
         "en": "Gift, bestowal, donation",
         "cleanEn": "gift bestowal donation",
-        "occurrences": [ "U04-L07", "U05-L14", "U02-L12" ]
+        "occurrences": [ "U02-L12", "U04-L07", "U05-L14" ]
     },
     {
-        "idx": 858,
+        "idx": 781,
         "ar": "عَظِيمٌ",
         "cleanAr": "عظيم",
         "letter": "ع",
@@ -12013,10 +10935,10 @@ var WORDS_DATA = [    {
         "ur": "بہت بڑا، عظمت والا، جلیل القدر",
         "en": "Great, tremendous, magnificent, huge",
         "cleanEn": "great tremendous magnificent huge",
-        "occurrences": [ "U01-L01", "U01-L07", "U01-L15", "U01-L16", "U02-L03", "U02-L04", "U03-L01", "U05-L07" ]
+        "occurrences": [ "U01-L01", "U01-L07", "U01-L15", "U01-L16", "U01-L19", "U02-L03", "U02-L04", "U03-L01", "U05-L07" ]
     },
     {
-        "idx": 859,
+        "idx": 782,
         "ar": "عَفُوٌّ",
         "cleanAr": "عفو",
         "letter": "ع",
@@ -12026,11 +10948,11 @@ var WORDS_DATA = [    {
         "role": "Divine Attribute / صِفَة",
         "ur": "بہت معاف کرنے والا، درگزر فرمانے والا",
         "en": "Ever-Pardoning, Oft-Forgiving",
-        "cleanEn": "everpardoning oftforgiving",
+        "cleanEn": "ever pardoning oft forgiving",
         "occurrences": [ "U02-L01", "U02-L12" ]
     },
     {
-        "idx": 860,
+        "idx": 783,
         "ar": "عِقَابٌ",
         "cleanAr": "عقاب",
         "letter": "ع",
@@ -12044,7 +10966,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L04", "U05-L07" ]
     },
     {
-        "idx": 861,
+        "idx": 784,
         "ar": "عَقَبَةٌ",
         "cleanAr": "عقبه",
         "letter": "ع",
@@ -12058,7 +10980,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L21" ]
     },
     {
-        "idx": 862,
+        "idx": 785,
         "ar": "عُقْبَىٰ",
         "cleanAr": "عقبي",
         "letter": "ع",
@@ -12072,7 +10994,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L17", "U05-L03" ]
     },
     {
-        "idx": 863,
+        "idx": 786,
         "ar": "عَلَّامٌ",
         "cleanAr": "علام",
         "letter": "ع",
@@ -12082,11 +11004,11 @@ var WORDS_DATA = [    {
         "role": "Intensive Adjective / صِيغَةُ مُبَالَغَة (فَعَّال)",
         "ur": "غیب و ظاہر کا کامل علم رکھنے والا، انتہائی باخبر",
         "en": "All-Knowing, Omniscient of all secrets",
-        "cleanEn": "allknowing omniscient of all secrets",
+        "cleanEn": "all knowing omniscient of all secrets",
         "occurrences": [ "U03-L05", "U03-L08" ]
     },
     {
-        "idx": 864,
+        "idx": 787,
         "ar": "عَلَامَةٌ",
         "cleanAr": "علامه",
         "letter": "ع",
@@ -12100,35 +11022,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L11" ]
     },
     {
-        "idx": 865,
-        "ar": "عِلْمٌ",
-        "cleanAr": "علم",
-        "letter": "ع",
-        "tr": "‘Ilm",
-        "cleanTr": "ilm",
-        "cat": "اسْمٌ",
-        "role": "Masdar / Noun",
-        "ur": "علم، آگاہی، سچی معلومات",
-        "en": "Knowledge, Knowing, Learning",
-        "cleanEn": "knowledge knowing learning",
-        "occurrences": [ "U01-L06", "U01-L18", "U02-L03", "U02-L08" ]
-    },
-    {
-        "idx": 866,
-        "ar": "عَلِمَ",
-        "cleanAr": "علم",
-        "letter": "ع",
-        "tr": "‘Alima",
-        "cleanTr": "alima",
-        "cat": "فِعْلٌ",
-        "role": "Verb (Past) / فِعْلٌ مَاضٍ",
-        "ur": "اس نے جانا، علم رکھا",
-        "en": "He knew, learned",
-        "cleanEn": "he knew learned",
-        "occurrences": [ "U01-L03", "U02-L03" ]
-    },
-    {
-        "idx": 867,
+        "idx": 788,
         "ar": "عَلَّمَ",
         "cleanAr": "علم",
         "letter": "ع",
@@ -12142,35 +11036,35 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L04" ]
     },
     {
-        "idx": 868,
-        "ar": "عُلَمَاءٌ",
-        "cleanAr": "علماء",
+        "idx": 789,
+        "ar": "عَلِمَ",
+        "cleanAr": "علم",
         "letter": "ع",
-        "tr": "‘Ulamā’",
-        "cleanTr": "ulama",
+        "tr": "‘Alima",
+        "cleanTr": "alima",
+        "cat": "فِعْلٌ",
+        "role": "Verb (Past) / فِعْلٌ مَاضٍ",
+        "ur": "اس نے جانا، علم رکھا",
+        "en": "He knew, learned",
+        "cleanEn": "he knew learned",
+        "occurrences": [ "U01-L03", "U02-L03" ]
+    },
+    {
+        "idx": 790,
+        "ar": "عِلْمٌ",
+        "cleanAr": "علم",
+        "letter": "ع",
+        "tr": "‘Ilm",
+        "cleanTr": "ilm",
         "cat": "اسْمٌ",
-        "role": "Broken Plural / جَمْعُ تَكْسِير (عَالِم)",
-        "ur": "اہل علم، علماء کرام",
-        "en": "Scholars, those endowed with knowledge",
-        "cleanEn": "scholars those endowed with knowledge",
-        "occurrences": [ "U05-L04" ]
+        "role": "Masdar / Noun",
+        "ur": "علم، آگاہی، سچی معلومات",
+        "en": "Knowledge, Knowing, Learning",
+        "cleanEn": "knowledge knowing learning",
+        "occurrences": [ "U01-L06", "U01-L18", "U01-L19", "U02-L03", "U02-L08", "U04-L01", "U05-L02" ]
     },
     {
-        "idx": 869,
-        "ar": "عَلِيٌّ",
-        "cleanAr": "علي",
-        "letter": "ع",
-        "tr": "‘Aliyy",
-        "cleanTr": "aliyy",
-        "cat": "صِفَةٌ",
-        "role": "Divine Attribute / صِفَة",
-        "ur": "عالی شان، سب سے برتر، بلند مرتبہ",
-        "en": "Most High, Sublime, Exalted (Divine Attribute)",
-        "cleanEn": "most high sublime exalted divine attribute",
-        "occurrences": [ "U02-L12", "U04-L01" ]
-    },
-    {
-        "idx": 870,
+        "idx": 791,
         "ar": "عَلَىٰ",
         "cleanAr": "علي",
         "letter": "ع",
@@ -12184,12 +11078,26 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L02", "U02-L04", "U02-L06", "U02-L09", "U02-L13", "U03-L03" ]
     },
     {
-        "idx": 871,
+        "idx": 792,
+        "ar": "عَلِيٌّ",
+        "cleanAr": "علي",
+        "letter": "ع",
+        "tr": "‘Aliyy",
+        "cleanTr": "aliyy",
+        "cat": "صِفَةٌ",
+        "role": "Divine Attribute / صِفَة",
+        "ur": "عالی شان، سب سے برتر، بلند مرتبہ",
+        "en": "Most High, Sublime, Exalted (Divine Attribute)",
+        "cleanEn": "most high sublime exalted divine attribute",
+        "occurrences": [ "U02-L12", "U04-L01" ]
+    },
+    {
+        "idx": 793,
         "ar": "عُلْيَا",
         "cleanAr": "عليا",
         "letter": "ع",
         "tr": "‘Ulyā",
-        "cleanTr": "'ulya",
+        "cleanTr": "ulya",
         "cat": "صِفَةٌ",
         "role": "Superlative Adjective (Fem.) / اسْمُ التَّفْضِيل (مُؤَنَّث)",
         "ur": "سب سے بلند، سب سے غالب (مؤنث)",
@@ -12198,7 +11106,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L09" ]
     },
     {
-        "idx": 872,
+        "idx": 794,
         "ar": "عَلِيمٌ",
         "cleanAr": "عليم",
         "letter": "ع",
@@ -12212,7 +11120,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L09", "U01-L14", "U02-L01", "U02-L11", "U02-L12", "U03-L02", "U05-L02" ]
     },
     {
-        "idx": 873,
+        "idx": 795,
         "ar": "عِلِّيُّونَ",
         "cleanAr": "عليون",
         "letter": "ع",
@@ -12226,21 +11134,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L21" ]
     },
     {
-        "idx": 874,
-        "ar": "عَمَّةٌ",
-        "cleanAr": "عمة",
-        "letter": "ع",
-        "tr": "‘Ammah",
-        "cleanTr": "'ammah",
-        "cat": "اسْمٌ",
-        "role": "Noun (Feminine) / اسْمٌ",
-        "ur": "پھوپھی",
-        "en": "Paternal aunt",
-        "cleanEn": "paternal aunt",
-        "occurrences": [ "U05-L10" ]
-    },
-    {
-        "idx": 875,
+        "idx": 796,
         "ar": "عُمْرٌ",
         "cleanAr": "عمر",
         "letter": "ع",
@@ -12254,7 +11148,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L07" ]
     },
     {
-        "idx": 876,
+        "idx": 797,
         "ar": "عِمْرَانٌ",
         "cleanAr": "عمران",
         "letter": "ع",
@@ -12268,7 +11162,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L04" ]
     },
     {
-        "idx": 877,
+        "idx": 798,
         "ar": "عُمْرَةٌ",
         "cleanAr": "عمره",
         "letter": "ع",
@@ -12282,7 +11176,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L02", "U02-L07" ]
     },
     {
-        "idx": 878,
+        "idx": 799,
         "ar": "عَمَلٌ",
         "cleanAr": "عمل",
         "letter": "ع",
@@ -12296,7 +11190,21 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L02", "U01-L10", "U01-L13", "U02-L05", "U03-L05", "U05-L06" ]
     },
     {
-        "idx": 879,
+        "idx": 800,
+        "ar": "عَمَّةٌ",
+        "cleanAr": "عمه",
+        "letter": "ع",
+        "tr": "‘Ammah",
+        "cleanTr": "ammah",
+        "cat": "اسْمٌ",
+        "role": "Noun (Feminine) / اسْمٌ",
+        "ur": "پھوپھی",
+        "en": "Paternal aunt",
+        "cleanEn": "paternal aunt",
+        "occurrences": [ "U05-L10" ]
+    },
+    {
+        "idx": 801,
         "ar": "عَمًى",
         "cleanAr": "عمي",
         "letter": "ع",
@@ -12310,7 +11218,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L08" ]
     },
     {
-        "idx": 880,
+        "idx": 802,
         "ar": "عَنْ",
         "cleanAr": "عن",
         "letter": "ع",
@@ -12324,7 +11232,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L03", "U05-L02" ]
     },
     {
-        "idx": 881,
+        "idx": 803,
         "ar": "عِنْدَ",
         "cleanAr": "عند",
         "letter": "ع",
@@ -12338,7 +11246,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L04", "U03-L04", "U05-L02" ]
     },
     {
-        "idx": 882,
+        "idx": 804,
         "ar": "عُنُقٌ",
         "cleanAr": "عنق",
         "letter": "ع",
@@ -12349,10 +11257,10 @@ var WORDS_DATA = [    {
         "ur": "گردن، گلا",
         "en": "Neck",
         "cleanEn": "neck",
-        "occurrences": [ "U04-L03" ]
+        "occurrences": [ "U04-L03", "U05-L17" ]
     },
     {
-        "idx": 883,
+        "idx": 805,
         "ar": "عَنِيدٌ",
         "cleanAr": "عنيد",
         "letter": "ع",
@@ -12366,7 +11274,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L15" ]
     },
     {
-        "idx": 884,
+        "idx": 806,
         "ar": "عَهْدٌ",
         "cleanAr": "عهد",
         "letter": "ع",
@@ -12380,7 +11288,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L07", "U02-L01", "U05-L07" ]
     },
     {
-        "idx": 885,
+        "idx": 807,
         "ar": "عِهْنٌ",
         "cleanAr": "عهن",
         "letter": "ع",
@@ -12394,7 +11302,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L01" ]
     },
     {
-        "idx": 886,
+        "idx": 808,
         "ar": "عِيسَىٰ",
         "cleanAr": "عيسي",
         "letter": "ع",
@@ -12408,7 +11316,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L07", "U01-L12", "U02-L06", "U02-L13", "U03-L06", "U05-L02" ]
     },
     {
-        "idx": 887,
+        "idx": 809,
         "ar": "عِيشَةٌ",
         "cleanAr": "عيشه",
         "letter": "ع",
@@ -12422,7 +11330,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L03" ]
     },
     {
-        "idx": 888,
+        "idx": 810,
         "ar": "عَيْنٌ",
         "cleanAr": "عين",
         "letter": "ع",
@@ -12433,24 +11341,10 @@ var WORDS_DATA = [    {
         "ur": "آنکھ؛ چشمہ، نقد مال، ذات",
         "en": "Eye, Spring, Fountain, Entity",
         "cleanEn": "eye spring fountain entity",
-        "occurrences": [ "U02-L07", "U03-L10" ]
+        "occurrences": [ "U02-L07", "U03-L10", "U05-L02", "U05-L10" ]
     },
     {
-        "idx": 889,
-        "ar": "عُيُونٌ",
-        "cleanAr": "عيون",
-        "letter": "ع",
-        "tr": "‘Uyūn",
-        "cleanTr": "'uyun",
-        "cat": "اسْمٌ",
-        "role": "Plural Noun / جَمْع (عَيْن)",
-        "ur": "چشمے، فوارے",
-        "en": "Springs, water fountains",
-        "cleanEn": "springs water fountains",
-        "occurrences": [ "U05-L02" ]
-    },
-    {
-        "idx": 890,
+        "idx": 811,
         "ar": "غَابِرٌ",
         "cleanAr": "غابر",
         "letter": "غ",
@@ -12464,7 +11358,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L02" ]
     },
     {
-        "idx": 891,
+        "idx": 812,
         "ar": "غَارٌ",
         "cleanAr": "غار",
         "letter": "غ",
@@ -12478,7 +11372,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L08", "U02-L03" ]
     },
     {
-        "idx": 892,
+        "idx": 813,
         "ar": "غَاسِقٌ",
         "cleanAr": "غاسق",
         "letter": "غ",
@@ -12489,10 +11383,10 @@ var WORDS_DATA = [    {
         "ur": "اندھیری رات، چھا جانے والا اندھیرا",
         "en": "Darkness, night as it spreads",
         "cleanEn": "darkness night as it spreads",
-        "occurrences": [ "U03-L04", "U02-L10" ]
+        "occurrences": [ "U02-L10", "U03-L04" ]
     },
     {
-        "idx": 893,
+        "idx": 814,
         "ar": "غَافِرٌ",
         "cleanAr": "غافر",
         "letter": "غ",
@@ -12506,7 +11400,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L09", "U03-L08" ]
     },
     {
-        "idx": 894,
+        "idx": 815,
         "ar": "غَافِلٌ",
         "cleanAr": "غافل",
         "letter": "غ",
@@ -12520,7 +11414,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L04", "U03-L08", "U05-L01" ]
     },
     {
-        "idx": 895,
+        "idx": 816,
         "ar": "غَالِبٌ",
         "cleanAr": "غالب",
         "letter": "غ",
@@ -12534,7 +11428,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L09", "U02-L08", "U03-L08", "U05-L12" ]
     },
     {
-        "idx": 896,
+        "idx": 817,
         "ar": "غَاوٍ",
         "cleanAr": "غاو",
         "letter": "غ",
@@ -12548,12 +11442,12 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L02" ]
     },
     {
-        "idx": 897,
+        "idx": 818,
         "ar": "غَائِبٌ",
-        "cleanAr": "غائب",
+        "cleanAr": "غايب",
         "letter": "غ",
         "tr": "Ghā’ib",
-        "cleanTr": "gha'ib",
+        "cleanTr": "ghaib",
         "cat": "اسْمٌ",
         "role": "Active Participle / اسْمُ فَاعِل",
         "ur": "غائب، پوشیدہ",
@@ -12562,7 +11456,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L02" ]
     },
     {
-        "idx": 898,
+        "idx": 819,
         "ar": "غَبَرَةٌ",
         "cleanAr": "غبره",
         "letter": "غ",
@@ -12576,7 +11470,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L21" ]
     },
     {
-        "idx": 899,
+        "idx": 820,
         "ar": "غَدَاةٌ",
         "cleanAr": "غداه",
         "letter": "غ",
@@ -12590,7 +11484,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L07" ]
     },
     {
-        "idx": 900,
+        "idx": 821,
         "ar": "غُرَابٌ",
         "cleanAr": "غراب",
         "letter": "غ",
@@ -12604,7 +11498,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L15" ]
     },
     {
-        "idx": 901,
+        "idx": 822,
         "ar": "غَرَامٌ",
         "cleanAr": "غرام",
         "letter": "غ",
@@ -12618,7 +11512,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L11" ]
     },
     {
-        "idx": 902,
+        "idx": 823,
         "ar": "غُرُوبٌ",
         "cleanAr": "غروب",
         "letter": "غ",
@@ -12632,7 +11526,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L02", "U04-L11" ]
     },
     {
-        "idx": 903,
+        "idx": 824,
         "ar": "غُرُورٌ",
         "cleanAr": "غرور",
         "letter": "غ",
@@ -12646,7 +11540,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L08", "U02-L09", "U03-L04" ]
     },
     {
-        "idx": 904,
+        "idx": 825,
         "ar": "غَسَقٌ",
         "cleanAr": "غسق",
         "letter": "غ",
@@ -12660,7 +11554,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L05" ]
     },
     {
-        "idx": 905,
+        "idx": 826,
         "ar": "غِسْلِينٌ",
         "cleanAr": "غسلين",
         "letter": "غ",
@@ -12670,11 +11564,11 @@ var WORDS_DATA = [    {
         "role": "Noun / اسْمٌ",
         "ur": "دوزخیوں کے زخموں کا دھون، پیپ",
         "en": "Pus, discharge of wounds (Ghislīn)",
-        "cleanEn": "pus discharge of wounds ghisln",
+        "cleanEn": "pus discharge of wounds ghisl n",
         "occurrences": [ "U05-L21" ]
     },
     {
-        "idx": 906,
+        "idx": 827,
         "ar": "غِشَاوَةٌ",
         "cleanAr": "غشاوه",
         "letter": "غ",
@@ -12688,7 +11582,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L08" ]
     },
     {
-        "idx": 907,
+        "idx": 828,
         "ar": "غَضَبٌ",
         "cleanAr": "غضب",
         "letter": "غ",
@@ -12702,7 +11596,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L08", "U02-L04", "U03-L05", "U05-L07" ]
     },
     {
-        "idx": 908,
+        "idx": 829,
         "ar": "غَفَّارٌ",
         "cleanAr": "غفار",
         "letter": "غ",
@@ -12712,11 +11606,11 @@ var WORDS_DATA = [    {
         "role": "Intensive Adjective / صِيغَةُ مُبَالَغَة (فَعَّال)",
         "ur": "بار بار بخشنے والا، کمال پردہ پوشی فرمانے والا",
         "en": "All-Forgiving, Oft-Pardoning",
-        "cleanEn": "allforgiving oftpardoning",
+        "cleanEn": "all forgiving oft pardoning",
         "occurrences": [ "U03-L08", "U04-L01", "U05-L21" ]
     },
     {
-        "idx": 909,
+        "idx": 830,
         "ar": "غَفْلَةٌ",
         "cleanAr": "غفله",
         "letter": "غ",
@@ -12730,7 +11624,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L03", "U05-L05" ]
     },
     {
-        "idx": 910,
+        "idx": 831,
         "ar": "غَفُورٌ",
         "cleanAr": "غفور",
         "letter": "غ",
@@ -12740,11 +11634,11 @@ var WORDS_DATA = [    {
         "role": "Intensive Adjective / صِيغَةُ مُبَالَغَة",
         "ur": "بے انتہا بخشنے والا، گناہ معاف فرمانے والا",
         "en": "Ever-Forgiving, Oft-Forgiving",
-        "cleanEn": "everforgiving oftforgiving",
+        "cleanEn": "ever forgiving oft forgiving",
         "occurrences": [ "U01-L09", "U01-L14", "U02-L01", "U02-L11", "U02-L12", "U04-L01" ]
     },
     {
-        "idx": 911,
+        "idx": 832,
         "ar": "غِلٌّ",
         "cleanAr": "غل",
         "letter": "غ",
@@ -12758,7 +11652,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L15" ]
     },
     {
-        "idx": 912,
+        "idx": 833,
         "ar": "غُلَامٌ",
         "cleanAr": "غلام",
         "letter": "غ",
@@ -12772,7 +11666,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L15", "U04-L16" ]
     },
     {
-        "idx": 913,
+        "idx": 834,
         "ar": "غُلْفٌ",
         "cleanAr": "غلف",
         "letter": "غ",
@@ -12786,7 +11680,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L14" ]
     },
     {
-        "idx": 914,
+        "idx": 835,
         "ar": "غَلِيظٌ",
         "cleanAr": "غليظ",
         "letter": "غ",
@@ -12800,7 +11694,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L04", "U03-L02" ]
     },
     {
-        "idx": 915,
+        "idx": 836,
         "ar": "غَمٌّ",
         "cleanAr": "غم",
         "letter": "غ",
@@ -12814,7 +11708,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L04", "U02-L07" ]
     },
     {
-        "idx": 916,
+        "idx": 837,
         "ar": "غَمْرَةٌ",
         "cleanAr": "غمره",
         "letter": "غ",
@@ -12828,7 +11722,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L06" ]
     },
     {
-        "idx": 917,
+        "idx": 838,
         "ar": "غَنِيٌّ",
         "cleanAr": "غني",
         "letter": "غ",
@@ -12838,11 +11732,11 @@ var WORDS_DATA = [    {
         "role": "Adjective / Divine Attribute",
         "ur": "بے پرواہ، غنی، بے نیاز، دولت مند",
         "en": "Rich, self-sufficient, free of need",
-        "cleanEn": "rich selfsufficient free of need",
-        "occurrences": [ "U01-L07", "U01-L09", "U01-L14", "U02-L01", "U02-L11", "U04-L01", "U05-L02" ]
+        "cleanEn": "rich self sufficient free of need",
+        "occurrences": [ "U01-L07", "U01-L09", "U01-L14", "U02-L01", "U02-L11", "U04-L01", "U05-L02", "U05-L04" ]
     },
     {
-        "idx": 918,
+        "idx": 839,
         "ar": "غَوِيٌّ",
         "cleanAr": "غوي",
         "letter": "غ",
@@ -12856,21 +11750,21 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L08" ]
     },
     {
-        "idx": 919,
+        "idx": 840,
         "ar": "غَيْبٌ",
         "cleanAr": "غيب",
         "letter": "غ",
         "tr": "Ghayb",
         "cleanTr": "ghayb",
         "cat": "اسْمٌ",
-        "role": "Singular & Broken Plural",
+        "role": "Singular \u0026 Broken Plural (Plural: غُيُوبٌ)",
         "ur": "غیب، پوشیدہ حقیقت، نگاہوں سے اوجھل",
         "en": "Unseen, hidden reality",
         "cleanEn": "unseen hidden reality",
-        "occurrences": [ "U01-L04", "U01-L10", "U02-L02", "U02-L07", "U05-L06" ]
+        "occurrences": [ "U01-L04", "U01-L10", "U02-L02", "U02-L07", "U03-L05", "U05-L06" ]
     },
     {
-        "idx": 920,
+        "idx": 841,
         "ar": "غَيْرٌ",
         "cleanAr": "غير",
         "letter": "غ",
@@ -12884,7 +11778,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L05", "U03-L04" ]
     },
     {
-        "idx": 921,
+        "idx": 842,
         "ar": "غَيْظٌ",
         "cleanAr": "غيظ",
         "letter": "غ",
@@ -12898,21 +11792,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L05" ]
     },
     {
-        "idx": 922,
-        "ar": "غُيُوبٌ",
-        "cleanAr": "غيوب",
-        "letter": "غ",
-        "tr": "Ghuyūb",
-        "cleanTr": "ghuyub",
-        "cat": "اسْمٌ",
-        "role": "Plural Noun / جَمْعُ غَيْب",
-        "ur": "چھپی ہوئی چیزیں، غیب کے پوشیدہ راز",
-        "en": "Unseen things, hidden matters",
-        "cleanEn": "unseen things hidden matters",
-        "occurrences": [ "U03-L05" ]
-    },
-    {
-        "idx": 923,
+        "idx": 843,
         "ar": "فَ",
         "cleanAr": "ف",
         "letter": "ف",
@@ -12926,7 +11806,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L03" ]
     },
     {
-        "idx": 924,
+        "idx": 844,
         "ar": "فَاتِحٌ",
         "cleanAr": "فاتح",
         "letter": "ف",
@@ -12940,7 +11820,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L08" ]
     },
     {
-        "idx": 925,
+        "idx": 845,
         "ar": "فَاجِرٌ",
         "cleanAr": "فاجر",
         "letter": "ف",
@@ -12951,10 +11831,10 @@ var WORDS_DATA = [    {
         "ur": "فاجر، گناہگار، حدیں توڑنے والا",
         "en": "Wicked person, evildoer, sinner",
         "cleanEn": "wicked person evildoer sinner",
-        "occurrences": [ "U01-L04" ]
+        "occurrences": [ "U01-L04", "U05-L04", "U05-L17" ]
     },
     {
-        "idx": 926,
+        "idx": 846,
         "ar": "فَاسِقٌ",
         "cleanAr": "فاسق",
         "letter": "ف",
@@ -12968,7 +11848,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L07", "U02-L12", "U05-L01" ]
     },
     {
-        "idx": 927,
+        "idx": 847,
         "ar": "فَاطِرٌ",
         "cleanAr": "فاطر",
         "letter": "ف",
@@ -12982,7 +11862,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L05", "U05-L20" ]
     },
     {
-        "idx": 928,
+        "idx": 848,
         "ar": "فَاعِلٌ",
         "cleanAr": "فاعل",
         "letter": "ف",
@@ -12993,10 +11873,10 @@ var WORDS_DATA = [    {
         "ur": "کرنے والا، فاعل",
         "en": "Doer, performer",
         "cleanEn": "doer performer",
-        "occurrences": [ "U03-L08", "U02-L02", "U05-L01" ]
+        "occurrences": [ "U02-L02", "U03-L08", "U05-L01" ]
     },
     {
-        "idx": 929,
+        "idx": 849,
         "ar": "فَاقِعٌ",
         "cleanAr": "فاقع",
         "letter": "ف",
@@ -13010,7 +11890,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L10" ]
     },
     {
-        "idx": 930,
+        "idx": 850,
         "ar": "فَاكِهَةٌ",
         "cleanAr": "فاكهه",
         "letter": "ف",
@@ -13021,15 +11901,15 @@ var WORDS_DATA = [    {
         "ur": "پھل، میوہ، لذیذ نعمت",
         "en": "Fruit, delight, delicacy",
         "cleanEn": "fruit delight delicacy",
-        "occurrences": [ "U03-L01", "U05-L08", "U05-L04" ]
+        "occurrences": [ "U03-L01", "U04-L12", "U05-L04", "U05-L08" ]
     },
     {
-        "idx": 931,
+        "idx": 851,
         "ar": "فَائِزٌ",
-        "cleanAr": "فائز",
+        "cleanAr": "فايز",
         "letter": "ف",
         "tr": "Fā’iz",
-        "cleanTr": "fa'iz",
+        "cleanTr": "faiz",
         "cat": "اسْمٌ",
         "role": "Active Participle / اسْمُ فَاعِل",
         "ur": "کامیاب، بامراد",
@@ -13038,7 +11918,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L01" ]
     },
     {
-        "idx": 932,
+        "idx": 852,
         "ar": "فَتَّاحٌ",
         "cleanAr": "فتاح",
         "letter": "ف",
@@ -13052,21 +11932,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L08", "U04-L01" ]
     },
     {
-        "idx": 933,
-        "ar": "فَتْحٌ",
-        "cleanAr": "فتح",
-        "letter": "ف",
-        "tr": "Fatḥ",
-        "cleanTr": "fath",
-        "cat": "اسْمٌ",
-        "role": "Masdar / Noun",
-        "ur": "فتح، کشادگی، نصرت و کامیابی",
-        "en": "Victory, triumph, opening, decisive relief",
-        "cleanEn": "victory triumph opening decisive relief",
-        "occurrences": [ "U01-L06", "U01-L15", "U02-L07", "U03-L01" ]
-    },
-    {
-        "idx": 934,
+        "idx": 853,
         "ar": "فَتَحَ",
         "cleanAr": "فتح",
         "letter": "ف",
@@ -13080,7 +11946,21 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L11" ]
     },
     {
-        "idx": 935,
+        "idx": 854,
+        "ar": "فَتْحٌ",
+        "cleanAr": "فتح",
+        "letter": "ف",
+        "tr": "Fatḥ",
+        "cleanTr": "fath",
+        "cat": "اسْمٌ",
+        "role": "Masdar / Noun",
+        "ur": "فتح، کشادگی، نصرت و کامیابی",
+        "en": "Victory, triumph, opening, decisive relief",
+        "cleanEn": "victory triumph opening decisive relief",
+        "occurrences": [ "U01-L06", "U01-L15", "U02-L07", "U03-L01" ]
+    },
+    {
+        "idx": 855,
         "ar": "فِتْنَةٌ",
         "cleanAr": "فتنه",
         "letter": "ف",
@@ -13094,21 +11974,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L03", "U02-L03", "U03-L05", "U05-L06" ]
     },
     {
-        "idx": 936,
-        "ar": "فُجَّارٌ",
-        "cleanAr": "فجار",
-        "letter": "ف",
-        "tr": "Fujjār",
-        "cleanTr": "fujjar",
-        "cat": "اسْمٌ",
-        "role": "Broken Plural / جَمْعُ تَكْسِير (فَاجِر)",
-        "ur": "بدکار، کھلے نافرمان، فاجر لوگ",
-        "en": "Wicked, depraved people",
-        "cleanEn": "wicked depraved people",
-        "occurrences": [ "U05-L04" ]
-    },
-    {
-        "idx": 937,
+        "idx": 856,
         "ar": "فَجْرٌ",
         "cleanAr": "فجر",
         "letter": "ف",
@@ -13122,21 +11988,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L08", "U02-L05", "U02-L10", "U03-L06" ]
     },
     {
-        "idx": 938,
-        "ar": "فَجَرَةٌ",
-        "cleanAr": "فجره",
-        "letter": "ف",
-        "tr": "Fajarah",
-        "cleanTr": "fajarah",
-        "cat": "اسْمٌ",
-        "role": "Broken Plural / جَمْعُ تَكْسِير (فَاجِر)",
-        "ur": "فاجر لوگ، کھلے گناہ گار",
-        "en": "Wicked, corrupt individuals",
-        "cleanEn": "wicked corrupt individuals",
-        "occurrences": [ "U05-L04", "U05-L17" ]
-    },
-    {
-        "idx": 939,
+        "idx": 857,
         "ar": "فَحْشَاءٌ",
         "cleanAr": "فحشاء",
         "letter": "ف",
@@ -13150,7 +12002,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L07", "U04-L07" ]
     },
     {
-        "idx": 940,
+        "idx": 858,
         "ar": "فَخَّارٌ",
         "cleanAr": "فخار",
         "letter": "ف",
@@ -13164,7 +12016,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L01" ]
     },
     {
-        "idx": 941,
+        "idx": 859,
         "ar": "فِدْيَةٌ",
         "cleanAr": "فديه",
         "letter": "ف",
@@ -13178,7 +12030,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L12" ]
     },
     {
-        "idx": 942,
+        "idx": 860,
         "ar": "فِرَارٌ",
         "cleanAr": "فرار",
         "letter": "ف",
@@ -13192,7 +12044,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L09" ]
     },
     {
-        "idx": 943,
+        "idx": 861,
         "ar": "فَرَاشٌ",
         "cleanAr": "فراش",
         "letter": "ف",
@@ -13206,7 +12058,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L01" ]
     },
     {
-        "idx": 944,
+        "idx": 862,
         "ar": "فِرَاقٌ",
         "cleanAr": "فراق",
         "letter": "ف",
@@ -13220,7 +12072,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L02" ]
     },
     {
-        "idx": 945,
+        "idx": 863,
         "ar": "فَرِحٌ",
         "cleanAr": "فرح",
         "letter": "ف",
@@ -13234,7 +12086,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L05" ]
     },
     {
-        "idx": 946,
+        "idx": 864,
         "ar": "فَرْعٌ",
         "cleanAr": "فرع",
         "letter": "ف",
@@ -13248,7 +12100,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L10" ]
     },
     {
-        "idx": 947,
+        "idx": 865,
         "ar": "فِرْعَوْنٌ",
         "cleanAr": "فرعون",
         "letter": "ف",
@@ -13262,7 +12114,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L01", "U02-L01", "U02-L13", "U03-L03", "U05-L02" ]
     },
     {
-        "idx": 948,
+        "idx": 866,
         "ar": "فُرْقَانٌ",
         "cleanAr": "فرقان",
         "letter": "ف",
@@ -13276,7 +12128,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L05", "U03-L04" ]
     },
     {
-        "idx": 949,
+        "idx": 867,
         "ar": "فِرْقَةٌ",
         "cleanAr": "فرقه",
         "letter": "ف",
@@ -13290,7 +12142,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L07" ]
     },
     {
-        "idx": 950,
+        "idx": 868,
         "ar": "فُرُوجٌ",
         "cleanAr": "فروج",
         "letter": "ف",
@@ -13304,7 +12156,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L07" ]
     },
     {
-        "idx": 951,
+        "idx": 869,
         "ar": "فَرِيضَةٌ",
         "cleanAr": "فريضه",
         "letter": "ف",
@@ -13318,7 +12170,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L06" ]
     },
     {
-        "idx": 952,
+        "idx": 870,
         "ar": "فَرِيقٌ",
         "cleanAr": "فريق",
         "letter": "ف",
@@ -13332,7 +12184,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L05", "U02-L03", "U03-L10", "U05-L12" ]
     },
     {
-        "idx": 953,
+        "idx": 871,
         "ar": "فَسَادٌ",
         "cleanAr": "فساد",
         "letter": "ف",
@@ -13346,7 +12198,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L01", "U03-L01" ]
     },
     {
-        "idx": 954,
+        "idx": 872,
         "ar": "فِسْقٌ",
         "cleanAr": "فسق",
         "letter": "ف",
@@ -13360,7 +12212,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L08", "U01-L18", "U04-L04", "U05-L12" ]
     },
     {
-        "idx": 955,
+        "idx": 873,
         "ar": "فُسُوقٌ",
         "cleanAr": "فسوق",
         "letter": "ف",
@@ -13374,7 +12226,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L08" ]
     },
     {
-        "idx": 956,
+        "idx": 874,
         "ar": "فَصْلٌ",
         "cleanAr": "فصل",
         "letter": "ف",
@@ -13388,7 +12240,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L02" ]
     },
     {
-        "idx": 957,
+        "idx": 875,
         "ar": "فَضْلٌ",
         "cleanAr": "فضل",
         "letter": "ف",
@@ -13399,10 +12251,10 @@ var WORDS_DATA = [    {
         "ur": "احسان، مہربانی، عنایت، بخشش، زیادتیِ خیر",
         "en": "Bounty, Grace, Favor, Divine bounty",
         "cleanEn": "bounty grace favor divine bounty",
-        "occurrences": [ "U01-L06", "U01-L16", "U02-L01", "U02-L04", "U03-L01", "U03-L02" ]
+        "occurrences": [ "U01-L06", "U01-L16", "U01-L19", "U02-L01", "U02-L04", "U03-L01", "U03-L02" ]
     },
     {
-        "idx": 958,
+        "idx": 876,
         "ar": "فِضَّةٌ",
         "cleanAr": "فضه",
         "letter": "ف",
@@ -13416,7 +12268,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L05" ]
     },
     {
-        "idx": 959,
+        "idx": 877,
         "ar": "فِطْرَةٌ",
         "cleanAr": "فطره",
         "letter": "ف",
@@ -13430,7 +12282,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L05" ]
     },
     {
-        "idx": 960,
+        "idx": 878,
         "ar": "فَظٌّ",
         "cleanAr": "فظ",
         "letter": "ف",
@@ -13444,7 +12296,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L04" ]
     },
     {
-        "idx": 961,
+        "idx": 879,
         "ar": "فَعَّالٌ",
         "cleanAr": "فعال",
         "letter": "ف",
@@ -13458,21 +12310,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L08" ]
     },
     {
-        "idx": 962,
-        "ar": "فُقَرَاءٌ",
-        "cleanAr": "فقراء",
-        "letter": "ف",
-        "tr": "Fuqarā’",
-        "cleanTr": "fuqara",
-        "cat": "اسْمٌ",
-        "role": "Broken Plural / جَمْعُ تَكْسِير (فَقِير)",
-        "ur": "محتاج، غریب، فقیر لوگ",
-        "en": "Poor, needy",
-        "cleanEn": "poor needy",
-        "occurrences": [ "U05-L04" ]
-    },
-    {
-        "idx": 963,
+        "idx": 880,
         "ar": "فَقِيرٌ",
         "cleanAr": "فقير",
         "letter": "ف",
@@ -13483,10 +12321,10 @@ var WORDS_DATA = [    {
         "ur": "محتاج، ضرورت مند، غریب",
         "en": "Poor, needy, impoverished",
         "cleanEn": "poor needy impoverished",
-        "occurrences": [ "U01-L07", "U02-L12" ]
+        "occurrences": [ "U01-L07", "U02-L12", "U05-L04" ]
     },
     {
-        "idx": 964,
+        "idx": 881,
         "ar": "فُلْكٌ",
         "cleanAr": "فلك",
         "letter": "ف",
@@ -13500,21 +12338,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L04", "U02-L11", "U04-L12", "U05-L12" ]
     },
     {
-        "idx": 965,
-        "ar": "فَوَاكِهٌ",
-        "cleanAr": "فواكه",
-        "letter": "ف",
-        "tr": "Fawākih",
-        "cleanTr": "fawakih",
-        "cat": "اسْمٌ",
-        "role": "Plural Noun / جَمْعُ فَاكِهَة",
-        "ur": "پھل، لذیذ میوے",
-        "en": "Fruits, delicious delicacies",
-        "cleanEn": "fruits delicious delicacies",
-        "occurrences": [ "U04-L12" ]
-    },
-    {
-        "idx": 966,
+        "idx": 882,
         "ar": "فَوْجٌ",
         "cleanAr": "فوج",
         "letter": "ف",
@@ -13528,7 +12352,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L15", "U04-L12", "U05-L10" ]
     },
     {
-        "idx": 967,
+        "idx": 883,
         "ar": "فَوْزٌ",
         "cleanAr": "فوز",
         "letter": "ف",
@@ -13542,7 +12366,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L16", "U03-L01" ]
     },
     {
-        "idx": 968,
+        "idx": 884,
         "ar": "فَوْقَ",
         "cleanAr": "فوق",
         "letter": "ف",
@@ -13556,7 +12380,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L10", "U05-L04" ]
     },
     {
-        "idx": 969,
+        "idx": 885,
         "ar": "فِي",
         "cleanAr": "في",
         "letter": "ف",
@@ -13570,7 +12394,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L03", "U02-L02", "U02-L03", "U03-L03" ]
     },
     {
-        "idx": 970,
+        "idx": 886,
         "ar": "فِئَةٌ",
         "cleanAr": "فيه",
         "letter": "ف",
@@ -13584,7 +12408,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L06", "U02-L08" ]
     },
     {
-        "idx": 971,
+        "idx": 887,
         "ar": "قَاتِلٌ",
         "cleanAr": "قاتل",
         "letter": "ق",
@@ -13598,7 +12422,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L01" ]
     },
     {
-        "idx": 972,
+        "idx": 888,
         "ar": "قَادِرٌ",
         "cleanAr": "قادر",
         "letter": "ق",
@@ -13608,11 +12432,11 @@ var WORDS_DATA = [    {
         "role": "Noun (Active Participle) / اسْمُ فَاعِل",
         "ur": "قدرت رکھنے والا، قابو پانے والا",
         "en": "All-Capable, Able, Omnipotent",
-        "cleanEn": "allcapable able omnipotent",
+        "cleanEn": "all capable able omnipotent",
         "occurrences": [ "U01-L04", "U01-L09", "U02-L01", "U03-L08", "U05-L01" ]
     },
     {
-        "idx": 973,
+        "idx": 889,
         "ar": "قَارِعَةٌ",
         "cleanAr": "قارعه",
         "letter": "ق",
@@ -13623,10 +12447,10 @@ var WORDS_DATA = [    {
         "ur": "دل دہلا دینے والی آفت (قیامت)",
         "en": "Striking Calamity (Day of Judgment)",
         "cleanEn": "striking calamity day of judgment",
-        "occurrences": [ "U05-L21", "U02-L03" ]
+        "occurrences": [ "U02-L03", "U05-L21" ]
     },
     {
-        "idx": 974,
+        "idx": 890,
         "ar": "قَارُونُ",
         "cleanAr": "قارون",
         "letter": "ق",
@@ -13640,7 +12464,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L01", "U03-L06" ]
     },
     {
-        "idx": 975,
+        "idx": 891,
         "ar": "قَاسِطٌ",
         "cleanAr": "قاسط",
         "letter": "ق",
@@ -13654,7 +12478,21 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L16" ]
     },
     {
-        "idx": 976,
+        "idx": 892,
+        "ar": "قَاصٍ",
+        "cleanAr": "قاص",
+        "letter": "ق",
+        "tr": "Qāṣin",
+        "cleanTr": "qasin",
+        "cat": "صِفَةٌ",
+        "role": "Active Participle / اسْمُ فَاعِل",
+        "ur": "دور، فاصلے پر",
+        "en": "Remote, distant, far off",
+        "cleanEn": "remote distant far off",
+        "occurrences": [ "U02-L09" ]
+    },
+    {
+        "idx": 893,
         "ar": "قَاعِدٌ",
         "cleanAr": "قاعد",
         "letter": "ق",
@@ -13668,7 +12506,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L17", "U05-L02" ]
     },
     {
-        "idx": 977,
+        "idx": 894,
         "ar": "قَالَ",
         "cleanAr": "قال",
         "letter": "ق",
@@ -13679,10 +12517,10 @@ var WORDS_DATA = [    {
         "ur": "اس نے کہا، فرمایا",
         "en": "He said, spoke",
         "cleanEn": "he said spoke",
-        "occurrences": [ "U01-L06", "U01-L15", "U02-L01", "U02-L13", "U02-L04" ]
+        "occurrences": [ "U01-L06", "U01-L15", "U02-L01", "U02-L04", "U02-L13" ]
     },
     {
-        "idx": 978,
+        "idx": 895,
         "ar": "قَانِتٌ",
         "cleanAr": "قانت",
         "letter": "ق",
@@ -13696,7 +12534,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L03", "U05-L01" ]
     },
     {
-        "idx": 979,
+        "idx": 896,
         "ar": "قَاهِرٌ",
         "cleanAr": "قاهر",
         "letter": "ق",
@@ -13710,7 +12548,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L09", "U03-L08", "U05-L04" ]
     },
     {
-        "idx": 980,
+        "idx": 897,
         "ar": "قَائِمٌ",
         "cleanAr": "قايم",
         "letter": "ق",
@@ -13721,24 +12559,10 @@ var WORDS_DATA = [    {
         "ur": "کھڑا ہونے والا، قائم، نگران",
         "en": "Standing, upright, maintainer",
         "cleanEn": "standing upright maintainer",
-        "occurrences": [ "U03-L08", "U04-L01", "U05-L01", "U02-L09" ]
+        "occurrences": [ "U02-L09", "U03-L02", "U03-L08", "U04-L01", "U05-L01" ]
     },
     {
-        "idx": 981,
-        "ar": "قَائِمَةٌ",
-        "cleanAr": "قايمه",
-        "letter": "ق",
-        "tr": "Qā’imah",
-        "cleanTr": "qaimah",
-        "cat": "صِفَةٌ",
-        "role": "Adjective (Active Participle, Fem.) / صِفَة (اسْمُ فَاعِل)",
-        "ur": "قائم، حق پر جمی ہوئی، راست باز",
-        "en": "Upright, standing firm, steadfast (fem.)",
-        "cleanEn": "upright standing firm steadfast fem",
-        "occurrences": [ "U03-L02" ]
-    },
-    {
-        "idx": 982,
+        "idx": 898,
         "ar": "قَبْرٌ",
         "cleanAr": "قبر",
         "letter": "ق",
@@ -13749,10 +12573,10 @@ var WORDS_DATA = [    {
         "ur": "قبر / قبور، قبریں",
         "en": "Grave / Graves",
         "cleanEn": "grave graves",
-        "occurrences": [ "U01-L03", "U01-L10", "U04-L02" ]
+        "occurrences": [ "U01-L03", "U01-L10", "U02-L03", "U04-L02" ]
     },
     {
-        "idx": 983,
+        "idx": 899,
         "ar": "قَبْلَ",
         "cleanAr": "قبل",
         "letter": "ق",
@@ -13766,7 +12590,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L02", "U05-L06" ]
     },
     {
-        "idx": 984,
+        "idx": 900,
         "ar": "قِبْلَةٌ",
         "cleanAr": "قبله",
         "letter": "ق",
@@ -13780,21 +12604,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L03" ]
     },
     {
-        "idx": 985,
-        "ar": "قُبُورٌ",
-        "cleanAr": "قبور",
-        "letter": "ق",
-        "tr": "Qubūr",
-        "cleanTr": "qubur",
-        "cat": "اسْمٌ",
-        "role": "Plural Noun / جَمْع",
-        "ur": "قبریں، لحدیں (مفرد: قَبْر)",
-        "en": "Graves, Tombs",
-        "cleanEn": "graves tombs",
-        "occurrences": [ "U02-L03" ]
-    },
-    {
-        "idx": 986,
+        "idx": 901,
         "ar": "قِتَالٌ",
         "cleanAr": "قتال",
         "letter": "ق",
@@ -13808,7 +12618,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L03", "U02-L02", "U04-L04", "U05-L12" ]
     },
     {
-        "idx": 987,
+        "idx": 902,
         "ar": "قَتْلٌ",
         "cleanAr": "قتل",
         "letter": "ق",
@@ -13822,8 +12632,8 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L03", "U02-L03", "U05-L06" ]
     },
     {
-        "idx": 988,
-        "ar": "قَتْلَى",
+        "idx": 903,
+        "ar": "قَتْلَىٰ",
         "cleanAr": "قتلي",
         "letter": "ق",
         "tr": "Qatlā",
@@ -13836,7 +12646,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L12" ]
     },
     {
-        "idx": 989,
+        "idx": 904,
         "ar": "قَتُورٌ",
         "cleanAr": "قتور",
         "letter": "ق",
@@ -13850,21 +12660,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L12" ]
     },
     {
-        "idx": 990,
-        "ar": "قَدْرٌ",
-        "cleanAr": "قدر",
-        "letter": "ق",
-        "tr": "Qadr",
-        "cleanTr": "qadr",
-        "cat": "اسْمٌ",
-        "role": "Noun / اسْمٌ",
-        "ur": "قدر، منزلت، تقدیر، پیمانہ",
-        "en": "Decree, honor, power, destiny",
-        "cleanEn": "decree honor power destiny",
-        "occurrences": [ "U03-L04" ]
-    },
-    {
-        "idx": 991,
+        "idx": 905,
         "ar": "قَدَرٌ",
         "cleanAr": "قدر",
         "letter": "ق",
@@ -13878,7 +12674,21 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L09", "U03-L06" ]
     },
     {
-        "idx": 992,
+        "idx": 906,
+        "ar": "قَدْرٌ",
+        "cleanAr": "قدر",
+        "letter": "ق",
+        "tr": "Qadr",
+        "cleanTr": "qadr",
+        "cat": "اسْمٌ",
+        "role": "Noun / اسْمٌ",
+        "ur": "قدر، منزلت، تقدیر، پیمانہ",
+        "en": "Decree, honor, power, destiny",
+        "cleanEn": "decree honor power destiny",
+        "occurrences": [ "U03-L04" ]
+    },
+    {
+        "idx": 907,
         "ar": "قُدُّوسٌ",
         "cleanAr": "قدوس",
         "letter": "ق",
@@ -13892,7 +12702,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L01" ]
     },
     {
-        "idx": 993,
+        "idx": 908,
         "ar": "قَدِيرٌ",
         "cleanAr": "قدير",
         "letter": "ق",
@@ -13902,11 +12712,11 @@ var WORDS_DATA = [    {
         "role": "Intensive Adjective / صِفَة مُشَبَّهَة",
         "ur": "ہر چیز پر قادر، زبردست قدرت والا",
         "en": "All-Powerful, Omnipotent, Capable of all things",
-        "cleanEn": "allpowerful omnipotent capable of all things",
+        "cleanEn": "all powerful omnipotent capable of all things",
         "occurrences": [ "U01-L09", "U01-L14", "U02-L12", "U03-L07", "U05-L07" ]
     },
     {
-        "idx": 994,
+        "idx": 909,
         "ar": "قَدِيمٌ",
         "cleanAr": "قديم",
         "letter": "ق",
@@ -13920,7 +12730,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L02" ]
     },
     {
-        "idx": 995,
+        "idx": 910,
         "ar": "قَرَارٌ",
         "cleanAr": "قرار",
         "letter": "ق",
@@ -13934,7 +12744,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L04", "U05-L21" ]
     },
     {
-        "idx": 996,
+        "idx": 911,
         "ar": "قُرْآنٌ",
         "cleanAr": "قران",
         "letter": "ق",
@@ -13948,7 +12758,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L01", "U01-L15", "U02-L03", "U03-L01", "U03-L02" ]
     },
     {
-        "idx": 997,
+        "idx": 912,
         "ar": "قَرُبَ",
         "cleanAr": "قرب",
         "letter": "ق",
@@ -13962,7 +12772,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L10" ]
     },
     {
-        "idx": 998,
+        "idx": 913,
         "ar": "قَرْضٌ",
         "cleanAr": "قرض",
         "letter": "ق",
@@ -13976,7 +12786,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L08" ]
     },
     {
-        "idx": 999,
+        "idx": 914,
         "ar": "قِرْطَاسٌ",
         "cleanAr": "قرطاس",
         "letter": "ق",
@@ -13990,7 +12800,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L08" ]
     },
     {
-        "idx": 1000,
+        "idx": 915,
         "ar": "قَرِيبٌ",
         "cleanAr": "قريب",
         "letter": "ق",
@@ -14001,10 +12811,10 @@ var WORDS_DATA = [    {
         "ur": "بہت نزدیک، بندوں کی پکار سننے والا",
         "en": "Near, close, approaching",
         "cleanEn": "near close approaching",
-        "occurrences": [ "U01-L09", "U03-L01", "U05-L02", "U03-L10" ]
+        "occurrences": [ "U01-L09", "U01-L19", "U03-L01", "U03-L10", "U04-L01", "U05-L02", "U05-L13" ]
     },
     {
-        "idx": 1001,
+        "idx": 916,
         "ar": "قُرَيْشٌ",
         "cleanAr": "قريش",
         "letter": "ق",
@@ -14018,7 +12828,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L06" ]
     },
     {
-        "idx": 1002,
+        "idx": 917,
         "ar": "قَرِينٌ",
         "cleanAr": "قرين",
         "letter": "ق",
@@ -14032,7 +12842,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L04", "U05-L21" ]
     },
     {
-        "idx": 1003,
+        "idx": 918,
         "ar": "قَرْيَةٌ",
         "cleanAr": "قريه",
         "letter": "ق",
@@ -14046,7 +12856,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L06", "U02-L03", "U03-L07", "U05-L10" ]
     },
     {
-        "idx": 1004,
+        "idx": 919,
         "ar": "قِسْطٌ",
         "cleanAr": "قسط",
         "letter": "ق",
@@ -14057,10 +12867,10 @@ var WORDS_DATA = [    {
         "ur": "انصاف، عدل، حق کی پاسداری",
         "en": "Justice, Equity, Fairness",
         "cleanEn": "justice equity fairness",
-        "occurrences": [ "U02-L07" ]
+        "occurrences": [ "U02-L07", "U05-L12" ]
     },
     {
-        "idx": 1005,
+        "idx": 920,
         "ar": "قَسَمٌ",
         "cleanAr": "قسم",
         "letter": "ق",
@@ -14074,7 +12884,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L03", "U01-L18", "U02-L03", "U04-L04", "U05-L20" ]
     },
     {
-        "idx": 1006,
+        "idx": 921,
         "ar": "قِسْمَةٌ",
         "cleanAr": "قسمه",
         "letter": "ق",
@@ -14088,7 +12898,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L06" ]
     },
     {
-        "idx": 1007,
+        "idx": 922,
         "ar": "قَسْوَةٌ",
         "cleanAr": "قسوه",
         "letter": "ق",
@@ -14102,7 +12912,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L22" ]
     },
     {
-        "idx": 1008,
+        "idx": 923,
         "ar": "قِصَاصٌ",
         "cleanAr": "قصاص",
         "letter": "ق",
@@ -14116,7 +12926,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L07", "U05-L12" ]
     },
     {
-        "idx": 1009,
+        "idx": 924,
         "ar": "قَصْرٌ",
         "cleanAr": "قصر",
         "letter": "ق",
@@ -14130,7 +12940,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L01" ]
     },
     {
-        "idx": 1010,
+        "idx": 925,
         "ar": "قَصَصٌ",
         "cleanAr": "قصص",
         "letter": "ق",
@@ -14144,21 +12954,35 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L01" ]
     },
     {
-        "idx": 1011,
+        "idx": 926,
+        "ar": "قُلْ",
+        "cleanAr": "قل",
+        "letter": "ق",
+        "tr": "Qul",
+        "cleanTr": "qul",
+        "cat": "فِعْلٌ",
+        "role": "Imperative Verb / فِعْلُ أَمْر",
+        "ur": "تم کہہ دو، فرما دیجئے",
+        "en": "Say! (imperative)",
+        "cleanEn": "say imperative",
+        "occurrences": [ "U02-L06", "U02-L12", "U05-L21" ]
+    },
+    {
+        "idx": 927,
         "ar": "قَلْبٌ",
         "cleanAr": "قلب",
         "letter": "ق",
         "tr": "Qalb",
         "cleanTr": "qalb",
         "cat": "اسْمٌ",
-        "role": "Singular & Broken Plural",
+        "role": "Singular \u0026 Broken Plural",
         "ur": "دل، قلب، باطن",
         "en": "Heart, mind, inner self",
         "cleanEn": "heart mind inner self",
-        "occurrences": [ "U01-L04", "U01-L10", "U03-L07", "U03-L10" ]
+        "occurrences": [ "U01-L04", "U01-L10", "U03-L07", "U03-L10", "U05-L03" ]
     },
     {
-        "idx": 1012,
+        "idx": 928,
         "ar": "قَلَمٌ",
         "cleanAr": "قلم",
         "letter": "ق",
@@ -14172,21 +12996,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L04", "U01-L10", "U01-L12", "U01-L13", "U02-L07", "U04-L04" ]
     },
     {
-        "idx": 1013,
-        "ar": "قُلُوبٌ",
-        "cleanAr": "قلوب",
-        "letter": "ق",
-        "tr": "Qulūb",
-        "cleanTr": "qulub",
-        "cat": "اسْمٌ",
-        "role": "Broken Plural / جَمْعُ تَكْسِير (قَلْب)",
-        "ur": "دل، قلوب",
-        "en": "Hearts",
-        "cleanEn": "hearts",
-        "occurrences": [ "U05-L03" ]
-    },
-    {
-        "idx": 1014,
+        "idx": 929,
         "ar": "قَلِيلٌ",
         "cleanAr": "قليل",
         "letter": "ق",
@@ -14197,10 +13007,10 @@ var WORDS_DATA = [    {
         "ur": "تھوڑا، مختصر، کم",
         "en": "Little, few, small in quantity",
         "cleanEn": "little few small in quantity",
-        "occurrences": [ "U01-L05", "U02-L09", "U03-L01", "U05-L02", "U05-L01" ]
+        "occurrences": [ "U01-L05", "U02-L09", "U03-L01", "U05-L01", "U05-L02" ]
     },
     {
-        "idx": 1015,
+        "idx": 930,
         "ar": "قَمَرٌ",
         "cleanAr": "قمر",
         "letter": "ق",
@@ -14214,7 +13024,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L02", "U01-L12", "U01-L13", "U02-L02", "U02-L10", "U04-L03", "U05-L12" ]
     },
     {
-        "idx": 1016,
+        "idx": 931,
         "ar": "قَمِيصٌ",
         "cleanAr": "قميص",
         "letter": "ق",
@@ -14228,7 +13038,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L02" ]
     },
     {
-        "idx": 1017,
+        "idx": 932,
         "ar": "قَهَّارٌ",
         "cleanAr": "قهار",
         "letter": "ق",
@@ -14238,11 +13048,11 @@ var WORDS_DATA = [    {
         "role": "Intensive Adjective / صِيغَةُ مُبَالَغَة (فَعَّال)",
         "ur": "سب پر کامل غلبہ رکھنے والا، زبردست",
         "en": "All-Dominant Subduer, Supreme Vanquisher",
-        "cleanEn": "alldominant subduer supreme vanquisher",
+        "cleanEn": "all dominant subduer supreme vanquisher",
         "occurrences": [ "U03-L08", "U05-L20" ]
     },
     {
-        "idx": 1018,
+        "idx": 933,
         "ar": "قَوْلٌ",
         "cleanAr": "قول",
         "letter": "ق",
@@ -14256,7 +13066,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L04", "U01-L08", "U02-L03", "U03-L01", "U03-L02", "U05-L22" ]
     },
     {
-        "idx": 1019,
+        "idx": 934,
         "ar": "قَوْمٌ",
         "cleanAr": "قوم",
         "letter": "ق",
@@ -14270,7 +13080,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L04", "U02-L01", "U02-L06" ]
     },
     {
-        "idx": 1020,
+        "idx": 935,
         "ar": "قُوَّةٌ",
         "cleanAr": "قوه",
         "letter": "ق",
@@ -14284,7 +13094,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L08", "U02-L07", "U02-L11", "U03-L04", "U05-L10", "U05-L22" ]
     },
     {
-        "idx": 1021,
+        "idx": 936,
         "ar": "قَوِيٌّ",
         "cleanAr": "قوي",
         "letter": "ق",
@@ -14294,11 +13104,11 @@ var WORDS_DATA = [    {
         "role": "Adjective / Divine Attribute",
         "ur": "طاقتور، قوی، زبردست قوت والا",
         "en": "All-Strong, Possessor of supreme strength",
-        "cleanEn": "allstrong possessor of supreme strength",
+        "cleanEn": "all strong possessor of supreme strength",
         "occurrences": [ "U01-L05", "U01-L09", "U01-L14", "U02-L01", "U03-L05" ]
     },
     {
-        "idx": 1022,
+        "idx": 937,
         "ar": "قِيَامٌ",
         "cleanAr": "قيام",
         "letter": "ق",
@@ -14312,7 +13122,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L08" ]
     },
     {
-        "idx": 1023,
+        "idx": 938,
         "ar": "قِيَامَةٌ",
         "cleanAr": "قيامه",
         "letter": "ق",
@@ -14326,7 +13136,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L06", "U03-L04" ]
     },
     {
-        "idx": 1024,
+        "idx": 939,
         "ar": "قِيلٌ",
         "cleanAr": "قيل",
         "letter": "ق",
@@ -14340,7 +13150,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L22" ]
     },
     {
-        "idx": 1025,
+        "idx": 940,
         "ar": "قَيِّمَةٌ",
         "cleanAr": "قيمه",
         "letter": "ق",
@@ -14354,7 +13164,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L12" ]
     },
     {
-        "idx": 1026,
+        "idx": 941,
         "ar": "قَيُّومٌ",
         "cleanAr": "قيوم",
         "letter": "ق",
@@ -14364,11 +13174,11 @@ var WORDS_DATA = [    {
         "role": "Divine Attribute / اسْمٌ مِن أَسْمَاءِ الله",
         "ur": "تمام کائنات کو قائم رکھنے والا، ازلی محافظ",
         "en": "The Self-Subsisting Sustainer of all",
-        "cleanEn": "the selfsubsisting sustainer of all",
+        "cleanEn": "the self subsisting sustainer of all",
         "occurrences": [ "U04-L01", "U05-L19" ]
     },
     {
-        "idx": 1027,
+        "idx": 942,
         "ar": "كَ",
         "cleanAr": "ك",
         "letter": "ك",
@@ -14382,7 +13192,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L05", "U04-L01" ]
     },
     {
-        "idx": 1028,
+        "idx": 943,
         "ar": "كَاتِبٌ",
         "cleanAr": "كاتب",
         "letter": "ك",
@@ -14396,7 +13206,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L16" ]
     },
     {
-        "idx": 1029,
+        "idx": 944,
         "ar": "كَاذِبٌ",
         "cleanAr": "كاذب",
         "letter": "ك",
@@ -14410,7 +13220,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L08", "U03-L08", "U04-L01", "U05-L01" ]
     },
     {
-        "idx": 1030,
+        "idx": 945,
         "ar": "كَاذِحٌ",
         "cleanAr": "كاذح",
         "letter": "ك",
@@ -14424,7 +13234,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L08" ]
     },
     {
-        "idx": 1031,
+        "idx": 946,
         "ar": "كَارِهٌ",
         "cleanAr": "كاره",
         "letter": "ك",
@@ -14438,7 +13248,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L01" ]
     },
     {
-        "idx": 1032,
+        "idx": 947,
         "ar": "كَاشِفَةٌ",
         "cleanAr": "كاشفه",
         "letter": "ك",
@@ -14452,7 +13262,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L12", "U05-L20" ]
     },
     {
-        "idx": 1033,
+        "idx": 948,
         "ar": "كَافِرٌ",
         "cleanAr": "كافر",
         "letter": "ك",
@@ -14463,10 +13273,10 @@ var WORDS_DATA = [    {
         "ur": "انکار کرنے والا، کافر، ناشکرا",
         "en": "Disbeliever, Denier of truth, Ungrateful",
         "cleanEn": "disbeliever denier of truth ungrateful",
-        "occurrences": [ "U01-L01", "U02-L13", "U03-L08", "U04-L01", "U02-L08", "U05-L01" ]
+        "occurrences": [ "U01-L01", "U02-L08", "U02-L13", "U03-L08", "U04-L01", "U05-L01", "U05-L04", "U05-L05" ]
     },
     {
-        "idx": 1034,
+        "idx": 949,
         "ar": "كَامِلٌ",
         "cleanAr": "كامل",
         "letter": "ك",
@@ -14480,21 +13290,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L08", "U02-L06", "U02-L12" ]
     },
     {
-        "idx": 1035,
-        "ar": "كَأَنَّ",
-        "cleanAr": "كان",
-        "letter": "ك",
-        "tr": "Ka’anna",
-        "cleanTr": "kaanna",
-        "cat": "حَرْفٌ",
-        "role": "Particle of Simile / مِنْ أَخَوَاتِ إِنَّ",
-        "ur": "گویا کہ، جیسے کہ",
-        "en": "As if, as though",
-        "cleanEn": "as if as though",
-        "occurrences": [ "U05-L20", "U01-L17", "U05-L08" ]
-    },
-    {
-        "idx": 1036,
+        "idx": 950,
         "ar": "كَانَ",
         "cleanAr": "كان",
         "letter": "ك",
@@ -14508,7 +13304,21 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L02", "U02-L04", "U02-L12", "U03-L03" ]
     },
     {
-        "idx": 1037,
+        "idx": 951,
+        "ar": "كَأَنَّ",
+        "cleanAr": "كان",
+        "letter": "ك",
+        "tr": "Ka’anna",
+        "cleanTr": "kaanna",
+        "cat": "حَرْفٌ",
+        "role": "Particle of Simile / مِنْ أَخَوَاتِ إِنَّ",
+        "ur": "گویا کہ، جیسے کہ",
+        "en": "As if, as though",
+        "cleanEn": "as if as though",
+        "occurrences": [ "U05-L08", "U05-L20" ]
+    },
+    {
+        "idx": 952,
         "ar": "كَاهِنٌ",
         "cleanAr": "كاهن",
         "letter": "ك",
@@ -14518,25 +13328,11 @@ var WORDS_DATA = [    {
         "role": "Noun (Active Participle) / اسْمُ فَاعِل",
         "ur": "کاہن، نجومی، غیب دانی کا دعویدار",
         "en": "Soothsayer, diviner, fortune-teller",
-        "cleanEn": "soothsayer diviner fortuneteller",
+        "cleanEn": "soothsayer diviner fortune teller",
         "occurrences": [ "U03-L04" ]
     },
     {
-        "idx": 1038,
-        "ar": "كِبْرٌ",
-        "cleanAr": "كبر",
-        "letter": "ك",
-        "tr": "Kibr",
-        "cleanTr": "kibr",
-        "cat": "اسْمٌ",
-        "role": "Verbal Noun / مَصْدَر",
-        "ur": "گھمنڈ، تکبر، بڑائی کی ہوس",
-        "en": "Pride, arrogance",
-        "cleanEn": "pride arrogance",
-        "occurrences": [ "U05-L19" ]
-    },
-    {
-        "idx": 1039,
+        "idx": 953,
         "ar": "كِبَرٌ",
         "cleanAr": "كبر",
         "letter": "ك",
@@ -14550,7 +13346,21 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L05", "U04-L16" ]
     },
     {
-        "idx": 1040,
+        "idx": 954,
+        "ar": "كِبْرٌ",
+        "cleanAr": "كبر",
+        "letter": "ك",
+        "tr": "Kibr",
+        "cleanTr": "kibr",
+        "cat": "اسْمٌ",
+        "role": "Verbal Noun / مَصْدَر",
+        "ur": "گھمنڈ، تکبر، بڑائی کی ہوس",
+        "en": "Pride, arrogance",
+        "cleanEn": "pride arrogance",
+        "occurrences": [ "U05-L19" ]
+    },
+    {
+        "idx": 955,
         "ar": "كُبْرَىٰ",
         "cleanAr": "كبري",
         "letter": "ك",
@@ -14564,7 +13374,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L01" ]
     },
     {
-        "idx": 1041,
+        "idx": 956,
         "ar": "كِبْرِيَاءٌ",
         "cleanAr": "كبرياء",
         "letter": "ك",
@@ -14578,7 +13388,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L04", "U05-L03" ]
     },
     {
-        "idx": 1042,
+        "idx": 957,
         "ar": "كَبِيرٌ",
         "cleanAr": "كبير",
         "letter": "ك",
@@ -14589,24 +13399,24 @@ var WORDS_DATA = [    {
         "ur": "بہت بڑا، کبریا کا مالک",
         "en": "Most Great, Grand (Divine Attribute)",
         "cleanEn": "most great grand divine attribute",
-        "occurrences": [ "U01-L02", "U01-L06", "U02-L12", "U03-L01" ]
+        "occurrences": [ "U01-L02", "U01-L06", "U01-L19", "U02-L05", "U02-L12", "U03-L01", "U03-L02" ]
     },
     {
-        "idx": 1043,
+        "idx": 958,
         "ar": "كَبِيرَةٌ",
         "cleanAr": "كبيره",
         "letter": "ك",
         "tr": "Kabīrah",
         "cleanTr": "kabirah",
         "cat": "صِفَةٌ",
-        "role": "Feminine Adjective / صِفَة مُؤَنَّث (Plural: كَبَائِرُ)",
+        "role": "Noun / Adjective (Feminine) / اسْمٌ (Plural: كَبَائِرُ)",
         "ur": "کبیرہ گناہ / کبائر، بڑے گناہ",
         "en": "Hard, burdensome, great",
         "cleanEn": "hard burdensome great",
         "occurrences": [ "U01-L10", "U05-L02" ]
     },
     {
-        "idx": 1044,
+        "idx": 959,
         "ar": "كِتَابٌ",
         "cleanAr": "كتاب",
         "letter": "ك",
@@ -14620,7 +13430,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L04", "U01-L10", "U01-L12", "U01-L13", "U01-L15", "U01-L16", "U01-L18", "U02-L01", "U02-L08", "U02-L10", "U03-L01", "U03-L02" ]
     },
     {
-        "idx": 1045,
+        "idx": 960,
         "ar": "كَثِيرٌ",
         "cleanAr": "كثير",
         "letter": "ك",
@@ -14634,7 +13444,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L05", "U03-L01" ]
     },
     {
-        "idx": 1046,
+        "idx": 961,
         "ar": "كَذَّابٌ",
         "cleanAr": "كذاب",
         "letter": "ك",
@@ -14644,11 +13454,11 @@ var WORDS_DATA = [    {
         "role": "Intensive Adjective / صِيغَةُ مُبَالَغَة (فَعَّال)",
         "ur": "نہایت جھوٹا، بڑا کذاب، جھوٹ گھڑنے والا",
         "en": "Habitual liar, arch-liar, impostor",
-        "cleanEn": "habitual liar archliar impostor",
+        "cleanEn": "habitual liar arch liar impostor",
         "occurrences": [ "U03-L02", "U03-L08", "U04-L01" ]
     },
     {
-        "idx": 1047,
+        "idx": 962,
         "ar": "كَذِبٌ",
         "cleanAr": "كذب",
         "letter": "ك",
@@ -14662,7 +13472,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L02" ]
     },
     {
-        "idx": 1048,
+        "idx": 963,
         "ar": "كَرْبٌ",
         "cleanAr": "كرب",
         "letter": "ك",
@@ -14676,7 +13486,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L12" ]
     },
     {
-        "idx": 1049,
+        "idx": 964,
         "ar": "كُرْسِيٌّ",
         "cleanAr": "كرسي",
         "letter": "ك",
@@ -14690,7 +13500,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L08", "U04-L02" ]
     },
     {
-        "idx": 1050,
+        "idx": 965,
         "ar": "كُرْهٌ",
         "cleanAr": "كره",
         "letter": "ك",
@@ -14704,7 +13514,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L01", "U05-L12" ]
     },
     {
-        "idx": 1051,
+        "idx": 966,
         "ar": "كَرِيمٌ",
         "cleanAr": "كريم",
         "letter": "ك",
@@ -14715,10 +13525,10 @@ var WORDS_DATA = [    {
         "ur": "عمدہ، شاندار، معزز، سخی، کرم والا",
         "en": "Noble, generous, honorable, gracious",
         "cleanEn": "noble generous honorable gracious",
-        "occurrences": [ "U01-L18", "U03-L01", "U05-L08" ]
+        "occurrences": [ "U01-L18", "U01-L19", "U03-L01", "U05-L08", "U05-L10" ]
     },
     {
-        "idx": 1052,
+        "idx": 967,
         "ar": "كَعْبَةٌ",
         "cleanAr": "كعبه",
         "letter": "ك",
@@ -14727,26 +13537,12 @@ var WORDS_DATA = [    {
         "cat": "عَلَمٌ",
         "role": "Proper Place / شَعَائِرُ اللَّه",
         "ur": "کعبہ، بیت اللہ",
-        "en": "The Ka'bah",
-        "cleanEn": "the kabah",
+        "en": "The Ka\u0027bah",
+        "cleanEn": "the ka bah",
         "occurrences": [ "U01-L01" ]
     },
     {
-        "idx": 1053,
-        "ar": "كُفَّارٌ",
-        "cleanAr": "كفار",
-        "letter": "ك",
-        "tr": "Kuffār",
-        "cleanTr": "kuffar",
-        "cat": "اسْمٌ",
-        "role": "Broken Plural / جَمْعُ تَكْسِير (كَافِر)",
-        "ur": "کھلے کافر، حق کا انکار کرنے والے",
-        "en": "Disbelievers",
-        "cleanEn": "disbelievers",
-        "occurrences": [ "U05-L04" ]
-    },
-    {
-        "idx": 1054,
+        "idx": 968,
         "ar": "كَفَّارٌ",
         "cleanAr": "كفار",
         "letter": "ك",
@@ -14760,7 +13556,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L08" ]
     },
     {
-        "idx": 1055,
+        "idx": 969,
         "ar": "كَفَّارَةٌ",
         "cleanAr": "كفاره",
         "letter": "ك",
@@ -14774,21 +13570,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L01" ]
     },
     {
-        "idx": 1056,
-        "ar": "كُفْرٌ",
-        "cleanAr": "كفر",
-        "letter": "ك",
-        "tr": "Kufr",
-        "cleanTr": "kufr",
-        "cat": "اسْمٌ",
-        "role": "Verbal Noun / مَصْدَر",
-        "ur": "کفر، انکار، ناشکری، حق کو چھپانا",
-        "en": "Disbelief, Rejection of truth, Ingratitude",
-        "cleanEn": "disbelief rejection of truth ingratitude",
-        "occurrences": [ "U01-L03", "U02-L02", "U03-L04", "U05-L06" ]
-    },
-    {
-        "idx": 1057,
+        "idx": 970,
         "ar": "كَفَرَ",
         "cleanAr": "كفر",
         "letter": "ك",
@@ -14799,10 +13581,24 @@ var WORDS_DATA = [    {
         "ur": "اس نے کفر کیا، انکار کیا",
         "en": "He disbelieved, denied",
         "cleanEn": "he disbelieved denied",
-        "occurrences": [ "U01-L11", "U01-L15", "U05-L22" ]
+        "occurrences": [ "U01-L11", "U01-L15" ]
     },
     {
-        "idx": 1058,
+        "idx": 971,
+        "ar": "كُفْرٌ",
+        "cleanAr": "كفر",
+        "letter": "ك",
+        "tr": "Kufr",
+        "cleanTr": "kufr",
+        "cat": "اسْمٌ",
+        "role": "Verbal Noun / مَصْدَر",
+        "ur": "کفر، انکار، ناشکری، حق کو چھپانا",
+        "en": "Disbelief, Rejection of truth, Ingratitude",
+        "cleanEn": "disbelief rejection of truth ingratitude",
+        "occurrences": [ "U01-L03", "U02-L02", "U03-L04", "U05-L06", "U05-L22" ]
+    },
+    {
+        "idx": 972,
         "ar": "كُفْرَانٌ",
         "cleanAr": "كفران",
         "letter": "ك",
@@ -14816,21 +13612,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L08" ]
     },
     {
-        "idx": 1059,
-        "ar": "كَفَرَةٌ",
-        "cleanAr": "كفره",
-        "letter": "ك",
-        "tr": "Kafarah",
-        "cleanTr": "kafarah",
-        "cat": "اسْمٌ",
-        "role": "Broken Plural / جَمْعُ تَكْسِير (كَافِر)",
-        "ur": "کفر کرنے والے، منکر لوگ",
-        "en": "Disbelievers",
-        "cleanEn": "disbelievers",
-        "occurrences": [ "U05-L04", "U05-L05" ]
-    },
-    {
-        "idx": 1060,
+        "idx": 973,
         "ar": "كَفُورٌ",
         "cleanAr": "كفور",
         "letter": "ك",
@@ -14844,7 +13626,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L01", "U04-L03" ]
     },
     {
-        "idx": 1061,
+        "idx": 974,
         "ar": "كَفَىٰ",
         "cleanAr": "كفي",
         "letter": "ك",
@@ -14858,7 +13640,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L22" ]
     },
     {
-        "idx": 1062,
+        "idx": 975,
         "ar": "كُلٌّ",
         "cleanAr": "كل",
         "letter": "ك",
@@ -14872,7 +13654,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L09", "U03-L03", "U03-L07" ]
     },
     {
-        "idx": 1063,
+        "idx": 976,
         "ar": "كَلَّا",
         "cleanAr": "كلا",
         "letter": "ك",
@@ -14886,7 +13668,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L10", "U04-L12", "U05-L21" ]
     },
     {
-        "idx": 1064,
+        "idx": 977,
         "ar": "كَلَامٌ",
         "cleanAr": "كلام",
         "letter": "ك",
@@ -14900,7 +13682,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L02", "U01-L13", "U03-L05" ]
     },
     {
-        "idx": 1065,
+        "idx": 978,
         "ar": "كَلْبٌ",
         "cleanAr": "كلب",
         "letter": "ك",
@@ -14914,21 +13696,21 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L04", "U05-L06" ]
     },
     {
-        "idx": 1066,
+        "idx": 979,
         "ar": "كَلِمَةٌ",
         "cleanAr": "كلمه",
         "letter": "ك",
         "tr": "Kalimah",
         "cleanTr": "kalimah",
         "cat": "اسْمٌ",
-        "role": "Singular & Sound Feminine Plural",
+        "role": "Singular \u0026 Sound Feminine Plural",
         "ur": "کلمہ، بات / کلمات، الٰہی فرامین",
         "en": "Word, statement, kalimah, decree",
         "cleanEn": "word statement kalimah decree",
-        "occurrences": [ "U01-L11", "U02-L06", "U03-L01", "U03-L02", "U05-L14", "U03-L05" ]
+        "occurrences": [ "U01-L11", "U02-L06", "U03-L01", "U03-L02", "U03-L05", "U05-L14" ]
     },
     {
-        "idx": 1067,
+        "idx": 980,
         "ar": "كَنُودٌ",
         "cleanAr": "كنود",
         "letter": "ك",
@@ -14942,7 +13724,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L03" ]
     },
     {
-        "idx": 1068,
+        "idx": 981,
         "ar": "كَهْفٌ",
         "cleanAr": "كهف",
         "letter": "ك",
@@ -14952,25 +13734,25 @@ var WORDS_DATA = [    {
         "role": "Noun of Place / اسْمُ مَكَان",
         "ur": "پہاڑ کا کشادہ غار، کہف",
         "en": "Cave (Al-Kahf)",
-        "cleanEn": "cave alkahf",
-        "occurrences": [ "U02-L06", "U05-L06", "U02-L13" ]
+        "cleanEn": "cave al kahf",
+        "occurrences": [ "U02-L06", "U02-L13", "U05-L06" ]
     },
     {
-        "idx": 1069,
+        "idx": 982,
         "ar": "كَوْكَبٌ",
         "cleanAr": "كوكب",
         "letter": "ك",
         "tr": "Kawkab",
         "cleanTr": "kawkab",
         "cat": "اسْمٌ",
-        "role": "Singular & Broken Plural",
+        "role": "Singular \u0026 Broken Plural",
         "ur": "سیارہ / کواکب، سیارے",
         "en": "Planet / Planets",
         "cleanEn": "planet planets",
         "occurrences": [ "U01-L10" ]
     },
     {
-        "idx": 1070,
+        "idx": 983,
         "ar": "كَيْدٌ",
         "cleanAr": "كيد",
         "letter": "ك",
@@ -14984,7 +13766,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L05", "U05-L03" ]
     },
     {
-        "idx": 1071,
+        "idx": 984,
         "ar": "كَيْفٌ",
         "cleanAr": "كيف",
         "letter": "ك",
@@ -14998,21 +13780,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L06", "U05-L03" ]
     },
     {
-        "idx": 1072,
-        "ar": "لِ",
-        "cleanAr": "ل",
-        "letter": "ل",
-        "tr": "Li",
-        "cleanTr": "li",
-        "cat": "حَرْفٌ",
-        "role": "Preposition (For / Truly) / حَرْفُ جَرّ / تَأْكِيد (Plural: لَـ)",
-        "ur": "لِـ: کے لیے، کی خاطر، کی ملکیت؛ لَـ: البتہ، یقیناً، ضرور",
-        "en": "For, belonging to / Indeed, surely",
-        "cleanEn": "for belonging to indeed surely",
-        "occurrences": [ "U01-L01", "U02-L02", "U03-L03", "U01-L08" ]
-    },
-    {
-        "idx": 1073,
+        "idx": 985,
         "ar": "لَ",
         "cleanAr": "ل",
         "letter": "ل",
@@ -15026,7 +13794,21 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L01", "U03-L03" ]
     },
     {
-        "idx": 1074,
+        "idx": 986,
+        "ar": "لِ",
+        "cleanAr": "ل",
+        "letter": "ل",
+        "tr": "Li",
+        "cleanTr": "li",
+        "cat": "حَرْفٌ",
+        "role": "Preposition (For / Truly) / حَرْفُ جَرّ / تَأْكِيد (Plural: لَـ)",
+        "ur": "لِـ: کے لیے، کی خاطر، کی ملکیت؛ لَـ: البتہ، یقیناً، ضرور",
+        "en": "For, belonging to / Indeed, surely",
+        "cleanEn": "for belonging to indeed surely",
+        "occurrences": [ "U01-L01", "U01-L08", "U02-L02", "U03-L03" ]
+    },
+    {
+        "idx": 987,
         "ar": "لَا",
         "cleanAr": "لا",
         "letter": "ل",
@@ -15040,7 +13822,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L02", "U02-L07", "U02-L08", "U02-L09" ]
     },
     {
-        "idx": 1075,
+        "idx": 988,
         "ar": "لَاعِبٌ",
         "cleanAr": "لاعب",
         "letter": "ل",
@@ -15054,7 +13836,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L20" ]
     },
     {
-        "idx": 1076,
+        "idx": 989,
         "ar": "لِبَاسٌ",
         "cleanAr": "لباس",
         "letter": "ل",
@@ -15068,7 +13850,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L01", "U05-L06" ]
     },
     {
-        "idx": 1077,
+        "idx": 990,
         "ar": "لَحْمٌ",
         "cleanAr": "لحم",
         "letter": "ل",
@@ -15079,10 +13861,10 @@ var WORDS_DATA = [    {
         "ur": "گوشت",
         "en": "Meat, flesh",
         "cleanEn": "meat flesh",
-        "occurrences": [ "U04-L04", "U02-L07" ]
+        "occurrences": [ "U02-L07", "U04-L04" ]
     },
     {
-        "idx": 1078,
+        "idx": 991,
         "ar": "لَدُنْ",
         "cleanAr": "لدن",
         "letter": "ل",
@@ -15096,7 +13878,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L14" ]
     },
     {
-        "idx": 1079,
+        "idx": 992,
         "ar": "لَدَىٰ",
         "cleanAr": "لدي",
         "letter": "ل",
@@ -15110,7 +13892,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L14" ]
     },
     {
-        "idx": 1080,
+        "idx": 993,
         "ar": "لِسَانٌ",
         "cleanAr": "لسان",
         "letter": "ل",
@@ -15121,10 +13903,10 @@ var WORDS_DATA = [    {
         "ur": "زبان، بولی، گفتگو",
         "en": "Tongue, language, speech",
         "cleanEn": "tongue language speech",
-        "occurrences": [ "U03-L01" ]
+        "occurrences": [ "U03-L01", "U05-L10" ]
     },
     {
-        "idx": 1081,
+        "idx": 994,
         "ar": "لَطِيفٌ",
         "cleanAr": "لطيف",
         "letter": "ل",
@@ -15138,7 +13920,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L14", "U04-L01" ]
     },
     {
-        "idx": 1082,
+        "idx": 995,
         "ar": "لَظَىٰ",
         "cleanAr": "لظي",
         "letter": "ل",
@@ -15152,7 +13934,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L21" ]
     },
     {
-        "idx": 1083,
+        "idx": 996,
         "ar": "لَعِبٌ",
         "cleanAr": "لعب",
         "letter": "ل",
@@ -15166,7 +13948,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L09", "U03-L03", "U05-L10" ]
     },
     {
-        "idx": 1084,
+        "idx": 997,
         "ar": "لَعْنَةٌ",
         "cleanAr": "لعنه",
         "letter": "ل",
@@ -15177,10 +13959,10 @@ var WORDS_DATA = [    {
         "ur": "لعنت، رحمتِ الٰہی سے دوری، پھٹکار",
         "en": "Curse, condemnation, expulsion from mercy",
         "cleanEn": "curse condemnation expulsion from mercy",
-        "occurrences": [ "U01-L02", "U01-L17", "U03-L05", "U05-L08", "U05-L02" ]
+        "occurrences": [ "U01-L02", "U01-L17", "U03-L05", "U05-L02", "U05-L08" ]
     },
     {
-        "idx": 1085,
+        "idx": 998,
         "ar": "لَغْوٌ",
         "cleanAr": "لغو",
         "letter": "ل",
@@ -15194,7 +13976,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L07", "U04-L07", "U05-L05" ]
     },
     {
-        "idx": 1086,
+        "idx": 999,
         "ar": "لِقَاءٌ",
         "cleanAr": "لقاء",
         "letter": "ل",
@@ -15204,25 +13986,25 @@ var WORDS_DATA = [    {
         "role": "Noun (Verbal Noun) / مَصْدَر",
         "ur": "ملاقات، روبرو پیشی، سامنا",
         "en": "Meeting, encounter, face-to-face",
-        "cleanEn": "meeting encounter facetoface",
+        "cleanEn": "meeting encounter face to face",
         "occurrences": [ "U03-L05", "U05-L07" ]
     },
     {
-        "idx": 1087,
+        "idx": 1000,
         "ar": "لَقَبٌ",
         "cleanAr": "لقب",
         "letter": "ل",
         "tr": "Laqab",
         "cleanTr": "laqab",
         "cat": "اسْمٌ",
-        "role": "Singular & Broken Plural",
+        "role": "Singular \u0026 Broken Plural",
         "ur": "لقب / القاب، نام",
         "en": "Title / Titles, nicknames",
         "cleanEn": "title titles nicknames",
         "occurrences": [ "U01-L10" ]
     },
     {
-        "idx": 1088,
+        "idx": 1001,
         "ar": "لَمْ",
         "cleanAr": "لم",
         "letter": "ل",
@@ -15236,7 +14018,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L02" ]
     },
     {
-        "idx": 1089,
+        "idx": 1002,
         "ar": "لَمْحٌ",
         "cleanAr": "لمح",
         "letter": "ل",
@@ -15250,7 +14032,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L01" ]
     },
     {
-        "idx": 1090,
+        "idx": 1003,
         "ar": "لَهْوٌ",
         "cleanAr": "لهو",
         "letter": "ل",
@@ -15264,7 +14046,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L03", "U05-L10" ]
     },
     {
-        "idx": 1091,
+        "idx": 1004,
         "ar": "لَوْ",
         "cleanAr": "لو",
         "letter": "ل",
@@ -15278,7 +14060,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L03" ]
     },
     {
-        "idx": 1092,
+        "idx": 1005,
         "ar": "لَوَّاحَةٌ",
         "cleanAr": "لواحه",
         "letter": "ل",
@@ -15288,11 +14070,11 @@ var WORDS_DATA = [    {
         "role": "Intensive Adjective / صِفَةُ مُبَالَغَة",
         "ur": "جھلسانے والی، کھال سیاہ کرنے والی",
         "en": "Scorcher (of the flesh/skin), blackener",
-        "cleanEn": "scorcher of the fleshskin blackener",
+        "cleanEn": "scorcher of the flesh skin blackener",
         "occurrences": [ "U02-L02" ]
     },
     {
-        "idx": 1093,
+        "idx": 1006,
         "ar": "لَوَاقِعٌ",
         "cleanAr": "لواقع",
         "letter": "ل",
@@ -15306,7 +14088,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L23" ]
     },
     {
-        "idx": 1094,
+        "idx": 1007,
         "ar": "لَوْحٌ",
         "cleanAr": "لوح",
         "letter": "ل",
@@ -15320,7 +14102,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L03", "U03-L03" ]
     },
     {
-        "idx": 1095,
+        "idx": 1008,
         "ar": "لُوطٌ",
         "cleanAr": "لوط",
         "letter": "ل",
@@ -15334,7 +14116,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L12", "U02-L13", "U03-L04", "U05-L06", "U05-L21" ]
     },
     {
-        "idx": 1096,
+        "idx": 1009,
         "ar": "لَوْلَا",
         "cleanAr": "لولا",
         "letter": "ل",
@@ -15345,10 +14127,10 @@ var WORDS_DATA = [    {
         "ur": "اگر نہ ہوتا",
         "en": "Were it not for, if not",
         "cleanEn": "were it not for if not",
-        "occurrences": [ "U05-L12" ]
+        "occurrences": [ "U01-L15", "U05-L12" ]
     },
     {
-        "idx": 1097,
+        "idx": 1010,
         "ar": "لَوْنٌ",
         "cleanAr": "لون",
         "letter": "ل",
@@ -15362,21 +14144,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L10" ]
     },
     {
-        "idx": 1098,
-        "ar": "لَيَالٍ",
-        "cleanAr": "ليال",
-        "letter": "ل",
-        "tr": "Layālin",
-        "cleanTr": "layalin",
-        "cat": "اسْمٌ",
-        "role": "Plural Noun / جَمْع (لَيْلَةٌ)",
-        "ur": "راتیں",
-        "en": "Nights",
-        "cleanEn": "nights",
-        "occurrences": [ "U02-L10" ]
-    },
-    {
-        "idx": 1099,
+        "idx": 1011,
         "ar": "لَيْسَ",
         "cleanAr": "ليس",
         "letter": "ل",
@@ -15387,10 +14155,10 @@ var WORDS_DATA = [    {
         "ur": "نہیں ہے، نہیں ہیں",
         "en": "Is not, are not",
         "cleanEn": "is not are not",
-        "occurrences": [ "U02-L02", "U02-L09", "U05-L20", "U02-L04" ]
+        "occurrences": [ "U02-L02", "U02-L04", "U02-L09", "U05-L20" ]
     },
     {
-        "idx": 1100,
+        "idx": 1012,
         "ar": "لَيْلٌ",
         "cleanAr": "ليل",
         "letter": "ل",
@@ -15404,7 +14172,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L07", "U01-L12", "U01-L13", "U02-L03", "U02-L10" ]
     },
     {
-        "idx": 1101,
+        "idx": 1013,
         "ar": "لَيْلَةٌ",
         "cleanAr": "ليله",
         "letter": "ل",
@@ -15415,10 +14183,10 @@ var WORDS_DATA = [    {
         "ur": "رات، شب",
         "en": "Night",
         "cleanEn": "night",
-        "occurrences": [ "U03-L04" ]
+        "occurrences": [ "U02-L10", "U03-L04" ]
     },
     {
-        "idx": 1102,
+        "idx": 1014,
         "ar": "مَا",
         "cleanAr": "ما",
         "letter": "م",
@@ -15429,24 +14197,10 @@ var WORDS_DATA = [    {
         "ur": "نہیں (نافیہ)، کیا؟ (سوالیہ)، جو کچھ (موصولہ)",
         "en": "Not (negation), What? (question), That which (relative)",
         "cleanEn": "not negation what question that which relative",
-        "occurrences": [ "U02-L02", "U02-L03", "U02-L05", "U02-L06", "U02-L08", "U02-L09", "U02-L13", "U03-L03", "U01-L03" ]
+        "occurrences": [ "U01-L03", "U02-L02", "U02-L03", "U02-L05", "U02-L06", "U02-L08", "U02-L09", "U02-L13", "U03-L03" ]
     },
     {
-        "idx": 1103,
-        "ar": "مَاءٌ",
-        "cleanAr": "ماء",
-        "letter": "م",
-        "tr": "Mā’",
-        "cleanTr": "ma",
-        "cat": "اسْمٌ",
-        "role": "Noun / اسْمٌ",
-        "ur": "پانی، بارش کا پانی، حیات بخش مائع",
-        "en": "Water, rain, life-giving liquid",
-        "cleanEn": "water rain lifegiving liquid",
-        "occurrences": [ "U02-L05", "U02-L11", "U03-L01" ]
-    },
-    {
-        "idx": 1104,
+        "idx": 1015,
         "ar": "مَأْجُوجٌ",
         "cleanAr": "ماجوج",
         "letter": "م",
@@ -15460,7 +14214,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L01", "U05-L01" ]
     },
     {
-        "idx": 1105,
+        "idx": 1016,
         "ar": "مَاذَا",
         "cleanAr": "ماذا",
         "letter": "م",
@@ -15474,21 +14228,21 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L05", "U05-L12" ]
     },
     {
-        "idx": 1106,
+        "idx": 1017,
         "ar": "مَالٌ",
         "cleanAr": "مال",
         "letter": "م",
         "tr": "Māl",
         "cleanTr": "mal",
         "cat": "اسْمٌ",
-        "role": "Singular & Broken Plural",
+        "role": "Singular \u0026 Broken Plural",
         "ur": "مال / اموال، دولتیں",
         "en": "Wealth, property, possessions",
         "cleanEn": "wealth property possessions",
-        "occurrences": [ "U01-L06", "U01-L10", "U03-L05", "U05-L01", "U05-L22" ]
+        "occurrences": [ "U01-L06", "U01-L10", "U02-L02", "U03-L03", "U03-L05", "U05-L01", "U05-L22" ]
     },
     {
-        "idx": 1107,
+        "idx": 1018,
         "ar": "مَالِكٌ",
         "cleanAr": "مالك",
         "letter": "م",
@@ -15502,7 +14256,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L04", "U01-L09", "U02-L13" ]
     },
     {
-        "idx": 1108,
+        "idx": 1019,
         "ar": "مَالِئٌ",
         "cleanAr": "مالي",
         "letter": "م",
@@ -15516,7 +14270,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L08" ]
     },
     {
-        "idx": 1109,
+        "idx": 1020,
         "ar": "مَانِعٌ",
         "cleanAr": "مانع",
         "letter": "م",
@@ -15530,7 +14284,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L08" ]
     },
     {
-        "idx": 1110,
+        "idx": 1021,
         "ar": "مَأْوَىٰ",
         "cleanAr": "ماوي",
         "letter": "م",
@@ -15544,7 +14298,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L02", "U05-L06" ]
     },
     {
-        "idx": 1111,
+        "idx": 1022,
         "ar": "مَائِدَةٌ",
         "cleanAr": "مايده",
         "letter": "م",
@@ -15558,7 +14312,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L16" ]
     },
     {
-        "idx": 1112,
+        "idx": 1023,
         "ar": "مِائَةٌ",
         "cleanAr": "مايه",
         "letter": "م",
@@ -15572,7 +14326,21 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L10" ]
     },
     {
-        "idx": 1113,
+        "idx": 1024,
+        "ar": "مَاءٌ",
+        "cleanAr": "ماء",
+        "letter": "م",
+        "tr": "Mā’",
+        "cleanTr": "ma",
+        "cat": "اسْمٌ",
+        "role": "Noun / اسْمٌ",
+        "ur": "پانی، بارش کا پانی، حیات بخش مائع",
+        "en": "Water, rain, life-giving liquid",
+        "cleanEn": "water rain life giving liquid",
+        "occurrences": [ "U02-L05", "U02-L11", "U03-L01" ]
+    },
+    {
+        "idx": 1025,
         "ar": "مُبَارَكٌ",
         "cleanAr": "مبارك",
         "letter": "م",
@@ -15586,21 +14354,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L01", "U03-L01" ]
     },
     {
-        "idx": 1114,
-        "ar": "مُبَارَكَةٌ",
-        "cleanAr": "مباركه",
-        "letter": "م",
-        "tr": "Mubārakah",
-        "cleanTr": "mubarakah",
-        "cat": "صِفَةٌ",
-        "role": "Adjective (Feminine) / صِفَة (مُؤَنَّث)",
-        "ur": "بابرکت، مبارک (مؤنث)",
-        "en": "Blessed, auspicious (fem.)",
-        "cleanEn": "blessed auspicious fem",
-        "occurrences": [ "U03-L01" ]
-    },
-    {
-        "idx": 1115,
+        "idx": 1026,
         "ar": "مُبَدِّلٌ",
         "cleanAr": "مبدل",
         "letter": "م",
@@ -15614,7 +14368,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L08", "U03-L09" ]
     },
     {
-        "idx": 1116,
+        "idx": 1027,
         "ar": "مُبَذِّرٌ",
         "cleanAr": "مبذر",
         "letter": "م",
@@ -15628,7 +14382,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L09", "U05-L01" ]
     },
     {
-        "idx": 1117,
+        "idx": 1028,
         "ar": "مُبَشِّرٌ",
         "cleanAr": "مبشر",
         "letter": "م",
@@ -15642,7 +14396,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L09", "U05-L01" ]
     },
     {
-        "idx": 1118,
+        "idx": 1029,
         "ar": "مُبْعَدٌ",
         "cleanAr": "مبعد",
         "letter": "م",
@@ -15656,7 +14410,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L09", "U05-L01" ]
     },
     {
-        "idx": 1119,
+        "idx": 1030,
         "ar": "مَبْعُوثٌ",
         "cleanAr": "مبعوث",
         "letter": "م",
@@ -15670,7 +14424,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L12" ]
     },
     {
-        "idx": 1120,
+        "idx": 1031,
         "ar": "مُبْلِسٌ",
         "cleanAr": "مبلس",
         "letter": "م",
@@ -15684,7 +14438,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L05" ]
     },
     {
-        "idx": 1121,
+        "idx": 1032,
         "ar": "مَبْلَغٌ",
         "cleanAr": "مبلغ",
         "letter": "م",
@@ -15698,7 +14452,21 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L06" ]
     },
     {
-        "idx": 1122,
+        "idx": 1033,
+        "ar": "مُبَيِّنٌ",
+        "cleanAr": "مبين",
+        "letter": "م",
+        "tr": "Mubayyin",
+        "cleanTr": "mubayyin",
+        "cat": "صِفَةٌ",
+        "role": "Active Participle (Form II) / اسْمُ فَاعِل (Fem. Plural: مُبَيِّنَاتٌ)",
+        "ur": "واضح کرنے والا، کھول کر بیان کرنے والا",
+        "en": "Clarifying, making distinct, manifest",
+        "cleanEn": "clarifying making distinct manifest",
+        "occurrences": [ "U05-L12" ]
+    },
+    {
+        "idx": 1034,
         "ar": "مُبِينٌ",
         "cleanAr": "مبين",
         "letter": "م",
@@ -15709,10 +14477,10 @@ var WORDS_DATA = [    {
         "ur": "کھلا، واضح، صاف صاف بیان کرنے والا",
         "en": "Clear, manifest, evident, clarifying",
         "cleanEn": "clear manifest evident clarifying",
-        "occurrences": [ "U02-L02", "U02-L09", "U03-L01", "U05-L01", "U05-L12" ]
+        "occurrences": [ "U02-L02", "U02-L09", "U03-L01", "U05-L01" ]
     },
     {
-        "idx": 1123,
+        "idx": 1035,
         "ar": "مَتَاعٌ",
         "cleanAr": "متاع",
         "letter": "م",
@@ -15726,7 +14494,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L03", "U02-L09", "U03-L01", "U05-L06" ]
     },
     {
-        "idx": 1124,
+        "idx": 1036,
         "ar": "مُتَّقٍ",
         "cleanAr": "متق",
         "letter": "م",
@@ -15736,11 +14504,11 @@ var WORDS_DATA = [    {
         "role": "Noun (Active Participle) / اسْمُ فَاعِل",
         "ur": "پرہیزگار، تقویٰ اختیار کرنے والا، گناہوں سے بچنے والا",
         "en": "God-fearing, pious, righteous",
-        "cleanEn": "godfearing pious righteous",
-        "occurrences": [ "U03-L09", "U01-L03", "U05-L01" ]
+        "cleanEn": "god fearing pious righteous",
+        "occurrences": [ "U01-L03", "U03-L09", "U05-L01" ]
     },
     {
-        "idx": 1125,
+        "idx": 1037,
         "ar": "مُتَكَبِّرٌ",
         "cleanAr": "متكبر",
         "letter": "م",
@@ -15754,7 +14522,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L09", "U05-L01" ]
     },
     {
-        "idx": 1126,
+        "idx": 1038,
         "ar": "مُتَّكِئٌ",
         "cleanAr": "متكي",
         "letter": "م",
@@ -15768,7 +14536,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L06" ]
     },
     {
-        "idx": 1127,
+        "idx": 1039,
         "ar": "مُتِمٌّ",
         "cleanAr": "متم",
         "letter": "م",
@@ -15782,7 +14550,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L03" ]
     },
     {
-        "idx": 1128,
+        "idx": 1040,
         "ar": "مُتَوَفِّيٌ",
         "cleanAr": "متوفي",
         "letter": "م",
@@ -15796,7 +14564,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L13" ]
     },
     {
-        "idx": 1129,
+        "idx": 1041,
         "ar": "مُتَوَكِّلٌ",
         "cleanAr": "متوكل",
         "letter": "م",
@@ -15810,7 +14578,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L09", "U05-L01" ]
     },
     {
-        "idx": 1130,
+        "idx": 1042,
         "ar": "مَتَىٰ",
         "cleanAr": "متي",
         "letter": "م",
@@ -15824,7 +14592,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L06", "U01-L15", "U03-L06" ]
     },
     {
-        "idx": 1131,
+        "idx": 1043,
         "ar": "مَتِينٌ",
         "cleanAr": "متين",
         "letter": "م",
@@ -15838,7 +14606,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L15" ]
     },
     {
-        "idx": 1132,
+        "idx": 1044,
         "ar": "مِثَالٌ",
         "cleanAr": "مثال",
         "letter": "م",
@@ -15852,7 +14620,21 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L08" ]
     },
     {
-        "idx": 1133,
+        "idx": 1045,
+        "ar": "مَثَلٌ",
+        "cleanAr": "مثل",
+        "letter": "م",
+        "tr": "Mathal",
+        "cleanTr": "mathal",
+        "cat": "اسْمٌ",
+        "role": "Singular \u0026 Broken Plural",
+        "ur": "مثال، نمونہ، سبق آموز حال",
+        "en": "Similitude, Example, Parable, Comparison",
+        "cleanEn": "similitude example parable comparison",
+        "occurrences": [ "U01-L10", "U02-L02", "U02-L04", "U03-L04", "U05-L03" ]
+    },
+    {
+        "idx": 1046,
         "ar": "مِثْلٌ",
         "cleanAr": "مثل",
         "letter": "م",
@@ -15866,21 +14648,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L15", "U03-L05", "U05-L06" ]
     },
     {
-        "idx": 1134,
-        "ar": "مَثَلٌ",
-        "cleanAr": "مثل",
-        "letter": "م",
-        "tr": "Mathal",
-        "cleanTr": "mathal",
-        "cat": "اسْمٌ",
-        "role": "Singular & Broken Plural",
-        "ur": "مثال، نمونہ، سبق آموز حال",
-        "en": "Similitude, Example, Parable, Comparison",
-        "cleanEn": "similitude example parable comparison",
-        "occurrences": [ "U01-L10", "U02-L02", "U02-L04", "U03-L04", "U05-L03" ]
-    },
-    {
-        "idx": 1135,
+        "idx": 1047,
         "ar": "مَثْوًى",
         "cleanAr": "مثوي",
         "letter": "م",
@@ -15894,7 +14662,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L21" ]
     },
     {
-        "idx": 1136,
+        "idx": 1048,
         "ar": "مُجَاهِدٌ",
         "cleanAr": "مجاهد",
         "letter": "م",
@@ -15908,7 +14676,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L02", "U03-L09", "U05-L01" ]
     },
     {
-        "idx": 1137,
+        "idx": 1049,
         "ar": "مُجْتَمِعٌ",
         "cleanAr": "مجتمع",
         "letter": "م",
@@ -15922,7 +14690,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L01" ]
     },
     {
-        "idx": 1138,
+        "idx": 1050,
         "ar": "مُجْرِمٌ",
         "cleanAr": "مجرم",
         "letter": "م",
@@ -15933,10 +14701,10 @@ var WORDS_DATA = [    {
         "ur": "مجرم، گناہگار، نافرمان",
         "en": "Criminal, sinner, culprit",
         "cleanEn": "criminal sinner culprit",
-        "occurrences": [ "U01-L06", "U03-L09", "U04-L17", "U02-L08", "U05-L01" ]
+        "occurrences": [ "U01-L06", "U02-L08", "U03-L09", "U04-L17", "U05-L01" ]
     },
     {
-        "idx": 1139,
+        "idx": 1051,
         "ar": "مَجْمُوعٌ",
         "cleanAr": "مجموع",
         "letter": "م",
@@ -15950,7 +14718,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L16", "U04-L18", "U05-L02" ]
     },
     {
-        "idx": 1140,
+        "idx": 1052,
         "ar": "مَجْنُونٌ",
         "cleanAr": "مجنون",
         "letter": "م",
@@ -15964,7 +14732,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L06", "U04-L08" ]
     },
     {
-        "idx": 1141,
+        "idx": 1053,
         "ar": "مُجِيبٌ",
         "cleanAr": "مجيب",
         "letter": "م",
@@ -15978,7 +14746,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L09", "U04-L15" ]
     },
     {
-        "idx": 1142,
+        "idx": 1054,
         "ar": "مَجِيدٌ",
         "cleanAr": "مجيد",
         "letter": "م",
@@ -15992,7 +14760,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L02", "U05-L07" ]
     },
     {
-        "idx": 1143,
+        "idx": 1055,
         "ar": "مَحَبَّةٌ",
         "cleanAr": "محبه",
         "letter": "م",
@@ -16006,7 +14774,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L04", "U04-L16" ]
     },
     {
-        "idx": 1144,
+        "idx": 1056,
         "ar": "مَحْذُورٌ",
         "cleanAr": "محذور",
         "letter": "م",
@@ -16020,7 +14788,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L07" ]
     },
     {
-        "idx": 1145,
+        "idx": 1057,
         "ar": "مِحْرَابٌ",
         "cleanAr": "محراب",
         "letter": "م",
@@ -16034,7 +14802,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L08", "U02-L03" ]
     },
     {
-        "idx": 1146,
+        "idx": 1058,
         "ar": "مُحَرَّمٌ",
         "cleanAr": "محرم",
         "letter": "م",
@@ -16045,24 +14813,10 @@ var WORDS_DATA = [    {
         "ur": "حرام کیا گیا، عزت و احترام والا، ممنوع",
         "en": "Forbidden, sacred, sanctified",
         "cleanEn": "forbidden sacred sanctified",
-        "occurrences": [ "U03-L09", "U04-L01" ]
+        "occurrences": [ "U03-L09", "U04-L01", "U05-L08" ]
     },
     {
-        "idx": 1147,
-        "ar": "مُحَرَّمَةٌ",
-        "cleanAr": "محرمه",
-        "letter": "م",
-        "tr": "Muharramah",
-        "cleanTr": "muharramah",
-        "cat": "صِفَةٌ",
-        "role": "Passive Participle Fem. / صِفَة",
-        "ur": "حرام کی گئی، ممنوع",
-        "en": "Forbidden, prohibited",
-        "cleanEn": "forbidden prohibited",
-        "occurrences": [ "U05-L08" ]
-    },
-    {
-        "idx": 1148,
+        "idx": 1059,
         "ar": "مَحْرُومٌ",
         "cleanAr": "محروم",
         "letter": "م",
@@ -16076,7 +14830,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L02", "U05-L01" ]
     },
     {
-        "idx": 1149,
+        "idx": 1060,
         "ar": "مُحْسِنٌ",
         "cleanAr": "محسن",
         "letter": "م",
@@ -16086,11 +14840,11 @@ var WORDS_DATA = [    {
         "role": "Noun (Active Participle) / اسْمُ فَاعِل",
         "ur": "احسان کرنے والا، نیکی کرنے والا، عمدہ عمل کرنے والا",
         "en": "Good-doer, benefactor, one who excels in virtue",
-        "cleanEn": "gooddoer benefactor one who excels in virtue",
+        "cleanEn": "good doer benefactor one who excels in virtue",
         "occurrences": [ "U03-L09", "U04-L01", "U05-L01" ]
     },
     {
-        "idx": 1150,
+        "idx": 1061,
         "ar": "مُحْضَرٌ",
         "cleanAr": "محضر",
         "letter": "م",
@@ -16104,7 +14858,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L09", "U05-L01" ]
     },
     {
-        "idx": 1151,
+        "idx": 1062,
         "ar": "مَحْظُورٌ",
         "cleanAr": "محظور",
         "letter": "م",
@@ -16118,7 +14872,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L07" ]
     },
     {
-        "idx": 1152,
+        "idx": 1063,
         "ar": "مَحْفُوظٌ",
         "cleanAr": "محفوظ",
         "letter": "م",
@@ -16132,7 +14886,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L03", "U04-L18" ]
     },
     {
-        "idx": 1153,
+        "idx": 1064,
         "ar": "مُحَمَّدٌ",
         "cleanAr": "محمد",
         "letter": "م",
@@ -16146,7 +14900,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L01", "U02-L04", "U03-L05", "U03-L09" ]
     },
     {
-        "idx": 1154,
+        "idx": 1065,
         "ar": "مَحْيَا",
         "cleanAr": "محيا",
         "letter": "م",
@@ -16160,7 +14914,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L15" ]
     },
     {
-        "idx": 1155,
+        "idx": 1066,
         "ar": "مَحِيصٌ",
         "cleanAr": "محيص",
         "letter": "م",
@@ -16174,7 +14928,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L23" ]
     },
     {
-        "idx": 1156,
+        "idx": 1067,
         "ar": "مُحِيطٌ",
         "cleanAr": "محيط",
         "letter": "م",
@@ -16184,11 +14938,11 @@ var WORDS_DATA = [    {
         "role": "Adjective (Active Participle) / صِفَة (اسْمُ فَاعِل)",
         "ur": "احاطہ کرنے والا، گھیرنے والا",
         "en": "All-encompassing, all-surrounding",
-        "cleanEn": "allencompassing allsurrounding",
+        "cleanEn": "all encompassing all surrounding",
         "occurrences": [ "U03-L02", "U05-L02" ]
     },
     {
-        "idx": 1157,
+        "idx": 1068,
         "ar": "مُخْتَلِفٌ",
         "cleanAr": "مختلف",
         "letter": "م",
@@ -16202,7 +14956,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L02", "U03-L09", "U05-L01" ]
     },
     {
-        "idx": 1158,
+        "idx": 1069,
         "ar": "مُخْرِجٌ",
         "cleanAr": "مخرج",
         "letter": "م",
@@ -16216,35 +14970,35 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L01" ]
     },
     {
-        "idx": 1159,
-        "ar": "مُخْلِصٌ",
-        "cleanAr": "مخلص",
-        "letter": "م",
-        "tr": "Mukhliṣ",
-        "cleanTr": "mukhlis",
-        "cat": "صِفَةٌ",
-        "role": "Active Participle (Form IV) / اسْمُ فَاعِل",
-        "ur": "اخلاص والا، خلوصِ دل سے عبادت کرنے والا",
-        "en": "Sincere, devoting religion purely to God",
-        "cleanEn": "sincere devoting religion purely to god",
-        "occurrences": [ "U01-L08", "U03-L09" ]
-    },
-    {
-        "idx": 1160,
+        "idx": 1070,
         "ar": "مُخْلَصٌ",
         "cleanAr": "مخلص",
         "letter": "م",
         "tr": "Mukhlaṣ",
         "cleanTr": "mukhlas",
         "cat": "اسْمٌ",
-        "role": "Noun (Passive Participle) / اسْمُ مَفْعُول",
+        "role": "Passive Participle / اسْمُ مَفْعُول (Plural: مُخْلَصُونَ)",
         "ur": "چن لیا گیا، خالص کر لیا گیا برگزیدہ بندہ",
         "en": "Purified, chosen for sincerity, devout",
         "cleanEn": "purified chosen for sincerity devout",
         "occurrences": [ "U03-L09", "U05-L01" ]
     },
     {
-        "idx": 1161,
+        "idx": 1071,
+        "ar": "مُخْلِصٌ",
+        "cleanAr": "مخلص",
+        "letter": "م",
+        "tr": "Mukhliṣ",
+        "cleanTr": "mukhlis",
+        "cat": "صِفَةٌ",
+        "role": "Active Participle / اسْمُ فَاعِل (Plural: مُخْلِصُونَ)",
+        "ur": "اخلاص والا، خلوصِ دل سے عبادت کرنے والا",
+        "en": "Sincere, devoting religion purely to God",
+        "cleanEn": "sincere devoting religion purely to god",
+        "occurrences": [ "U01-L08", "U03-L09", "U05-L01" ]
+    },
+    {
+        "idx": 1072,
         "ar": "مَدٌّ",
         "cleanAr": "مد",
         "letter": "م",
@@ -16258,7 +15012,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L03" ]
     },
     {
-        "idx": 1162,
+        "idx": 1073,
         "ar": "مُدْبِرٌ",
         "cleanAr": "مدبر",
         "letter": "م",
@@ -16272,7 +15026,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L17" ]
     },
     {
-        "idx": 1163,
+        "idx": 1074,
         "ar": "مُدَّثِّرٌ",
         "cleanAr": "مدثر",
         "letter": "م",
@@ -16286,7 +15040,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L13" ]
     },
     {
-        "idx": 1164,
+        "idx": 1075,
         "ar": "مُدَّكِرٌ",
         "cleanAr": "مدكر",
         "letter": "م",
@@ -16300,7 +15054,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L23" ]
     },
     {
-        "idx": 1165,
+        "idx": 1076,
         "ar": "مُدَّةٌ",
         "cleanAr": "مده",
         "letter": "م",
@@ -16314,7 +15068,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L07", "U05-L06" ]
     },
     {
-        "idx": 1166,
+        "idx": 1077,
         "ar": "مَدْيَنٌ",
         "cleanAr": "مدين",
         "letter": "م",
@@ -16323,12 +15077,12 @@ var WORDS_DATA = [    {
         "cat": "عَلَمٌ",
         "role": "Proper (Place / Tribe) / عَلَم",
         "ur": "مدین (حضرت شعیب کی بستی)",
-        "en": "Madyan (Midian, city of Shu'ayb)",
-        "cleanEn": "madyan midian city of shuayb",
+        "en": "Madyan (Midian, city of Shu\u0027ayb)",
+        "cleanEn": "madyan midian city of shu ayb",
         "occurrences": [ "U02-L06", "U03-L04" ]
     },
     {
-        "idx": 1167,
+        "idx": 1078,
         "ar": "مَدِينَةٌ",
         "cleanAr": "مدينه",
         "letter": "م",
@@ -16342,7 +15096,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L03", "U03-L04" ]
     },
     {
-        "idx": 1168,
+        "idx": 1079,
         "ar": "مُذَكِّرٌ",
         "cleanAr": "مذكر",
         "letter": "م",
@@ -16356,7 +15110,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L09", "U04-L05", "U05-L19" ]
     },
     {
-        "idx": 1169,
+        "idx": 1080,
         "ar": "مَذْكُورٌ",
         "cleanAr": "مذكور",
         "letter": "م",
@@ -16370,7 +15124,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L02", "U04-L18" ]
     },
     {
-        "idx": 1170,
+        "idx": 1081,
         "ar": "مَذْمُومٌ",
         "cleanAr": "مذموم",
         "letter": "م",
@@ -16384,21 +15138,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L01" ]
     },
     {
-        "idx": 1171,
-        "ar": "مَرَّةٌ",
-        "cleanAr": "مرة",
-        "letter": "م",
-        "tr": "Marrah",
-        "cleanTr": "marrah",
-        "cat": "اسْمٌ",
-        "role": "Noun (Instance) / اسْمُ مَرَّة",
-        "ur": "بار، مرتبہ، دفعہ",
-        "en": "Time, once, occasion, instance",
-        "cleanEn": "time once occasion instance",
-        "occurrences": [ "U01-L08", "U03-L10", "U01-L05" ]
-    },
-    {
-        "idx": 1172,
+        "idx": 1082,
         "ar": "مَرْجِعٌ",
         "cleanAr": "مرجع",
         "letter": "م",
@@ -16412,7 +15152,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L06" ]
     },
     {
-        "idx": 1173,
+        "idx": 1083,
         "ar": "مَرَدٌّ",
         "cleanAr": "مرد",
         "letter": "م",
@@ -16426,21 +15166,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L15" ]
     },
     {
-        "idx": 1174,
-        "ar": "مُرْسِلٌ",
-        "cleanAr": "مرسل",
-        "letter": "م",
-        "tr": "Mursil",
-        "cleanTr": "mursil",
-        "cat": "اسْمٌ",
-        "role": "Noun (Active Participle) / اسْمُ فَاعِل",
-        "ur": "بھیجنے والا، روانہ کرنے والا",
-        "en": "Sender, dispatcher",
-        "cleanEn": "sender dispatcher",
-        "occurrences": [ "U03-L09" ]
-    },
-    {
-        "idx": 1175,
+        "idx": 1084,
         "ar": "مُرْسَلٌ",
         "cleanAr": "مرسل",
         "letter": "م",
@@ -16454,7 +15180,21 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L11", "U03-L09", "U05-L01" ]
     },
     {
-        "idx": 1176,
+        "idx": 1085,
+        "ar": "مُرْسِلٌ",
+        "cleanAr": "مرسل",
+        "letter": "م",
+        "tr": "Mursil",
+        "cleanTr": "mursil",
+        "cat": "اسْمٌ",
+        "role": "Noun (Active Participle) / اسْمُ فَاعِل",
+        "ur": "بھیجنے والا، روانہ کرنے والا",
+        "en": "Sender, dispatcher",
+        "cleanEn": "sender dispatcher",
+        "occurrences": [ "U03-L09" ]
+    },
+    {
+        "idx": 1086,
         "ar": "مِرْصَادٌ",
         "cleanAr": "مرصاد",
         "letter": "م",
@@ -16468,7 +15208,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L07" ]
     },
     {
-        "idx": 1177,
+        "idx": 1087,
         "ar": "مَرَضٌ",
         "cleanAr": "مرض",
         "letter": "م",
@@ -16482,7 +15222,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L02", "U01-L13", "U04-L03", "U05-L07" ]
     },
     {
-        "idx": 1178,
+        "idx": 1088,
         "ar": "مَرْضَاةٌ",
         "cleanAr": "مرضاه",
         "letter": "م",
@@ -16496,7 +15236,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L05" ]
     },
     {
-        "idx": 1179,
+        "idx": 1089,
         "ar": "مَرْعَىٰ",
         "cleanAr": "مرعي",
         "letter": "م",
@@ -16510,7 +15250,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L12" ]
     },
     {
-        "idx": 1180,
+        "idx": 1090,
         "ar": "مَرْفُوعٌ",
         "cleanAr": "مرفوع",
         "letter": "م",
@@ -16524,7 +15264,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L10", "U03-L03" ]
     },
     {
-        "idx": 1181,
+        "idx": 1091,
         "ar": "مَرْقُومٌ",
         "cleanAr": "مرقوم",
         "letter": "م",
@@ -16538,7 +15278,21 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L21" ]
     },
     {
-        "idx": 1182,
+        "idx": 1092,
+        "ar": "مَرَّةٌ",
+        "cleanAr": "مره",
+        "letter": "م",
+        "tr": "Marrah",
+        "cleanTr": "marrah",
+        "cat": "اسْمٌ",
+        "role": "Noun (Instance) / اسْمُ مَرَّة",
+        "ur": "بار، مرتبہ، دفعہ",
+        "en": "Time, once, occasion, instance",
+        "cleanEn": "time once occasion instance",
+        "occurrences": [ "U01-L05", "U01-L08", "U03-L10" ]
+    },
+    {
+        "idx": 1093,
         "ar": "مَرْوَةٌ",
         "cleanAr": "مروه",
         "letter": "م",
@@ -16552,7 +15306,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L12", "U02-L01", "U03-L06" ]
     },
     {
-        "idx": 1183,
+        "idx": 1094,
         "ar": "مَرِيضٌ",
         "cleanAr": "مريض",
         "letter": "م",
@@ -16566,7 +15320,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L04", "U05-L20" ]
     },
     {
-        "idx": 1184,
+        "idx": 1095,
         "ar": "مَرْيَمٌ",
         "cleanAr": "مريم",
         "letter": "م",
@@ -16580,7 +15334,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L04", "U02-L06", "U02-L13", "U03-L04", "U05-L07" ]
     },
     {
-        "idx": 1185,
+        "idx": 1096,
         "ar": "مِرْيَةٌ",
         "cleanAr": "مريه",
         "letter": "م",
@@ -16594,7 +15348,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L08" ]
     },
     {
-        "idx": 1186,
+        "idx": 1097,
         "ar": "مِزَاجٌ",
         "cleanAr": "مزاج",
         "letter": "م",
@@ -16608,7 +15362,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L02" ]
     },
     {
-        "idx": 1187,
+        "idx": 1098,
         "ar": "مُزَحْزِحٌ",
         "cleanAr": "مزحزح",
         "letter": "م",
@@ -16622,7 +15376,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L05" ]
     },
     {
-        "idx": 1188,
+        "idx": 1099,
         "ar": "مُزَّمِّلٌ",
         "cleanAr": "مزمل",
         "letter": "م",
@@ -16636,7 +15390,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L13" ]
     },
     {
-        "idx": 1189,
+        "idx": 1100,
         "ar": "مَزِيدٌ",
         "cleanAr": "مزيد",
         "letter": "م",
@@ -16650,21 +15404,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L23" ]
     },
     {
-        "idx": 1190,
-        "ar": "مَسَاجِدٌ",
-        "cleanAr": "مساجد",
-        "letter": "م",
-        "tr": "Masājid",
-        "cleanTr": "masajid",
-        "cat": "اسْمٌ",
-        "role": "Plural Noun / جَمْع (مَسْجِدٌ)",
-        "ur": "مسجدیں، عبادت گاہیں",
-        "en": "Mosques, places of prostration",
-        "cleanEn": "mosques places of prostration",
-        "occurrences": [ "U02-L11", "U03-L05" ]
-    },
-    {
-        "idx": 1191,
+        "idx": 1101,
         "ar": "مَسَاقٌ",
         "cleanAr": "مساق",
         "letter": "م",
@@ -16678,7 +15418,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L21" ]
     },
     {
-        "idx": 1192,
+        "idx": 1102,
         "ar": "مُسَبِّحٌ",
         "cleanAr": "مسبح",
         "letter": "م",
@@ -16692,7 +15432,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L09", "U05-L01" ]
     },
     {
-        "idx": 1193,
+        "idx": 1103,
         "ar": "مُسْتَسْلِمٌ",
         "cleanAr": "مستسلم",
         "letter": "م",
@@ -16706,7 +15446,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L21" ]
     },
     {
-        "idx": 1194,
+        "idx": 1104,
         "ar": "مُسْتَغْفِرٌ",
         "cleanAr": "مستغفر",
         "letter": "م",
@@ -16720,7 +15460,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L09", "U05-L01" ]
     },
     {
-        "idx": 1195,
+        "idx": 1105,
         "ar": "مُسْتَقَرٌّ",
         "cleanAr": "مستقر",
         "letter": "م",
@@ -16734,7 +15474,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L12" ]
     },
     {
-        "idx": 1196,
+        "idx": 1106,
         "ar": "مُسْتَقِيمٌ",
         "cleanAr": "مستقيم",
         "letter": "م",
@@ -16748,7 +15488,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L06", "U02-L04", "U02-L06", "U03-L01" ]
     },
     {
-        "idx": 1197,
+        "idx": 1107,
         "ar": "مُسْتَمِعٌ",
         "cleanAr": "مستمع",
         "letter": "م",
@@ -16762,7 +15502,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L16" ]
     },
     {
-        "idx": 1198,
+        "idx": 1108,
         "ar": "مُسْتَهْزِئٌ",
         "cleanAr": "مستهزي",
         "letter": "م",
@@ -16776,7 +15516,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L13" ]
     },
     {
-        "idx": 1199,
+        "idx": 1109,
         "ar": "مَسْجِدٌ",
         "cleanAr": "مسجد",
         "letter": "م",
@@ -16787,10 +15527,10 @@ var WORDS_DATA = [    {
         "ur": "مسجد / مساجد، سجدہ گاہیں",
         "en": "Mosque, place of prostration",
         "cleanEn": "mosque place of prostration",
-        "occurrences": [ "U01-L02", "U01-L10", "U01-L13", "U03-L03" ]
+        "occurrences": [ "U01-L02", "U01-L10", "U01-L13", "U02-L11", "U03-L03", "U03-L05" ]
     },
     {
-        "idx": 1200,
+        "idx": 1110,
         "ar": "مَسْجُورٌ",
         "cleanAr": "مسجور",
         "letter": "م",
@@ -16804,7 +15544,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L10" ]
     },
     {
-        "idx": 1201,
+        "idx": 1111,
         "ar": "مُسَحَّرٌ",
         "cleanAr": "مسحر",
         "letter": "م",
@@ -16818,7 +15558,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L09", "U05-L01" ]
     },
     {
-        "idx": 1202,
+        "idx": 1112,
         "ar": "مَسْحُورٌ",
         "cleanAr": "مسحور",
         "letter": "م",
@@ -16832,7 +15572,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L01", "U05-L13" ]
     },
     {
-        "idx": 1203,
+        "idx": 1113,
         "ar": "مُسَخَّرٌ",
         "cleanAr": "مسخر",
         "letter": "م",
@@ -16846,7 +15586,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L09", "U04-L03", "U05-L01" ]
     },
     {
-        "idx": 1204,
+        "idx": 1114,
         "ar": "مَسَدٌ",
         "cleanAr": "مسد",
         "letter": "م",
@@ -16856,11 +15596,11 @@ var WORDS_DATA = [    {
         "role": "Noun / اسْمٌ",
         "ur": "بٹی ہوئی رسی، کھجور کے ریشے کا بان",
         "en": "Twisted palm-fiber rope",
-        "cleanEn": "twisted palmfiber rope",
+        "cleanEn": "twisted palm fiber rope",
         "occurrences": [ "U02-L05", "U04-L11" ]
     },
     {
-        "idx": 1205,
+        "idx": 1115,
         "ar": "مُسْرِفٌ",
         "cleanAr": "مسرف",
         "letter": "م",
@@ -16874,7 +15614,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L09", "U05-L01" ]
     },
     {
-        "idx": 1206,
+        "idx": 1116,
         "ar": "مَسْرُورٌ",
         "cleanAr": "مسرور",
         "letter": "م",
@@ -16888,7 +15628,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L04" ]
     },
     {
-        "idx": 1207,
+        "idx": 1117,
         "ar": "مَسْطُورٌ",
         "cleanAr": "مسطور",
         "letter": "م",
@@ -16902,7 +15642,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L10", "U02-L12", "U03-L03", "U04-L18" ]
     },
     {
-        "idx": 1208,
+        "idx": 1118,
         "ar": "مُسْفِرَةٌ",
         "cleanAr": "مسفره",
         "letter": "م",
@@ -16916,7 +15656,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L21" ]
     },
     {
-        "idx": 1209,
+        "idx": 1119,
         "ar": "مِسْكٌ",
         "cleanAr": "مسك",
         "letter": "م",
@@ -16930,7 +15670,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L02" ]
     },
     {
-        "idx": 1210,
+        "idx": 1120,
         "ar": "مَسْكَنٌ",
         "cleanAr": "مسكن",
         "letter": "م",
@@ -16944,7 +15684,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L10", "U05-L07" ]
     },
     {
-        "idx": 1211,
+        "idx": 1121,
         "ar": "مَسْكَنَةٌ",
         "cleanAr": "مسكنه",
         "letter": "م",
@@ -16958,7 +15698,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L08" ]
     },
     {
-        "idx": 1212,
+        "idx": 1122,
         "ar": "مِسْكِينٌ",
         "cleanAr": "مسكين",
         "letter": "م",
@@ -16972,7 +15712,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L05", "U05-L12" ]
     },
     {
-        "idx": 1213,
+        "idx": 1123,
         "ar": "مُسْلِمٌ",
         "cleanAr": "مسلم",
         "letter": "م",
@@ -16983,24 +15723,10 @@ var WORDS_DATA = [    {
         "ur": "مسلمان، سرِ تسلیم خم کرنے والا، مطیع",
         "en": "Muslim, submissive, one who surrenders to God",
         "cleanEn": "muslim submissive one who surrenders to god",
-        "occurrences": [ "U01-L07", "U02-L12", "U03-L09", "U03-L10", "U05-L01" ]
+        "occurrences": [ "U01-L07", "U01-L11", "U02-L12", "U03-L02", "U03-L09", "U03-L10", "U05-L01" ]
     },
     {
-        "idx": 1214,
-        "ar": "مُسْلِمَةٌ",
-        "cleanAr": "مسلمه",
-        "letter": "م",
-        "tr": "Muslimah",
-        "cleanTr": "muslimah",
-        "cat": "صِفَةٌ",
-        "role": "Adjective (Active Participle, Fem.) / صِفَة (اسْمُ فَاعِل) (Plural: الْمُسْلِمَاتُ)",
-        "ur": "فرمانبردار، اطاعت گزار، مسلمہ",
-        "en": "Submissive, obedient, Muslim (fem.)",
-        "cleanEn": "submissive obedient muslim fem",
-        "occurrences": [ "U01-L11", "U03-L02" ]
-    },
-    {
-        "idx": 1215,
+        "idx": 1124,
         "ar": "مُسَمًّى",
         "cleanAr": "مسمي",
         "letter": "م",
@@ -17014,7 +15740,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L02" ]
     },
     {
-        "idx": 1216,
+        "idx": 1125,
         "ar": "مَسِيحٌ",
         "cleanAr": "مسيح",
         "letter": "م",
@@ -17028,7 +15754,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L05", "U05-L19" ]
     },
     {
-        "idx": 1217,
+        "idx": 1126,
         "ar": "مُسَيْطِرٌ",
         "cleanAr": "مسيطر",
         "letter": "م",
@@ -17042,7 +15768,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L20" ]
     },
     {
-        "idx": 1218,
+        "idx": 1127,
         "ar": "مَسْئُولٌ",
         "cleanAr": "مسيول",
         "letter": "م",
@@ -17056,7 +15782,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L12", "U03-L05", "U04-L18" ]
     },
     {
-        "idx": 1219,
+        "idx": 1128,
         "ar": "مَشَارِبٌ",
         "cleanAr": "مشارب",
         "letter": "م",
@@ -17070,21 +15796,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L08" ]
     },
     {
-        "idx": 1220,
-        "ar": "مَشَارِقٌ",
-        "cleanAr": "مشارق",
-        "letter": "م",
-        "tr": "Mashāriq",
-        "cleanTr": "mashariq",
-        "cat": "اسْمٌ",
-        "role": "Broken Plural / جَمْع (مَشْرِق)",
-        "ur": "طلوع ہونے کے تمام مقامات",
-        "en": "Points of sunrise / the Easts",
-        "cleanEn": "points of sunrise the easts",
-        "occurrences": [ "U05-L21" ]
-    },
-    {
-        "idx": 1221,
+        "idx": 1129,
         "ar": "مُشْتَرِكٌ",
         "cleanAr": "مشترك",
         "letter": "م",
@@ -17098,7 +15810,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L21" ]
     },
     {
-        "idx": 1222,
+        "idx": 1130,
         "ar": "مَشْرِقٌ",
         "cleanAr": "مشرق",
         "letter": "م",
@@ -17109,10 +15821,10 @@ var WORDS_DATA = [    {
         "ur": "مشرق، سورج طلوع ہونے کی سمت",
         "en": "East, sunrise direction",
         "cleanEn": "east sunrise direction",
-        "occurrences": [ "U01-L02", "U02-L02", "U03-L04", "U05-L19", "U03-L10", "U02-L03" ]
+        "occurrences": [ "U01-L02", "U02-L02", "U02-L03", "U03-L04", "U03-L10", "U05-L19", "U05-L21" ]
     },
     {
-        "idx": 1223,
+        "idx": 1131,
         "ar": "مُشْرِكٌ",
         "cleanAr": "مشرك",
         "letter": "م",
@@ -17123,24 +15835,10 @@ var WORDS_DATA = [    {
         "ur": "شرک کرنے والا، ساجھی ٹھہرانے والا",
         "en": "Polytheist (male), Associator of partners with God",
         "cleanEn": "polytheist male associator of partners with god",
-        "occurrences": [ "U02-L05", "U03-L03", "U03-L09", "U05-L01" ]
+        "occurrences": [ "U01-L03", "U01-L11", "U02-L05", "U03-L03", "U03-L09", "U05-L01" ]
     },
     {
-        "idx": 1224,
-        "ar": "مُشْرِكَةٌ",
-        "cleanAr": "مشركه",
-        "letter": "م",
-        "tr": "Mushrikah",
-        "cleanTr": "mushrikah",
-        "cat": "اسْمٌ",
-        "role": "Feminine Active Participle / اسْمُ فَاعِل (Plural: الْمُشْرِكَاتُ)",
-        "ur": "مشرکہ عورت، شرک کرنے والی",
-        "en": "Polytheist woman / Polytheist women",
-        "cleanEn": "polytheist woman polytheist women",
-        "occurrences": [ "U01-L03", "U01-L11", "U02-L05", "U03-L03" ]
-    },
-    {
-        "idx": 1225,
+        "idx": 1132,
         "ar": "مُشْفِقٌ",
         "cleanAr": "مشفق",
         "letter": "م",
@@ -17154,7 +15852,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L09", "U05-L01" ]
     },
     {
-        "idx": 1226,
+        "idx": 1133,
         "ar": "مَشْكُورٌ",
         "cleanAr": "مشكور",
         "letter": "م",
@@ -17168,12 +15866,12 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L18", "U05-L10" ]
     },
     {
-        "idx": 1227,
+        "idx": 1134,
         "ar": "مَشْهُودٌ",
         "cleanAr": "مشهود",
         "letter": "م",
         "tr": "Mash-hūd",
-        "cleanTr": "mashhud",
+        "cleanTr": "mash-hud",
         "cat": "صِفَةٌ",
         "role": "Adjective (Passive Participle) / صِفَة (اسْمُ مَفْعُول)",
         "ur": "حاضر کیا گیا، جس میں تمام خلائق موجود ہوں",
@@ -17182,7 +15880,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L16", "U03-L06", "U04-L18" ]
     },
     {
-        "idx": 1228,
+        "idx": 1135,
         "ar": "مَشْيٌ",
         "cleanAr": "مشي",
         "letter": "م",
@@ -17196,7 +15894,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L07" ]
     },
     {
-        "idx": 1229,
+        "idx": 1136,
         "ar": "مِصْبَاحٌ",
         "cleanAr": "مصباح",
         "letter": "م",
@@ -17210,7 +15908,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L12" ]
     },
     {
-        "idx": 1230,
+        "idx": 1137,
         "ar": "مُصَدِّقٌ",
         "cleanAr": "مصدق",
         "letter": "م",
@@ -17224,7 +15922,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L15", "U03-L01", "U03-L09", "U05-L01" ]
     },
     {
-        "idx": 1231,
+        "idx": 1138,
         "ar": "مِصْرٌ",
         "cleanAr": "مصر",
         "letter": "م",
@@ -17238,7 +15936,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L04", "U05-L21" ]
     },
     {
-        "idx": 1232,
+        "idx": 1139,
         "ar": "مُصْطَفَىٰ",
         "cleanAr": "مصطفي",
         "letter": "م",
@@ -17252,7 +15950,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L09" ]
     },
     {
-        "idx": 1233,
+        "idx": 1140,
         "ar": "مُصَلٍّ",
         "cleanAr": "مصل",
         "letter": "م",
@@ -17266,7 +15964,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L02" ]
     },
     {
-        "idx": 1234,
+        "idx": 1141,
         "ar": "مُصْلِحٌ",
         "cleanAr": "مصلح",
         "letter": "م",
@@ -17280,7 +15978,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L09", "U05-L01" ]
     },
     {
-        "idx": 1235,
+        "idx": 1142,
         "ar": "مُصِيبَةٌ",
         "cleanAr": "مصيبه",
         "letter": "م",
@@ -17294,7 +15992,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L02" ]
     },
     {
-        "idx": 1236,
+        "idx": 1143,
         "ar": "مَصِيرٌ",
         "cleanAr": "مصير",
         "letter": "م",
@@ -17308,12 +16006,12 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L05", "U05-L06", "U05-L11" ]
     },
     {
-        "idx": 1237,
+        "idx": 1144,
         "ar": "مُضْعِفٌ",
         "cleanAr": "مضعف",
         "letter": "م",
         "tr": "Mud‘if",
-        "cleanTr": "mud'if",
+        "cleanTr": "mudif",
         "cat": "اسْمٌ",
         "role": "Active Participle / اسْمُ فَاعِل",
         "ur": "کئی گنا ثواب پانے والا",
@@ -17322,7 +16020,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L05" ]
     },
     {
-        "idx": 1238,
+        "idx": 1145,
         "ar": "مُضِلٌّ",
         "cleanAr": "مضل",
         "letter": "م",
@@ -17336,7 +16034,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L02", "U05-L23" ]
     },
     {
-        "idx": 1239,
+        "idx": 1146,
         "ar": "مَطَرٌ",
         "cleanAr": "مطر",
         "letter": "م",
@@ -17350,7 +16048,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L08" ]
     },
     {
-        "idx": 1240,
+        "idx": 1147,
         "ar": "مُطَفِّفٌ",
         "cleanAr": "مطفف",
         "letter": "م",
@@ -17364,7 +16062,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L02" ]
     },
     {
-        "idx": 1241,
+        "idx": 1148,
         "ar": "مَطْلَعٌ",
         "cleanAr": "مطلع",
         "letter": "م",
@@ -17375,10 +16073,24 @@ var WORDS_DATA = [    {
         "ur": "طلوع ہونے کا وقت یا مقام، پو پھٹنا",
         "en": "Rising time / place, break of dawn",
         "cleanEn": "rising time place break of dawn",
-        "occurrences": [ "U04-L09", "U05-L09" ]
+        "occurrences": [ "U04-L09" ]
     },
     {
-        "idx": 1242,
+        "idx": 1149,
+        "ar": "مُطَّلِعٌ",
+        "cleanAr": "مطلع",
+        "letter": "م",
+        "tr": "Muṭṭali‘",
+        "cleanTr": "muttali",
+        "cat": "اسْمٌ",
+        "role": "Active Participle (Form VIII) / اسْمُ فَاعِل (Plural: مُطَّلِعُونَ)",
+        "ur": "جھانکنے والا، مطلع ہونے والا",
+        "en": "Looking down, observing",
+        "cleanEn": "looking down observing",
+        "occurrences": [ "U05-L09" ]
+    },
+    {
+        "idx": 1150,
         "ar": "مَطْلُوبٌ",
         "cleanAr": "مطلوب",
         "letter": "م",
@@ -17392,7 +16104,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L18" ]
     },
     {
-        "idx": 1243,
+        "idx": 1151,
         "ar": "مُطْمَئِنٌّ",
         "cleanAr": "مطمين",
         "letter": "م",
@@ -17406,7 +16118,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L09" ]
     },
     {
-        "idx": 1244,
+        "idx": 1152,
         "ar": "مُظْلِمٌ",
         "cleanAr": "مظلم",
         "letter": "م",
@@ -17420,7 +16132,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L05" ]
     },
     {
-        "idx": 1245,
+        "idx": 1153,
         "ar": "مَظْلُومٌ",
         "cleanAr": "مظلوم",
         "letter": "م",
@@ -17434,7 +16146,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L08", "U04-L17" ]
     },
     {
-        "idx": 1246,
+        "idx": 1154,
         "ar": "مَعَ",
         "cleanAr": "مع",
         "letter": "م",
@@ -17448,7 +16160,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L04" ]
     },
     {
-        "idx": 1247,
+        "idx": 1155,
         "ar": "مُعْتَدٍ",
         "cleanAr": "معتد",
         "letter": "م",
@@ -17462,7 +16174,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L05" ]
     },
     {
-        "idx": 1248,
+        "idx": 1156,
         "ar": "مُعْجِزٌ",
         "cleanAr": "معجز",
         "letter": "م",
@@ -17476,21 +16188,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L20" ]
     },
     {
-        "idx": 1249,
-        "ar": "مُعَذِّبٌ",
-        "cleanAr": "معذب",
-        "letter": "م",
-        "tr": "Mu‘adhdhib",
-        "cleanTr": "muadhdhib",
-        "cat": "اسْمٌ",
-        "role": "Noun (Active Participle) / اسْمُ فَاعِل",
-        "ur": "عذاب دینے والا، سزا سنانے والا",
-        "en": "Punisher, tormentor, inflictor of chastisement",
-        "cleanEn": "punisher tormentor inflictor of chastisement",
-        "occurrences": [ "U03-L09", "U05-L06" ]
-    },
-    {
-        "idx": 1250,
+        "idx": 1157,
         "ar": "مُعَذَّبٌ",
         "cleanAr": "معذب",
         "letter": "م",
@@ -17504,7 +16202,21 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L09", "U05-L01" ]
     },
     {
-        "idx": 1251,
+        "idx": 1158,
+        "ar": "مُعَذِّبٌ",
+        "cleanAr": "معذب",
+        "letter": "م",
+        "tr": "Mu‘adhdhib",
+        "cleanTr": "muadhdhib",
+        "cat": "اسْمٌ",
+        "role": "Noun (Active Participle) / اسْمُ فَاعِل",
+        "ur": "عذاب دینے والا، سزا سنانے والا",
+        "en": "Punisher, tormentor, inflictor of chastisement",
+        "cleanEn": "punisher tormentor inflictor of chastisement",
+        "occurrences": [ "U03-L09", "U05-L06" ]
+    },
+    {
+        "idx": 1159,
         "ar": "مَعْذِرَةٌ",
         "cleanAr": "معذره",
         "letter": "م",
@@ -17518,7 +16230,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L06", "U05-L06" ]
     },
     {
-        "idx": 1252,
+        "idx": 1160,
         "ar": "مُعْرِضٌ",
         "cleanAr": "معرض",
         "letter": "م",
@@ -17532,7 +16244,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L09", "U05-L01" ]
     },
     {
-        "idx": 1253,
+        "idx": 1161,
         "ar": "مَعْرُوفٌ",
         "cleanAr": "معروف",
         "letter": "م",
@@ -17546,7 +16258,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L05", "U02-L07", "U03-L02", "U04-L18" ]
     },
     {
-        "idx": 1254,
+        "idx": 1162,
         "ar": "مَعْصِيَةٌ",
         "cleanAr": "معصيه",
         "letter": "م",
@@ -17560,7 +16272,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L05" ]
     },
     {
-        "idx": 1255,
+        "idx": 1163,
         "ar": "مُعَقِّبٌ",
         "cleanAr": "معقب",
         "letter": "م",
@@ -17574,7 +16286,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L03" ]
     },
     {
-        "idx": 1256,
+        "idx": 1164,
         "ar": "مُعَلَّمٌ",
         "cleanAr": "معلم",
         "letter": "م",
@@ -17588,7 +16300,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L09" ]
     },
     {
-        "idx": 1257,
+        "idx": 1165,
         "ar": "مَعْلُومٌ",
         "cleanAr": "معلوم",
         "letter": "م",
@@ -17602,7 +16314,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L02", "U04-L18" ]
     },
     {
-        "idx": 1258,
+        "idx": 1166,
         "ar": "مَعْمُورٌ",
         "cleanAr": "معمور",
         "letter": "م",
@@ -17612,11 +16324,11 @@ var WORDS_DATA = [    {
         "role": "Adjective (Passive Participle) / صِفَة (اسْمُ مَفْعُول)",
         "ur": "آباد، رونق والا، کثرت سے زیارت کیا جانے والا",
         "en": "Inhabited, frequented, visited, well-populated",
-        "cleanEn": "inhabited frequented visited wellpopulated",
+        "cleanEn": "inhabited frequented visited well populated",
         "occurrences": [ "U02-L10", "U03-L03" ]
     },
     {
-        "idx": 1259,
+        "idx": 1167,
         "ar": "مَعِيشَةٌ",
         "cleanAr": "معيشه",
         "letter": "م",
@@ -17630,7 +16342,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L04" ]
     },
     {
-        "idx": 1260,
+        "idx": 1168,
         "ar": "مَغْرِبٌ",
         "cleanAr": "مغرب",
         "letter": "م",
@@ -17641,10 +16353,10 @@ var WORDS_DATA = [    {
         "ur": "مغرب، سورج ڈوبنے کی سمت یا وقت",
         "en": "West, place of sunset",
         "cleanEn": "west place of sunset",
-        "occurrences": [ "U01-L02", "U02-L02", "U03-L04", "U05-L19", "U03-L10" ]
+        "occurrences": [ "U01-L02", "U02-L02", "U03-L04", "U03-L10", "U05-L19" ]
     },
     {
-        "idx": 1261,
+        "idx": 1169,
         "ar": "مُغْرَمٌ",
         "cleanAr": "مغرم",
         "letter": "م",
@@ -17658,7 +16370,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L16" ]
     },
     {
-        "idx": 1262,
+        "idx": 1170,
         "ar": "مَغْفِرَةٌ",
         "cleanAr": "مغفره",
         "letter": "م",
@@ -17672,7 +16384,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L02", "U02-L06", "U03-L03", "U05-L07" ]
     },
     {
-        "idx": 1263,
+        "idx": 1171,
         "ar": "مَغْلُوبٌ",
         "cleanAr": "مغلوب",
         "letter": "م",
@@ -17686,7 +16398,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L18" ]
     },
     {
-        "idx": 1264,
+        "idx": 1172,
         "ar": "مَغْلُولَةٌ",
         "cleanAr": "مغلوله",
         "letter": "م",
@@ -17700,7 +16412,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L05" ]
     },
     {
-        "idx": 1265,
+        "idx": 1173,
         "ar": "مُغْنٍ",
         "cleanAr": "مغن",
         "letter": "م",
@@ -17714,7 +16426,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L09" ]
     },
     {
-        "idx": 1266,
+        "idx": 1174,
         "ar": "مَفَاتِحٌ",
         "cleanAr": "مفاتح",
         "letter": "م",
@@ -17728,7 +16440,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L05" ]
     },
     {
-        "idx": 1267,
+        "idx": 1175,
         "ar": "مَفَازٌ",
         "cleanAr": "مفاز",
         "letter": "م",
@@ -17742,7 +16454,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L02" ]
     },
     {
-        "idx": 1268,
+        "idx": 1176,
         "ar": "مُفْتَرٍ",
         "cleanAr": "مفتر",
         "letter": "م",
@@ -17756,7 +16468,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L05", "U05-L19" ]
     },
     {
-        "idx": 1269,
+        "idx": 1177,
         "ar": "مُفْتَرًى",
         "cleanAr": "مفتري",
         "letter": "م",
@@ -17770,7 +16482,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L02" ]
     },
     {
-        "idx": 1270,
+        "idx": 1178,
         "ar": "مُفْسِدٌ",
         "cleanAr": "مفسد",
         "letter": "م",
@@ -17780,11 +16492,11 @@ var WORDS_DATA = [    {
         "role": "Noun (Active Participle) / اسْمُ فَاعِل",
         "ur": "فساد برپا کرنے والا، فسادی، بگاڑ پیدا کرنے والا",
         "en": "Mischief-maker, corruptor, spreader of evil",
-        "cleanEn": "mischiefmaker corruptor spreader of evil",
+        "cleanEn": "mischief maker corruptor spreader of evil",
         "occurrences": [ "U03-L09", "U05-L01" ]
     },
     {
-        "idx": 1271,
+        "idx": 1179,
         "ar": "مَفْعُولٌ",
         "cleanAr": "مفعول",
         "letter": "م",
@@ -17798,7 +16510,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L05", "U04-L18" ]
     },
     {
-        "idx": 1272,
+        "idx": 1180,
         "ar": "مُفْلِحٌ",
         "cleanAr": "مفلح",
         "letter": "م",
@@ -17812,7 +16524,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L09", "U05-L01" ]
     },
     {
-        "idx": 1273,
+        "idx": 1181,
         "ar": "مَقَالِيدٌ",
         "cleanAr": "مقاليد",
         "letter": "م",
@@ -17826,7 +16538,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L04", "U05-L20" ]
     },
     {
-        "idx": 1274,
+        "idx": 1182,
         "ar": "مَقَامٌ",
         "cleanAr": "مقام",
         "letter": "م",
@@ -17840,7 +16552,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L06" ]
     },
     {
-        "idx": 1275,
+        "idx": 1183,
         "ar": "مَقَامِعٌ",
         "cleanAr": "مقامع",
         "letter": "م",
@@ -17854,7 +16566,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L08" ]
     },
     {
-        "idx": 1276,
+        "idx": 1184,
         "ar": "مَقْبُوحٌ",
         "cleanAr": "مقبوح",
         "letter": "م",
@@ -17868,7 +16580,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L05" ]
     },
     {
-        "idx": 1277,
+        "idx": 1185,
         "ar": "مَقْتٌ",
         "cleanAr": "مقت",
         "letter": "م",
@@ -17882,7 +16594,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L05", "U05-L10" ]
     },
     {
-        "idx": 1278,
+        "idx": 1186,
         "ar": "مُقْتَحِمٌ",
         "cleanAr": "مقتحم",
         "letter": "م",
@@ -17896,7 +16608,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L10" ]
     },
     {
-        "idx": 1279,
+        "idx": 1187,
         "ar": "مُقْتَدٍ",
         "cleanAr": "مقتد",
         "letter": "م",
@@ -17910,7 +16622,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L16" ]
     },
     {
-        "idx": 1280,
+        "idx": 1188,
         "ar": "مُقْتَدِرٌ",
         "cleanAr": "مقتدر",
         "letter": "م",
@@ -17920,11 +16632,11 @@ var WORDS_DATA = [    {
         "role": "Noun (Active Participle) / اسْمُ فَاعِل",
         "ur": "کامل قدرت والا، زبردست قابو رکھنے والا",
         "en": "Omnipotent, All-Powerful, Prevailing",
-        "cleanEn": "omnipotent allpowerful prevailing",
+        "cleanEn": "omnipotent all powerful prevailing",
         "occurrences": [ "U03-L09", "U05-L01" ]
     },
     {
-        "idx": 1281,
+        "idx": 1189,
         "ar": "مُقْتَسِمٌ",
         "cleanAr": "مقتسم",
         "letter": "م",
@@ -17938,7 +16650,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L02" ]
     },
     {
-        "idx": 1282,
+        "idx": 1190,
         "ar": "مُقْتَصِدَةٌ",
         "cleanAr": "مقتصده",
         "letter": "م",
@@ -17952,7 +16664,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L08" ]
     },
     {
-        "idx": 1283,
+        "idx": 1191,
         "ar": "مِقْدَارٌ",
         "cleanAr": "مقدار",
         "letter": "م",
@@ -17966,7 +16678,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L07", "U04-L02" ]
     },
     {
-        "idx": 1284,
+        "idx": 1192,
         "ar": "مُقَدَّسٌ",
         "cleanAr": "مقدس",
         "letter": "م",
@@ -17980,7 +16692,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L01" ]
     },
     {
-        "idx": 1285,
+        "idx": 1193,
         "ar": "مَقْدُورٌ",
         "cleanAr": "مقدور",
         "letter": "م",
@@ -17994,7 +16706,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L06" ]
     },
     {
-        "idx": 1286,
+        "idx": 1194,
         "ar": "مُقَرَّبٌ",
         "cleanAr": "مقرب",
         "letter": "م",
@@ -18008,7 +16720,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L01" ]
     },
     {
-        "idx": 1287,
+        "idx": 1195,
         "ar": "مَقْسُومٌ",
         "cleanAr": "مقسوم",
         "letter": "م",
@@ -18022,7 +16734,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L18" ]
     },
     {
-        "idx": 1288,
+        "idx": 1196,
         "ar": "مَقْطُوعٌ",
         "cleanAr": "مقطوع",
         "letter": "م",
@@ -18036,7 +16748,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L18" ]
     },
     {
-        "idx": 1289,
+        "idx": 1197,
         "ar": "مَقِيلٌ",
         "cleanAr": "مقيل",
         "letter": "م",
@@ -18050,7 +16762,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L22" ]
     },
     {
-        "idx": 1290,
+        "idx": 1198,
         "ar": "مُقِيمٌ",
         "cleanAr": "مقيم",
         "letter": "م",
@@ -18061,10 +16773,10 @@ var WORDS_DATA = [    {
         "ur": "دائمی، برقرار رہنے والا",
         "en": "Enduring, lasting, permanent",
         "cleanEn": "enduring lasting permanent",
-        "occurrences": [ "U05-L02", "U03-L02" ]
+        "occurrences": [ "U03-L02", "U05-L02" ]
     },
     {
-        "idx": 1291,
+        "idx": 1199,
         "ar": "مَكَانٌ",
         "cleanAr": "مكان",
         "letter": "م",
@@ -18078,7 +16790,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L07", "U03-L01", "U03-L02" ]
     },
     {
-        "idx": 1292,
+        "idx": 1200,
         "ar": "مَكَانَةٌ",
         "cleanAr": "مكانه",
         "letter": "م",
@@ -18092,7 +16804,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L06" ]
     },
     {
-        "idx": 1293,
+        "idx": 1201,
         "ar": "مُكَذِّبٌ",
         "cleanAr": "مكذب",
         "letter": "م",
@@ -18106,7 +16818,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L09", "U05-L01" ]
     },
     {
-        "idx": 1294,
+        "idx": 1202,
         "ar": "مَكْذُوبٌ",
         "cleanAr": "مكذوب",
         "letter": "م",
@@ -18120,7 +16832,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L18" ]
     },
     {
-        "idx": 1295,
+        "idx": 1203,
         "ar": "مَكْرٌ",
         "cleanAr": "مكر",
         "letter": "م",
@@ -18134,21 +16846,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L01", "U03-L05", "U05-L06" ]
     },
     {
-        "idx": 1296,
-        "ar": "مُكْرِمٌ",
-        "cleanAr": "مكرم",
-        "letter": "م",
-        "tr": "Mukrim",
-        "cleanTr": "mukrim",
-        "cat": "اسْمٌ",
-        "role": "Active Participle / اسْمُ فَاعِل",
-        "ur": "عزت بخشنے والا",
-        "en": "Honorer, one who confers dignity",
-        "cleanEn": "honorer one who confers dignity",
-        "occurrences": [ "U05-L23" ]
-    },
-    {
-        "idx": 1297,
+        "idx": 1204,
         "ar": "مُكْرَمٌ",
         "cleanAr": "مكرم",
         "letter": "م",
@@ -18162,7 +16860,21 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L09", "U05-L01" ]
     },
     {
-        "idx": 1298,
+        "idx": 1205,
+        "ar": "مُكْرِمٌ",
+        "cleanAr": "مكرم",
+        "letter": "م",
+        "tr": "Mukrim",
+        "cleanTr": "mukrim",
+        "cat": "اسْمٌ",
+        "role": "Active Participle / اسْمُ فَاعِل",
+        "ur": "عزت بخشنے والا",
+        "en": "Honorer, one who confers dignity",
+        "cleanEn": "honorer one who confers dignity",
+        "occurrences": [ "U05-L23" ]
+    },
+    {
+        "idx": 1206,
         "ar": "مَكْرُوهٌ",
         "cleanAr": "مكروه",
         "letter": "م",
@@ -18176,7 +16888,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L18" ]
     },
     {
-        "idx": 1299,
+        "idx": 1207,
         "ar": "مَلَأٌ",
         "cleanAr": "ملا",
         "letter": "م",
@@ -18190,21 +16902,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L03" ]
     },
     {
-        "idx": 1300,
-        "ar": "مَلَائِكَةٌ",
-        "cleanAr": "ملايكه",
-        "letter": "م",
-        "tr": "Malā’ikah",
-        "cleanTr": "malaikah",
-        "cat": "اسْمٌ",
-        "role": "Broken Plural / جَمْعُ تَكْسِير (مَلَك)",
-        "ur": "فرشتے",
-        "en": "Angels",
-        "cleanEn": "angels",
-        "occurrences": [ "U04-L12", "U05-L02" ]
-    },
-    {
-        "idx": 1301,
+        "idx": 1208,
         "ar": "مَلْجَأٌ",
         "cleanAr": "ملجا",
         "letter": "م",
@@ -18218,7 +16916,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L23" ]
     },
     {
-        "idx": 1302,
+        "idx": 1209,
         "ar": "مُلْقٍ",
         "cleanAr": "ملق",
         "letter": "م",
@@ -18232,49 +16930,49 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L09" ]
     },
     {
-        "idx": 1303,
-        "ar": "مُلْكٌ",
-        "cleanAr": "ملك",
-        "letter": "م",
-        "tr": "Mulk",
-        "cleanTr": "mulk",
-        "cat": "اسْمٌ",
-        "role": "Verbal Noun / مَصْدَر",
-        "ur": "بادشاہت، سلطنت، اقتدار، حاکمیت",
-        "en": "Kingdom, dominion, sovereignty, rule",
-        "cleanEn": "kingdom dominion sovereignty rule",
-        "occurrences": [ "U02-L02", "U03-L01", "U05-L08" ]
-    },
-    {
-        "idx": 1304,
-        "ar": "مَلِكٌ",
-        "cleanAr": "ملك",
-        "letter": "م",
-        "tr": "Malik",
-        "cleanTr": "malik",
-        "cat": "اسْمٌ",
-        "role": "Noun / اسْمٌ",
-        "ur": "بادشاہ، مالک، فرماں روا",
-        "en": "King, sovereign, monarch",
-        "cleanEn": "king sovereign monarch",
-        "occurrences": [ "U03-L05" ]
-    },
-    {
-        "idx": 1305,
+        "idx": 1210,
         "ar": "مَلَكٌ",
         "cleanAr": "ملك",
         "letter": "م",
         "tr": "Malak",
         "cleanTr": "malak",
         "cat": "اسْمٌ",
-        "role": "Singular & Broken Plural",
+        "role": "Noun / اسْمٌ (Plural: مَلَائِكَةٌ)",
         "ur": "فرشتہ، آسمانی نوری مخلوق",
         "en": "Angel, heavenly messenger",
         "cleanEn": "angel heavenly messenger",
-        "occurrences": [ "U01-L10", "U03-L01", "U03-L10" ]
+        "occurrences": [ "U01-L10", "U03-L01", "U03-L10", "U04-L12", "U05-L02" ]
     },
     {
-        "idx": 1306,
+        "idx": 1211,
+        "ar": "مَلِكٌ",
+        "cleanAr": "ملك",
+        "letter": "م",
+        "tr": "Malik",
+        "cleanTr": "malik",
+        "cat": "اسْمٌ",
+        "role": "Noun / اسْمٌ (Plural: مُلُوكٌ)",
+        "ur": "بادشاہ، مالک، فرماں روا",
+        "en": "King, sovereign, monarch",
+        "cleanEn": "king sovereign monarch",
+        "occurrences": [ "U03-L05", "U05-L04" ]
+    },
+    {
+        "idx": 1212,
+        "ar": "مُلْكٌ",
+        "cleanAr": "ملك",
+        "letter": "م",
+        "tr": "Mulk",
+        "cleanTr": "mulk",
+        "cat": "اسْمٌ",
+        "role": "Noun / اسْمٌ",
+        "ur": "بادشاہت، سلطنت، اقتدار، حاکمیت",
+        "en": "Kingdom, dominion, sovereignty, rule",
+        "cleanEn": "kingdom dominion sovereignty rule",
+        "occurrences": [ "U02-L02", "U03-L01", "U05-L08" ]
+    },
+    {
+        "idx": 1213,
         "ar": "مَلَكُوتٌ",
         "cleanAr": "ملكوت",
         "letter": "م",
@@ -18288,7 +16986,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L05", "U05-L21" ]
     },
     {
-        "idx": 1307,
+        "idx": 1214,
         "ar": "مِلَّةٌ",
         "cleanAr": "مله",
         "letter": "م",
@@ -18302,21 +17000,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L07", "U02-L03", "U05-L06" ]
     },
     {
-        "idx": 1308,
-        "ar": "مُلُوكٌ",
-        "cleanAr": "ملوك",
-        "letter": "م",
-        "tr": "Mulūk",
-        "cleanTr": "muluk",
-        "cat": "اسْمٌ",
-        "role": "Broken Plural / جَمْعُ تَكْسِير (مَلِك)",
-        "ur": "بادشاہ، حکمران",
-        "en": "Kings, monarchs",
-        "cleanEn": "kings monarchs",
-        "occurrences": [ "U05-L04" ]
-    },
-    {
-        "idx": 1309,
+        "idx": 1215,
         "ar": "مَمَاتٌ",
         "cleanAr": "ممات",
         "letter": "م",
@@ -18330,7 +17014,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L15" ]
     },
     {
-        "idx": 1310,
+        "idx": 1216,
         "ar": "مَمْلُوكٌ",
         "cleanAr": "مملوك",
         "letter": "م",
@@ -18344,7 +17028,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L18" ]
     },
     {
-        "idx": 1311,
+        "idx": 1217,
         "ar": "مَمْنُوعٌ",
         "cleanAr": "ممنوع",
         "letter": "م",
@@ -18358,7 +17042,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L18" ]
     },
     {
-        "idx": 1312,
+        "idx": 1218,
         "ar": "مَمْنُونٌ",
         "cleanAr": "ممنون",
         "letter": "م",
@@ -18372,35 +17056,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L08" ]
     },
     {
-        "idx": 1313,
-        "ar": "مِنْ",
-        "cleanAr": "من",
-        "letter": "م",
-        "tr": "Min",
-        "cleanTr": "min",
-        "cat": "حَرْفٌ",
-        "role": "Preposition (From / Of) / حَرْفُ جَرّ (اِبْتِدَاء و تَبْعِيض)",
-        "ur": "سے، کی طرف سے، میں سے، کی وجہ سے",
-        "en": "From, Of, Out of, By reason of",
-        "cleanEn": "from of out of by reason of",
-        "occurrences": [ "U01-L03", "U02-L03", "U02-L04", "U02-L05", "U02-L08", "U02-L11", "U02-L13", "U03-L03" ]
-    },
-    {
-        "idx": 1314,
-        "ar": "مَنْ",
-        "cleanAr": "من",
-        "letter": "م",
-        "tr": "Man",
-        "cleanTr": "man",
-        "cat": "ضَمِيرٌ",
-        "role": "Interrogative Pronoun / اسْمُ اسْتِفْهَام",
-        "ur": "جو شخص، جو کوئی، جس نے",
-        "en": "Whoever, who, whom",
-        "cleanEn": "whoever who whom",
-        "occurrences": [ "U01-L02", "U03-L05" ]
-    },
-    {
-        "idx": 1315,
+        "idx": 1219,
         "ar": "مَنٌّ",
         "cleanAr": "من",
         "letter": "م",
@@ -18414,7 +17070,49 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L08" ]
     },
     {
-        "idx": 1316,
+        "idx": 1220,
+        "ar": "مَنَّ",
+        "cleanAr": "من",
+        "letter": "م",
+        "tr": "Manna",
+        "cleanTr": "manna",
+        "cat": "فِعْلٌ",
+        "role": "Verb (Form I) / فِعْلٌ مَاضٍ",
+        "ur": "اس نے احسان کیا، انعام فرمایا",
+        "en": "He conferred a favor, bestowed grace",
+        "cleanEn": "he conferred a favor bestowed grace",
+        "occurrences": [ "U01-L17" ]
+    },
+    {
+        "idx": 1221,
+        "ar": "مَنْ",
+        "cleanAr": "من",
+        "letter": "م",
+        "tr": "Man",
+        "cleanTr": "man",
+        "cat": "ضَمِيرٌ",
+        "role": "Interrogative Pronoun / اسْمُ اسْتِفْهَام",
+        "ur": "جو شخص، جو کوئی، جس نے",
+        "en": "Whoever, who, whom",
+        "cleanEn": "whoever who whom",
+        "occurrences": [ "U01-L02", "U03-L05" ]
+    },
+    {
+        "idx": 1222,
+        "ar": "مِنْ",
+        "cleanAr": "من",
+        "letter": "م",
+        "tr": "Min",
+        "cleanTr": "min",
+        "cat": "حَرْفٌ",
+        "role": "Preposition (From / Of) / حَرْفُ جَرّ (اِبْتِدَاء و تَبْعِيض)",
+        "ur": "سے، کی طرف سے، میں سے، کی وجہ سے",
+        "en": "From, Of, Out of, By reason of",
+        "cleanEn": "from of out of by reason of",
+        "occurrences": [ "U01-L03", "U02-L03", "U02-L04", "U02-L05", "U02-L08", "U02-L11", "U02-L13", "U03-L03" ]
+    },
+    {
+        "idx": 1223,
         "ar": "مَنَافِعٌ",
         "cleanAr": "منافع",
         "letter": "م",
@@ -18428,7 +17126,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L01", "U05-L08" ]
     },
     {
-        "idx": 1317,
+        "idx": 1224,
         "ar": "مُنَافِقٌ",
         "cleanAr": "منافق",
         "letter": "م",
@@ -18438,25 +17136,11 @@ var WORDS_DATA = [    {
         "role": "Singular Active Participle / اسْمُ فَاعِل",
         "ur": "منافق، دو رخی پالیسی رکھنے والا، کفر چھپانے والا",
         "en": "Hypocrite, two-faced pretender",
-        "cleanEn": "hypocrite twofaced pretender",
-        "occurrences": [ "U01-L02", "U03-L09", "U05-L01" ]
+        "cleanEn": "hypocrite two faced pretender",
+        "occurrences": [ "U01-L02", "U01-L11", "U03-L09", "U05-L01" ]
     },
     {
-        "idx": 1318,
-        "ar": "مُنَافِقَةٌ",
-        "cleanAr": "منافقه",
-        "letter": "م",
-        "tr": "Munāfiqah",
-        "cleanTr": "munafiqah",
-        "cat": "صِفَةٌ",
-        "role": "Noun (Active Participle Fem.) / اسْمُ فَاعِل",
-        "ur": "منافقہ عورت / منافق عورتیں",
-        "en": "Hypocrite woman",
-        "cleanEn": "hypocrite woman",
-        "occurrences": [ "U01-L11" ]
-    },
-    {
-        "idx": 1319,
+        "idx": 1225,
         "ar": "مَنَامٌ",
         "cleanAr": "منام",
         "letter": "م",
@@ -18470,7 +17154,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L07", "U05-L10" ]
     },
     {
-        "idx": 1320,
+        "idx": 1226,
         "ar": "مُنْتَظِرٌ",
         "cleanAr": "منتظر",
         "letter": "م",
@@ -18484,7 +17168,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L09", "U05-L01" ]
     },
     {
-        "idx": 1321,
+        "idx": 1227,
         "ar": "مُنتَقِمٌ",
         "cleanAr": "منتقم",
         "letter": "م",
@@ -18498,7 +17182,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L16" ]
     },
     {
-        "idx": 1322,
+        "idx": 1228,
         "ar": "مُنتَهٍ",
         "cleanAr": "منته",
         "letter": "م",
@@ -18512,7 +17196,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L09" ]
     },
     {
-        "idx": 1323,
+        "idx": 1229,
         "ar": "مُنتَهَىٰ",
         "cleanAr": "منتهي",
         "letter": "م",
@@ -18526,35 +17210,49 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L07" ]
     },
     {
-        "idx": 1324,
-        "ar": "مُنذِرٌ",
-        "cleanAr": "منذر",
-        "letter": "م",
-        "tr": "Mundhir",
-        "cleanTr": "mundhir",
-        "cat": "اسْمٌ",
-        "role": "Noun (Active Participle) / اسْمُ فَاعِل",
-        "ur": "ڈرانے والا، خوفِ خدا کی تنبیہ کرنے والا",
-        "en": "Warner, admonisher",
-        "cleanEn": "warner admonisher",
-        "occurrences": [ "U03-L09", "U04-L05" ]
-    },
-    {
-        "idx": 1325,
+        "idx": 1230,
         "ar": "مُنذَرٌ",
         "cleanAr": "منذر",
         "letter": "م",
         "tr": "Mundhar",
         "cleanTr": "mundhar",
         "cat": "اسْمٌ",
-        "role": "Noun (Passive Participle) / اسْمُ مَفْعُول",
+        "role": "Passive Participle / اسْمُ مَفْعُول (Plural: مُنذَرُونَ)",
         "ur": "جس کو ڈرایا گیا، متنبہ کیا گیا",
         "en": "Warned, cautioned",
         "cleanEn": "warned cautioned",
         "occurrences": [ "U03-L09", "U05-L01" ]
     },
     {
-        "idx": 1326,
+        "idx": 1231,
+        "ar": "مُنذِرٌ",
+        "cleanAr": "منذر",
+        "letter": "م",
+        "tr": "Mundhir",
+        "cleanTr": "mundhir",
+        "cat": "اسْمٌ",
+        "role": "Active Participle / اسْمُ فَاعِل (Plural: مُنذِرُونَ)",
+        "ur": "ڈرانے والا، خوفِ خدا کی تنبیہ کرنے والا",
+        "en": "Warner, admonisher",
+        "cleanEn": "warner admonisher",
+        "occurrences": [ "U03-L09", "U04-L05", "U05-L01" ]
+    },
+    {
+        "idx": 1232,
+        "ar": "مُنَزَّلٌ",
+        "cleanAr": "منزل",
+        "letter": "م",
+        "tr": "Munazzal",
+        "cleanTr": "munazzal",
+        "cat": "اسْمٌ",
+        "role": "Noun (Passive Participle) / اسْمُ مَفْعُول",
+        "ur": "نازل کیا گیا، اتارا گیا",
+        "en": "Sent down, revealed gradually",
+        "cleanEn": "sent down revealed gradually",
+        "occurrences": [ "U03-L09" ]
+    },
+    {
+        "idx": 1233,
         "ar": "مُنَزِّلٌ",
         "cleanAr": "منزل",
         "letter": "م",
@@ -18568,21 +17266,21 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L09" ]
     },
     {
-        "idx": 1327,
-        "ar": "مُنَزَّلٌ",
+        "idx": 1234,
+        "ar": "مُنْزِلٌ",
         "cleanAr": "منزل",
         "letter": "م",
-        "tr": "Munazzal",
-        "cleanTr": "munazzal",
+        "tr": "Munzil",
+        "cleanTr": "munzil",
         "cat": "اسْمٌ",
-        "role": "Noun (Passive Participle) / اسْمُ مَفْعُول",
-        "ur": "نازل کیا گیا، اتارا گیا",
-        "en": "Sent down, revealed gradually",
-        "cleanEn": "sent down revealed gradually",
-        "occurrences": [ "U03-L09", "U05-L01" ]
+        "role": "Active Participle (Form IV) / اسْمُ فَاعِل (Plural: مُنْزِلُونَ)",
+        "ur": "نازل کرنے والا، اتارنے والا",
+        "en": "Sender down, revealer",
+        "cleanEn": "sender down revealer",
+        "occurrences": [ "U05-L01" ]
     },
     {
-        "idx": 1328,
+        "idx": 1235,
         "ar": "مَنْشُورٌ",
         "cleanAr": "منشور",
         "letter": "م",
@@ -18596,7 +17294,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L10" ]
     },
     {
-        "idx": 1329,
+        "idx": 1236,
         "ar": "مَنْصُورٌ",
         "cleanAr": "منصور",
         "letter": "م",
@@ -18610,7 +17308,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L18", "U05-L01" ]
     },
     {
-        "idx": 1330,
+        "idx": 1237,
         "ar": "مُنظَرٌ",
         "cleanAr": "منظر",
         "letter": "م",
@@ -18624,7 +17322,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L09", "U05-L01" ]
     },
     {
-        "idx": 1331,
+        "idx": 1238,
         "ar": "مَنَعَ",
         "cleanAr": "منع",
         "letter": "م",
@@ -18638,7 +17336,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L13" ]
     },
     {
-        "idx": 1332,
+        "idx": 1239,
         "ar": "مُنقَلِبٌ",
         "cleanAr": "منقلب",
         "letter": "م",
@@ -18652,21 +17350,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L16" ]
     },
     {
-        "idx": 1333,
-        "ar": "مُنْكَرٌ",
-        "cleanAr": "منكر",
-        "letter": "م",
-        "tr": "Munkar",
-        "cleanTr": "munkar",
-        "cat": "اسْمٌ",
-        "role": "Noun (Passive Participle) / اسْمُ مَفْعُول",
-        "ur": "برا کام، شریعت و عقل کی رو سے ناپسندیدہ بات",
-        "en": "Wrong, Abomination, Evil deed",
-        "cleanEn": "wrong abomination evil deed",
-        "occurrences": [ "U02-L07", "U04-L07" ]
-    },
-    {
-        "idx": 1334,
+        "idx": 1240,
         "ar": "مُنكِرٌ",
         "cleanAr": "منكر",
         "letter": "م",
@@ -18680,7 +17364,21 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L09", "U05-L01" ]
     },
     {
-        "idx": 1335,
+        "idx": 1241,
+        "ar": "مُنْكَرٌ",
+        "cleanAr": "منكر",
+        "letter": "م",
+        "tr": "Munkar",
+        "cleanTr": "munkar",
+        "cat": "اسْمٌ",
+        "role": "Noun (Passive Participle) / اسْمُ مَفْعُول",
+        "ur": "برا کام، شریعت و عقل کی رو سے ناپسندیدہ بات",
+        "en": "Wrong, Abomination, Evil deed",
+        "cleanEn": "wrong abomination evil deed",
+        "occurrences": [ "U02-L07", "U04-L07" ]
+    },
+    {
+        "idx": 1242,
         "ar": "مُنِيبٌ",
         "cleanAr": "منيب",
         "letter": "م",
@@ -18694,7 +17392,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L07" ]
     },
     {
-        "idx": 1336,
+        "idx": 1243,
         "ar": "مُنِيرٌ",
         "cleanAr": "منير",
         "letter": "م",
@@ -18708,7 +17406,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L02" ]
     },
     {
-        "idx": 1337,
+        "idx": 1244,
         "ar": "مُهَاجِرٌ",
         "cleanAr": "مهاجر",
         "letter": "م",
@@ -18717,26 +17415,12 @@ var WORDS_DATA = [    {
         "cat": "اسْمٌ",
         "role": "Active Participle (Form III) / اسْمُ فَاعِل",
         "ur": "ہجرت کرنے والا، اللہ کیلئے وطن چھوڑنے والا",
-        "en": "Emigrant, one who migrates for God's sake",
-        "cleanEn": "emigrant one who migrates for gods sake",
-        "occurrences": [ "U01-L02", "U03-L09", "U05-L01" ]
+        "en": "Emigrant, one who migrates for God\u0027s sake",
+        "cleanEn": "emigrant one who migrates for god s sake",
+        "occurrences": [ "U01-L02", "U01-L11", "U03-L09", "U05-L01" ]
     },
     {
-        "idx": 1338,
-        "ar": "مُهَاجِرَةٌ",
-        "cleanAr": "مهاجره",
-        "letter": "م",
-        "tr": "Muhājirah",
-        "cleanTr": "muhajirah",
-        "cat": "صِفَةٌ",
-        "role": "Noun (Active Participle Fem.) / اسْمُ فَاعِل",
-        "ur": "مہاجرہ عورت / مہاجر عورتیں",
-        "en": "Emigrant woman",
-        "cleanEn": "emigrant woman",
-        "occurrences": [ "U01-L11" ]
-    },
-    {
-        "idx": 1339,
+        "idx": 1245,
         "ar": "مِهَادٌ",
         "cleanAr": "مهاد",
         "letter": "م",
@@ -18750,7 +17434,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L06" ]
     },
     {
-        "idx": 1340,
+        "idx": 1246,
         "ar": "مُهْتَدٍ",
         "cleanAr": "مهتد",
         "letter": "م",
@@ -18760,11 +17444,11 @@ var WORDS_DATA = [    {
         "role": "Noun (Active Participle) / اسْمُ فَاعِل",
         "ur": "ہدایت پانے والا، راہ راست پر چلنے والا",
         "en": "Guided one, rightly-directed",
-        "cleanEn": "guided one rightlydirected",
+        "cleanEn": "guided one rightly directed",
         "occurrences": [ "U04-L01", "U05-L02" ]
     },
     {
-        "idx": 1341,
+        "idx": 1247,
         "ar": "مُهْلٌ",
         "cleanAr": "مهل",
         "letter": "م",
@@ -18778,21 +17462,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L01" ]
     },
     {
-        "idx": 1342,
-        "ar": "مُهْلِكٌ",
-        "cleanAr": "مهلك",
-        "letter": "م",
-        "tr": "Muhlik",
-        "cleanTr": "muhlik",
-        "cat": "اسْمٌ",
-        "role": "Noun (Active Participle) / اسْمُ فَاعِل",
-        "ur": "ہلاک کرنے والا، نیست و نابود کرنے والا",
-        "en": "Destroyer, annihilator",
-        "cleanEn": "destroyer annihilator",
-        "occurrences": [ "U03-L09", "U05-L06" ]
-    },
-    {
-        "idx": 1343,
+        "idx": 1248,
         "ar": "مُهْلَكٌ",
         "cleanAr": "مهلك",
         "letter": "م",
@@ -18806,7 +17476,21 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L09", "U05-L01" ]
     },
     {
-        "idx": 1344,
+        "idx": 1249,
+        "ar": "مُهْلِكٌ",
+        "cleanAr": "مهلك",
+        "letter": "م",
+        "tr": "Muhlik",
+        "cleanTr": "muhlik",
+        "cat": "اسْمٌ",
+        "role": "Noun (Active Participle) / اسْمُ فَاعِل",
+        "ur": "ہلاک کرنے والا، نیست و نابود کرنے والا",
+        "en": "Destroyer, annihilator",
+        "cleanEn": "destroyer annihilator",
+        "occurrences": [ "U03-L09", "U05-L06" ]
+    },
+    {
+        "idx": 1250,
         "ar": "مُهَيْمِنٌ",
         "cleanAr": "مهيمن",
         "letter": "م",
@@ -18820,21 +17504,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L01" ]
     },
     {
-        "idx": 1345,
-        "ar": "مُهِينٌ",
-        "cleanAr": "مهين",
-        "letter": "م",
-        "tr": "Muhīn",
-        "cleanTr": "muhin",
-        "cat": "اسْمٌ",
-        "role": "Active Participle / اسْمُ فَاعِل",
-        "ur": "ذلیل و رسوا کرنے والا",
-        "en": "Humiliating, degrading",
-        "cleanEn": "humiliating degrading",
-        "occurrences": [ "U05-L02", "U03-L02" ]
-    },
-    {
-        "idx": 1346,
+        "idx": 1251,
         "ar": "مَهِينٌ",
         "cleanAr": "مهين",
         "letter": "م",
@@ -18848,21 +17518,21 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L13", "U05-L20" ]
     },
     {
-        "idx": 1347,
-        "ar": "مَوَاقِيتٌ",
-        "cleanAr": "مواقيت",
+        "idx": 1252,
+        "ar": "مُهِينٌ",
+        "cleanAr": "مهين",
         "letter": "م",
-        "tr": "Mawāqīt",
-        "cleanTr": "mawaqit",
+        "tr": "Muhīn",
+        "cleanTr": "muhin",
         "cat": "اسْمٌ",
-        "role": "Plural Noun / جَمْعُ مِيقَات",
-        "ur": "وقت معلوم کرنے کے ذرائع، میعادیں",
-        "en": "Fixed times, indicators of periods",
-        "cleanEn": "fixed times indicators of periods",
-        "occurrences": [ "U04-L09" ]
+        "role": "Active Participle / اسْمُ فَاعِل",
+        "ur": "ذلیل و رسوا کرنے والا",
+        "en": "Humiliating, degrading",
+        "cleanEn": "humiliating degrading",
+        "occurrences": [ "U03-L02", "U05-L02" ]
     },
     {
-        "idx": 1348,
+        "idx": 1253,
         "ar": "مَوْتٌ",
         "cleanAr": "موت",
         "letter": "م",
@@ -18876,7 +17546,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L04", "U02-L01", "U03-L07" ]
     },
     {
-        "idx": 1349,
+        "idx": 1254,
         "ar": "مَوْتَةٌ",
         "cleanAr": "موته",
         "letter": "م",
@@ -18890,7 +17560,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L14" ]
     },
     {
-        "idx": 1350,
+        "idx": 1255,
         "ar": "مُؤَذِّنٌ",
         "cleanAr": "موذن",
         "letter": "م",
@@ -18904,7 +17574,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L06" ]
     },
     {
-        "idx": 1351,
+        "idx": 1256,
         "ar": "مُوسِعٌ",
         "cleanAr": "موسع",
         "letter": "م",
@@ -18918,7 +17588,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L16" ]
     },
     {
-        "idx": 1352,
+        "idx": 1257,
         "ar": "مُوسَىٰ",
         "cleanAr": "موسي",
         "letter": "م",
@@ -18932,7 +17602,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L01", "U01-L12", "U02-L04", "U02-L06", "U02-L07", "U02-L13", "U03-L04", "U05-L03" ]
     },
     {
-        "idx": 1353,
+        "idx": 1258,
         "ar": "مُؤْصَدَةٌ",
         "cleanAr": "موصده",
         "letter": "م",
@@ -18946,7 +17616,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L08" ]
     },
     {
-        "idx": 1354,
+        "idx": 1259,
         "ar": "مَوْعِدٌ",
         "cleanAr": "موعد",
         "letter": "م",
@@ -18960,7 +17630,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L06", "U04-L02", "U05-L06" ]
     },
     {
-        "idx": 1355,
+        "idx": 1260,
         "ar": "مَوْعِظَةٌ",
         "cleanAr": "موعظه",
         "letter": "م",
@@ -18974,7 +17644,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L03", "U05-L02" ]
     },
     {
-        "idx": 1356,
+        "idx": 1261,
         "ar": "مُوقِنٌ",
         "cleanAr": "موقن",
         "letter": "م",
@@ -18988,7 +17658,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L09", "U05-L01" ]
     },
     {
-        "idx": 1357,
+        "idx": 1262,
         "ar": "مَوْقُوفٌ",
         "cleanAr": "موقوف",
         "letter": "م",
@@ -19002,7 +17672,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L07" ]
     },
     {
-        "idx": 1358,
+        "idx": 1263,
         "ar": "مَوْلَىٰ",
         "cleanAr": "مولي",
         "letter": "م",
@@ -19016,7 +17686,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L08", "U04-L02", "U05-L08" ]
     },
     {
-        "idx": 1359,
+        "idx": 1264,
         "ar": "مُؤْمِنٌ",
         "cleanAr": "مومن",
         "letter": "م",
@@ -19027,24 +17697,10 @@ var WORDS_DATA = [    {
         "ur": "ایمان لانے والا، مؤمن، تصدیق کرنے والا",
         "en": "Believer, faithful, one who trusts in God",
         "cleanEn": "believer faithful one who trusts in god",
-        "occurrences": [ "U01-L01", "U02-L02", "U03-L03", "U03-L09", "U04-L01", "U03-L10", "U02-L13", "U05-L01" ]
+        "occurrences": [ "U01-L01", "U01-L03", "U02-L02", "U02-L13", "U03-L03", "U03-L09", "U03-L10", "U04-L01", "U05-L01" ]
     },
     {
-        "idx": 1360,
-        "ar": "مُؤْمِنَةٌ",
-        "cleanAr": "مومنه",
-        "letter": "م",
-        "tr": "Mu’minah",
-        "cleanTr": "muminah",
-        "cat": "اسْمٌ",
-        "role": "Feminine Active Participle / اسْمُ فَاعِل",
-        "ur": "ایمان والی عورت، مؤمنہ",
-        "en": "Believing woman (fem.)",
-        "cleanEn": "believing woman fem",
-        "occurrences": [ "U01-L03", "U03-L03" ]
-    },
-    {
-        "idx": 1361,
+        "idx": 1265,
         "ar": "مَيِّتٌ",
         "cleanAr": "ميت",
         "letter": "م",
@@ -19055,10 +17711,10 @@ var WORDS_DATA = [    {
         "ur": "مردہ، بے جان، مرا ہوا",
         "en": "Mortal, dead, bound to die",
         "cleanEn": "mortal dead bound to die",
-        "occurrences": [ "U01-L05", "U02-L05", "U04-L08", "U05-L01", "U04-L18" ]
+        "occurrences": [ "U01-L05", "U02-L05", "U04-L08", "U04-L18", "U05-L01", "U05-L04" ]
     },
     {
-        "idx": 1362,
+        "idx": 1266,
         "ar": "مِيثَاقٌ",
         "cleanAr": "ميثاق",
         "letter": "م",
@@ -19072,7 +17728,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L05", "U05-L10" ]
     },
     {
-        "idx": 1363,
+        "idx": 1267,
         "ar": "مِيرَاثٌ",
         "cleanAr": "ميراث",
         "letter": "م",
@@ -19086,7 +17742,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L05" ]
     },
     {
-        "idx": 1364,
+        "idx": 1268,
         "ar": "مِيزَانٌ",
         "cleanAr": "ميزان",
         "letter": "م",
@@ -19100,7 +17756,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L02", "U02-L03" ]
     },
     {
-        "idx": 1365,
+        "idx": 1269,
         "ar": "مَيْسِرٌ",
         "cleanAr": "ميسر",
         "letter": "م",
@@ -19114,7 +17770,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L03" ]
     },
     {
-        "idx": 1366,
+        "idx": 1270,
         "ar": "مِيقَاتٌ",
         "cleanAr": "ميقات",
         "letter": "م",
@@ -19125,10 +17781,10 @@ var WORDS_DATA = [    {
         "ur": "مقررہ وقت، وعدہ گاہ، معین میعاد",
         "en": "Fixed time, appointed appointment",
         "cleanEn": "fixed time appointed appointment",
-        "occurrences": [ "U03-L06", "U05-L02" ]
+        "occurrences": [ "U03-L06", "U04-L09", "U05-L02" ]
     },
     {
-        "idx": 1367,
+        "idx": 1271,
         "ar": "مِيكَالٌ",
         "cleanAr": "ميكال",
         "letter": "م",
@@ -19142,7 +17798,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L02" ]
     },
     {
-        "idx": 1368,
+        "idx": 1272,
         "ar": "نَادِمٌ",
         "cleanAr": "نادم",
         "letter": "ن",
@@ -19156,7 +17812,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L02" ]
     },
     {
-        "idx": 1369,
+        "idx": 1273,
         "ar": "نَارٌ",
         "cleanAr": "نار",
         "letter": "ن",
@@ -19170,7 +17826,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L08", "U01-L17", "U02-L02", "U02-L03", "U02-L04", "U02-L05", "U02-L06", "U02-L09", "U02-L13", "U03-L01" ]
     },
     {
-        "idx": 1370,
+        "idx": 1274,
         "ar": "نَاسٌ",
         "cleanAr": "ناس",
         "letter": "ن",
@@ -19184,7 +17840,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L06", "U01-L16", "U02-L02", "U02-L04", "U02-L05", "U02-L07", "U02-L11", "U02-L13", "U03-L04" ]
     },
     {
-        "idx": 1371,
+        "idx": 1275,
         "ar": "نَاشِئَةٌ",
         "cleanAr": "ناشيه",
         "letter": "ن",
@@ -19198,7 +17854,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L05" ]
     },
     {
-        "idx": 1372,
+        "idx": 1276,
         "ar": "نَاصِحٌ",
         "cleanAr": "ناصح",
         "letter": "ن",
@@ -19212,7 +17868,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L08", "U05-L01" ]
     },
     {
-        "idx": 1373,
+        "idx": 1277,
         "ar": "نَاصِرٌ",
         "cleanAr": "ناصر",
         "letter": "ن",
@@ -19223,10 +17879,10 @@ var WORDS_DATA = [    {
         "ur": "مددگار، نصرت کرنے والا",
         "en": "Helper, supporter",
         "cleanEn": "helper supporter",
-        "occurrences": [ "U02-L08", "U03-L08", "U05-L01" ]
+        "occurrences": [ "U02-L08", "U03-L08", "U05-L01", "U05-L04" ]
     },
     {
-        "idx": 1374,
+        "idx": 1278,
         "ar": "نَاصِيَةٌ",
         "cleanAr": "ناصيه",
         "letter": "ن",
@@ -19240,7 +17896,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L11" ]
     },
     {
-        "idx": 1375,
+        "idx": 1279,
         "ar": "نَاضِرَةٌ",
         "cleanAr": "ناضره",
         "letter": "ن",
@@ -19254,7 +17910,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L21" ]
     },
     {
-        "idx": 1376,
+        "idx": 1280,
         "ar": "نَاظِرٌ",
         "cleanAr": "ناظر",
         "letter": "ن",
@@ -19268,7 +17924,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L08", "U05-L02" ]
     },
     {
-        "idx": 1377,
+        "idx": 1281,
         "ar": "نَاعِمَةٌ",
         "cleanAr": "ناعمه",
         "letter": "ن",
@@ -19282,7 +17938,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L21" ]
     },
     {
-        "idx": 1378,
+        "idx": 1282,
         "ar": "نَاقَةٌ",
         "cleanAr": "ناقه",
         "letter": "ن",
@@ -19292,11 +17948,11 @@ var WORDS_DATA = [    {
         "role": "Noun (Animal) / اسْمٌ",
         "ur": "اونٹنی (حضرت صالح کی اونٹنی)",
         "en": "She-camel",
-        "cleanEn": "shecamel",
+        "cleanEn": "she camel",
         "occurrences": [ "U01-L17", "U04-L12" ]
     },
     {
-        "idx": 1379,
+        "idx": 1283,
         "ar": "نَائِمٌ",
         "cleanAr": "نايم",
         "letter": "ن",
@@ -19310,21 +17966,21 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L05" ]
     },
     {
-        "idx": 1380,
+        "idx": 1284,
         "ar": "نَبَأٌ",
         "cleanAr": "نبا",
         "letter": "ن",
         "tr": "Naba’",
         "cleanTr": "naba",
         "cat": "اسْمٌ",
-        "role": "Noun / اسْمٌ",
+        "role": "Noun / اسْمٌ (Plural: أَنبَاءٌ)",
         "ur": "اہم خبر، اطلاع، بڑا واقعہ",
         "en": "News, great tiding, announcement",
         "cleanEn": "news great tiding announcement",
-        "occurrences": [ "U03-L01", "U04-L01" ]
+        "occurrences": [ "U03-L01", "U03-L06", "U04-L01" ]
     },
     {
-        "idx": 1381,
+        "idx": 1285,
         "ar": "نُبُوَّةٌ",
         "cleanAr": "نبوه",
         "letter": "ن",
@@ -19338,7 +17994,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L04", "U04-L03" ]
     },
     {
-        "idx": 1382,
+        "idx": 1286,
         "ar": "نَبِيٌّ",
         "cleanAr": "نبي",
         "letter": "ن",
@@ -19349,10 +18005,10 @@ var WORDS_DATA = [    {
         "ur": "نبی، اللہ کا پیغام پہنچانے والا پیغمبر",
         "en": "Prophet",
         "cleanEn": "prophet",
-        "occurrences": [ "U01-L02", "U01-L15", "U02-L02", "U02-L13", "U04-L17", "U05-L01" ]
+        "occurrences": [ "U01-L02", "U01-L15", "U02-L02", "U02-L13", "U04-L17", "U05-L01", "U05-L04" ]
     },
     {
-        "idx": 1383,
+        "idx": 1287,
         "ar": "نَجَاةٌ",
         "cleanAr": "نجاه",
         "letter": "ن",
@@ -19366,7 +18022,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L06", "U02-L06" ]
     },
     {
-        "idx": 1384,
+        "idx": 1288,
         "ar": "نَجَسٌ",
         "cleanAr": "نجس",
         "letter": "ن",
@@ -19380,35 +18036,21 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L01" ]
     },
     {
-        "idx": 1385,
+        "idx": 1289,
         "ar": "نَجْمٌ",
         "cleanAr": "نجم",
         "letter": "ن",
         "tr": "Najm",
         "cleanTr": "najm",
         "cat": "اسْمٌ",
-        "role": "Singular & Broken Plural",
+        "role": "Singular \u0026 Broken Plural",
         "ur": "ستارہ / نجوم، ستارے",
         "en": "Star / Stars",
         "cleanEn": "star stars",
-        "occurrences": [ "U01-L10", "U02-L10" ]
+        "occurrences": [ "U01-L10", "U02-L10", "U04-L03" ]
     },
     {
-        "idx": 1386,
-        "ar": "نُجُومٌ",
-        "cleanAr": "نجوم",
-        "letter": "ن",
-        "tr": "Nujūm",
-        "cleanTr": "nujum",
-        "cat": "اسْمٌ",
-        "role": "Plural Noun / جَمْعُ نَجْم",
-        "ur": "ستارے",
-        "en": "Stars",
-        "cleanEn": "stars",
-        "occurrences": [ "U04-L03" ]
-    },
-    {
-        "idx": 1387,
+        "idx": 1290,
         "ar": "نَجْوَىٰ",
         "cleanAr": "نجوي",
         "letter": "ن",
@@ -19422,7 +18064,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L06" ]
     },
     {
-        "idx": 1388,
+        "idx": 1291,
         "ar": "نَحْلٌ",
         "cleanAr": "نحل",
         "letter": "ن",
@@ -19436,7 +18078,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L06" ]
     },
     {
-        "idx": 1389,
+        "idx": 1292,
         "ar": "نَحْنُ",
         "cleanAr": "نحن",
         "letter": "ن",
@@ -19450,7 +18092,21 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L01", "U05-L13" ]
     },
     {
-        "idx": 1390,
+        "idx": 1293,
+        "ar": "نِدٌّ",
+        "cleanAr": "ند",
+        "letter": "ن",
+        "tr": "Nidd",
+        "cleanTr": "nidd",
+        "cat": "اسْمٌ",
+        "role": "Noun / اسْمٌ (Plural: أَندَادٌ)",
+        "ur": "مدِمقابل، شریک، ہمسر",
+        "en": "Equal, rival, peer",
+        "cleanEn": "equal rival peer",
+        "occurrences": [ "U05-L04" ]
+    },
+    {
+        "idx": 1294,
         "ar": "نَدَامَةٌ",
         "cleanAr": "ندامه",
         "letter": "ن",
@@ -19464,7 +18120,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L02", "U02-L02" ]
     },
     {
-        "idx": 1391,
+        "idx": 1295,
         "ar": "نَذِيرٌ",
         "cleanAr": "نذير",
         "letter": "ن",
@@ -19475,24 +18131,10 @@ var WORDS_DATA = [    {
         "ur": "ڈرانے والا، متنبہ کرنے والا پیغمبر",
         "en": "Warner, one who alerts of danger",
         "cleanEn": "warner one who alerts of danger",
-        "occurrences": [ "U02-L09", "U03-L01", "U04-L05", "U03-L05", "U05-L03" ]
+        "occurrences": [ "U02-L09", "U03-L01", "U03-L05", "U04-L05", "U05-L03" ]
     },
     {
-        "idx": 1392,
-        "ar": "نُزُلٌ",
-        "cleanAr": "نزل",
-        "letter": "ن",
-        "tr": "Nuzul",
-        "cleanTr": "nuzul",
-        "cat": "اسْمٌ",
-        "role": "Noun / اسْمٌ",
-        "ur": "مہمانی، ضیافت، پہلی مہمانی",
-        "en": "Hospitality, welcome gift, reception",
-        "cleanEn": "hospitality welcome gift reception",
-        "occurrences": [ "U05-L06" ]
-    },
-    {
-        "idx": 1393,
+        "idx": 1296,
         "ar": "نَزَّلَ",
         "cleanAr": "نزل",
         "letter": "ن",
@@ -19506,7 +18148,21 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L01" ]
     },
     {
-        "idx": 1394,
+        "idx": 1297,
+        "ar": "نُزُلٌ",
+        "cleanAr": "نزل",
+        "letter": "ن",
+        "tr": "Nuzul",
+        "cleanTr": "nuzul",
+        "cat": "اسْمٌ",
+        "role": "Noun / اسْمٌ",
+        "ur": "مہمانی، ضیافت، پہلی مہمانی",
+        "en": "Hospitality, welcome gift, reception",
+        "cleanEn": "hospitality welcome gift reception",
+        "occurrences": [ "U05-L06" ]
+    },
+    {
+        "idx": 1298,
         "ar": "نِسَاءٌ",
         "cleanAr": "نساء",
         "letter": "ن",
@@ -19520,7 +18176,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L04" ]
     },
     {
-        "idx": 1395,
+        "idx": 1299,
         "ar": "نَسَبٌ",
         "cleanAr": "نسب",
         "letter": "ن",
@@ -19531,10 +18187,10 @@ var WORDS_DATA = [    {
         "ur": "نسب، خاندانی سلسلہ، قرابت",
         "en": "Lineage, kinship, descent",
         "cleanEn": "lineage kinship descent",
-        "occurrences": [ "U01-L05" ]
+        "occurrences": [ "U01-L05", "U05-L21" ]
     },
     {
-        "idx": 1396,
+        "idx": 1300,
         "ar": "نُسْخَةٌ",
         "cleanAr": "نسخه",
         "letter": "ن",
@@ -19545,10 +18201,10 @@ var WORDS_DATA = [    {
         "ur": "تحریر، نسخہ، لکھی ہوئی تختی",
         "en": "Inscription, writing, script, copy",
         "cleanEn": "inscription writing script copy",
-        "occurrences": [ "U04-L11", "U01-L17" ]
+        "occurrences": [ "U01-L17", "U04-L11" ]
     },
     {
-        "idx": 1397,
+        "idx": 1301,
         "ar": "نُسُكٌ",
         "cleanAr": "نسك",
         "letter": "ن",
@@ -19562,7 +18218,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L15" ]
     },
     {
-        "idx": 1398,
+        "idx": 1302,
         "ar": "نِسْوَةٌ",
         "cleanAr": "نسوه",
         "letter": "ن",
@@ -19576,7 +18232,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L22" ]
     },
     {
-        "idx": 1399,
+        "idx": 1303,
         "ar": "نَصَارَىٰ",
         "cleanAr": "نصاري",
         "letter": "ن",
@@ -19587,10 +18243,10 @@ var WORDS_DATA = [    {
         "ur": "عیسائی، نصرانی لوگ",
         "en": "The Christians",
         "cleanEn": "the christians",
-        "occurrences": [ "U02-L04", "U05-L16", "U02-L06" ]
+        "occurrences": [ "U02-L04", "U02-L06", "U05-L16" ]
     },
     {
-        "idx": 1400,
+        "idx": 1304,
         "ar": "نُصْحٌ",
         "cleanAr": "نصح",
         "letter": "ن",
@@ -19604,7 +18260,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L14" ]
     },
     {
-        "idx": 1401,
+        "idx": 1305,
         "ar": "نَصْرٌ",
         "cleanAr": "نصر",
         "letter": "ن",
@@ -19618,7 +18274,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L05", "U05-L06" ]
     },
     {
-        "idx": 1402,
+        "idx": 1306,
         "ar": "نَصْرَانِيٌّ",
         "cleanAr": "نصراني",
         "letter": "ن",
@@ -19632,7 +18288,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L12" ]
     },
     {
-        "idx": 1403,
+        "idx": 1307,
         "ar": "نِصْفٌ",
         "cleanAr": "نصف",
         "letter": "ن",
@@ -19646,7 +18302,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L08", "U04-L02" ]
     },
     {
-        "idx": 1404,
+        "idx": 1308,
         "ar": "نَصِيبٌ",
         "cleanAr": "نصيب",
         "letter": "ن",
@@ -19660,7 +18316,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L04", "U05-L04" ]
     },
     {
-        "idx": 1405,
+        "idx": 1309,
         "ar": "نَظَرَ",
         "cleanAr": "نظر",
         "letter": "ن",
@@ -19674,7 +18330,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L10", "U02-L06" ]
     },
     {
-        "idx": 1406,
+        "idx": 1310,
         "ar": "نَعْجَةٌ",
         "cleanAr": "نعجه",
         "letter": "ن",
@@ -19688,7 +18344,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L16" ]
     },
     {
-        "idx": 1407,
+        "idx": 1311,
         "ar": "نِعْمَ",
         "cleanAr": "نعم",
         "letter": "ن",
@@ -19702,7 +18358,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L03" ]
     },
     {
-        "idx": 1408,
+        "idx": 1312,
         "ar": "نِعْمَةٌ",
         "cleanAr": "نعمه",
         "letter": "ن",
@@ -19713,10 +18369,10 @@ var WORDS_DATA = [    {
         "ur": "احسان، نعمت، مہربانی",
         "en": "Favor, grace, blessing, bounty",
         "cleanEn": "favor grace blessing bounty",
-        "occurrences": [ "U01-L17", "U02-L07", "U03-L05", "U01-L05" ]
+        "occurrences": [ "U01-L05", "U01-L17", "U02-L07", "U03-L05" ]
     },
     {
-        "idx": 1409,
+        "idx": 1313,
         "ar": "نَعِيمٌ",
         "cleanAr": "نعيم",
         "letter": "ن",
@@ -19730,7 +18386,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L03", "U04-L07", "U05-L02" ]
     },
     {
-        "idx": 1410,
+        "idx": 1314,
         "ar": "نَفَادٌ",
         "cleanAr": "نفاد",
         "letter": "ن",
@@ -19744,7 +18400,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L23" ]
     },
     {
-        "idx": 1411,
+        "idx": 1315,
         "ar": "نِفَاقٌ",
         "cleanAr": "نفاق",
         "letter": "ن",
@@ -19758,7 +18414,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L04", "U05-L07", "U05-L22" ]
     },
     {
-        "idx": 1412,
+        "idx": 1316,
         "ar": "نَفْخَةٌ",
         "cleanAr": "نفخه",
         "letter": "ن",
@@ -19772,21 +18428,21 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L01" ]
     },
     {
-        "idx": 1413,
+        "idx": 1317,
         "ar": "نَفْسٌ",
         "cleanAr": "نفس",
         "letter": "ن",
         "tr": "Nafs",
         "cleanTr": "nafs",
         "cat": "اسْمٌ",
-        "role": "Singular & Broken Plural",
+        "role": "Singular \u0026 Broken Plural",
         "ur": "جان، روح، ذات، خود انسان",
         "en": "Soul, self, person, psyche",
         "cleanEn": "soul self person psyche",
-        "occurrences": [ "U01-L07", "U01-L10", "U02-L01", "U02-L05", "U02-L07", "U03-L01" ]
+        "occurrences": [ "U01-L07", "U01-L10", "U02-L01", "U02-L05", "U02-L07", "U03-L01", "U05-L07", "U05-L11" ]
     },
     {
-        "idx": 1414,
+        "idx": 1318,
         "ar": "نَفْعٌ",
         "cleanAr": "نفع",
         "letter": "ن",
@@ -19800,21 +18456,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L03", "U04-L02", "U05-L08" ]
     },
     {
-        "idx": 1415,
-        "ar": "نُفُوسٌ",
-        "cleanAr": "نفوس",
-        "letter": "ن",
-        "tr": "Nufūs",
-        "cleanTr": "nufus",
-        "cat": "اسْمٌ",
-        "role": "Broken Plural / جَمْعُ تَكْسِير (نَفْس)",
-        "ur": "دل، باطن، جانیں",
-        "en": "Inner selves, souls",
-        "cleanEn": "inner selves souls",
-        "occurrences": [ "U05-L11" ]
-    },
-    {
-        "idx": 1416,
+        "idx": 1319,
         "ar": "نِكَاحٌ",
         "cleanAr": "نكاح",
         "letter": "ن",
@@ -19828,7 +18470,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L03" ]
     },
     {
-        "idx": 1417,
+        "idx": 1320,
         "ar": "نَكَالٌ",
         "cleanAr": "نكال",
         "letter": "ن",
@@ -19842,7 +18484,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L05" ]
     },
     {
-        "idx": 1418,
+        "idx": 1321,
         "ar": "نَكِيرٌ",
         "cleanAr": "نكير",
         "letter": "ن",
@@ -19856,7 +18498,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L14", "U05-L23" ]
     },
     {
-        "idx": 1419,
+        "idx": 1322,
         "ar": "نَمْلٌ",
         "cleanAr": "نمل",
         "letter": "ن",
@@ -19870,7 +18512,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L13" ]
     },
     {
-        "idx": 1420,
+        "idx": 1323,
         "ar": "نَهَارٌ",
         "cleanAr": "نهار",
         "letter": "ن",
@@ -19884,7 +18526,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L07", "U01-L12", "U01-L13", "U02-L03", "U02-L10", "U03-L06" ]
     },
     {
-        "idx": 1421,
+        "idx": 1324,
         "ar": "نَهَرٌ",
         "cleanAr": "نهر",
         "letter": "ن",
@@ -19895,10 +18537,10 @@ var WORDS_DATA = [    {
         "ur": "نہر، دریا، ندی",
         "en": "River, stream",
         "cleanEn": "river stream",
-        "occurrences": [ "U02-L07", "U01-L03", "U01-L10" ]
+        "occurrences": [ "U01-L03", "U01-L10", "U02-L07", "U04-L04", "U05-L12" ]
     },
     {
-        "idx": 1422,
+        "idx": 1325,
         "ar": "نُوحٌ",
         "cleanAr": "نوح",
         "letter": "ن",
@@ -19912,7 +18554,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L12", "U02-L04", "U02-L13", "U03-L04", "U05-L06" ]
     },
     {
-        "idx": 1423,
+        "idx": 1326,
         "ar": "نُورٌ",
         "cleanAr": "نور",
         "letter": "ن",
@@ -19926,7 +18568,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L04", "U02-L04", "U03-L01" ]
     },
     {
-        "idx": 1424,
+        "idx": 1327,
         "ar": "هَادٍ",
         "cleanAr": "هاد",
         "letter": "ه",
@@ -19937,10 +18579,10 @@ var WORDS_DATA = [    {
         "ur": "سیدھی راہ دکھانے والا، راہنما",
         "en": "Guide, director to truth",
         "cleanEn": "guide director to truth",
-        "occurrences": [ "U03-L08", "U04-L05", "U05-L23", "U01-L03", "U01-L09", "U05-L22" ]
+        "occurrences": [ "U01-L03", "U01-L09", "U03-L08", "U04-L05", "U05-L22", "U05-L23" ]
     },
     {
-        "idx": 1425,
+        "idx": 1328,
         "ar": "هَارُونُ",
         "cleanAr": "هارون",
         "letter": "ه",
@@ -19954,7 +18596,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L12", "U02-L04", "U02-L13", "U03-L04" ]
     },
     {
-        "idx": 1426,
+        "idx": 1329,
         "ar": "هَالِكٌ",
         "cleanAr": "هالك",
         "letter": "ه",
@@ -19968,7 +18610,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L02" ]
     },
     {
-        "idx": 1427,
+        "idx": 1330,
         "ar": "هَامَانٌ",
         "cleanAr": "هامان",
         "letter": "ه",
@@ -19977,12 +18619,12 @@ var WORDS_DATA = [    {
         "cat": "عَلَمٌ",
         "role": "Proper Name / عَلَم",
         "ur": "ہامان (فرعون کا وزیر)",
-        "en": "Haman (Pharaoh's minister)",
-        "cleanEn": "haman pharaohs minister",
+        "en": "Haman (Pharaoh\u0027s minister)",
+        "cleanEn": "haman pharaoh s minister",
         "occurrences": [ "U02-L01", "U02-L13" ]
     },
     {
-        "idx": 1428,
+        "idx": 1331,
         "ar": "هَاهُنَا",
         "cleanAr": "هاهنا",
         "letter": "ه",
@@ -19996,7 +18638,21 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L21" ]
     },
     {
-        "idx": 1429,
+        "idx": 1332,
+        "ar": "هَدَىٰ",
+        "cleanAr": "هدي",
+        "letter": "ه",
+        "tr": "Hadā",
+        "cleanTr": "hada",
+        "cat": "فِعْلٌ",
+        "role": "Verb (Form I) / فِعْلٌ مَاضٍ",
+        "ur": "اس نے ہدایت دی، راستہ دکھایا",
+        "en": "He guided, directed",
+        "cleanEn": "he guided directed",
+        "occurrences": [ "U02-L06" ]
+    },
+    {
+        "idx": 1333,
         "ar": "هُدًى",
         "cleanAr": "هدي",
         "letter": "ه",
@@ -20007,10 +18663,10 @@ var WORDS_DATA = [    {
         "ur": "ہدایت، سیدھا راستہ؛ رہنمائی، راہِ راست",
         "en": "Guidance, true direction",
         "cleanEn": "guidance true direction",
-        "occurrences": [ "U01-L15", "U01-L16", "U02-L01", "U02-L04", "U02-L07", "U03-L01", "U05-L02", "U01-L18", "U02-L06" ]
+        "occurrences": [ "U01-L15", "U01-L16", "U01-L18", "U02-L01", "U02-L04", "U02-L07", "U03-L01", "U05-L02" ]
     },
     {
-        "idx": 1430,
+        "idx": 1334,
         "ar": "هَدِيَّةٌ",
         "cleanAr": "هديه",
         "letter": "ه",
@@ -20024,7 +18680,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L08" ]
     },
     {
-        "idx": 1431,
+        "idx": 1335,
         "ar": "هٰذَا",
         "cleanAr": "هذا",
         "letter": "ه",
@@ -20035,10 +18691,10 @@ var WORDS_DATA = [    {
         "ur": "یہ (مذکر قریب)",
         "en": "This (masculine singular)",
         "cleanEn": "this masculine singular",
-        "occurrences": [ "U01-L01", "U01-L15", "U03-L03", "U02-L01" ]
+        "occurrences": [ "U01-L01", "U01-L15", "U02-L01", "U03-L03" ]
     },
     {
-        "idx": 1432,
+        "idx": 1336,
         "ar": "هٰذِهِ",
         "cleanAr": "هذه",
         "letter": "ه",
@@ -20052,7 +18708,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L17", "U03-L03" ]
     },
     {
-        "idx": 1433,
+        "idx": 1337,
         "ar": "هَزْلٌ",
         "cleanAr": "هزل",
         "letter": "ه",
@@ -20066,7 +18722,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L20" ]
     },
     {
-        "idx": 1434,
+        "idx": 1338,
         "ar": "هَلْ",
         "cleanAr": "هل",
         "letter": "ه",
@@ -20080,7 +18736,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L09", "U04-L08", "U05-L09" ]
     },
     {
-        "idx": 1435,
+        "idx": 1339,
         "ar": "هُمْ",
         "cleanAr": "هم",
         "letter": "ه",
@@ -20094,7 +18750,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L02", "U02-L03", "U02-L05", "U02-L08", "U02-L09" ]
     },
     {
-        "idx": 1436,
+        "idx": 1340,
         "ar": "هُمَا",
         "cleanAr": "هما",
         "letter": "ه",
@@ -20108,7 +18764,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L08" ]
     },
     {
-        "idx": 1437,
+        "idx": 1341,
         "ar": "هُوَ",
         "cleanAr": "هو",
         "letter": "ه",
@@ -20122,7 +18778,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L05", "U02-L08", "U02-L09" ]
     },
     {
-        "idx": 1438,
+        "idx": 1342,
         "ar": "هُودٌ",
         "cleanAr": "هود",
         "letter": "ه",
@@ -20136,7 +18792,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L13", "U03-L04" ]
     },
     {
-        "idx": 1439,
+        "idx": 1343,
         "ar": "هٰؤُلَاءِ",
         "cleanAr": "هولاء",
         "letter": "ه",
@@ -20150,7 +18806,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L18" ]
     },
     {
-        "idx": 1440,
+        "idx": 1344,
         "ar": "هِيَ",
         "cleanAr": "هي",
         "letter": "ه",
@@ -20164,7 +18820,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L09" ]
     },
     {
-        "idx": 1441,
+        "idx": 1345,
         "ar": "هَيِّنٌ",
         "cleanAr": "هين",
         "letter": "ه",
@@ -20178,7 +18834,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L16" ]
     },
     {
-        "idx": 1442,
+        "idx": 1346,
         "ar": "وَ",
         "cleanAr": "و",
         "letter": "و",
@@ -20189,10 +18845,10 @@ var WORDS_DATA = [    {
         "ur": "قسم ہے؛ اور",
         "en": "By (in oaths); and",
         "cleanEn": "by in oaths and",
-        "occurrences": [ "U01-L01", "U01-L12", "U03-L03", "U02-L10" ]
+        "occurrences": [ "U01-L01", "U01-L12", "U02-L10", "U03-L03" ]
     },
     {
-        "idx": 1443,
+        "idx": 1347,
         "ar": "وَاجِفَةٌ",
         "cleanAr": "واجفه",
         "letter": "و",
@@ -20206,7 +18862,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L21" ]
     },
     {
-        "idx": 1444,
+        "idx": 1348,
         "ar": "وَاحِدٌ",
         "cleanAr": "واحد",
         "letter": "و",
@@ -20220,21 +18876,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L08", "U03-L01" ]
     },
     {
-        "idx": 1445,
-        "ar": "وَاحِدَةٌ",
-        "cleanAr": "واحده",
-        "letter": "و",
-        "tr": "Wāḥidah",
-        "cleanTr": "wahidah",
-        "cat": "صِفَةٌ",
-        "role": "Adjective (Feminine) / صِفَة (مُؤَنَّث)",
-        "ur": "ایک، اکیلی (مؤنث)",
-        "en": "One, single (fem.)",
-        "cleanEn": "one single fem",
-        "occurrences": [ "U03-L01" ]
-    },
-    {
-        "idx": 1446,
+        "idx": 1349,
         "ar": "وَادٍ",
         "cleanAr": "واد",
         "letter": "و",
@@ -20248,7 +18890,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L04" ]
     },
     {
-        "idx": 1447,
+        "idx": 1350,
         "ar": "وَارِثٌ",
         "cleanAr": "وارث",
         "letter": "و",
@@ -20259,10 +18901,10 @@ var WORDS_DATA = [    {
         "ur": "وارث، بعد میں قائم رہنے والا، ترکہ پانے والا",
         "en": "Inheritor, ultimate possessor",
         "cleanEn": "inheritor ultimate possessor",
-        "occurrences": [ "U01-L04", "U02-L04", "U03-L08", "U05-L01" ]
+        "occurrences": [ "U01-L04", "U02-L04", "U03-L08", "U05-L01", "U05-L04" ]
     },
     {
-        "idx": 1448,
+        "idx": 1351,
         "ar": "وَارِدٌ",
         "cleanAr": "وارد",
         "letter": "و",
@@ -20276,7 +18918,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L09" ]
     },
     {
-        "idx": 1449,
+        "idx": 1352,
         "ar": "وَاسِعٌ",
         "cleanAr": "واسع",
         "letter": "و",
@@ -20286,25 +18928,11 @@ var WORDS_DATA = [    {
         "role": "Active Participle / Divine Attribute",
         "ur": "وسعت والا، لامحدود رحمت و علم والا",
         "en": "All-Encompassing, Boundless, Vast",
-        "cleanEn": "allencompassing boundless vast",
-        "occurrences": [ "U01-L09", "U02-L01" ]
+        "cleanEn": "all encompassing boundless vast",
+        "occurrences": [ "U01-L09", "U02-L01", "U03-L05" ]
     },
     {
-        "idx": 1450,
-        "ar": "وَاسِعَةٌ",
-        "cleanAr": "واسعه",
-        "letter": "و",
-        "tr": "Wāsi‘ah",
-        "cleanTr": "wasiah",
-        "cat": "صِفَةٌ",
-        "role": "Adjective (Fem.) / صِفَة (مُؤَنَّث)",
-        "ur": "کشادَہ، وسیع، پھیلی ہوئی",
-        "en": "Spacious, vast, wide (fem.)",
-        "cleanEn": "spacious vast wide fem",
-        "occurrences": [ "U03-L05" ]
-    },
-    {
-        "idx": 1451,
+        "idx": 1353,
         "ar": "وَاقٍ",
         "cleanAr": "واق",
         "letter": "و",
@@ -20318,7 +18946,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L23" ]
     },
     {
-        "idx": 1452,
+        "idx": 1354,
         "ar": "وَاقِعٌ",
         "cleanAr": "واقع",
         "letter": "و",
@@ -20332,7 +18960,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L01", "U04-L07" ]
     },
     {
-        "idx": 1453,
+        "idx": 1355,
         "ar": "وَالٍ",
         "cleanAr": "وال",
         "letter": "و",
@@ -20346,7 +18974,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L23" ]
     },
     {
-        "idx": 1454,
+        "idx": 1356,
         "ar": "وَالِدٌ",
         "cleanAr": "والد",
         "letter": "و",
@@ -20357,24 +18985,24 @@ var WORDS_DATA = [    {
         "ur": "باپ، جنم دینے والا والد",
         "en": "Father, parent",
         "cleanEn": "father parent",
-        "occurrences": [ "U01-L01", "U01-L07", "U01-L13", "U02-L10", "U03-L10", "U01-L03" ]
+        "occurrences": [ "U01-L01", "U01-L03", "U01-L07", "U01-L13", "U02-L10", "U03-L10" ]
     },
     {
-        "idx": 1455,
+        "idx": 1357,
         "ar": "وَالِدَةٌ",
         "cleanAr": "والده",
         "letter": "و",
         "tr": "Wālidah",
         "cleanTr": "walidah",
         "cat": "اسْمٌ",
-        "role": "Singular & Sound Feminine Plural",
+        "role": "Noun (Feminine) / اسْمٌ (مُؤَنَّث) (Plural: وَالِدَاتٌ)",
         "ur": "ماں / مائیں، مائیں دودھ پلانے والی",
-        "en": "Mother / Mothers",
-        "cleanEn": "mother mothers",
+        "en": "Mother",
+        "cleanEn": "mother",
         "occurrences": [ "U01-L07", "U01-L11" ]
     },
     {
-        "idx": 1456,
+        "idx": 1358,
         "ar": "وَاهِبٌ",
         "cleanAr": "واهب",
         "letter": "و",
@@ -20388,7 +19016,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L08" ]
     },
     {
-        "idx": 1457,
+        "idx": 1359,
         "ar": "وَتْرٌ",
         "cleanAr": "وتر",
         "letter": "و",
@@ -20402,7 +19030,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L10" ]
     },
     {
-        "idx": 1458,
+        "idx": 1360,
         "ar": "وَجَدَ",
         "cleanAr": "وجد",
         "letter": "و",
@@ -20416,7 +19044,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L02" ]
     },
     {
-        "idx": 1459,
+        "idx": 1361,
         "ar": "وَجْهٌ",
         "cleanAr": "وجه",
         "letter": "و",
@@ -20427,24 +19055,10 @@ var WORDS_DATA = [    {
         "ur": "چہرہ، رخ، ذات",
         "en": "Face, countenance, essence",
         "cleanEn": "face countenance essence",
-        "occurrences": [ "U03-L05" ]
+        "occurrences": [ "U02-L07", "U03-L05", "U05-L07" ]
     },
     {
-        "idx": 1460,
-        "ar": "وُجُوهٌ",
-        "cleanAr": "وجوه",
-        "letter": "و",
-        "tr": "Wujūh",
-        "cleanTr": "wujuh",
-        "cat": "اسْمٌ",
-        "role": "Broken Plural / جَمْعُ تَكْسِير (وَجْه)",
-        "ur": "چہرے",
-        "en": "Faces",
-        "cleanEn": "faces",
-        "occurrences": [ "U05-L07", "U02-L07" ]
-    },
-    {
-        "idx": 1461,
+        "idx": 1362,
         "ar": "وَجِيهٌ",
         "cleanAr": "وجيه",
         "letter": "و",
@@ -20458,7 +19072,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L05" ]
     },
     {
-        "idx": 1462,
+        "idx": 1363,
         "ar": "وَحْيٌ",
         "cleanAr": "وحي",
         "letter": "و",
@@ -20472,7 +19086,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L04", "U02-L09", "U04-L08", "U05-L19" ]
     },
     {
-        "idx": 1463,
+        "idx": 1364,
         "ar": "وَدُودٌ",
         "cleanAr": "ودود",
         "letter": "و",
@@ -20486,7 +19100,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L15" ]
     },
     {
-        "idx": 1464,
+        "idx": 1365,
         "ar": "وَذَرَ",
         "cleanAr": "وذر",
         "letter": "و",
@@ -20500,12 +19114,12 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L02" ]
     },
     {
-        "idx": 1465,
+        "idx": 1366,
         "ar": "وَرَاءَ",
         "cleanAr": "وراء",
         "letter": "و",
         "tr": "Warā’a",
-        "cleanTr": "wara'a",
+        "cleanTr": "waraa",
         "cat": "ظَرْفٌ",
         "role": "Adverb of Place / ظَرْفُ مَكَان",
         "ur": "پیچھے، ماورا، علاوہ",
@@ -20514,21 +19128,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L03", "U05-L07" ]
     },
     {
-        "idx": 1466,
-        "ar": "وَرَثَةٌ",
-        "cleanAr": "ورثه",
-        "letter": "و",
-        "tr": "Warathah",
-        "cleanTr": "warathah",
-        "cat": "اسْمٌ",
-        "role": "Broken Plural / جَمْعُ تَكْسِير (وَارِث)",
-        "ur": "وارث بننے والے لوگ",
-        "en": "Inheritors, heirs",
-        "cleanEn": "inheritors heirs",
-        "occurrences": [ "U05-L04" ]
-    },
-    {
-        "idx": 1467,
+        "idx": 1367,
         "ar": "وَزَرٌ",
         "cleanAr": "وزر",
         "letter": "و",
@@ -20542,7 +19142,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L21" ]
     },
     {
-        "idx": 1468,
+        "idx": 1368,
         "ar": "وَزْنٌ",
         "cleanAr": "وزن",
         "letter": "و",
@@ -20556,7 +19156,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L05", "U05-L21" ]
     },
     {
-        "idx": 1469,
+        "idx": 1369,
         "ar": "وَزِيرٌ",
         "cleanAr": "وزير",
         "letter": "و",
@@ -20570,7 +19170,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U04-L16" ]
     },
     {
-        "idx": 1470,
+        "idx": 1370,
         "ar": "وَسَقَ",
         "cleanAr": "وسق",
         "letter": "و",
@@ -20584,7 +19184,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L10" ]
     },
     {
-        "idx": 1471,
+        "idx": 1371,
         "ar": "وَسْوَاسٌ",
         "cleanAr": "وسواس",
         "letter": "و",
@@ -20595,10 +19195,10 @@ var WORDS_DATA = [    {
         "ur": "وسوسہ ڈالنے والا، برے خیالات ابھارنے والا شیطان",
         "en": "Whisperer, instigator of evil notions",
         "cleanEn": "whisperer instigator of evil notions",
-        "occurrences": [ "U03-L04", "U02-L04" ]
+        "occurrences": [ "U02-L04", "U03-L04" ]
     },
     {
-        "idx": 1472,
+        "idx": 1372,
         "ar": "وَصِيَّةٌ",
         "cleanAr": "وصيه",
         "letter": "و",
@@ -20612,7 +19212,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L03" ]
     },
     {
-        "idx": 1473,
+        "idx": 1373,
         "ar": "وَعْدٌ",
         "cleanAr": "وعد",
         "letter": "و",
@@ -20623,10 +19223,10 @@ var WORDS_DATA = [    {
         "ur": "وعدہ، قیامت کی پیشگوئی",
         "en": "Promise, pledge, covenant",
         "cleanEn": "promise pledge covenant",
-        "occurrences": [ "U01-L07", "U01-L15", "U01-L16", "U02-L12", "U03-L04", "U05-L03", "U02-L13" ]
+        "occurrences": [ "U01-L07", "U01-L15", "U01-L16", "U02-L12", "U02-L13", "U03-L04", "U05-L03" ]
     },
     {
-        "idx": 1474,
+        "idx": 1374,
         "ar": "وَعِيدٌ",
         "cleanAr": "وعيد",
         "letter": "و",
@@ -20640,7 +19240,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L04" ]
     },
     {
-        "idx": 1475,
+        "idx": 1375,
         "ar": "وَقْتٌ",
         "cleanAr": "وقت",
         "letter": "و",
@@ -20654,7 +19254,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L08" ]
     },
     {
-        "idx": 1476,
+        "idx": 1376,
         "ar": "وَقْرٌ",
         "cleanAr": "وقر",
         "letter": "و",
@@ -20668,7 +19268,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L07" ]
     },
     {
-        "idx": 1477,
+        "idx": 1377,
         "ar": "وَقْعَةٌ",
         "cleanAr": "وقعه",
         "letter": "و",
@@ -20679,10 +19279,10 @@ var WORDS_DATA = [    {
         "ur": "واقع ہونا، قیامت کا واقعہ",
         "en": "Occurrence, event, happening",
         "cleanEn": "occurrence event happening",
-        "occurrences": [ "U04-L11", "U02-L04" ]
+        "occurrences": [ "U02-L04", "U04-L11" ]
     },
     {
-        "idx": 1478,
+        "idx": 1378,
         "ar": "وَقُودٌ",
         "cleanAr": "وقود",
         "letter": "و",
@@ -20696,7 +19296,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L05" ]
     },
     {
-        "idx": 1479,
+        "idx": 1379,
         "ar": "وَكِيلٌ",
         "cleanAr": "وكيل",
         "letter": "و",
@@ -20710,7 +19310,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L09", "U04-L01", "U04-L05" ]
     },
     {
-        "idx": 1480,
+        "idx": 1380,
         "ar": "وَلَايَةٌ",
         "cleanAr": "ولايه",
         "letter": "و",
@@ -20724,7 +19324,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L23" ]
     },
     {
-        "idx": 1481,
+        "idx": 1381,
         "ar": "وَلَدٌ",
         "cleanAr": "ولد",
         "letter": "و",
@@ -20735,10 +19335,10 @@ var WORDS_DATA = [    {
         "ur": "بچہ، اولاد، فرزند",
         "en": "Child, son, offspring",
         "cleanEn": "child son offspring",
-        "occurrences": [ "U01-L07", "U04-L04", "U05-L03" ]
+        "occurrences": [ "U01-L07", "U04-L04", "U05-L03", "U05-L04" ]
     },
     {
-        "idx": 1482,
+        "idx": 1382,
         "ar": "وَلِيٌّ",
         "cleanAr": "ولي",
         "letter": "و",
@@ -20749,10 +19349,10 @@ var WORDS_DATA = [    {
         "ur": "دوست، حمایتی، کارساز و مددگار",
         "en": "Protecting friend, guardian, patron",
         "cleanEn": "protecting friend guardian patron",
-        "occurrences": [ "U01-L07", "U01-L09", "U04-L01", "U05-L03" ]
+        "occurrences": [ "U01-L07", "U01-L09", "U04-L01", "U05-L03", "U05-L04" ]
     },
     {
-        "idx": 1483,
+        "idx": 1383,
         "ar": "وَهَّابٌ",
         "cleanAr": "وهاب",
         "letter": "و",
@@ -20762,11 +19362,11 @@ var WORDS_DATA = [    {
         "role": "Intensive Adjective / صِيغَةُ مُبَالَغَة (فَعَّال)",
         "ur": "بہت عطا کرنے والا، بے غرض بخشنے والا",
         "en": "All-Bestower, Supreme Giver",
-        "cleanEn": "allbestower supreme giver",
+        "cleanEn": "all bestower supreme giver",
         "occurrences": [ "U03-L08", "U04-L05", "U05-L06" ]
     },
     {
-        "idx": 1484,
+        "idx": 1384,
         "ar": "وَيْلٌ",
         "cleanAr": "ويل",
         "letter": "و",
@@ -20780,7 +19380,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U05-L02" ]
     },
     {
-        "idx": 1485,
+        "idx": 1385,
         "ar": "يَا",
         "cleanAr": "يا",
         "letter": "ي",
@@ -20794,7 +19394,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L06", "U02-L13", "U03-L06" ]
     },
     {
-        "idx": 1486,
+        "idx": 1386,
         "ar": "يَأْجُوجٌ",
         "cleanAr": "ياجوج",
         "letter": "ي",
@@ -20808,7 +19408,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L01", "U05-L01" ]
     },
     {
-        "idx": 1487,
+        "idx": 1387,
         "ar": "يَبَسٌ",
         "cleanAr": "يبس",
         "letter": "ي",
@@ -20822,21 +19422,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L03" ]
     },
     {
-        "idx": 1488,
-        "ar": "يَتَامَىٰ",
-        "cleanAr": "يتامي",
-        "letter": "ي",
-        "tr": "Yatāmā",
-        "cleanTr": "yatama",
-        "cat": "اسْمٌ",
-        "role": "Broken Plural / جَمْعُ تَكْسِير (يَتِيم)",
-        "ur": "یتیم بچے، بے سہارا",
-        "en": "Orphans",
-        "cleanEn": "orphans",
-        "occurrences": [ "U05-L04" ]
-    },
-    {
-        "idx": 1489,
+        "idx": 1388,
         "ar": "يَتِيمٌ",
         "cleanAr": "يتيم",
         "letter": "ي",
@@ -20847,10 +19433,10 @@ var WORDS_DATA = [    {
         "ur": "یتیم بچہ، بے سہارا",
         "en": "Orphan",
         "cleanEn": "orphan",
-        "occurrences": [ "U01-L02", "U01-L13", "U03-L10", "U04-L17" ]
+        "occurrences": [ "U01-L02", "U01-L13", "U03-L10", "U04-L17", "U05-L04" ]
     },
     {
-        "idx": 1490,
+        "idx": 1389,
         "ar": "يَثْرِبٌ",
         "cleanAr": "يثرب",
         "letter": "ي",
@@ -20864,7 +19450,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L04" ]
     },
     {
-        "idx": 1491,
+        "idx": 1390,
         "ar": "يَحْيَىٰ",
         "cleanAr": "يحيي",
         "letter": "ي",
@@ -20878,7 +19464,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L12", "U02-L07", "U02-L13", "U05-L02" ]
     },
     {
-        "idx": 1492,
+        "idx": 1391,
         "ar": "يَدٌ",
         "cleanAr": "يد",
         "letter": "ي",
@@ -20889,10 +19475,10 @@ var WORDS_DATA = [    {
         "ur": "ہاتھ، قدرت، نعمت، اختیار",
         "en": "Hand, power, authority",
         "cleanEn": "hand power authority",
-        "occurrences": [ "U01-L01", "U01-L10", "U03-L05", "U03-L10" ]
+        "occurrences": [ "U01-L01", "U01-L10", "U03-L05", "U03-L10", "U05-L06" ]
     },
     {
-        "idx": 1493,
+        "idx": 1392,
         "ar": "يسٓ",
         "cleanAr": "يس",
         "letter": "ي",
@@ -20902,11 +19488,11 @@ var WORDS_DATA = [    {
         "role": "Disjointed Letters / حُرُوفٌ مُقَطَّعَة",
         "ur": "حروف مقطعات (یس)",
         "en": "Disjointed letters Ya-Sin",
-        "cleanEn": "disjointed letters yasin",
+        "cleanEn": "disjointed letters ya sin",
         "occurrences": [ "U05-L02" ]
     },
     {
-        "idx": 1494,
+        "idx": 1393,
         "ar": "يُسْرٌ",
         "cleanAr": "يسر",
         "letter": "ي",
@@ -20920,7 +19506,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U03-L06" ]
     },
     {
-        "idx": 1495,
+        "idx": 1394,
         "ar": "يُسْرَىٰ",
         "cleanAr": "يسري",
         "letter": "ي",
@@ -20934,7 +19520,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L02" ]
     },
     {
-        "idx": 1496,
+        "idx": 1395,
         "ar": "يَسِيرٌ",
         "cleanAr": "يسير",
         "letter": "ي",
@@ -20948,7 +19534,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L04", "U02-L12" ]
     },
     {
-        "idx": 1497,
+        "idx": 1396,
         "ar": "يَعْقُوبٌ",
         "cleanAr": "يعقوب",
         "letter": "ي",
@@ -20962,7 +19548,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L07", "U02-L01", "U03-L04" ]
     },
     {
-        "idx": 1498,
+        "idx": 1397,
         "ar": "يَقِينٌ",
         "cleanAr": "يقين",
         "letter": "ي",
@@ -20976,7 +19562,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L06" ]
     },
     {
-        "idx": 1499,
+        "idx": 1398,
         "ar": "يَمِينٌ",
         "cleanAr": "يمين",
         "letter": "ي",
@@ -20987,10 +19573,10 @@ var WORDS_DATA = [    {
         "ur": "دایاں ہاتھ، دائیں سمت، قسم",
         "en": "Right hand, right side, oath",
         "cleanEn": "right hand right side oath",
-        "occurrences": [ "U04-L03" ]
+        "occurrences": [ "U04-L03", "U05-L11" ]
     },
     {
-        "idx": 1500,
+        "idx": 1399,
         "ar": "يَهُودٌ",
         "cleanAr": "يهود",
         "letter": "ي",
@@ -21004,7 +19590,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L04", "U04-L08" ]
     },
     {
-        "idx": 1501,
+        "idx": 1400,
         "ar": "يَهُودِيٌّ",
         "cleanAr": "يهودي",
         "letter": "ي",
@@ -21018,7 +19604,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L12" ]
     },
     {
-        "idx": 1502,
+        "idx": 1401,
         "ar": "يُوسُفٌ",
         "cleanAr": "يوسف",
         "letter": "ي",
@@ -21032,7 +19618,7 @@ var WORDS_DATA = [    {
         "occurrences": [ "U02-L04", "U04-L05", "U05-L02" ]
     },
     {
-        "idx": 1503,
+        "idx": 1402,
         "ar": "يَوْمٌ",
         "cleanAr": "يوم",
         "letter": "ي",
@@ -21043,10 +19629,10 @@ var WORDS_DATA = [    {
         "ur": "دن، وقت، قیامت کا دن",
         "en": "Day, period, Day of Judgment",
         "cleanEn": "day period day of judgment",
-        "occurrences": [ "U01-L10", "U01-L16", "U02-L02", "U02-L08", "U03-L01", "U03-L02", "U05-L06", "U03-L10" ]
+        "occurrences": [ "U01-L10", "U01-L16", "U02-L02", "U02-L08", "U03-L01", "U03-L02", "U03-L10", "U05-L06" ]
     },
     {
-        "idx": 1504,
+        "idx": 1403,
         "ar": "يَوْمَئِذٍ",
         "cleanAr": "يوميذ",
         "letter": "ي",
@@ -21057,10 +19643,10 @@ var WORDS_DATA = [    {
         "ur": "اس دن، قیامت کے روز، اس وقت",
         "en": "On that Day, at that time, on Judgment Day",
         "cleanEn": "on that day at that time on judgment day",
-        "occurrences": [ "U01-L05", "U02-L08" ]
+        "occurrences": [ "U01-L05", "U02-L08", "U05-L21" ]
     },
     {
-        "idx": 1505,
+        "idx": 1404,
         "ar": "يُونُسٌ",
         "cleanAr": "يونس",
         "letter": "ي",
@@ -21074,4 +19660,3 @@ var WORDS_DATA = [    {
         "occurrences": [ "U01-L12", "U02-L06", "U03-L04" ]
     }
 ];
-

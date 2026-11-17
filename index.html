@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lexicon — Classical & Quranic Arabic Study Companion</title>
-  <meta name="description" content="Alphabetical Quranic Arabic vocabulary dictionary (1,538 Classical & Quranic Arabic Base Words), comprehensive Grammar Rules across Units 1 to 5, and authentic Tajweed modules. Fast, diacritic-tolerant search.">
+  <meta name="description" content="Alphabetical Quranic Arabic vocabulary dictionary (1,404 Classical & Quranic Arabic Base Words), comprehensive Grammar Rules across Units 1 to 5, and authentic Tajweed modules. Fast, diacritic-tolerant search.">
   <meta name="theme-color" content="#0f766e">
 
   <!-- Open Graph Meta Tags -->
@@ -26,10 +26,13 @@
     <!-- Top Header -->
     <header class="app-header">
       <div class="brand-wrapper">
-        <h1 class="brand-title">
-          Lexicon
-          <span class="brand-subline">Classical &amp; Quranic Arabic</span>
-        </h1>
+        <div class="brand-lockup">
+          <div class="brand-primary-row">
+            <h1 class="brand-title">Lexicon</h1>
+            <span class="brand-arabic-badge font-ar" lang="ar" dir="rtl" aria-label="Al-Mu'jam">المُعْجَم</span>
+          </div>
+          <p class="brand-descriptor">Classical &amp; Quranic Arabic Study Companion</p>
+        </div>
       </div>
 
       <div class="header-actions">
@@ -40,6 +43,19 @@
         </div>
       </div>
     </header>
+
+    <!-- Working Draft Status Banner -->
+    <aside class="notice-banner" role="status" aria-label="Dataset development status">
+      <div class="notice-content">
+        <span class="notice-icon" aria-hidden="true">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+        </span>
+        <p class="notice-text">
+          <span class="notice-tag">Working Draft</span>
+          This lexicon is an in-progress study preview. Active audit and root verification are ongoing across the dataset, so expect occasional inaccuracies, provisional roots, or unrefined entries.
+        </p>
+      </div>
+    </aside>
 
     <!-- Main Navigation Tabs: 1. Tajweed, 2. Words (Default Active), 3. Rules, 4. Translations -->
     <nav class="main-tabs" role="tablist" aria-label="Main study views">
@@ -185,5 +201,7 @@
   <script src="app.js"></script>
 </body>
 </html>
+
+
 
 
